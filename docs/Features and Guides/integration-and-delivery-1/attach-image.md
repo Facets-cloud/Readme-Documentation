@@ -38,7 +38,7 @@ You have successfully attached the image to all the environments.
 3. Click on **Attach Image** in an environment card. 
 4. The Attach Image modal appears.
    1. Here, you can choose to **Select Image** or **Specify URL.**
-   2. If you choose to select an image, select the **Container Registry, Repository, **and** Tag.**
+   2. If you choose to select an image, select the **Container Registry, Repository,** and **Tag.**
    3. If you choose to specify the URL, select the **Container Registry** and mention the **Image URL.**
    4. Click **Attach.**
 
@@ -49,12 +49,12 @@ You have successfully attached the image to that environment. Repeat this proces
 This option allows you to use the CI/CD workflow set at the project level. Based on the workflow set in the CI/CD, you will be able to attach images to the environment.
 
 1. Select **Use the CI/CD Workflow Set at the Project Level.** 
-2. Click **Save Changes.**  
+2. Click **Save Changes.**\
    This will display the CI/CD set at the projects level in the images tab. 
 3. To attach an image, click on the **Attach Image** button. 
 4. The **Attach Image** modal appears.
    1. Here, you can choose to **Select Image** or **Specify URL.**
-   2. If you choose to select an image, select the **Container Registry, Repository, **and** Tag.**
+   2. If you choose to select an image, select the **Container Registry, Repository,** and **Tag.**
    3. If you choose to specify the URL, select the **Container Registry** and mention the **Image URL.**
    4. Click **Attach.**
 
@@ -88,5 +88,5 @@ No, you cannot deploy your application if the image is only registered but not p
 
 ## Related Guides
 
-- [CI/CD Workflow](https://readme.facets.cloud/docs/cicd-workflow)
-- [Container Registries](https://readme.facets.cloud/docs/container-registries)
+* [CI/CD Workflow](https://readme.facets.cloud/docs/cicd-workflow)
+* [Container Registries](https://readme.facets.cloud/docs/container-registries)
