@@ -21,8 +21,8 @@ The following are the various types of releases available in Facets:
 3. **Launch Release:** Used for launching a new environment for the first time.
 4. **Destroy Release:** Used to destroy all resources provisioned by Facets.
 5. **Plan Release:** Provides a preview of all changes that will be made during the release, allowing for review and approval before applying changes.
-6. **Custom Release: **This release type allows power users to issue direct Terraform commands, giving them greater control and flexibility in their deployments.
-7. **Queued Release: **This feature allows the system to automatically add a new, manually triggered release to a queue while another release is already in progress. This allows you to initiate releases without the need to wait for the current one to complete.
+6. **Custom Release:** This release type allows power users to issue direct Terraform commands, giving them greater control and flexibility in their deployments.
+7. **Queued Release:** This feature allows the system to automatically add a new, manually triggered release to a queue while another release is already in progress. This allows you to initiate releases without the need to wait for the current one to complete.
 
 In addition, Terraform logs are available for power users to view detailed information about the changes made during each release. By using releases in Facets, organizations can have a well-defined and automated process for deploying changes to their cloud environments, which helps reduce the risk of errors and makes it easier to roll back if necessary.
 
@@ -46,5 +46,5 @@ In such scenarios, the scheduled release gets skipped. It does not enter the que
 
 ## Related Guides
 
-- [Performing Releases](performing-releases)
-- [Scheduling Releases](doc:scheduling-releases)
+* [Performing Releases](performing-releases)
+* [Scheduling Releases](doc:scheduling-releases)
