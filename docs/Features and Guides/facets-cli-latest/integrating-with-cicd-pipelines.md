@@ -36,11 +36,11 @@ facetsctl login -u <USERNAME> -t <TOKEN> -f <CP_URL>
 
 Initialize the artifact based on the inputs:
 
-- If `SERVICE_NAME` is provided:
+* If `SERVICE_NAME` is provided:
   ```bash
   facetsctl artifact init -p <PROJECT_NAME> -s <SERVICE_NAME> -a <ARTIFACTORY_NAME>
   ```
-- If `CI_NAME` is provided:
+* If `CI_NAME` is provided:
   ```
   facetsctl artifact init -p <PROJECT_NAME> -c <CI_NAME> -a <ARTIFACTORY_NAME>
   ```
