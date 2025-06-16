@@ -29,8 +29,8 @@ This guide provides step-by-step instructions for linking or referencing resourc
 2. Select Connect with Other Resources from the dropdown menu.
 3. A modal will open where you can: 
    1. Select the resource to link.
-   2. Choose the variables and set their dollar reference values in the value field.  
-      Start typing with ${ in the input field to see dropdown suggestions for available references.
+   2. Choose the variables and set their dollar reference values in the value field.\
+      Start typing with $\{ in the input field to see dropdown suggestions for available references.
    3. Confirm your selections and save the changes.
 
 ### Linking Resources for Ingress:
