@@ -30,12 +30,12 @@ Queued Releases are enabled by default and do not require any manual configurati
 
 Each queued release includes detailed metadata, such as:
 
-- Release Type
-- Whether the release is a refresh (`true`/`false`)
-- Whether the release is forced (`true`/`false`)
-- Whether destructive actions are allowed (`true`/`false`)
-- Any associated comments
-- The user who triggered the release
+* Release Type
+* Whether the release is a refresh (`true`/`false`)
+* Whether the release is forced (`true`/`false`)
+* Whether destructive actions are allowed (`true`/`false`)
+* Any associated comments
+* The user who triggered the release
 
 For Selective Releases, additional information such as the Resource Type, Resource Name, and the specific actions is also displayed.
 
@@ -59,12 +59,12 @@ When a release is paused, it overrides the availability rules configured for the
 
 Releases can be paused at two different levels:
 
-- **Blueprint Level**: Enables release pausing or resumption for an entire environment through the **Environments Tab**.
+* **Blueprint Level**: Enables release pausing or resumption for an entire environment through the **Environments Tab**.
 
-  [block:image]{"images":[{"image":["https://files.readme.io/ddf49b13ab1b9f13d88266547aa1b1b59d2b2374f9274c2ec427bdf9de016986-Screenshot_2025-04-09_at_10.39.28_AM.png","",""],"align":"center","sizing":"600px"}]}[/block]
-- **Environment Level**: Provides control over individual environments via the **Releases Page**.
+  <Image align="center" width="600px" src="https://files.readme.io/ddf49b13ab1b9f13d88266547aa1b1b59d2b2374f9274c2ec427bdf9de016986-Screenshot_2025-04-09_at_10.39.28_AM.png" />
+* **Environment Level**: Provides control over individual environments via the **Releases Page**.
 
-  [block:image]{"images":[{"image":["https://files.readme.io/71305c9908f74860651f7f7fba264680dcd6699e8fc7e4b6ecb2d62033f4c8c0-Screenshot_2025-04-09_at_10.39.49_AM.png","",""],"align":"center","sizing":"600px"}]}[/block]
+  <Image align="center" width="600px" src="https://files.readme.io/71305c9908f74860651f7f7fba264680dcd6699e8fc7e4b6ecb2d62033f4c8c0-Screenshot_2025-04-09_at_10.39.49_AM.png" />
 
 ***
 
@@ -92,7 +92,7 @@ $ facetsctl release sync APPS -p <project> -e <environment>
 
 ##### Arguments
 
-- `APPS`: A comma-separated list of application names to be synchronized.
+* `APPS`: A comma-separated list of application names to be synchronized.
 
 ##### Flags
 
@@ -113,7 +113,7 @@ $ facetsctl release wait APPS -p <project> -e <environment> [--sync]
 
 ##### Arguments
 
-- `APPS`: A comma-separated list of application names.
+* `APPS`: A comma-separated list of application names.
 
 ##### Flags
 
@@ -143,19 +143,7 @@ Only non-conflicting releases are eligible to run in parallel. If conflicts are 
 
 ### How to Enable Parallel Releases
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fpxb4pvzxompv&display_name=Storylane&url=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fpxb4pvzxompv&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_25738d37-f3f6-462d-9648-f82a03dfca0b%2Fproject%2Fproject_417c97c3-a06c-4df7-9f41-10ef98f3c0ab%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"431\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://app.storylane.io/demo/pxb4pvzxompv",
-  "title": "Projects | Nov 28 3:23 PM",
-  "favicon": "https://app.storylane.io/favicon.ico",
-  "image": "https://app-pages.storylane.io/company/company_25738d37-f3f6-462d-9648-f82a03dfca0b/project/project_417c97c3-a06c-4df7-9f41-10ef98f3c0ab/preview.gif",
-  "provider": "app.storylane.io",
-  "href": "https://app.storylane.io/demo/pxb4pvzxompv",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
-
+<Embed url="https://app.storylane.io/demo/pxb4pvzxompv" title="Projects | Nov 28 3:23 PM" favicon="https://app.storylane.io/favicon.ico" image="https://app-pages.storylane.io/company/company_25738d37-f3f6-462d-9648-f82a03dfca0b/project/project_417c97c3-a06c-4df7-9f41-10ef98f3c0ab/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demo/pxb4pvzxompv" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fpxb4pvzxompv%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fpxb4pvzxompv%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_25738d37-f3f6-462d-9648-f82a03dfca0b%252Fproject%252Fproject_417c97c3-a06c-4df7-9f41-10ef98f3c0ab%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22431%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 1. Navigate to **Settings > General**.
 2. Enable the **Parallel Releases** option (disabled by default).
@@ -180,36 +168,24 @@ Scheduled Releases are especially useful for periodic updates, automating routin
 
 ### How to Configure a Scheduled Release
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fmaciqnme2jja&display_name=Storylane&url=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fmaciqnme2jja&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%2Fproject%2Fproject_daf0ad98-ee90-4d76-8392-d94a2403ac00%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"473\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://app.storylane.io/demo/maciqnme2jja",
-  "title": "Overview | Feb 17 4:36 PM",
-  "favicon": "https://app.storylane.io/favicon.ico",
-  "image": "https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_daf0ad98-ee90-4d76-8392-d94a2403ac00/preview.gif",
-  "provider": "app.storylane.io",
-  "href": "https://app.storylane.io/demo/maciqnme2jja",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
-
+<Embed url="https://app.storylane.io/demo/maciqnme2jja" title="Overview | Feb 17 4:36 PM" favicon="https://app.storylane.io/favicon.ico" image="https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_daf0ad98-ee90-4d76-8392-d94a2403ac00/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demo/maciqnme2jja" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fmaciqnme2jja%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fmaciqnme2jja%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_daf0ad98-ee90-4d76-8392-d94a2403ac00%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22473%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 1. **Open Environment Settings**
-   - Navigate to the **Environment Settings** section and go to the **Releases** tab.
+   * Navigate to the **Environment Settings** section and go to the **Releases** tab.
 
 2. **Configure the Schedule**
-   - Toggle the **Available** option to enable scheduled releases.
-   - Choose the desired frequency:
-     - **Minutes**: For rapid deployment intervals.
-     - **Hours**: For more frequent daily deployments.
-     - **Days**: For longer development and testing cycles.
-     - **Weeks**: For production-grade, stable deployments.
-   - Define the specific interval for the release schedule.
-   - Use the **Pause** toggle to temporarily suspend the scheduled release.
+   * Toggle the **Available** option to enable scheduled releases.
+   * Choose the desired frequency:
+     * **Minutes**: For rapid deployment intervals.
+     * **Hours**: For more frequent daily deployments.
+     * **Days**: For longer development and testing cycles.
+     * **Weeks**: For production-grade, stable deployments.
+   * Define the specific interval for the release schedule.
+   * Use the **Pause** toggle to temporarily suspend the scheduled release.
 
 3. **Save the Configuration**
-   - Click **Save Changes** to activate the schedule.
-   - Manual release triggers will still be available in parallel with the schedule.
+   * Click **Save Changes** to activate the schedule.
+   * Manual release triggers will still be available in parallel with the schedule.
 
 ***
 
@@ -219,15 +195,15 @@ Scheduled Releases are especially useful for periodic updates, automating routin
 
 **Possible Causes:**
 
-- The environment may have an active paused release.
-- A scheduled release could be conflicting with an ongoing deployment.
-- A state lock error may be preventing the release due to resource conflicts.
+* The environment may have an active paused release.
+* A scheduled release could be conflicting with an ongoing deployment.
+* A state lock error may be preventing the release due to resource conflicts.
 
 **Resolution:**
 
-- Resume the paused release via the **Releases Page**.
-- Adjust the release schedule to avoid overlaps with ongoing deployments.
-- Resolve any conflicting resource states and retry the release.
+* Resume the paused release via the **Releases Page**.
+* Adjust the release schedule to avoid overlaps with ongoing deployments.
+* Resolve any conflicting resource states and retry the release.
 
 ***
 
@@ -235,13 +211,13 @@ Scheduled Releases are especially useful for periodic updates, automating routin
 
 **Possible Causes:**
 
-- The **Release Approval Workflow** is currently enabled, which blocks parallel execution.
-- The environment has reached the maximum configured limit for parallel releases.
+* The **Release Approval Workflow** is currently enabled, which blocks parallel execution.
+* The environment has reached the maximum configured limit for parallel releases.
 
 **Resolution:**
 
-- Disable the **Release Approval Workflow** to enable parallel execution.
-- Increase the **Maximum Parallel Releases** value in the system settings.
+* Disable the **Release Approval Workflow** to enable parallel execution.
+* Increase the **Maximum Parallel Releases** value in the system settings.
 
 ***
 
@@ -249,10 +225,10 @@ Scheduled Releases are especially useful for periodic updates, automating routin
 
 **Possible Causes:**
 
-- The specified project or environment name may be incorrect.
-- The targeted applications are already in sync and require no action.
+* The specified project or environment name may be incorrect.
+* The targeted applications are already in sync and require no action.
 
 **Resolution:**
 
-- Confirm and correct the environment and project identifiers.
-- Use the `--sync` flag to enforce synchronization even if applications appear in sync.
+* Confirm and correct the environment and project identifiers.
+* Use the `--sync` flag to enforce synchronization even if applications appear in sync.
