@@ -12,9 +12,9 @@ next:
 ---
 Facets is now available as a plugin in Backstage, enabling teams to seamlessly integrate release orchestration within their developer portal. With this plugin, you can:
 
-- View and manage controlled shifts directly from Backstage.
-- Monitor deployment progress and troubleshoot issues in real time.
-- Automate and standardize release workflows across teams.
+* View and manage controlled shifts directly from Backstage.
+* Monitor deployment progress and troubleshoot issues in real time.
+* Automate and standardize release workflows across teams.
 
 This plugin is listed in the [Backstage Plugin Marketplace](https://backstage.io/plugins/) under the **Deployment** category.
 
@@ -44,10 +44,10 @@ Provides access to infrastructure details like endpoints, connection strings, an
 
 ## **Prerequisites**
 
-- **Backstage Instance**: You can either integrate this into an existing Backstage app or set up a new one.
-- **Node.js & Yarn**: Required for package installation.
-- **Facets.cloud Account**: Sign up at [Facets.cloud](https://facets.cloud) and generate an API key.
-- **Backstage Plugin Knowledge** (optional): Refer to [Backstage Plugin Docs](https://backstage.io/docs/plugins/installing-a-plugin) for additional details.
+* **Backstage Instance**: You can either integrate this into an existing Backstage app or set up a new one.
+* **Node.js & Yarn**: Required for package installation.
+* **Facets.cloud Account**: Sign up at [Facets.cloud](https://facets.cloud) and generate an API key.
+* **Backstage Plugin Knowledge** (optional): Refer to [Backstage Plugin Docs](https://backstage.io/docs/plugins/installing-a-plugin) for additional details.
 
 ## Installation Guide
 
@@ -200,19 +200,19 @@ For the best experience, users should configure their own Facets.cloud credentia
 
 ### Components not appearing
 
-- Verify entity annotations are correctly configured  
-- Check user has valid credentials configured  
+* Verify entity annotations are correctly configured  
+* Check user has valid credentials configured  
 
 ### Connection errors
 
-- Ensure `controlPlaneUrl` is correct  
-- Verify API credentials have proper permissions  
-- Check network connectivity to Facets Control Plane  
+* Ensure `controlPlaneUrl` is correct  
+* Verify API credentials have proper permissions  
+* Check network connectivity to Facets Control Plane  
 
 ### Authentication issues
 
-- Try regenerating your personal token  
-- Ensure username matches your Facets.Cloud account
+* Try regenerating your personal token  
+* Ensure username matches your Facets.Cloud account
 
 ***
 
