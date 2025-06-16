@@ -16,31 +16,16 @@ Facets now integrates WireGuard VPN, simplifying secure access to cluster resour
 
 ## Enabling VPN Server in Facets
 
-1. Navigate to **Blueprint > List,** select the required Blueprint, and select the desired Environment.  
+1. Navigate to **Blueprint > List,** select the required Blueprint, and select the desired Environment.\
    You will be redirected to the **Environments > Overview** page.
 2. To enable the VPN Profile for this Environment, click on the ellipsis icon from the top right corner and select **Environment Settings.**
 3. Toggle **Enable VPN Server** and click **Save Changes.**
 4. Now, perform a release to confirm the status of the VPN server in the environment.
 5. Navigate to **Environments > Overview.** Click on the ellipsis icon from the top right corner, and select **Download VPN Profile**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b933cb0-VPN.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/b933cb0-VPN.gif">
+  Click on the image to expand
+</Image>
 
 ## Setting up the WireGuard Client
 
