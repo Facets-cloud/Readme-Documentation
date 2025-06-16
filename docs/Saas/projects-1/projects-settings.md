@@ -49,7 +49,7 @@ Manage the project's CI/CD flow and map Git branches to environments.
 4. Set Promotion Workflow: Define the hierarchy for promoting artifacts across environments (e.g., from aws-infra-test to aws-infra-dev).
 5. Save Changes: Ensure all settings are saved to apply updates.
 
-## Delete a Project 
+## Delete a Project
 
 1. Click Delete in the Danger Zone section.
 2. In the confirmation pop-up, type Confirm to verify your intent.
