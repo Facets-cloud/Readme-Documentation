@@ -18,8 +18,8 @@ Given that directly altering the master branch is not recommended, we choose to 
 
 Let's first understand the logic we will use to create a new branch.
 
-- Facets uses the `stackName` parameter to identify the Blueprint where you want to create a branch.
-- The`branch` parameter is used as the new branch name.
+* Facets uses the `stackName` parameter to identify the Blueprint where you want to create a branch.
+* The`branch` parameter is used as the new branch name.
 
 ### Steps to create a branch
 
@@ -37,10 +37,10 @@ You should get a response confirming the creation of a new branch.
 
 To create a new resource, you will need the following details:
 
-- The `stackName` parameter is used to identify the Blueprint.
-- The`branch` parameter is used to identify the branch in the Blueprint.
-- The `resourceName` parameter is the name of the resource.
-- The `resourceType` parameter is the type of resource.
+* The `stackName` parameter is used to identify the Blueprint.
+* The`branch` parameter is used to identify the branch in the Blueprint.
+* The `resourceName` parameter is the name of the resource.
+* The `resourceType` parameter is the type of resource.
 
 ### Steps to create a JSON resource
 
@@ -56,13 +56,13 @@ You should receive a response confirming the creation of a new resource.
 
 To update a new resource, you will need the following details:
 
-- The `stackName` parameter is used to identify the Blueprint.
-- The`branch` parameter is used to identify the branch in the Blueprint.
-- The `directory` parameter is used to identify the path to create the resource in the branch.
-- The `filename` parameter is the name of the file with the extension.
-- The `resourceName` parameter is the name of the resource.
-- The `resourceType` parameter is the type of the resource.
-- The `content` block contains the content to be added to the resource.
+* The `stackName` parameter is used to identify the Blueprint.
+* The`branch` parameter is used to identify the branch in the Blueprint.
+* The `directory` parameter is used to identify the path to create the resource in the branch.
+* The `filename` parameter is the name of the file with the extension.
+* The `resourceName` parameter is the name of the resource.
+* The `resourceType` parameter is the type of the resource.
+* The `content` block contains the content to be added to the resource.
 
 **Note:** The content within the `content` tag will replace the content in the resource JSON.
 
