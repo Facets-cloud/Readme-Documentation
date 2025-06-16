@@ -16,11 +16,11 @@ Facets offers a variety of external tools to help you monitor, configure, and ma
 
 Below is a list of the tools that are currently available in Facets:
 
-- Kubernetes Embedded Dashboard: Allows users to interact dynamically with Kubernetes-related actions.
-- Prometheus: A monitoring system and time-series database.
-- Alertmanager: Handles alerts sent by Prometheus and other client applications.
-- Grafana: An open-source analytics and visualization tool.
-- Wetty: A terminal emulator that enables you to access your terminal directly from the web.
+* Kubernetes Embedded Dashboard: Allows users to interact dynamically with Kubernetes-related actions.
+* Prometheus: A monitoring system and time-series database.
+* Alertmanager: Handles alerts sent by Prometheus and other client applications.
+* Grafana: An open-source analytics and visualization tool.
+* Wetty: A terminal emulator that enables you to access your terminal directly from the web.
 
 In addition to these tools, Facets also allows users to integrate other tools based on their specific needs, providing even more flexibility and control over resource management.
 
@@ -28,23 +28,7 @@ In addition to these tools, Facets also allows users to integrate other tools ba
 
 The Kubernetes Embedded Dashboard provides a dynamic way to interact with Kubernetes-related actions directly from the Facets UI. This eliminates the need to download and refresh kubeconfig, allowing you to use the embedded dashboard for all your Kubernetes-related actions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a52cdd2-embedded_k8s.png",
-        null,
-        "Kubernetes Dashboard screen (Click on the image to expand)"
-      ],
-      "align": "center",
-      "sizing": "450px"
-    }
-  ]
-}
-[/block]
-
-
+<Image align="center" width="450px" src="https://files.readme.io/a52cdd2-embedded_k8s.png" />
 
 ## Prometheus
 
