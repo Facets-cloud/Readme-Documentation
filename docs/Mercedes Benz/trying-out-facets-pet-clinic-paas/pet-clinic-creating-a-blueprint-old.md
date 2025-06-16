@@ -16,7 +16,7 @@ For a better understanding of the concept of Blueprint and associated functional
 
 1. Open **Blueprints** and click **New Blueprint.**
 2. Begin by assigning a unique **Name** to your Blueprint. 
-3. Proceed to the **Repository Setup.  
+3. Proceed to the **Repository Setup.\
    Create a new Repository** will be selected by default. 
 4. Choose your VCS Account from the available list. To create a new VCS account, click on **Create New Account,** provide the necessary details, and then select the account. For more details, refer to the [Integrate Version Control Systems (VCS) with Facets](https://readme.facets.cloud/docs/integrating-vcs-accounts) documentation.
 5. Specify the master **Branch Name** (for example, "main" for GitHub or "master" for Bitbucket).
