@@ -36,8 +36,8 @@ Guardrail policies are classified into two severity levels: Warning and Error. T
 
 Policy enforcement actions are recorded in comprehensive logs, providing a detailed account of policy violations and subsequent measures.
 
-> 📘 
-> 
+> 📘
+>
 > In the event of policy violations, you can view them on the **Releases** page, under the **Validations Summary** panel.
 
 ## FAQs
@@ -52,7 +52,7 @@ Rego, the policy language of Open Policy Agent (OPA), was chosen for its declara
 
 ### 3. How to write and test rego code?
 
-Refer to the [Rego code documentation](https://doc.clickup.com/3443930/d/h/3936u-18744/caa022affb5455a/3936u-64707) for guidance on creating your Rego code.  
+Refer to the [Rego code documentation](https://doc.clickup.com/3443930/d/h/3936u-18744/caa022affb5455a/3936u-64707) for guidance on creating your Rego code.\
 Experiment and refine your Rego code in the interactive Rego Code Playground. Visit the [Playground](https://play.openpolicyagent.org/) to test your Rego code.
 
 ### 4. Where can I view the Guardrail Policy validations?
@@ -61,7 +61,7 @@ You can view them on the **Releases** page, under the **Validations Summary** pa
 
 ### 5. Can I enable or disable a Guardrail Policy?
 
-Yes, you can enable or disable a policy using the toggle in the UI. Navigate to **Settings > Guardrails **page.
+Yes, you can enable or disable a policy using the toggle in the UI. Navigate to **Settings > Guardrails** page.
 
 ### 6. Is it possible to clone a Guardrail Policy?
 
