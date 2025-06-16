@@ -8,9 +8,9 @@ metadata:
 ---
 You can follow these links to learn how to access the kubeconfig file of your cluster based on the cloud service you are using:
 
-- [Amazon Web Services (AWS)](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
-- [Google Cloud Platform (GCP)](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl)
-- [Microsoft Azure](https://learn.microsoft.com/en-us/azure/aks/control-kubeconfig-access#get-and-verify-the-configuration-information)
+* [Amazon Web Services (AWS)](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
+* [Google Cloud Platform (GCP)](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl)
+* [Microsoft Azure](https://learn.microsoft.com/en-us/azure/aks/control-kubeconfig-access#get-and-verify-the-configuration-information)
 
 ### sample kubeconfig file
 
