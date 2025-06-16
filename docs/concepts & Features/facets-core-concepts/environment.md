@@ -38,4 +38,4 @@ The Release Stream in Facets is a classification of environments into different 
 
 ## Related Guides
 
-- [Create an Environment](doc:create-an-environment)
+* [Create an Environment](doc:create-an-environment)
