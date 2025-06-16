@@ -19,8 +19,8 @@ Custom modules in Facets.cloud offer streamlined cloud resource management, util
 
 Blueprints in Facets.cloud are composed of a collection of JSON objects, where each object specifies a part of the infrastructure:
 
-- **`kind`**: Specifies the general category or type of the module (e.g., `database`, `network`, `compute`).
-- **`flavor`**: Provides a more specific variation within the `kind`, allowing for the selection of a particular implementation or version of the module.
+* **`kind`**: Specifies the general category or type of the module (e.g., `database`, `network`, `compute`).
+* **`flavor`**: Provides a more specific variation within the `kind`, allowing for the selection of a particular implementation or version of the module.
 
 ### Module Wiring
 
@@ -75,7 +75,7 @@ In this example, the user defines the desired Postgres version, instance types, 
 
 First, install Copier, a tool for generating the module's skeleton:
 
-- Use the command: `pip3 install copier`.
+* Use the command: `pip3 install copier`.
 
 #### Create Your Module
 
@@ -83,7 +83,7 @@ Generate your module's structure using Copier:
 
 1. Navigate to the `iac` folder in your Blueprint repository.
 2. Run Copier with the command: `copier copy git@github.com:Facets-cloud/module-template.git ./`
-   - Note: Integration with a separate IaC repository is coming soon.
+   * Note: Integration with a separate IaC repository is coming soon.
 
 ![](https://user-images.githubusercontent.com/108784231/234993721-511e0397-8407-43a9-b262-6df22475a283.gif)
 
@@ -91,21 +91,21 @@ Generate your module's structure using Copier:
 
 Copier will create several files, each serving a specific purpose in your module:
 
-- `main.tf`: Your main Terraform configuration file.
-- `variables.tf`: Defines variables for `main.tf`.
-- `output.tf`: Outlines the outputs from your module.
-- `versions.tf`: Manages Terraform and provider version requirements.
+* `main.tf`: Your main Terraform configuration file.
+* `variables.tf`: Defines variables for `main.tf`.
+* `output.tf`: Outlines the outputs from your module.
+* `versions.tf`: Manages Terraform and provider version requirements.
 
 ### The Role of `module.json`
 
 `module.json` is a key file in your module, specifying critical attributes:
 
-- Intent and Flavor (`kind` and `flavor`).
-- Supported Clouds: Lists compatible cloud environments.
-- Dependencies: Any dependent modules.
-- Lifecycle Phases: The operational phase of your module.
-- Input Type: Indicates if your module is Configurable or Instantiable.
-- Variables: Identifies variables injected during wiring.
+* Intent and Flavor (`kind` and `flavor`).
+* Supported Clouds: Lists compatible cloud environments.
+* Dependencies: Any dependent modules.
+* Lifecycle Phases: The operational phase of your module.
+* Input Type: Indicates if your module is Configurable or Instantiable.
+* Variables: Identifies variables injected during wiring.
 
 ### Wiring the Module
 
@@ -113,12 +113,10 @@ Facets.cloud automates the wiring of variables and providers as defined in `modu
 
 ### Outputs and Resource Wiring
 
-- Outputs in `output.tf` facilitate data sharing between modules.
-- Facets.cloud uses these outputs for integrating modules in your blueprint.
+* Outputs in `output.tf` facilitate data sharing between modules.
+* Facets.cloud uses these outputs for integrating modules in your blueprint.
 
 This guide outlines the steps to create and integrate a custom module in Facets.cloud, simplifying cloud infrastructure management.
-
-
 
 ## Coming Soon: Advanced Features and UI Management in Facets.cloud
 
@@ -128,23 +126,23 @@ Facets.cloud is continuously evolving, and several exciting features are on the 
 
 Shortly, Facets.cloud will offer the ability to integrate separate IaC repositories directly within the platform. This feature will:
 
-- Allow users to manage their Terraform modules in dedicated repositories.
-- Simplify the process of adding and updating modules.
+* Allow users to manage their Terraform modules in dedicated repositories.
+* Simplify the process of adding and updating modules.
 
 ### Enhanced Module Generation and Validation
 
 With the integration of IaC repositories, Facets.cloud will enhance the module generation and validation process:
 
-- **Module Generation:** Users will be able to generate modules directly from the UI, leveraging templates and guided workflows.
-- **Validation Tools:** Built-in tools for validating the structure and functionality of your modules will ensure they meet best practices and are ready for deployment.
+* **Module Generation:** Users will be able to generate modules directly from the UI, leveraging templates and guided workflows.
+* **Validation Tools:** Built-in tools for validating the structure and functionality of your modules will ensure they meet best practices and are ready for deployment.
 
 ### Usage Statistics for Modules
 
 Understanding how modules are utilized is crucial for continuous improvement and decision-making. The upcoming features will include:
 
-- **Usage Tracking:** Track how often and in what ways your modules are being used within the platform.
-- **Insightful Analytics:** Gain valuable insights from usage data to understand popular modules, common configurations, and more.
-- **Optimization Opportunities:** Use these analytics to optimize module offerings, addressing the most common user needs and trends.
+* **Usage Tracking:** Track how often and in what ways your modules are being used within the platform.
+* **Insightful Analytics:** Gain valuable insights from usage data to understand popular modules, common configurations, and more.
+* **Optimization Opportunities:** Use these analytics to optimize module offerings, addressing the most common user needs and trends.
 
 ### Conclusion
 
