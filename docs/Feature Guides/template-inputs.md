@@ -37,10 +37,10 @@ Create a JSON file in your blueprint definition to define a Template Input.
 
 The location of this file should be in the `template_input_type/instances` folder.
 
-> 📘 
-> 
+> 📘
+>
 > The Template Input will appear in the Control Plane based on the filename you have defined. 
-> 
+>
 > For example, if you create a file named `Customers.json` to define your Template Input, it will be visible as `Customers` in the Template Input screen in your Control Plane.
 
 ## Set Up the Template Inputs from Facets Control Plane
@@ -61,8 +61,6 @@ The sample json file will look like this:
   }
 ```
 
-
-
 Specify the fields that will define your template as per your business logic in this file. 
 
 The name of the Template Input in your Control Plane will be the same as the name of the file defined in the `template_input_type/instances` folder.
@@ -70,48 +68,19 @@ The name of the Template Input in your Control Plane will be the same as the nam
 Now, 
 
 1. Select the environment where you want to define your **Template Inputs** from the **Blueprint Overview** screen. 
-2. Go to **Template Inputs** screen from your sidebar.  
+2. Go to **Template Inputs** screen from your sidebar.\
    Template Inputs in your Control Plane will require you to provide a unique ID for each tenant that is defined.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/effa73e-image.png",
-        null,
-        "Template Inputs screen"
-      ],
-      "align": "center",
-      "sizing": "150px",
-      "caption": "Template Inputs screen"
-    }
-  ]
-}
-[/block]
+<Image alt="Template Inputs screen" align="center" width="150px" src="https://files.readme.io/effa73e-image.png">
+  Template Inputs screen
+</Image>
 
-3. Click on the Create New Tenants button.  
+3. Click on the Create New Tenants button.\
    Notice the button says "tenants" here. You can modify this by modifying the file name in `template_input_type/instances` folder. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8a12ebb-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "500px"
-    }
-  ]
-}
-[/block]
+<Image align="center" width="500px" src="https://files.readme.io/8a12ebb-image.png" />
 
-
-
-   Template Inputs in your Control Plane will require you to provide a unique ID for each defined input. This can be any string of alphanumeric characters.  
+   Template Inputs in your Control Plane will require you to provide a unique ID for each defined input. This can be any string of alphanumeric characters.\
    The other fields are parsed directly from the defined JSON file in your blueprint definition.
 
 4. Input the details for all your tenants as shown in the popup dialog box.
@@ -147,13 +116,11 @@ Notice the key `templatedOn` is mapped to the defined Template Input file name.
 }
 ```
 
-
-
 > 📘 NOTE
-> 
-> To refer to any field in the template input you can use `current.data.<field_name>`.  
+>
+> To refer to any field in the template input you can use `current.data.<field_name>`.\
 > For example,` {{current.data.tenant_name}}`. 
-> 
+>
 > However, to refer to the unique ID assigned when creating a new tenant in the Control Plane, use `{{current.uid}}`.
 
 ## Perform release and override values
