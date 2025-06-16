@@ -14,8 +14,8 @@ next:
   description: ''
 ---
 > 🚧 Your Control Plane URL will vary
-> 
-> The Control Plane URL, denoted as <code>YOUR_CP_URL</code> for this API reference document is <https://facetsdemo.console.facets.cloud>.  
+>
+> The Control Plane URL, denoted as <code>YOUR\_CP\_URL</code> for this API reference document is [https://facetsdemo.console.facets.cloud](https://facetsdemo.console.facets.cloud).\
 > Replace that with the Control Plane URL unique to your account.
 
 ## API Endpoint
@@ -26,27 +26,25 @@ This API processes a <code>POST</code> request to trigger a selective release on
 https://{YOUR_CP_URL}/cc-ui/v1/clusters/{clusterId}/deployments/release/deployment/hotfix
 ```
 
-
-
-- This API endpoint has two **path parameters**, <code>YOUR_CP_URL</code>, and <code>clusterId</code>.
-- There is also a **body parameter**, <code>resourceList</code>.
+* This API endpoint has two **path parameters**, <code>YOUR\_CP\_URL</code>, and <code>clusterId</code>.
+* There is also a **body parameter**, <code>resourceList</code>.
 
 ### **Path parameters**
 
-- <code>YOUR_CP_URL</code> of type <code>String</code>, is the Control Plane URL specific to your account.
-- <code>clusterId</code> of type <code>String</code>, is the unique ID for the environment where you want to make a release. You can find this ID in the Environment Overview screen in Facets UI.
+* <code>YOUR\_CP\_URL</code> of type <code>String</code>, is the Control Plane URL specific to your account.
+* <code>clusterId</code> of type <code>String</code>, is the unique ID for the environment where you want to make a release. You can find this ID in the Environment Overview screen in Facets UI.
 
 ### **Body parameters**
 
 <code>resourceList</code> is an Array of Objects, defined as:
 
-- <code>resourceName</code> of type <code>string</code>. 
+* <code>resourceName</code> of type <code>string</code>. 
 
 > 📘 NOTE:
-> 
+>
 > <code>resourceName</code> should be the name of the application as defined under the <code>application/instance</code> path.
 
-- <code>resourceType</code> of type <code>string</code>,  with the default value <code>application</code>. 
+* <code>resourceType</code> of type <code>string</code>,  with the default value <code>application</code>. 
 
 ```text Example of resourceList
 {
@@ -59,14 +57,12 @@ https://{YOUR_CP_URL}/cc-ui/v1/clusters/{clusterId}/deployments/release/deployme
 }
 ```
 
-
-
 ## **Authenticate your API request**
 
 To learn more about how to generate a basic authentication token for use with Facets API requests, check [Authentication Setup](ref:authentication-setup).
 
-> 📘 
-> 
+> 📘
+>
 > Facets API uses Basic Authentication.
 
 ## Generate a Sample Request ➡️
