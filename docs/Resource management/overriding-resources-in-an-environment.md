@@ -15,32 +15,17 @@ Facets provides the flexibility to directly modify any resource configurations i
 ## How to Override Resources in an Environment?
 
 1. Navigate to **Environment > Resource Center.**
-2. Select the resource you wish to override and select the **Spec Override** tab.  
+2. Select the resource you wish to override and select the **Spec Override** tab.\
    Here, you will find the current configuration values for that resource in the Blueprint and the Environment.
-3. Click **Edit** to edit the configuration. Compare it with the original Blueprint configuration and make the necessary changes.  
+3. Click **Edit** to edit the configuration. Compare it with the original Blueprint configuration and make the necessary changes.\
    **Note:** You can only modify the Environment-level configuration here.
 4. Click **Save Changes** and perform a **Release.**
 
 **Note:** Any changes made to the overridden configuration will only take effect after the next release.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ef99329-override_resoures.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/ef99329-override_resoures.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully overridden a resource at the Environment level. 
 
@@ -48,7 +33,7 @@ You have successfully overridden a resource at the Environment level.
 
 1. Navigate to **Environment > Resource Center.**
 2. Select the required resource and select the **Spec Override** tab.
-3. Click **History** to view the version history of the configurations.  
+3. Click **History** to view the version history of the configurations.\
    Here, you will find the Current Version and all the Previous Versions. 
 4. Click the **View Changes** icon beside the Current Version to compare all the changes with the last version.
 5. Click the **Compare with Current Version** icon beside the Previous Versions to compare the changes with the current version.
@@ -57,25 +42,8 @@ You have successfully overridden a resource at the Environment level.
 
 **Note:** The rolled back configuration will only take effect after the next release.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8f7069d-rollback.gif",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
-
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/8f7069d-rollback.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully rolled back the overridden changes.
