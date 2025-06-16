@@ -21,24 +21,9 @@ Facets provide a way to dynamically manage system functionality that allows for 
 3. Click **Enable**/**Disable** from the top right corner. 
 4. In the popup that appears,  type the **Resource Name** in the text box and click **Enable**/**Disable.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aab3cb6-disable_individually.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/aab3cb6-disable_individually.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully enabled or disabled the Resource.
 
@@ -52,23 +37,8 @@ Particularly when dealing with a large number of resources, enabling or disablin
 
 **Note:** The bulk enable or disable feature allows for mass enabling or disabling of resources; however, it's important to remember that only one action type can be selected at a time - either enabling disabled resources or disabling enabled ones. Random selection of resources for mixed actions is not supported.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/74814f9-disable_in_bulk.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/74814f9-disable_in_bulk.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully enabled or disabled the Resources in bulk.
