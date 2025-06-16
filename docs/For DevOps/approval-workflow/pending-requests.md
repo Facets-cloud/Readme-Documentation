@@ -20,15 +20,15 @@ Pending requests in the release approval workflow involve changes that are await
 
 **Error Handling:** If the pre-release hook encounters an error or rejects the release (e.g., due to unmet requirements), the request remains in a pending state until corrective actions, such as blueprint modifications, are performed.
 
-**Stakeholder Delays: **Delayed actions from stakeholders (e.g., extended time to approve or reject in Jira) can result in pending requests staying active longer than expected. Notifications and reminders can help expedite the process.
+**Stakeholder Delays:** Delayed actions from stakeholders (e.g., extended time to approve or reject in Jira) can result in pending requests staying active longer than expected. Notifications and reminders can help expedite the process.
 
 ## Managing Pending Requests
 
 Facets provides tools and visibility to manage pending requests effectively:
 
-- **Jira Integration: **Automated ticket creation ensures that stakeholders are immediately informed of pending approvals.
-- **Dashboard Monitoring:** Pending requests are visible within the Facets dashboard, allowing users to track the status and take necessary actions.
-- **Notifications:** Automated reminders notify stakeholders about pending approvals to minimize delays.
-- **Break Glass Scenarios:** Authorised users can bypass the pending status in critical situations, enabling urgent changes to proceed.
+* **Jira Integration:** Automated ticket creation ensures that stakeholders are immediately informed of pending approvals.
+* **Dashboard Monitoring:** Pending requests are visible within the Facets dashboard, allowing users to track the status and take necessary actions.
+* **Notifications:** Automated reminders notify stakeholders about pending approvals to minimize delays.
+* **Break Glass Scenarios:** Authorised users can bypass the pending status in critical situations, enabling urgent changes to proceed.
 
 By proactively managing pending requests, teams can maintain efficiency and minimize bottlenecks in the release process.
