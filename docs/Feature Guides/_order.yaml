@@ -1,3 +1,4 @@
 - ci-integration
 - manage-iac-versions
 - user-management
+- restrict-user-access-to-environments
