@@ -22,21 +22,7 @@ Resource connections in Facets provide a elegant way to handle inter-resource de
 
 At the blueprint level, apart from dollar referencing in JSON, users can also establish these connections through a simple interface, selecting the target resource and specific fields they need to reference. These connections, once established, become part of your infrastructure's DNA - unchangeable at the environment level, ensuring consistency and preventing environment-specific connection issues.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/05fee15ee34648d9c2e1cd84e167219bcd66ba03d259dd84403b4ac3ad213ff7-Screenshot_2025-02-12_at_1.04.47_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/05fee15ee34648d9c2e1cd84e167219bcd66ba03d259dd84403b4ac3ad213ff7-Screenshot_2025-02-12_at_1.04.47_PM.png" />
 
 ### Real-World Application
 
@@ -52,9 +38,9 @@ test-service {
 
 When this blueprint is deployed, Facets automatically 
 
-- Establishes the connection between the service and postgres
-- Visualises this connection in the UI with directional arrows
-- Ensures the reference remains consistent across all environments
-- Maintains the relationship throughout the application lifecycle
+* Establishes the connection between the service and postgres
+* Visualises this connection in the UI with directional arrows
+* Ensures the reference remains consistent across all environments
+* Maintains the relationship throughout the application lifecycle
 
 This approach transforms what was once a complex web of environment-specific configurations into a clear, visually represented set of resource relationships that are easy to track and maintain.
