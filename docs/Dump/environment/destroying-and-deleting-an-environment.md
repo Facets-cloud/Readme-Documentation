@@ -32,7 +32,7 @@ To completely delete the environment and remove it from the Control plane:
 1. Open **Projects** tab and choose the Project that contains the environment.
 2. Select the **Environments** tab and select the Environment you intend to delete.
 3. Select the **Environment Settings** tab and click on **Danger Zone.**
-4. Click Delete Environment.  
+4. Click Delete Environment.\
    **Note:** An environment can only be deleted after it has been [destroyed](https://readme.facets.cloud/docs/destroying-and-deleting-an-environment#how-to-destroy-an-environment).
 5. In the pop-up, enter 'Confirm' and click **Confirm.**
 
@@ -54,7 +54,7 @@ No, an environment cannot be destroyed if it is in either the LAUNCHING or STOPP
 
 ### 4. Why can't I destroy my environment?
 
-An environment cannot be destroyed if it is in the following states: LAUNCHING, SCALING_UP, SCALING_DOWN, DESTROYING, or STOPPED. This is to prevent any unintended consequences.
+An environment cannot be destroyed if it is in the following states: LAUNCHING, SCALING\_UP, SCALING\_DOWN, DESTROYING, or STOPPED. This is to prevent any unintended consequences.
 
 ### 5. What state is an environment in after it has been destroyed?
 
