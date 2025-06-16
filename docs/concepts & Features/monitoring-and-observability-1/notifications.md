@@ -36,20 +36,20 @@ In conclusion, the Notifications feature in Facets provides users with an effect
 
 Facets currently supports the following notification types: 
 
-- Alerts
-- Application Deployment In Progress and Complete status
-- Deployment Status updates
-- Environment Configuration, Create, Delete, Destroy and Launch actions
-- Stack Signoff
+* Alerts
+* Application Deployment In Progress and Complete status
+* Deployment Status updates
+* Environment Configuration, Create, Delete, Destroy and Launch actions
+* Stack Signoff
 
 ### What are the different Channel Types supported in Facets?
 
 Facets currently supports the following channel types:
 
-- PagerDuty
-- Zenduty
-- Slack
-- Generic Webhooks
+* PagerDuty
+* Zenduty
+* Slack
+* Generic Webhooks
 
 ### Can I test notifications from the Control Plane?
 
@@ -57,4 +57,4 @@ Yes, Facets provides users with a Test Notification button to receive a mock not
 
 ## Related Guides
 
-- [Creating Notification Channels and Subscriptions](doc:notification-channels-subscriptions)
+* [Creating Notification Channels and Subscriptions](doc:notification-channels-subscriptions)
