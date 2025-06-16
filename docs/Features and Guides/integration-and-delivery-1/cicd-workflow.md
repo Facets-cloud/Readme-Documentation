@@ -14,19 +14,7 @@ Facets provides various CI/CD strategies to streamline your deployment process a
 
 ## How to Configure the CI/CD workflow in Facets?
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FyLyRSjBJn9g%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyLyRSjBJn9g&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FyLyRSjBJn9g%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=yLyRSjBJn9g",
-  "title": "Configuring CI/CD Workflow",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/yLyRSjBJn9g/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=yLyRSjBJn9g",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=yLyRSjBJn9g" title="Configuring CI/CD Workflow" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/yLyRSjBJn9g/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=yLyRSjBJn9g" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FyLyRSjBJn9g%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DyLyRSjBJn9g%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FyLyRSjBJn9g%252Fhqdefault.jpg%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 1. Open the **Projects** tab and select the required project.
 2. Go to the **Project Settings** tab and select **CI/CD.** Here, you will be able to define the CI/CD Flow.
@@ -36,21 +24,21 @@ Facets provides various CI/CD strategies to streamline your deployment process a
    2. **Single Branch Promotion**
    3. **Advanced**
 
-   [block:image]{"images":[{"image":["https://files.readme.io/08418b691b15f091face5378c8226518de4ce85fb58c849d58beda3f5f561388-Screenshot_2025-02-17_at_12.13.21_PM.png","",""],"align":"center"}]}[/block]
+   <Image align="center" src="https://files.readme.io/08418b691b15f091face5378c8226518de4ce85fb58c849d58beda3f5f561388-Screenshot_2025-02-17_at_12.13.21_PM.png" />
 
 ### i. Branch Per Environment
 
 This approach maps individual Git branches directly to specific environments, ideal for teams maintaining separate branches for different deployment stages. 
 
-1. Choose a branch pattern (e.g., develop_, release/_, main) and select the target environment for that branch
+1. Choose a branch pattern (e.g., develo&#x70;*, release/*, main) and select the target environment for that branch
 2. Repeat the above steps for all the required environments in the project.
 3. Click **Save Changes.**
 
 **Use Case:**
 
-- Each environment needs independent code branches
-- Different teams manage different environments
-- Environment-specific code variations are required
+* Each environment needs independent code branches
+* Different teams manage different environments
+* Environment-specific code variations are required
 
 ***
 
@@ -65,8 +53,8 @@ This approach creates a promotion-based workflow starting from one branch, ideal
 
 **Use Cases:**
 
-- Following trunk-based development and need controlled, progressive deployments
-- Want automated promotions with validation gates
+* Following trunk-based development and need controlled, progressive deployments
+* Want automated promotions with validation gates
 
 ***
 
@@ -84,12 +72,12 @@ This combines Branch per Environment and Single Branch Promotion. It enables you
    2. Drag and rearrange the environments/release streams in the required order to create the promotion hierarchy.
 4. Click **Save Changes.**
 
-_Note: Release Streams can be created from the Organization Settings of the control plane._
+*Note: Release Streams can be created from the Organization Settings of the control plane.*
 
 **Use Cases:**
 
-- Need maximum flexibility and have complex deployment requirements
-- Managing multiple release streams or environments. 
+* Need maximum flexibility and have complex deployment requirements
+* Managing multiple release streams or environments. 
 
 You have successfully created a Streamlined CI/CD Flow in Facets.
 
