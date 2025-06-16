@@ -19,7 +19,7 @@ To set up Loki to fetch logs from applications running on AWS EC2 instances, you
 To deploy an internal load balancer, you need a K8s resource.
 
 1. Navigate to the **Blueprint** and click **Add Resource.** Search for and add **K8s Resource.**
-2. Now, select the resource and click **Configure. **
+2. Now, select the resource and click **Configure.**
 3. In the JSON mode, replace the current contents with the contents given below.
 
 ```
@@ -61,7 +61,7 @@ To deploy an internal load balancer, you need a K8s resource.
 				],
 				"selector": {
 					"app.kubernetes.io/component": "gateway",
-					"app.kubernetes.io/instance": "<loki-instance-name>",
+					"app.kubernetes.io/instance": `<loki-instance-name>`,
 					"app.kubernetes.io/name": "loki-distributed"
 				}
 			}
@@ -90,9 +90,9 @@ chmod a+x "promtail-linux-amd64"
 
 To set up Promtail on the VM, create the configuration file and run Promtail with those configurations.
 
-Create the following configuration file, replacing <loki-internal-dns> with the DNS name of the load balancer created by deploying the k8s_resource. 
+Create the following configuration file, replacing `<loki-internal-dns>` with the DNS name of the load balancer created by deploying the k8s\_resource. 
 
-Modify other parameters according to your service configuration, especially the scrape_configs section to specify the targets and paths to the log files.
+Modify other parameters according to your service configuration, especially the scrape\_configs section to specify the targets and paths to the log files.
 
 ```
 server:
