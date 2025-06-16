@@ -14,8 +14,8 @@ next:
   description: ''
 ---
 > 🚧 Your Control Plane URL will vary
-> 
-> The Control Plane URL, denoted as <code>YOUR_CP_URL</code> for this API reference document is <https://facetsdemo.console.facets.cloud.>  
+>
+> The Control Plane URL, denoted as <code>YOUR\_CP\_URL</code> for this API reference document is [https://facetsdemo.console.facets.cloud.](https://facetsdemo.console.facets.cloud.)\
 > Replace that with the Control Plane URL unique to your account.
 
 # API Endpoint
@@ -28,35 +28,35 @@ This API processes a PUT request to copy configurations from one cluster to anot
 https://{YOUR_CP_URL}/cc-ui/v1/clusters/{clusterId}/copy-configurations
 ```
 
-- This API endpoint has two main components: `path parameters` - `YOUR_CP_URL` and `clusterId`.
-- There is also a `body parameter` containing the source cluster information.
+* This API endpoint has two main components: `path parameters` - `YOUR_CP_URL` and `clusterId`.
+* There is also a `body parameter` containing the source cluster information.
 
 ### Path parameters
 
-- `YOUR_CP_URL` of type `String`, is the Control Plane URL specific to your account.
-- `clusterId` of type `String`, is the unique ID for the destination cluster where you want to copy the configurations to. You can find this ID in the Environment Overview screen in Facets UI.
+* `YOUR_CP_URL` of type `String`, is the Control Plane URL specific to your account.
+* `clusterId` of type `String`, is the unique ID for the destination cluster where you want to copy the configurations to. You can find this ID in the Environment Overview screen in Facets UI.
 
 ### Body parameters
 
 There is one required parameter for making this API call:
 
-- `sourceClusterId` of type `String`, represents the cluster ID from which configurations will be copied.
-- _Note: The source cluster ID should be different from the destination cluster ID and must be a valid cluster in your environment._
+* `sourceClusterId` of type `String`, represents the cluster ID from which configurations will be copied.
+* *Note: The source cluster ID should be different from the destination cluster ID and must be a valid cluster in your environment.*
 
 ### Response Status Codes
 
 The API can return the following status codes:
 
-- `200 OK` - Request processed successfully
-- `201 Created` - Configurations copied successfully
-- `401 Unauthorized` - Missing or invalid authentication credentials
-- `403 Forbidden` - Insufficient permissions to access clusters
-- `404 Not Found` - Specified cluster(s) not found
+* `200 OK` - Request processed successfully
+* `201 Created` - Configurations copied successfully
+* `401 Unauthorized` - Missing or invalid authentication credentials
+* `403 Forbidden` - Insufficient permissions to access clusters
+* `404 Not Found` - Specified cluster(s) not found
 
 ### Authenticate your API request
 
-To learn more about how to generate a basic authentication token for use with Facets API requests, check [Authentication Setup](https://readme.facets.cloud/reference/authentication-setup).  
-_Note:  Facets API uses Basic Authentication._
+To learn more about how to generate a basic authentication token for use with Facets API requests, check [Authentication Setup](https://readme.facets.cloud/reference/authentication-setup).\
+*Note:  Facets API uses Basic Authentication.*
 
 ### Generate a Sample Request ➕
 
