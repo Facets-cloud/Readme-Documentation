@@ -18,8 +18,8 @@ The forthcoming sections are designed to provide detailed instructions and addit
 
 ## Objective
 
-- This guide aims to facilitate deploying a basic Pet Clinic application on Facets.cloud. Upon successful deployment, the application will be globally accessible.
-- Specifically, you will learn how to create a Blueprint, create an Environment, add and delete resources, and most importantly, deploy a simple application on the web using Facets. 
+* This guide aims to facilitate deploying a basic Pet Clinic application on Facets.cloud. Upon successful deployment, the application will be globally accessible.
+* Specifically, you will learn how to create a Blueprint, create an Environment, add and delete resources, and most importantly, deploy a simple application on the web using Facets. 
 
 ## Overview
 
