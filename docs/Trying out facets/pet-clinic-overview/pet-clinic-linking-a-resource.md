@@ -18,7 +18,7 @@ The first step involves wiring PostgreSQL with a Service. This is crucial as it 
 
 Let's walk through the process of wiring a Service to a Postgres database. Follow these steps:
 
-1. **Create a Service and a Postgres Resource**  
+1. **Create a Service and a Postgres Resource**\
    First, ensure you have both a Service and a Postgres resource created within your Blueprint.
 2. **Edit the JSON Configuration**
    1. Navigate to **Blueprint > Designer** and locate the Service resource you want to connect to the Postgres resource.
@@ -40,10 +40,10 @@ Let's walk through the process of wiring a Service to a Postgres database. Follo
 		}
 ```
 
-In this example,  
-**`"default-db":`** Name of our Postgres resource.  
-**`"POSTGRES_URL":`** URL for the Postgres database.  
-**`"POSTGRES_USER":`** Username of the Postgres database.  
+In this example,\
+**`"default-db":`** Name of our Postgres resource.\
+**`"POSTGRES_URL":`** URL for the Postgres database.\
+**`"POSTGRES_USER":`** Username of the Postgres database.\
 **`"POSTGRES_PASS":`** Password of the Postgres database.
 
 **Note:** The variables `POSTGRES_URL`, `POSTGRES_USER`, and `POSTGRES_PASS` are placeholders in the configuration. While these can be named differently, it is crucial to ensure that the values are correctly mapped to the respective variables.
@@ -56,7 +56,7 @@ To ensure that your application is accessible, you will need to create an ingres
 
 Let's walk through the process of wiring a Service with an Ingress. Follow these steps:
 
-1. **Create a Service and an Ingress Resource**  
+1. **Create a Service and an Ingress Resource**\
    First, ensure you have both a Service and an Ingress resource created within your Blueprint.
 2. **Edit the JSON Configuration**
    1. Navigate to **Blueprint > Designer** and locate the Ingress resource you want to connect to the Service resource.
@@ -71,7 +71,7 @@ Let's walk through the process of wiring a Service with an Ingress. Follow these
 
 In this example,
 
-**`"default-service":`**Name of the Service resource.
+**`"default-service":`**&#x4E;ame of the Service resource.
 
 By following these steps, you can effectively link your resources using the Dollar Ref mechanism, ensuring efficient intercommunication and public accessibility of your application.
 
