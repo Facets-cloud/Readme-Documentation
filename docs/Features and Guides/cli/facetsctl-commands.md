@@ -106,35 +106,82 @@ $ facetsctl artifact register --type GIT_REF --docker-image my-docker-image:late
 
 **FLAGS**
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Flag",
-    "h-1": "Required",
-    "h-2": "What does it do?",
-    "0-0": "`-i, --docker-image=<value>`",
-    "0-1": "Yes",
-    "0-2": "Defines the Docker image to register.",
-    "1-0": "`-r, --runId=<value>`",
-    "1-1": "No",
-    "1-2": "Used to corelate to your CI system.",
-    "2-0": "`-t, --type=<option>`",
-    "2-1": "Yes",
-    "2-2": "Defines the Type (GIT_REF, ENVIRONMENT, RELEASE_STREAM).  \n\\<options: GIT_REF|ENVIRONMENT|RELEASE_STREAM>",
-    "3-0": "`-v, --value=<value>`",
-    "3-1": "Yes",
-    "3-2": "Defines the value of the specified type."
-  },
-  "cols": 3,
-  "rows": 4,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Flag
+      </th>
 
+      <th>
+        Required
+      </th>
+
+      <th>
+        What does it do?
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        `-i, --docker-image=<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the Docker image to register.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-r, --runId=<value>`
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Used to corelate to your CI system.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-t, --type=<option>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the Type (GIT\_REF, ENVIRONMENT, RELEASE\_STREAM).\
+        \<options: GIT\_REF|ENVIRONMENT|RELEASE\_STREAM>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-v, --value=<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the value of the specified type.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ***
 
@@ -142,7 +189,7 @@ $ facetsctl artifact register --type GIT_REF --docker-image my-docker-image:late
 
 This command allows you to directly upload application build files to an s3 bucket in your organisation's AWS account. You can then reference this file in your Azure Function or your AWS Lambda resource.
 
-Once the zip file has been uploaded, you need to specify the zip_path in your AWS Lambda or Azure Functions resource. You can find the path from the CI Integration page of the Project where it is uploaded.
+Once the zip file has been uploaded, you need to specify the zip\_path in your AWS Lambda or Azure Functions resource. You can find the path from the CI Integration page of the Project where it is uploaded.
 
 ```shell
 $ facetsctl artifact upload -t GIT_REF|ENVIRONMENT|RELEASE_STREAM -f <value> -v <value> [-r <value>]
@@ -153,35 +200,82 @@ $ facetsctl artifact upload -t GIT_REF|ENVIRONMENT|RELEASE_STREAM -f <value> -v 
 
 **FLAGS**
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Flag",
-    "h-1": "Required",
-    "h-2": "What does it do?",
-    "0-0": "`-f, --file-path=<value>`",
-    "0-1": "Yes",
-    "0-2": "Defines the path to the application build file (e.g., WAR, JAR, ZIP) on your local system.",
-    "1-0": "`-r, --runId=<value>`",
-    "1-1": "No",
-    "1-2": "Used to corelate to your CI system.",
-    "2-0": "`-t, --type=<option>`",
-    "2-1": "Yes",
-    "2-2": "Defines the Type (GIT_REF, ENVIRONMENT, RELEASE_STREAM).  \n\\<options: GIT_REF|ENVIRONMENT|RELEASE_STREAM>",
-    "3-0": "`-v, --value=<value>`",
-    "3-1": "Yes",
-    "3-2": "Defines the value of the specified type."
-  },
-  "cols": 3,
-  "rows": 4,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Flag
+      </th>
 
+      <th>
+        Required
+      </th>
+
+      <th>
+        What does it do?
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        `-f, --file-path=<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the path to the application build file (e.g., WAR, JAR, ZIP) on your local system.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-r, --runId=<value>`
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Used to corelate to your CI system.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-t, --type=<option>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the Type (GIT\_REF, ENVIRONMENT, RELEASE\_STREAM).\
+        \<options: GIT\_REF|ENVIRONMENT|RELEASE\_STREAM>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-v, --value=<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the value of the specified type.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ***
 
