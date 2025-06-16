@@ -20,23 +20,7 @@ Control Plane is a self-serve DevOps platform that allows organizations to manag
 
 The Control Plane is designed as a microservices architecture and operates within a customer's cloud environment, offering full ownership. It requires a Kubernetes cluster to function and is currently only deployable on AWS. However, it has the capability to manage resources on all three major cloud platforms, including AWS, Azure, and GCP. The following diagram provides a simple illustration of its architecture. Additionally, it is self-deployable and can be easily set up on the customer's AWS account with a single click, through a fully automated process.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d599bf3-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "700px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="700px" border={true} src="https://files.readme.io/d599bf3-image.png" />
 
 ## FAQs
 
