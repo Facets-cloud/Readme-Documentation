@@ -16,14 +16,14 @@ Create and customise Kubernetes roles and cluster roles, by defining specific pe
 
 ### Roles:
 
-- `cc-read-role`
-- `cc-debug-role`
+* `cc-read-role`
+* `cc-debug-role`
 
 ### Cluster Roles:
 
-- `facets-reader-cluster-role`
-- `facets-reader-cluster-role-v2`
-- `facets-debug-cluster-role`
+* `facets-reader-cluster-role`
+* `facets-reader-cluster-role-v2`
+* `facets-debug-cluster-role`
 
 ## Goal
 
@@ -50,7 +50,7 @@ In your blueprint repository, create a file named `k8s_access_controls.json` und
 
 ### 2. Define Roles and Cluster Roles:
 
-Populate the roles and cluster_roles sections within the spec as needed. Syntax for Adding Roles and Cluster Roles:
+Populate the roles and cluster\_roles sections within the spec as needed. Syntax for Adding Roles and Cluster Roles:
 
 ```c json
 {  
@@ -96,29 +96,29 @@ Populate the roles and cluster_roles sections within the spec as needed. Syntax 
 
 ### Parameters
 
-- **spec.roles**: List of Kubernetes roles.
-  - `<role-name>`: The role name should adhere to the regex `^[a-zA-Z0-9_.-]*$`. If you use the same role name as the default ones, that role will be replaced with the new permissions defined. This is only applicable to default roles created by Facets.
-  - **metadata**: Standard role's metadata.
-    - **namespace**: Defines the space within which the name of the role must be unique.
-    - **annotations**: An unstructured key-value map stored with the role that may be used to store arbitrary metadata.
-    - **labels**: Map of string keys and values that can be used to organize and categorize (scope and select) the role.
-  - **rules**: Defines a set of permissions for the role. You can add multiple rules with the following attributes:
-    - `<rule-name>`: Rule name.
-    - **api_groups**: Name of the APIGroup that contains the resources.
-    - **resources**: List of resources that the rule applies to.
-    - **verbs**: List of verbs that apply to all the ResourceKinds and AttributeRestrictions contained in this rule.
+* **spec.roles**: List of Kubernetes roles.
+  * `<role-name>`: The role name should adhere to the regex `^[a-zA-Z0-9_.-]*$`. If you use the same role name as the default ones, that role will be replaced with the new permissions defined. This is only applicable to default roles created by Facets.
+  * **metadata**: Standard role's metadata.
+    * **namespace**: Defines the space within which the name of the role must be unique.
+    * **annotations**: An unstructured key-value map stored with the role that may be used to store arbitrary metadata.
+    * **labels**: Map of string keys and values that can be used to organize and categorize (scope and select) the role.
+  * **rules**: Defines a set of permissions for the role. You can add multiple rules with the following attributes:
+    * `<rule-name>`: Rule name.
+    * **api\_groups**: Name of the APIGroup that contains the resources.
+    * **resources**: List of resources that the rule applies to.
+    * **verbs**: List of verbs that apply to all the ResourceKinds and AttributeRestrictions contained in this rule.
 
-- **spec.cluster_roles**: List of Kubernetes cluster roles.
-  - `<cluster-role-name>`: The cluster role name should adhere to the regex `^[a-zA-Z0-9_.-]*$`. If you use the same cluster role name as the default ones, that role will be replaced with the new permissions defined. This is only applicable to default cluster roles created by Facets.
-  - **metadata**: Standard role's metadata.
-    - **annotations**: An unstructured key-value map stored with the role that may be used to store arbitrary metadata.
-    - **labels**: Map of string keys and values that can be used to organize and categorize (scope and select) the role.
-  - **rules**: Defines a set of permissions for the cluster role. You can add multiple rules with the following attributes:
-    - `<rule-name>`: Rule name.
-    - **api_groups**: Name of the APIGroup that contains the resources.
-    - **resources**: List of resources that the rule applies to.
-    - **verbs**: List of verbs that apply to all the ResourceKinds and AttributeRestrictions contained in this rule.
-    - **non_resource_urls**: A set of partial URLs that a user should have access to. Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"), but not both.
+* **spec.cluster\_roles**: List of Kubernetes cluster roles.
+  * `<cluster-role-name>`: The cluster role name should adhere to the regex `^[a-zA-Z0-9_.-]*$`. If you use the same cluster role name as the default ones, that role will be replaced with the new permissions defined. This is only applicable to default cluster roles created by Facets.
+  * **metadata**: Standard role's metadata.
+    * **annotations**: An unstructured key-value map stored with the role that may be used to store arbitrary metadata.
+    * **labels**: Map of string keys and values that can be used to organize and categorize (scope and select) the role.
+  * **rules**: Defines a set of permissions for the cluster role. You can add multiple rules with the following attributes:
+    * `<rule-name>`: Rule name.
+    * **api\_groups**: Name of the APIGroup that contains the resources.
+    * **resources**: List of resources that the rule applies to.
+    * **verbs**: List of verbs that apply to all the ResourceKinds and AttributeRestrictions contained in this rule.
+    * **non\_resource\_urls**: A set of partial URLs that a user should have access to. Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"), but not both.
 
 ### 3. Commit and Push Changes
 
