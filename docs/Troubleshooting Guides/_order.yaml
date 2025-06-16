@@ -4,3 +4,4 @@
 - expanding-a-pvc
 - removing-unhealthy-ingester-instances-from-the-ring
 - setting-up-loki-to-fetch-logs-from-vms
+- handle-loki-alerts
