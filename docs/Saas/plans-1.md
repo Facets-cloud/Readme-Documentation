@@ -16,21 +16,21 @@ Facets.Cloud offers two comprehensive pricing plans to meet the diverse needs of
 
 **Key Features**
 
-- Customer-managed infrastructure
-- Advanced features and extensive configuration options
-- Full control over environment, security, and resource allocation
-- Customizable Blueprint management
-- Enhanced security measures
+* Customer-managed infrastructure
+* Advanced features and extensive configuration options
+* Full control over environment, security, and resource allocation
+* Customizable Blueprint management
+* Enhanced security measures
 
 ## SaaS Offering
 
 **Key Features**
 
-- Fully managed service hosted by Facets
-- Essential DevOps management tools
-- Seamless integration with major cloud providers (AWS, Azure, GCP) and Kubernetes
-- Scalable resources and applications
-- Standard support included
+* Fully managed service hosted by Facets
+* Essential DevOps management tools
+* Seamless integration with major cloud providers (AWS, Azure, GCP) and Kubernetes
+* Scalable resources and applications
+* Standard support included
 
 ## Differences Between PaaS and SaaS
 
