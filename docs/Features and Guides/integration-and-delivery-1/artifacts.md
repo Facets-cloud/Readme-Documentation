@@ -48,5 +48,5 @@ By using promotion workflows in CI Integration, organizations can reduce the ris
 
 ## Related Guides
 
-- [Creating a CI Integration](https://readme.facets.cloud/docs/creating-a-ci-integration)
-- [Creating CI Rules](doc:ci-rules)
+* [Creating a CI Integration](https://readme.facets.cloud/docs/creating-a-ci-integration)
+* [Creating CI Rules](doc:ci-rules)
