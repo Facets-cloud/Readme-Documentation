@@ -21,124 +21,46 @@ An application should be defined in the blueprint specification in the environme
 ## Disable an Application from your Control Plane
 
 1. Login to Facets Control Plane. 
-2. Select the **Blueprint **which has your **Environment**.
+2. Select the **Blueprint** which has your **Environment**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dcede10-blueprint_page.png",
-        "blueprint page.png",
-        2560
-      ],
-      "sizing": "80",
-      "border": true,
-      "caption": "Select the Blueprint which has the environment with your application (Click on the image to expand)"
-    }
-  ]
-}
-[/block]
+<Image title="blueprint page.png" alt={2560} width="80%" border={true} src="https://files.readme.io/dcede10-blueprint_page.png">
+  Select the Blueprint which has the environment with your application (Click on the image to expand)
+</Image>
 
-3. Navigate to **Applications **page from the sidebar and click on the Application in question.
+3. Navigate to **Applications** page from the sidebar and click on the Application in question.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/123da19-apps_backend.png",
-        "apps backend.png",
-        2554
-      ],
-      "sizing": "80",
-      "border": true,
-      "caption": "Select the Application whose Container Configurations needs to be overridden. (Click on the image to expand)"
-    }
-  ]
-}
-[/block]
+<Image title="apps backend.png" alt={2554} width="80%" border={true} src="https://files.readme.io/123da19-apps_backend.png">
+  Select the Application whose Container Configurations needs to be overridden. (Click on the image to expand)
+</Image>
 
-4. Click on the **Override **button in the Configuration tab.
+4. Click on the **Override** button in the Configuration tab.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3eda39c-override_configuration.png",
-        "override configuration.png",
-        2163
-      ],
-      "sizing": "80",
-      "border": true,
-      "caption": "Click on the Override button. (Click on the image to expand)"
-    }
-  ]
-}
-[/block]
+<Image title="override configuration.png" alt={2163} width="80%" border={true} src="https://files.readme.io/3eda39c-override_configuration.png">
+  Click on the Override button. (Click on the image to expand)
+</Image>
 
-5. Choose whether you want to disable this application from being included in the next release by ticking the **Disabled **checkbox, and clicking on the **Submit **button at the bottom of the screen. 
+5. Choose whether you want to disable this application from being included in the next release by ticking the **Disabled** checkbox, and clicking on the **Submit** button at the bottom of the screen. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e020f05-disabled.png",
-        "disabled.png",
-        2014
-      ],
-      "sizing": "80",
-      "border": true,
-      "caption": "Tick the Disabled checkbox. (Click on the image to expand)"
-    }
-  ]
-}
-[/block]
+<Image title="disabled.png" alt={2014} width="80%" border={true} src="https://files.readme.io/e020f05-disabled.png">
+  Tick the Disabled checkbox. (Click on the image to expand)
+</Image>
 
 6. You will see a popup window asking you to **Review Changes**. Click on **Submit Changes** to override the configuration.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3547088-review_changes.PNG",
-        "review changes.PNG",
-        1881
-      ],
-      "sizing": "80",
-      "border": true,
-      "caption": "Review the Changes and Submit. (Click on the image to expand)"
-    }
-  ]
-}
-[/block]
+<Image title="review changes.PNG" alt={1881} width="80%" border={true} src="https://files.readme.io/3547088-review_changes.PNG">
+  Review the Changes and Submit. (Click on the image to expand)
+</Image>
 
 7. You will see a Toaster popup confirming the change and a notification that this change will be applied in the next release.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/19cccf8-disabled_popup.png",
-        "disabled popup.png",
-        2034
-      ],
-      "sizing": "80",
-      "border": true,
-      "caption": "Success Message. (Click on the image to expand)"
-    }
-  ]
-}
-[/block]
+<Image title="disabled popup.png" alt={2034} width="80%" border={true} src="https://files.readme.io/19cccf8-disabled_popup.png">
+  Success Message. (Click on the image to expand)
+</Image>
 
 ## Enable an Application from your Control Plane
 
 > 📘 Enabling an Application
-> 
+>
 > You can follow the same steps for enabling a disabled application by deselecting the tick box in Step 5 and submitting the change.
 
 ## Constraints
