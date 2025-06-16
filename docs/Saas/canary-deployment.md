@@ -14,9 +14,9 @@ Facets now supports Argo Rollouts-Canary Deployment for Service resources, enabl
 
 ## Prerequisites
 
-- Ability to modify/override resource JSON.
-- Ability to perform Releases.
-- `APPLICATION_DEPLOYMENT_PROMOTE` permission to promote the preview changes.
+* Ability to modify/override resource JSON.
+* Ability to perform Releases.
+* `APPLICATION_DEPLOYMENT_PROMOTE` permission to promote the preview changes.
 
 ## Setting the Deployment Strategy to Canary
 
@@ -38,8 +38,8 @@ Facets now supports Argo Rollouts-Canary Deployment for Service resources, enabl
 
 ## Configuring the Canary Strategy
 
-- **Understand the Traffic Manager:** We support Canary using Argo Rollouts, and we support all the traffic managers supported by Argo Rollouts. In this use case, we will use Istio as our traffic manager.
-- **Learn About Traffic Splitting:** We are using subset-level traffic splitting. To know more about this, refer to the [Istio documentation.](https://argo-rollouts.readthedocs.io/en/stable/features/traffic-management/istio/#subset-level-traffic-splitting)
+* **Understand the Traffic Manager:** We support Canary using Argo Rollouts, and we support all the traffic managers supported by Argo Rollouts. In this use case, we will use Istio as our traffic manager.
+* **Learn About Traffic Splitting:** We are using subset-level traffic splitting. To know more about this, refer to the [Istio documentation.](https://argo-rollouts.readthedocs.io/en/stable/features/traffic-management/istio/#subset-level-traffic-splitting)
 
 ### Setting up the traffic split
 
@@ -78,12 +78,12 @@ Facets now supports Argo Rollouts-Canary Deployment for Service resources, enabl
 
 In this example, we only are configuring only one `step` and `pause`(wait). 
 
-- `"setWeight": 10` refers to 10% of the traffic going to the Canary.
-- The `pause` value is empty because it signifies an indefinite pause, allowing for manual intervention to promote the Canary version or make further adjustments before continuing with the rollout.
+* `"setWeight": 10` refers to 10% of the traffic going to the Canary.
+* The `pause` value is empty because it signifies an indefinite pause, allowing for manual intervention to promote the Canary version or make further adjustments before continuing with the rollout.
 
 ### Configuring the traffic manager (istio)
 
-1. **Reference the Destination Rule and Virtual Service:** Add the following configuration to reference the destination rule and virtual service.  
+1. **Reference the Destination Rule and Virtual Service:** Add the following configuration to reference the destination rule and virtual service.\
    To know more about Destination Rule and Virtual Service, refer to the [Istio documentation.](https://argo-rollouts.readthedocs.io/en/stable/features/traffic-management/istio/#subset-level-traffic-splitting)
    1. **Destination Rule:** This defines policies that apply to traffic intended for a service after routing has occurred. These policies determine how requests are handled once they reach the service.
    2. **Virtual Service:** This defines how requests to a service are routed within an Istio service mesh. It specifies the routing rules and the service versions (subsets) the traffic should be directed to..
