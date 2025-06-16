@@ -19,10 +19,10 @@ Facets enables the organization of resources into **Projects**, representing gro
 Creating a new project is a strategic decision that should be based on clear functional or operational requirements. Consider the following scenarios:
 
 1. **Distinct Business Capabilities:**
-   - Projects should align with specific business functionalities. For example, an organization managing a **Recommendation Engine** and an **E-Commerce Platform** might structure these as separate projects since they serve different purposes and operate independently.
+   * Projects should align with specific business functionalities. For example, an organization managing a **Recommendation Engine** and an **E-Commerce Platform** might structure these as separate projects since they serve different purposes and operate independently.
 
 2. **Operational Independence:**
-   - Systems that function in silos or have minimal interaction are ideal candidates for separate projects.
+   * Systems that function in silos or have minimal interaction are ideal candidates for separate projects.
 
 ***
 
@@ -32,12 +32,12 @@ While it may seem intuitive to split a complex product into multiple projects, i
 
 ### 1. Use Resource Groups for Access Control
 
-- If **RBAC (Role-Based Access Control)** is the reason for splitting, leverage **Resource Groups** instead. They provide logical separation and fine-grained access control without requiring a project split.
-- More information: [Resource Groups Documentation](https://readme.facets.cloud/docs/user-management-2#resource-groups).
+* If **RBAC (Role-Based Access Control)** is the reason for splitting, leverage **Resource Groups** instead. They provide logical separation and fine-grained access control without requiring a project split.
+* More information: [Resource Groups Documentation](https://readme.facets.cloud/docs/user-management-2#resource-groups).
 
 ### 2. Facets Handles Large Terraform Projects
 
-- If the concern is the size of the Terraform project, Facets abstracts Terraform state management and optimizes it for scalability and performance. There is no need to split projects solely due to size considerations.
+* If the concern is the size of the Terraform project, Facets abstracts Terraform state management and optimizes it for scalability and performance. There is no need to split projects solely due to size considerations.
 
 ***
 
@@ -45,21 +45,21 @@ While it may seem intuitive to split a complex product into multiple projects, i
 
 ### Abstracted State Management
 
-- Automates Terraform state management, enabling scalability and reducing operational overhead.
+* Automates Terraform state management, enabling scalability and reducing operational overhead.
 
 ### Performance Optimizations
 
-- Enhances deployment efficiency, ensuring smooth operations even for large-scale environments.
+* Enhances deployment efficiency, ensuring smooth operations even for large-scale environments.
 
 ### Unified Project Knowledge
 
-- Offers a consolidated view of all resources and dependencies, improving transparency and eliminating redundant configurations.
+* Offers a consolidated view of all resources and dependencies, improving transparency and eliminating redundant configurations.
 
 ### Key Benefits
 
-- Simplified management of complex projects.
-- Streamlined configuration management.
-- Clear insights into resource relationships and dependencies.
+* Simplified management of complex projects.
+* Streamlined configuration management.
+* Clear insights into resource relationships and dependencies.
 
 ***
 
