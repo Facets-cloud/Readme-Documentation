@@ -16,13 +16,13 @@ Welcome to the **Module Development Guide**! This document provides resources to
 
 # Quick Start: Register a Custom Module
 
-Get started with custom modules in Facets by creating and testing a simple S3 bucket module. Detailed Guide for getting started can be found here: <https://github.com/Facets-cloud/module-development-cli/blob/main/README.md>
+Get started with custom modules in Facets by creating and testing a simple S3 bucket module. Detailed Guide for getting started can be found here: [https://github.com/Facets-cloud/module-development-cli/blob/main/README.md](https://github.com/Facets-cloud/module-development-cli/blob/main/README.md)
 
 ## Prerequisites
 
-- Access to a Facets Control Plane with necessary permissions
-- Basic Terraform knowledge
-- FTF CLI
+* Access to a Facets Control Plane with necessary permissions
+* Basic Terraform knowledge
+* FTF CLI
 
 ## Phase 1: Create and Test Your Module
 
@@ -36,11 +36,11 @@ By running this command, it prompts for details such as Intent, Flavor, Cloud, T
 
 Options:
 
-- \-i, --intent: (prompt) The intent of the module.
-- \-f, --flavor: (prompt) The flavor of the module.
-- \-c, --cloud: (prompt) The cloud provider for the module.
-- \-t, --title: (prompt) The title of the module.
-- \-d, --description: (prompt) The description of the module.
+* \-i, --intent: (prompt) The intent of the module.
+* \-f, --flavor: (prompt) The flavor of the module.
+* \-c, --cloud: (prompt) The cloud provider for the module.
+* \-t, --title: (prompt) The title of the module.
+* \-d, --description: (prompt) The description of the module.
 
 ### Step II. Add Module Code
 
@@ -151,7 +151,7 @@ ftf validate-directory /path/to/module [OPTIONS]
 
 Options: 
 
-- \--check-only: Verifies formatting without applying changes.
+* \--check-only: Verifies formatting without applying changes.
 
 The command operates directly on the provided path without additional prompts.
 
@@ -165,10 +165,10 @@ ftf login [OPTIONS]
 
 Prompts for Control Plane URL, Username, Token, and Profile. This information is stored under a specified profile for future interactions. Options:
 
-- \-c, --control-plane-url: (prompt) The URL of the control plane. (e.g.`https://<your-company>.console.facets.cloud)`
-- \-u, --username: (prompt) Your username.
-- \-t, --token: (prompt) Your access token, input is hidden
-- \-p, --profile: (prompt) The profile name to use for storing credentials, defaults to default.
+* \-c, --control-plane-url: (prompt) The URL of the control plane. (e.g.`https://<your-company>.console.facets.cloud)`
+* \-u, --username: (prompt) Your username.
+* \-t, --token: (prompt) Your access token, input is hidden
+* \-p, --profile: (prompt) The profile name to use for storing credentials, defaults to default.
 
 Personal Token can be found in the User menu. Click your profile icon in the bottom left, then select 'Personal Token'.
 
@@ -180,12 +180,12 @@ ftf preview-module /path/to/module [OPTIONS]
 
 Options:
 
-- \-p, --profile: (prompt) Profile to use, defaults to default.
-- \-a, --auto-create-intent: Automatically create intent if not exists.
-- \-f, --publishable: Indicates whether the module is publishable for production.
-- \-g, --git-repo-url: Git repository URL from where the code is taken.
-- \-r, --git-ref: Git reference or branch name.
-- \--publish: Publish the module after preview if set.
+* \-p, --profile: (prompt) Profile to use, defaults to default.
+* \-a, --auto-create-intent: Automatically create intent if not exists.
+* \-f, --publishable: Indicates whether the module is publishable for production.
+* \-g, --git-repo-url: Git repository URL from where the code is taken.
+* \-r, --git-ref: Git reference or branch name.
+* \--publish: Publish the module after preview if set.
 
 ### Step II. Enable Testing Project
 
@@ -202,18 +202,18 @@ curl -s https://facets-cloud.github.io/facets-schemas/scripts/allow_preview_modu
   -a true
 ```
 
-To register the module only in selected testing projects, user can mention the name of the projects in the facets.yaml under the field "allowed_test_projects" as shown in the sample facets.yaml above.
+To register the module only in selected testing projects, user can mention the name of the projects in the facets.yaml under the field "allowed\_test\_projects" as shown in the sample facets.yaml above.
 
 ***
 
 # 📚 Tutorial: Understanding Core Concepts
 
-Begin with our [** tutorial** ](https://readme.facets.cloud/docs/chapter-1-introduction-1)to grasp the fundamentals of module development. Learn about: 
+Begin with our [**tutorial** ](https://readme.facets.cloud/docs/chapter-1-introduction-1)to grasp the fundamentals of module development. Learn about: 
 
-- Module structure and best practices  
-- Inputs, outputs, and variables  
-- Dependency management  
-- Versioning and reusability
+* Module structure and best practices  
+* Inputs, outputs, and variables  
+* Dependency management  
+* Versioning and reusability
 
 ***
 
@@ -221,5 +221,5 @@ Begin with our [** tutorial** ](https://readme.facets.cloud/docs/chapter-1-intro
 
 Explore our [Module Development GitHub Repository](https://github.com/Facets-cloud/module-development-examples) for:
 
-✅ Comprehensive documentation  
+✅ Comprehensive documentation\
 ✅ Pre-built module templates
