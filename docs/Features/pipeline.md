@@ -30,4 +30,4 @@ A delivery pipeline in Facets is a feature that allows you to connect different 
 
 ## Related Guides
 
-- [Setting up the Delivery Pipeline](doc:setting-up-the-delivery-pipeline)
+* [Setting up the Delivery Pipeline](doc:setting-up-the-delivery-pipeline)
