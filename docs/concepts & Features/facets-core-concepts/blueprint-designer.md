@@ -16,31 +16,16 @@ Navigate to **Blueprint > Designer.**
 
 ## Key Functionalities
 
-- **Table View:** For those who prefer a structured format, the Table View provides a comprehensive tabular representation of all the Resources in the Blueprint.
-- **Graph View:** The Graph View offers an intuitive, visual representation of the Blueprint, making it easy to understand the relationships between different components.
-- **Resource Management:** Add, modify, or delete resources seamlessly within the Blueprint Designer.
-- **Resource Configuration:** Manage resource configurations directly at the Blueprint level, ensuring precise control over resource settings.
-- **Resource Overview:** Within the Blueprint Designer, you can observe how resource links with artifacts, environments, and other blueprint resources, all on one page, delivering valuable insights into resource interactions.
-- **Overrides Management:** Effectively manage overrides for all resources, ensuring flexibility in customization.
+* **Table View:** For those who prefer a structured format, the Table View provides a comprehensive tabular representation of all the Resources in the Blueprint.
+* **Graph View:** The Graph View offers an intuitive, visual representation of the Blueprint, making it easy to understand the relationships between different components.
+* **Resource Management:** Add, modify, or delete resources seamlessly within the Blueprint Designer.
+* **Resource Configuration:** Manage resource configurations directly at the Blueprint level, ensuring precise control over resource settings.
+* **Resource Overview:** Within the Blueprint Designer, you can observe how resource links with artifacts, environments, and other blueprint resources, all on one page, delivering valuable insights into resource interactions.
+* **Overrides Management:** Effectively manage overrides for all resources, ensuring flexibility in customization.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/baeb4b7-bpdes.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/baeb4b7-bpdes.gif">
+  Click on the image to expand
+</Image>
 
 ## FAQs
 
@@ -58,4 +43,4 @@ The Overrides page offers key details, including the configuration parameter (Ke
 
 ## Related Guide
 
-- [Adding Resources in Blueprint Designer](https://readme.facets.cloud/docs/adding-resources)
+* [Adding Resources in Blueprint Designer](https://readme.facets.cloud/docs/adding-resources)
