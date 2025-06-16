@@ -57,13 +57,13 @@ This diagram shows how modules define what they expose and what they expect — 
 
 Types define the shape and purpose of values that flow between modules. They follow a common pattern: `@outputs/xyz`, where `xyz` is the type name — like:
 
-- `@outputs/vpc`, `@outputs/project`, `@outputs/cluster`
+* `@outputs/vpc`, `@outputs/project`, `@outputs/cluster`
 
 Types are:
 
-- Defined by module authors or organizations
-- Stored and versioned in the Facets registry
-- Reused across modules to ensure compatibility
+* Defined by module authors or organizations
+* Stored and versioned in the Facets registry
+* Reused across modules to ensure compatibility
 
 > Think of types as shared contracts. They let modules snap together, even if they were developed independently.
 
@@ -75,9 +75,9 @@ Each module defines a `spec`, which represents the set of inputs that a develope
 
 These values:
 
-- Are structured and validated
-- Power the form-based UI and JSON input options
-- Allow developers to focus only on what they need to configure
+* Are structured and validated
+* Power the form-based UI and JSON input options
+* Allow developers to focus only on what they need to configure
 
 > The `spec` defines the developer-facing contract. It is used in the Facets UI and API to provide a clean configuration experience.
 
@@ -89,15 +89,15 @@ Modules can also accept values that come from the outputs of other modules. Thes
 
 Each entry in the `inputs:` section defines:
 
-- A key name (e.g., `network`)
-- The expected type (e.g., `@outputs/vpc`)
+* A key name (e.g., `network`)
+* The expected type (e.g., `@outputs/vpc`)
 
 At deployment time, Facets connects these inputs to outputs from upstream modules of the same type.
 
 **Example:**
 
-- A Kubernetes cluster module may require a VPC with `@outputs/vpc`
-- That input could be fulfilled by any module exposing that type — such as a VPC module or a landing zone setup
+* A Kubernetes cluster module may require a VPC with `@outputs/vpc`
+* That input could be fulfilled by any module exposing that type — such as a VPC module or a landing zone setup
 
 > This model allows modules to be reused flexibly across environments and use cases.
 
@@ -107,16 +107,16 @@ At deployment time, Facets connects these inputs to outputs from upstream module
 
 Modules expose one or more outputs that can be consumed by other modules. Each output has:
 
-- A key (e.g., `default`, `attributes.project_id`)
-- A type (e.g., `@outputs/project`, `@outputs/project_id`)
+* A key (e.g., `default`, `attributes.project_id`)
+* A type (e.g., `@outputs/project`, `@outputs/project_id`)
 
 These outputs are referenced by other modules using the type system — ensuring compatibility and discoverability.
 
-**Example:**  
+**Example:**\
 A GCP project module might expose:
 
-- `default`: of type `@outputs/project`
-- `attributes.project_id`: of type `@outputs/project_id`
+* `default`: of type `@outputs/project`
+* `attributes.project_id`: of type `@outputs/project_id`
 
 > Outputs make a module usable by others. Types make that usage safe and predictable.
 
