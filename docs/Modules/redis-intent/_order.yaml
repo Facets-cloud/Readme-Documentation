@@ -1,2 +1,3 @@
 - redis-k8s-flavor
 - redis-elasticache-flavor
+- redis-memorystore-flavor
