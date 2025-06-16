@@ -24,24 +24,9 @@ This guide outlines the process of destroying an existing environment. If you wi
 
 **Note:** This will delete the Kubernetes cluster and its dependent infra resources.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/99b88a3-image.png",
-        null,
-        "Click on the images to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the images to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the images to expand" align="center" width="450px" border={true} src="https://files.readme.io/99b88a3-image.png">
+  Click on the images to expand
+</Image>
 
 You have successfully destroyed an environment.
 
@@ -49,28 +34,13 @@ You have successfully destroyed an environment.
 
 To completely delete the environment and remove it from the Control plane:
 
-1. In the **Environments** tab click the **Delete** icon beside the environment you wish to delete.  
+1. In the **Environments** tab click the **Delete** icon beside the environment you wish to delete.\
    **Note:** An environment can only be deleted after it has been [destroyed](https://readme.facets.cloud/docs/destroying-and-deleting-an-environment#how-to-destroy-an-environment).
 2. In the pop-up, enter the name of the Environment and click **Confirm.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7ac85eb-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/7ac85eb-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully deleted an environment.
 
@@ -90,7 +60,7 @@ No, an environment cannot be destroyed if it is in either the LAUNCHING or STOPP
 
 ### 4\. Why can't I destroy my environment?
 
-An environment cannot be destroyed if it is in the following states: LAUNCHING, SCALING_UP, SCALING_DOWN, DESTROYING, or STOPPED. This is to prevent any unintended consequences.
+An environment cannot be destroyed if it is in the following states: LAUNCHING, SCALING\_UP, SCALING\_DOWN, DESTROYING, or STOPPED. This is to prevent any unintended consequences.
 
 ### 5\. What state is an environment in after it has been destroyed?
 
