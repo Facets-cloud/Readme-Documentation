@@ -58,8 +58,8 @@ AWS DMS is particularly useful for large databases and complex migrations where 
 
 After migration, perform thorough validation:  
 
-- **Data Integrity**: Verify that all records have been successfully transferred.  
-- **Application Connectivity**: Ensure the application can connect to the new database without issues.  
-- **Performance Testing**: Monitor query performance and make adjustments if needed.  
+* **Data Integrity**: Verify that all records have been successfully transferred.  
+* **Application Connectivity**: Ensure the application can connect to the new database without issues.  
+* **Performance Testing**: Monitor query performance and make adjustments if needed.  
 
 By choosing the right migration method based on your database and downtime requirements, you can ensure a smooth transition to Facets.cloud.
