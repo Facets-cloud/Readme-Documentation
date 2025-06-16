@@ -56,4 +56,4 @@ Each resource in a blueprint can have an implementation, known as a flavor. The 
 
 ## Related guides
 
-- [Create your first Blueprint](doc:create-your-first-blueprint)
+* [Create your first Blueprint](doc:create-your-first-blueprint)
