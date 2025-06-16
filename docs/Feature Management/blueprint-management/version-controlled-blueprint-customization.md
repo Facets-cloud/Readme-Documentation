@@ -22,24 +22,9 @@ Manage and track changes to your Blueprints using your [version control systems.
 4. To create a new branch in the repository, click on **Add branch.**
 5. In the pop-up, mention the **Branch Name** and click **Add.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bb30fe1-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/bb30fe1-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully added a new branch to the Repository.
 
