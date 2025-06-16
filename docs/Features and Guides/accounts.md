@@ -1,0 +1,38 @@
+---
+title: Account Management
+excerpt: Connecting your Git and Clouds
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+## Introduction
+
+In order to create blueprints and environments using Facets, it is necessary to integrate with various Git providers and Cloud accounts. Facets provides seamless and reusable account management features to make this process easy and efficient.
+
+### Git Accounts
+
+Git accounts are used to integrate with different Git providers, such as GitHub, Bitbucket, and GitLab. These Git accounts are necessary for creating projects. Refer to the [documentation](doc:creating-a-project) to learn more about creating a project.
+
+### Cloud Accounts
+
+Cloud accounts are used to integrate with different cloud providers, such as AWS, Azure, GCP, and Kubernetes clusters. These cloud accounts are necessary for creating and launching environments. Refer to the [documentation](doc:creating-an-environment) to learn more about creating and launching an environment.
+
+## FAQs
+
+### What are Git Accounts in Facets?
+
+Git Accounts in Facets are used to integrate with different Git providers, such as GitHub, Bitbucket, and GitLab. They are necessary for creating blueprints.
+
+### What are Cloud Accounts in Facets?
+
+Cloud Accounts in Facets are used to integrate with different cloud providers, such as AWS, Azure, and GCP. These cloud accounts are necessary for creating and launching environments.
+
+## Related Guides
+
+- [Integrate Version Control Systems (VCS) with Facets](doc:integrating-vcs-accounts)
+- [Integrating Cloud Accounts](https://readme.facets.cloud/docs/integrating-cloud-accounts)
