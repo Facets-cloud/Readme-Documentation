@@ -16,9 +16,9 @@ Facets provides users with the capability to change the stream, and major and mi
 
 Facets allows you to manage the IaC version from your **Environment Settings** screen.
 
-> 📘 
-> 
-> **Note: **IaC version or stream change will take effect from the next release after the change.
+> 📘
+>
+> **Note:** IaC version or stream change will take effect from the next release after the change.
 
 1. Login to Facets Control Plane and select the desired project in the **Projects** tab.
 2. Select the **Environment** in the **Environments** tab where you want to manage the IaC version.
@@ -28,5 +28,5 @@ Facets allows you to manage the IaC version from your **Environment Settings** s
 You should see a success toaster popup confirming your changes.
 
 > 📘 NOTE
-> 
-> **Note: **If there is no defined IaC version for an environment during deployment, Facets will automatically select the latest version of IaC from `PRODUCTION` stream.
+>
+> **Note:** If there is no defined IaC version for an environment during deployment, Facets will automatically select the latest version of IaC from `PRODUCTION` stream.
