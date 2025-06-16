@@ -14,8 +14,8 @@ next:
 
 Facets.Cloud currently offers two plans:
 
-- Growth plan - best suited for startups 
-- Enterprise plan - best suited for larger organizations
+* Growth plan - best suited for startups 
+* Enterprise plan - best suited for larger organizations
 
 Additionally, you can request Slack support, onboarding support, priority change requests, and joint discussion hours with Facets [support@facets.cloud](mailto:support@facets.cloud)
 
