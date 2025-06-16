@@ -18,10 +18,10 @@ Facets is a self-serve infrastructure platform that fundamentally transforms how
 
 In traditional infrastructure management, with n resources across m environments, teams must maintain n×m configuration files. Facets eliminates this complexity through blueprints:
 
-- Blueprint serves as a single source of truth
-- Resources are defined as JSON files (like Lego pieces)
-- Environment-specific configurations are handled through overrides
-- All definitions are stored in version-controlled repositories
+* Blueprint serves as a single source of truth
+* Resources are defined as JSON files (like Lego pieces)
+* Environment-specific configurations are handled through overrides
+* All definitions are stored in version-controlled repositories
 
 ### What Makes Facets Architecture Unique
 
@@ -33,21 +33,21 @@ The main control plane (root) that powers Facets for all our customers is deploy
 
 Facets automates the complex machinery of infrastructure management:
 
-**Simplified User Experience **
+**Simplified User Experience**
 
-- Users provide only the essential configuration, not detailed Terraform
-- Standardised Architecture: Facets modules ensure consistent, best-practice implementations
-- Automated Upgrades: Backend handles Kubernetes and module upgrades without user intervention
-- Multi-Environment Consistency: Same blueprint works across development, staging, and production
-- Reduced Maintenance: No need to manage numerous Terraform files and CI/CD pipelines
+* Users provide only the essential configuration, not detailed Terraform
+* Standardised Architecture: Facets modules ensure consistent, best-practice implementations
+* Automated Upgrades: Backend handles Kubernetes and module upgrades without user intervention
+* Multi-Environment Consistency: Same blueprint works across development, staging, and production
+* Reduced Maintenance: No need to manage numerous Terraform files and CI/CD pipelines
 
 **In Practice**, for DevOps teams, this means:
 
-- Defining infrastructure once rather than per environment
-- Focusing on business requirements instead of Terraform syntax
-- Standardising infrastructure across teams and projects
-- Eliminating configuration drift between environments
-- Reducing the risk of deployment failures
+* Defining infrastructure once rather than per environment
+* Focusing on business requirements instead of Terraform syntax
+* Standardising infrastructure across teams and projects
+* Eliminating configuration drift between environments
+* Reducing the risk of deployment failures
 
 ***
 
