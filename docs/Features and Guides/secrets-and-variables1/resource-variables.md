@@ -14,21 +14,7 @@ Facets empowers teams with resource-specific variable management right at the bl
 
  This granular control means every resource maintains its own configuration set, while still allowing for environment-specific overrides when needed. The clear hierarchical structure makes it immediately apparent which values are inherited from the blueprint and which are customised for specific environments. This approach provides the perfect balance between standardisation and flexibility, ensuring your resources can be configured optimally for different scenarios.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a9b04fe643806c5766b5a152aaf545d4ae473ab1bf6859c1a814cd2b8a64f0db-Screenshot_2025-02-12_at_11.34.56_AM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/a9b04fe643806c5766b5a152aaf545d4ae473ab1bf6859c1a814cd2b8a64f0db-Screenshot_2025-02-12_at_11.34.56_AM.png" />
 
 ### Real-World Application
 
@@ -56,4 +42,4 @@ production:
       DEFAULT_USER_ROLE: "enterprise"
 ```
 
-This approach transforms resource configuration management** from a complex, multi-file system into a clear, hierarchical structure** that's easy to understand and maintain.
+This approach transforms resource configuration management **from a complex, multi-file system into a clear, hierarchical structure** that's easy to understand and maintain.
