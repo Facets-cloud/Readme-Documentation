@@ -16,41 +16,11 @@ This guide walks you through the process of deploying your application on Facets
 
 Begin by creating a Service Resource in the **Blueprint** tab within Facets. This is the first foundational step for bringing your application into Facets, regardless of the application type.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ccc2ef03e8eeb74e2b2035210b833c9c1abf8f3be62128ed018c04a598426f70-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/ccc2ef03e8eeb74e2b2035210b833c9c1abf8f3be62128ed018c04a598426f70-image.png" />
 
 Once created, you can configure your service by clicking "Configure" from the context menu.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/223f54112d0dbeebb29cded1c5bbc26b526d72240aaa085456ac812c5350e37d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/223f54112d0dbeebb29cded1c5bbc26b526d72240aaa085456ac812c5350e37d-image.png" />
 
 ## 2. Configure Your Application
 
