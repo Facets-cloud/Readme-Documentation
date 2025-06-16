@@ -16,9 +16,9 @@ Facets modules are designed to be reusable, testable, and maintainable component
 
 Facets modules use two-digit version numbers, such as `1.0`, `1.1`, etc. Each increment signifies a major version change, indicating a backward-incompatible update. These changes may include:
 
-- Reorganizations
-- Codebase modifications
-- Alterations that break existing interfaces or functionalities([Hacker News][1], [GitKraken][2])
+* Reorganizations
+* Codebase modifications
+* Alterations that break existing interfaces or functionalities([Hacker News][1], [GitKraken][2])
 
 The `facets.yaml` configuration captures only the major version. A new major version is introduced when changes cannot be accommodated within the existing version without breaking compatibility.
 
@@ -28,9 +28,9 @@ Backward-compatible enhancements, bug fixes, and incremental improvements are ma
 
 This approach allows for:
 
-- Tracking of changes
-- Rollback procedures
-- Continuous improvement without disrupting existing integrations
+* Tracking of changes
+* Rollback procedures
+* Continuous improvement without disrupting existing integrations
 
 ## Directory Structure and Source Code Management
 
@@ -47,13 +47,13 @@ To facilitate the separation and maintenance of different major versions, each m
 
 This structure allows for:
 
-- Parallel maintenance of multiple major versions
-- Rollback procedures
-- Demarcation of version-specific changes([Medium][3])
+* Parallel maintenance of multiple major versions
+* Rollback procedures
+* Demarcation of version-specific changes([Medium][3])
 
 During the transition phase between versions, this approach ensures that both older and newer versions can be maintained.
 
-_While Git tagging is an alternative method for version management, it can become challenging to maintain, especially when dealing with multiple active versions and ensuring consistency across environments. The directory-based approach offers a more straightforward and maintainable solution in such scenarios._
+*While Git tagging is an alternative method for version management, it can become challenging to maintain, especially when dealing with multiple active versions and ensuring consistency across environments. The directory-based approach offers a more straightforward and maintainable solution in such scenarios.*
 
 ## Development Workflow for Soft Versioning
 
@@ -69,17 +69,17 @@ The history of these changes is preserved in the Git repository and the Facets p
 
 When a new major version of a module is published:
 
-- New instances of the module will default to the latest major version.
-- Existing instances will receive a notification indicating the availability of a new version.
-- The module's README should include migration steps to assist in upgrading to the new version.
+* New instances of the module will default to the latest major version.
+* Existing instances will receive a notification indicating the availability of a new version.
+* The module's README should include migration steps to assist in upgrading to the new version.
 
 This approach ensures that developers are informed of updates and have guidance on how to transition between versions.
 
 ## Best Practices
 
-- Maintain documentation for each major version, including migration guides.
-- Utilize semantic versioning principles to communicate the nature of changes.
-- Ensure that modules are unit testable to validate patterns of usage in isolation.
+* Maintain documentation for each major version, including migration guides.
+* Utilize semantic versioning principles to communicate the nature of changes.
+* Ensure that modules are unit testable to validate patterns of usage in isolation.
 
 By adhering to this versioning strategy, Facets modules remain robust, flexible, and user-friendly, accommodating growth and change without compromising stability.
 
