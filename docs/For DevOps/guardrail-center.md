@@ -22,11 +22,11 @@ As cloud infrastructure grows more complex, maintaining consistency becomes incr
 
 The Guardrail Center is your central hub for creating, managing, and monitoring policy enforcement across your Facets environment:
 
-- **Create and manage policies** using pre-built templates or custom Rego code
-- **Set enforcement levels** to either warn about or block non-compliant deployments
-- **Target specific resources** with granular policy application
-- **Monitor compliance** through comprehensive validation reporting
-- **Maintain audit trails** with detailed policy enforcement logs
+* **Create and manage policies** using pre-built templates or custom Rego code
+* **Set enforcement levels** to either warn about or block non-compliant deployments
+* **Target specific resources** with granular policy application
+* **Monitor compliance** through comprehensive validation reporting
+* **Maintain audit trails** with detailed policy enforcement logs
 
 ## Getting Started
 
