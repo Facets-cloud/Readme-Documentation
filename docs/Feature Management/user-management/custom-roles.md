@@ -19,23 +19,8 @@ next:
 5. You can also select the specific permissions you want to assign to this custom role. 
 6. Click on the **Add Role** button.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/40a0f22-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/40a0f22-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully created a Custom Role for your organization.
