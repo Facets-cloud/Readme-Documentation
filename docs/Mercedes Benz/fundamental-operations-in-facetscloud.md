@@ -17,49 +17,34 @@ next:
 
 To create a Blueprint, 
 
-1. Navigate to **Blueprints > List.**  
+1. Navigate to **Blueprints > List.**\
    This page displays all the configured Blueprints in Facets.
 2. Click **New Blueprint.**
 3. Choose whether you want to choose from an existing Blueprint Template or create a new Blueprint.
 4. If you choose to select from an existing Blueprint Template, search and select the required template. Now, proceed with creating the Blueprint.
 
-> 📘 
-> 
+> 📘
+>
 > Blueprint Templates encompass all the configured Resources and Services specific to that template. Utilising templates enables users to seamlessly incorporate these resources into their Blueprint, enhancing the creation and import process.
 
 5. If you choose to create a new Blueprint:
-   1. Mention a unique **Name **for your Blueprint.
+   1. Mention a unique **Name** for your Blueprint.
    2. Select if you want to **Create a new repository** or **Use an existing repository.**
       1. If you choose to **Use an existing repository**, mention the **Repository URL.**
-   3. Select **Mark as Template** to save this new Blueprint as a template and enter the **Template Description. **
+   3. Select **Mark as Template** to save this new Blueprint as a template and enter the **Template Description.**
    4. Now, select the **GitHub Account** and enter the **GitHub Organisation name.**
-   5. Mention the **Relative Path **and select the **Primary Cloud.**
+   5. Mention the **Relative Path** and select the **Primary Cloud.**
    6. Click **Create.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1cdf7ea-mb-createblueprint.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/1cdf7ea-mb-createblueprint.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully created a new Blueprint.  You will now be redirected to the **Blueprint Designer** where you can see the visualization of the resources.
 
 ## Access the Existing Blueprint
 
-1. Select the desired Blueprint from the blueprint list page and navigate to **Blueprint > Designer. **
+1. Select the desired Blueprint from the blueprint list page and navigate to **Blueprint > Designer.**
 2. Click **Coder** from the top right corner to access your project files.
 
 ## Create an Environment
@@ -72,30 +57,15 @@ After creating your Blueprint, you can now launch the first manifestation of it,
 4. You will also need to link the cloud account with the Facets control plane or select a pre-configured **Cloud Account.**
 5. Now, under **Advanced Options,** mention the following:
    1. Select the required **Time Zone.**
-   2. Choose the **Environment Type** between **Regular** or **Ephemeral.**  
+   2. Choose the **Environment Type** between **Regular** or **Ephemeral.**\
       **Note:** Please note that availability rules can be set only for ephemeral environments.
    3. Specify the **CIDR Range** for the VPC, making sure not to conflict with existing clusters if you have a use case for peering.
-   4. Also mention the **Availability Zone, Instance Type, VPC ID, **and **Request Limit Ratio.**
+   4. Also mention the **Availability Zone, Instance Type, VPC ID,** and **Request Limit Ratio.**
 6. Click **Create.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a388715-mb-_Create_an_Environment.gif",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/a388715-mb-_Create_an_Environment.gif">
+  Click on the image to expand
+</Image>
 
 A logical environment would be created by clicking the Create button. However, please note that the environment will not be launched immediately and will appear as 'stopped' on the environment page.
 
@@ -129,14 +99,14 @@ By providing these default resources, Facets makes it easy to get started with y
 
 ## Create Resources
 
-1. Select the desired Blueprint and navigate to **Blueprint > Designer. **
+1. Select the desired Blueprint and navigate to **Blueprint > Designer.**
 2. Click **Add Resource** from the top right corner.
 3. In the pop-up window, search for and select the desired type of resource you wish to add.
 4. Provide a **Name** for the resource and click **Create.**
 5. To create the resource and view its configuration, click **Create & View.**
 
-> 📘 
-> 
+> 📘
+>
 > **Note:** When creating a resource, it is initially set with default sample values that can be modified after the resource has been created.
 
 You have successfully added a Resource in Facets.
