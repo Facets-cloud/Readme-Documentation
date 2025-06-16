@@ -25,9 +25,9 @@ The goal is to model a reusable capability — like provisioning an S3 bucket. Y
 
 For example, this S3 bucket module lets developers:
 
-- Set a bucket name
-- Choose whether it is public or private
-- Select a lifecycle policy using simple enums — like `standard`, `short`, or `longterm`
+* Set a bucket name
+* Choose whether it is public or private
+* Select a lifecycle policy using simple enums — like `standard`, `short`, or `longterm`
 
 These enums are an example of organizational context and abstraction. Instead of asking developers to input raw retention periods, the module translates these values internally (e.g., `short` = 30 days, `standard` = 90 days, `longterm` = 365 days). This ensures consistency and simplifies configuration for consumers.
 
@@ -37,10 +37,10 @@ These enums are an example of organizational context and abstraction. Instead of
 
 Use `facets.yaml` to define your module’s public interface and metadata. This includes:
 
-- `intent`, `flavor`, `version`, and cloud provider
-- Developer-facing `spec` inputs
-- Cross-module `inputs` typed via `@outputs/...`
-- Structured `outputs` (bucket, policies, etc.)
+* `intent`, `flavor`, `version`, and cloud provider
+* Developer-facing `spec` inputs
+* Cross-module `inputs` typed via `@outputs/...`
+* Structured `outputs` (bucket, policies, etc.)
 
 This file serves as the module's single source of truth for configuration and wiring.
 
