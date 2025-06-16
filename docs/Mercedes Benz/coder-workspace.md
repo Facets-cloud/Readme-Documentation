@@ -32,7 +32,7 @@ You have successfully launched a Workspace.
 
 The Pull Request tab is a centralized hub for managing and tracking all your pull requests. This feature streamlines your workflow by allowing you to conveniently view and interact with both open and closed pull requests.
 
-You can utilize the **PR Status filter** to sort and view requests. Options include **All Requests, Open Requests, **and** Closed Requests.**
+You can utilize the **PR Status filter** to sort and view requests. Options include **All Requests, Open Requests,** and **Closed Requests.**
 
 ## Github Actions
 
