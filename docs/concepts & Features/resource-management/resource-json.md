@@ -20,7 +20,7 @@ The kind property specifies the type of resource that the JSON file represents. 
 
 ## Flavor
 
-The flavor property is used to select a specific implementation of the resource type. For example, for a resource type of ingress, a flavor of default, aws_alb, or gcp_alb could be specified. This property allows for flexibility in choosing the implementation that best fits the needs of the environment.
+The flavor property is used to select a specific implementation of the resource type. For example, for a resource type of ingress, a flavor of default, aws\_alb, or gcp\_alb could be specified. This property allows for flexibility in choosing the implementation that best fits the needs of the environment.
 
 ## Version
 
@@ -36,7 +36,7 @@ The provided property is a boolean flag that specifies whether the resource shou
 
 ## Depends On
 
-The depends_on property lists any dependencies that the resource has on other resources. For example, an application may depend on a MySQL database. The depends_on property would be set to ["mysql.y"].
+The depends\_on property lists any dependencies that the resource has on other resources. For example, an application may depend on a MySQL database. The depends\_on property would be set to \["mysql.y"].
 
 ## Metadata
 
