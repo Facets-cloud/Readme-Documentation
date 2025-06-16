@@ -32,7 +32,7 @@ The **Postgres** resource in this context is a PostgreSQL database, used by your
 1. In the Add Resource pop-up window, search for and select the resource type **Ingress.**
 2. Mention the **Ingress Name** and click **Add.**
 
-**Note: **When creating a resource, it is initially set with default sample values that can be modified after the resource has been created.
+**Note:** When creating a resource, it is initially set with default sample values that can be modified after the resource has been created.
 
 You have successfully created the necessary resources for the Pet Clinic application.
 
