@@ -10,8 +10,8 @@ metadata:
 next:
   description: ''
 ---
-> 📘 
-> 
+> 📘
+>
 > **Note:** This feature is only available in the Enterprise Plan.
 
 The Validation Summary Panel tracks all validation issues that may arise from faults in the resource JSON configuration, serving as a central hub for identifying potential errors and broken references. By providing immediate visibility into these issues, the panel helps you quickly pinpoint errors, avoid release failures, and boost developer productivity.
@@ -22,11 +22,11 @@ The Validation Summary Panel tracks all validation issues that may arise from fa
 
 The following are the types of validations:
 
-- REFERENCE_ERROR("Non-Existent Resource Reference"),
-- DISABLED_RESOURCE_REFERENCE("Disabled Resource References"),
-- INVALID_REFERENCE_EXPRESSION("Invalid Reference Expression"),
-- SYNTAX_ERROR("Syntax Error"),
-- GUARDRAILS_POLICY_ERROR("GuardRails Compliance Issues");
+* REFERENCE\_ERROR("Non-Existent Resource Reference"),
+* DISABLED\_RESOURCE\_REFERENCE("Disabled Resource References"),
+* INVALID\_REFERENCE\_EXPRESSION("Invalid Reference Expression"),
+* SYNTAX\_ERROR("Syntax Error"),
+* GUARDRAILS\_POLICY\_ERROR("GuardRails Compliance Issues");
 
 ### Non-Existent Resource Reference
 
@@ -112,24 +112,9 @@ This error occurs when the resource JSON is invalid, often due to syntax issues 
 }
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1aab76e36615b35ad9308ff5dc8acc5799a3bc5c6ddd460bcaef27b531b97c80-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/1aab76e36615b35ad9308ff5dc8acc5799a3bc5c6ddd460bcaef27b531b97c80-image.png">
+  Click on the image to expand
+</Image>
 
 ### Guardrails Policy Error
 
@@ -137,20 +122,6 @@ This error occurs when a defined guardrail policy is violated. Guardrail policie
 
 **Example:** The file shown in the image is not adhering to the guardrails policy defined.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6b55e1303c0652342cd2aff2760f67ef0bff9ccdf41a12e0e2fdce380551d56a-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/6b55e1303c0652342cd2aff2760f67ef0bff9ccdf41a12e0e2fdce380551d56a-image.png">
+  Click on the image to expand
+</Image>
