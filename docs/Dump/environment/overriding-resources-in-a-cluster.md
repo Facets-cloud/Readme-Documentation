@@ -1,0 +1,25 @@
+---
+title: Overriding Resources in an Environment
+excerpt: ''
+deprecated: false
+hidden: true
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+Facets provides the flexibility to directly modify any resource configurations in an environment from the Control Plane. This feature is particularly useful when there is a need to make modifications in the environment that will deviate from the Blueprint. Using overrides, you can make any specific changes needed as per your use case.
+
+## How to Override Resources for an Environment?
+
+1. Open the **Projects** tab and select your desired project. 
+2. Select the **Blueprint** tab and select the desired resource.
+3. Select **Override** from the drop-down.
+4. Select the environment where the values need to be updated.
+5. Update the desired values in the **Form** or **JSON** mode and click **Save Changes.**
+
+**Note:** Any changes made to the overridden configuration will only take effect after the next release.
+
+You have successfully overridden the Resource for an Environment.
