@@ -28,8 +28,8 @@ Variables can be directly added to the service's blueprint file in JSON format, 
 
 #### References
 
-- Blueprint Structure: [Facets Service Schema](https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.md)
-- Blueprint Context: [Facets Resource JSON Documentation](https://readme.facets.cloud/docs/resource-json)
+* Blueprint Structure: [Facets Service Schema](https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.md)
+* Blueprint Context: [Facets Resource JSON Documentation](https://readme.facets.cloud/docs/resource-json)
 
 ## Utilizing Secrets and Variables
 
@@ -44,11 +44,11 @@ In Facets, you can define secrets and variables, then link these to environment 
 
 #### Example
 
-- **Dollar Referencing**: Implement references such as `${blueprint.self.variables.xyz}` in your blueprint file.
+* **Dollar Referencing**: Implement references such as `${blueprint.self.variables.xyz}` in your blueprint file.
 
 #### Documentation
 
-- Blueprint Customization: [Dynamic Referencing Guide](https://readme.facets.cloud/docs/customise-your-apps-blueprint#use-dynamic-referencing-to-connect-resources-in-the-blueprint)
+* Blueprint Customization: [Dynamic Referencing Guide](https://readme.facets.cloud/docs/customise-your-apps-blueprint#use-dynamic-referencing-to-connect-resources-in-the-blueprint)
 
 ## Reading Secrets and Configurations from External Resources
 
@@ -63,13 +63,11 @@ Services can access secrets and configurations from external resources in Facets
 
 #### Example
 
-- **External Database Reference**: Use syntax like `${postgres.default-db.out.interfaces.writer.host}` to link external database host information.
+* **External Database Reference**: Use syntax like `${postgres.default-db.out.interfaces.writer.host}` to link external database host information.
 
 ## Conclusion
 
 Understanding and utilizing the capabilities of Facets for managing secrets and variables through environment variables is crucial for enhancing the security and flexibility of your applications. This guide aims to provide you with the foundational knowledge to implement these practices effectively.
-
-
 
 # Frequently Asked Questions (FAQs)
 
