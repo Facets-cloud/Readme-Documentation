@@ -20,7 +20,7 @@ We recommend going through the [Blueprint](https://readme.facets.cloud/docs/blue
 2. You have two options when creating a Blueprint: you can start from scratch by choosing **No Template**, or you can utilize an existing template.
 3. Begin by assigning a unique **Name** to your Blueprint. 
 4. Proceed to the **Repository Setup.** Choose if you want to **Create a new repository** or **Use an existing repository.**
-   1. If you opt to **Use an existing repository,** you will need to provide the **Repository URL**(mandatory).  
+   1. If you opt to **Use an existing repository,** you will need to provide the **Repository URL**(mandatory).\
       **Note:** A **stack.json** file is required in the repository when creating a Blueprint using an existing one.
 5. Select your VCS **Account** from the available list. If you need to set up a new account, refer to the [Integrate Version Control Systems (VCS) with Facets](https://readme.facets.cloud/docs/integrating-vcs-accounts) documentation.
 6. Decide if you want to **Mark this Blueprint as a Template.** By doing so, it can be later reused by everyone in the organization.
@@ -29,24 +29,9 @@ We recommend going through the [Blueprint](https://readme.facets.cloud/docs/blue
 8. Select your **Primary Cloud** provider and begin with the default JSON for resources. If you need to set up a new account, refer to the [Integrating Cloud Accounts](https://readme.facets.cloud/docs/integrating-cloud-accounts) documentation for more details.
 9. After completing the above steps, click the **Create** button to initiate the Blueprint creation process.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2fabf4e-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/2fabf4e-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully created your first Blueprint!
 
