@@ -14,18 +14,18 @@ This runbook provides guidance on writing YAML files for custom resources in the
 
 ## Key Fields in facets.yaml:
 
-- **intent**: High-level capability or resource type (e.g., "database", "storage").
-- **flavor**: Specific implementation of the intent (e.g., "AWS RDS", "Google AlloyDB").
-- **version**: Version of the module, allowing for version control and updates.
-- **description**: Briefly describes the purpose or function of the resource.
-- **clouds**: List of supported cloud providers (e.g., AWS, GCP).
-- **inputs:** Input parameters that the Terraform module requires to function correctly.
-- **outputs: **Outputs that the Terraform module produces.
-- **spec**:
-  - Define the **spec** properties using JSON Schema for validation.
-  - Include fields like `type`, `properties`, `required`, and validation rules (e.g., `enum`, `pattern`).
-  - This section can be quite extensive and depends on the nature of the intent, flavour and version.
-- **sample**: Provide a sample configuration to serve as a default template when the resource is created in UI.
+* **intent**: High-level capability or resource type (e.g., "database", "storage").
+* **flavor**: Specific implementation of the intent (e.g., "AWS RDS", "Google AlloyDB").
+* **version**: Version of the module, allowing for version control and updates.
+* **description**: Briefly describes the purpose or function of the resource.
+* **clouds**: List of supported cloud providers (e.g., AWS, GCP).
+* **inputs:** Input parameters that the Terraform module requires to function correctly.
+* **outputs:** Outputs that the Terraform module produces.
+* **spec**:
+  * Define the **spec** properties using JSON Schema for validation.
+  * Include fields like `type`, `properties`, `required`, and validation rules (e.g., `enum`, `pattern`).
+  * This section can be quite extensive and depends on the nature of the intent, flavour and version.
+* **sample**: Provide a sample configuration to serve as a default template when the resource is created in UI.
 
 Let us now talk about input, output and spec section in detail.
 
@@ -37,9 +37,9 @@ Inputs defines the input parameters that the Terraform module requires to functi
 
 Within each input object:
 
-- **type: **This field indicates the kind of data expected by the module for that input. For instance, if the type is @outputs/databricks_account, that means the input databricks_account should be the output of a module that produces a databricks_account.
-- **providers:** This field identifies the provider(s) associated with the input. These providers are used to configure resources in other Terraform modules with the help of this provider. This field offers flexibility for interoperability among various Terraform modules.
-- adds_capability: set to true, indicates that this input enhances the capabilities of the resource.
+* **type:** This field indicates the kind of data expected by the module for that input. For instance, if the type is @outputs/databricks\_account, that means the input databricks\_account should be the output of a module that produces a databricks\_account.
+* **providers:** This field identifies the provider(s) associated with the input. These providers are used to configure resources in other Terraform modules with the help of this provider. This field offers flexibility for interoperability among various Terraform modules.
+* adds\_capability: set to true, indicates that this input enhances the capabilities of the resource.
 
 **Example:**
 
@@ -63,11 +63,11 @@ Output section defines the outputs that the Terraform module produces. Each outp
 
 Within each output object:
 
-- **type: **This field denotes the kind of data the module produces for that output. For example, if the type is @outputs/databricks_account, this output can be utilized as an input of this type in another module.
-- **providers:** This field identifies the provider(s) relevant to the output. It includes additional details about the provider:
-  - source: Specifies the origin of the provider.
-  - version: Indicates the version of the provider being used.
-  - attributes: Enumerates the specific pieces of data that the output will return. This information about the provider can be used to configure resources in other Terraform modules, enhancing the module’s interoperability.
+* **type:** This field denotes the kind of data the module produces for that output. For example, if the type is @outputs/databricks\_account, this output can be utilized as an input of this type in another module.
+* **providers:** This field identifies the provider(s) relevant to the output. It includes additional details about the provider:
+  * source: Specifies the origin of the provider.
+  * version: Indicates the version of the provider being used.
+  * attributes: Enumerates the specific pieces of data that the output will return. This information about the provider can be used to configure resources in other Terraform modules, enhancing the module’s interoperability.
 
 **Example:**
 
@@ -93,15 +93,15 @@ The **spec** section is a critical part of the YAML file. It uses JSON Schema to
 
 ### Key JSON Schema Elements:
 
-- **type**: Specifies the data type (e.g., `string`, `boolean`, `object`).
-- **properties**: Lists the sub-properties of an object.
-- **items**: Defines the schema for array elements.
-- **title**: Provides a human-readable name for the property.
-- **description**: Explains the property’s purpose.
-- **enum**: Limits values to a predefined set.
-- **minimum/maximum**: Sets numerical constraints.
-- **pattern**: Uses regular expressions for string validation.
-- **required**: Marks mandatory fields.
+* **type**: Specifies the data type (e.g., `string`, `boolean`, `object`).
+* **properties**: Lists the sub-properties of an object.
+* **items**: Defines the schema for array elements.
+* **title**: Provides a human-readable name for the property.
+* **description**: Explains the property’s purpose.
+* **enum**: Limits values to a predefined set.
+* **minimum/maximum**: Sets numerical constraints.
+* **pattern**: Uses regular expressions for string validation.
+* **required**: Marks mandatory fields.
 
 ### Custom UI Fields (x-ui-\* Fields)
 
@@ -111,10 +111,10 @@ Facets extends JSON Schema with custom `x-ui-*` fields to enhance the user inter
 
 Some commonly used fields are:
 
-- **x-ui-api-source**: Fetches dynamic data for dropdowns from an API.
-- **x-ui-placeholder**: Provides placeholder text in input fields.
-- **x-ui-validation**: Adds custom validation rules.
-- **x-ui-visible-if**: Toggles visibility based on another field’s value.
+* **x-ui-api-source**: Fetches dynamic data for dropdowns from an API.
+* **x-ui-placeholder**: Provides placeholder text in input fields.
+* **x-ui-validation**: Adds custom validation rules.
+* **x-ui-visible-if**: Toggles visibility based on another field’s value.
 
 See the complete list and its details at [x-ui-fields](https://readme.facets.cloud/docs/facets-yaml-x-ui-fields)
 
