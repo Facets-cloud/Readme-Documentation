@@ -26,15 +26,15 @@ Facets.cloud solves this by providing a self-service platform where developers r
 
 ### Key Features
 
-- **Fully Automated Environments**: Facets.cloud handles everything from infrastructure provisioning to monitoring, logging, and scaling based on predefined automations.
+* **Fully Automated Environments**: Facets.cloud handles everything from infrastructure provisioning to monitoring, logging, and scaling based on predefined automations.
 
-- **Developer Self-Service**: Developers can manage and deploy their applications without needing manual intervention from the Platform Engineering team.
+* **Developer Self-Service**: Developers can manage and deploy their applications without needing manual intervention from the Platform Engineering team.
 
-- **Multi-Cloud Support**: The platform supports AWS, GCP, Azure, and Kubernetes, enabling teams to manage environments across multiple cloud providers with the same automation.
+* **Multi-Cloud Support**: The platform supports AWS, GCP, Azure, and Kubernetes, enabling teams to manage environments across multiple cloud providers with the same automation.
 
-- **Built-in Governance**: Platform Engineering teams can define policies and guardrails that enforce best practices, ensuring only approved configurations are used.
+* **Built-in Governance**: Platform Engineering teams can define policies and guardrails that enforce best practices, ensuring only approved configurations are used.
 
-- **Reusable Automations**: Automations, written once, can be reused across multiple projects and environments, reducing the need for custom scripts.
+* **Reusable Automations**: Automations, written once, can be reused across multiple projects and environments, reducing the need for custom scripts.
 
 ***
 
@@ -46,28 +46,13 @@ Facets.cloud solves this by providing a self-service platform where developers r
 
 3. **Facets.cloud Automates Provisioning**: Facets.cloud automatically provisions and configures environments based on developer intents and Platform Engineering automations, ensuring compliance with predefined policies.
 
-4. **Governance and Guardrails: **The governance team defines security, compliance, and operational guardrails, ensuring that all environments adhere to organizational standards and best practices.
+4. **Governance and Guardrails:** The governance team defines security, compliance, and operational guardrails, ensuring that all environments adhere to organizational standards and best practices.
 
 5. **Environments as a Service**: Whether it's a development, QA, or production environment, Facets.cloud automates the entire process, allowing you to spin up fully managed environments quickly and consistently.
 
 The diagram below illustrates how Facets.cloud integrates the different teams, automations, and workflows to create a unified cloud management experience:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ca61990453d35be136b268a3dbd010f96e353b43f96451fd55958a336a1f85b9-Screenshot_2024-08-08_at_1.36.02_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/ca61990453d35be136b268a3dbd010f96e353b43f96451fd55958a336a1f85b9-Screenshot_2024-08-08_at_1.36.02_PM.png" />
 
 ***
 
@@ -75,19 +60,19 @@ The diagram below illustrates how Facets.cloud integrates the different teams, a
 
 ### For Platform Engineers (formerly DevOps teams)
 
-- **Standardized Automation**: Create and reuse automations across projects, reducing manual effort and improving consistency.
-- **Reduced Operational Overhead**: Automations reduce the number of support tickets and manual tasks, freeing up time for strategic work.
-- **Governance and Compliance**: Ensure compliance with organizational policies by defining guardrails and enforcing best practices automatically.
-- **Multi-Cloud Flexibility**: Manage environments across AWS, GCP, Azure, and Kubernetes without needing custom scripts for each platform.
-- **Infrastructure as Code**: Automations dynamically generate Terraform, Helm, and other infrastructure code, reducing the need to write and maintain code manually.
+* **Standardized Automation**: Create and reuse automations across projects, reducing manual effort and improving consistency.
+* **Reduced Operational Overhead**: Automations reduce the number of support tickets and manual tasks, freeing up time for strategic work.
+* **Governance and Compliance**: Ensure compliance with organizational policies by defining guardrails and enforcing best practices automatically.
+* **Multi-Cloud Flexibility**: Manage environments across AWS, GCP, Azure, and Kubernetes without needing custom scripts for each platform.
+* **Infrastructure as Code**: Automations dynamically generate Terraform, Helm, and other infrastructure code, reducing the need to write and maintain code manually.
 
 ### For Developers
 
-- **Self-Service Environment Management**: Request and manage environments without relying on Platform Engineering teams for day-to-day tasks.
-- **Focus on Application Logic**: With infrastructure handled automatically, developers can focus on writing code and deploying applications.
-- **Consistent and Reliable Environments**: Environments are provisioned with consistent configurations, reducing the risk of errors or misconfigurations.
-- **Faster Time to Deployment**: Spin up environments quickly, enabling faster testing and deployment cycles.
-- **Visibility and Control**: Integrated monitoring and logging allow developers to track the health of their services without additional setup.
+* **Self-Service Environment Management**: Request and manage environments without relying on Platform Engineering teams for day-to-day tasks.
+* **Focus on Application Logic**: With infrastructure handled automatically, developers can focus on writing code and deploying applications.
+* **Consistent and Reliable Environments**: Environments are provisioned with consistent configurations, reducing the risk of errors or misconfigurations.
+* **Faster Time to Deployment**: Spin up environments quickly, enabling faster testing and deployment cycles.
+* **Visibility and Control**: Integrated monitoring and logging allow developers to track the health of their services without additional setup.
 
 ***
 
