@@ -21,7 +21,7 @@ To get a Web Component working, you only need **two files**:
 
 ## 1. `index.html`
 
-This is the main HTML entry point. It references the Web Component script and uses the custom tag..
+This is the main HTML entry point. It references the Web Component script and uses the custom tag.
 
 ```html
 <!DOCTYPE html>
@@ -29,17 +29,15 @@ This is the main HTML entry point. It references the Web Component script and us
   <body>
     <my-greeting></my-greeting>
 
-    <!-- Load the component logic -->
+    {/* Load the component logic */}
     <script type="module" src="my-greeting.js"></script>
   </body>
 </html>
-
- 
 ```
 
 ## 2. `my-greeting.js`
 
-This is where you write the main logic of your Web Component. The example below registers the <my-greeting> tag and renders it.
+This is where you write the main logic of your Web Component. The example below registers the `<my-greeting>` tag and renders it.
 
 ```js
 class MyGreeting extends HTMLElement {
@@ -56,13 +54,11 @@ class MyGreeting extends HTMLElement {
 }
 
 customElements.define('my-greeting', MyGreeting);
-
- 
 ```
 
-Post this, you can upload them to any static hosting service of your choice (e.g. S3, GitHub Pages, Cloudflare Pages, etc) just make sure both files are publicly accessible over HTTPS. 
+Post this, you can upload them to any static hosting service of your choice (e.g. S3, GitHub Pages, Cloudflare Pages, etc) just make sure both files are publicly accessible over HTTPS.
 
-## 3. How to Render inside Facets ?
+## 3. How to Render inside Facets?
 
-Once hosted, you can load the component by referencing the .js file directly.  
-For example : <https://your-host.com/my-greeting.js> in the remote url section of web-components.
+Once hosted, you can load the component by referencing the .js file directly.\
+For example: [https://your-host.com/my-greeting.js](https://your-host.com/my-greeting.js) in the remote url section of web-components.
