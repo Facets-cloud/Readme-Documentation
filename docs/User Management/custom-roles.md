@@ -21,20 +21,6 @@ next:
 
 You have successfully created a Custom Role for your organization.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/080083c-Custom_Roles.gif",
-        null,
-        "Create Custom Roles"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
+<Image alt="Create Custom Roles" align="center" width="450px" border={true} src="https://files.readme.io/080083c-Custom_Roles.gif">
+  Click on the image to expand
+</Image>
