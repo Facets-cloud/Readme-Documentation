@@ -21,26 +21,11 @@ This functionality is especially useful for scenarios where application pods nee
 1. Login to Facets Control Plane and select the Environment in your defined Blueprint.
 2. Navigate to **Environment > Resource Center** from the sidebar and select the **Application** or **Service** in which you want to perform a rolling restart. 
 3. Now, from the **Resource Details** page, select the **Kubernetes** tab.
-4. Click on the **Rolling Restart All** button under the **Pods **section.
+4. Click on the **Rolling Restart All** button under the **Pods** section.
 5. In the popup that appears, click **Confirm** to start the rolling restart of all pods in the application.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/42b4283-Rolling_Restart.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/42b4283-Rolling_Restart.gif">
+  Click on the image to expand
+</Image>
 
 A success toaster is displayed if the rolling restart is initiated successfully. An error toaster with an appropriate error message is displayed if the rolling restart fails.
