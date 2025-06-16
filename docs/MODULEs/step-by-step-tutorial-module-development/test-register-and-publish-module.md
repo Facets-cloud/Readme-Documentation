@@ -26,7 +26,7 @@ custom_s3_module/
 
 ***
 
-## ** Step 1: Local Testing**
+## **Step 1: Local Testing**
 
 Local testing validates the Terraform logic and configurations before registering the module in Facets.
 
@@ -40,7 +40,7 @@ ftf validate-directory /path/to/module [OPTIONS]
 
 Options:
 
-- \--check-only: Verifies formatting without applying changes.
+* \--check-only: Verifies formatting without applying changes.
 
 The command operates directly on the provided path without additional prompts.
 
@@ -60,10 +60,10 @@ ftf login [OPTIONS]
 
 Prompts for Control Plane URL, Username, Token, and Profile. This information is stored under a specified profile for future interactions. Options:
 
-- \-c, --control-plane-url: (prompt) The URL of the control plane. (e.g.`https://<your-company>.console.facets.cloud)`
-- \-u, --username: (prompt) Your username.
-- \-t, --token: (prompt) Your access token, input is hidden
-- \-p, --profile: (prompt) The profile name to use for storing credentials, defaults to default.
+* \-c, --control-plane-url: (prompt) The URL of the control plane. (e.g.`https://<your-company>.console.facets.cloud)`
+* \-u, --username: (prompt) Your username.
+* \-t, --token: (prompt) Your access token, input is hidden
+* \-p, --profile: (prompt) The profile name to use for storing credentials, defaults to default.
 
 Personal Token can be found in the User menu. Click your profile icon in the bottom left, then select 'Personal Token'.
 
@@ -75,19 +75,19 @@ ftf preview-module /path/to/module [OPTIONS]
 
 Options:
 
-- \-p, --profile: (prompt) Profile to use, defaults to default.
-- \-a, --auto-create-intent: Automatically create intent if not exists.
-- \-f, --publishable: Indicates whether the module is publishable for production.
-- \-g, --git-repo-url: Git repository URL from where the code is taken.
-- \-r, --git-ref: Git reference or branch name.
+* \-p, --profile: (prompt) Profile to use, defaults to default.
+* \-a, --auto-create-intent: Automatically create intent if not exists.
+* \-f, --publishable: Indicates whether the module is publishable for production.
+* \-g, --git-repo-url: Git repository URL from where the code is taken.
+* \-r, --git-ref: Git reference or branch name.
 
-_Note:_ Registered Modules will be visible only in testing projects, allowing users to test the module in specific environments. Run the following script to mark any project as testing project (this action can be done from the UI in Project Settings as well).
+*Note:* Registered Modules will be visible only in testing projects, allowing users to test the module in specific environments. Run the following script to mark any project as testing project (this action can be done from the UI in Project Settings as well).
 
 ```
 curl -s https://facets-cloud.github.io/facets-schemas/scripts/allow_preview_modules.sh | bash -s -- -c <control plane url> -u <username> -t <token> -p <project-name> -a true
 ```
 
-- Requirements: Bash (Unix-based shell), `curl` utility, `jq` utility (for parsing JSON responses)
+* Requirements: Bash (Unix-based shell), `curl` utility, `jq` utility (for parsing JSON responses)
 
 ***
 
@@ -105,9 +105,9 @@ ftf preview-module /path/to/module --publish -f
 
 Before publishing, check:
 
-- All inputs and outputs conform to organisational standards.
-- The module has been reviewed and approved by relevant stakeholders.
-- Metadata in `facets.yaml` is accurate and complete.
+* All inputs and outputs conform to organisational standards.
+* The module has been reviewed and approved by relevant stakeholders.
+* Metadata in `facets.yaml` is accurate and complete.
 
 ***
 
@@ -128,7 +128,7 @@ Once the module is registered and the resource is created and enabled:
 1. Perform a release for the resource.
 2. Open the Terraform logs and expand the **PRE-BUILD** section.
 3. Look for the following indicators:
-   - **"Module Matched"**: Confirms that the resource matches a registered module. Example:
+   * **"Module Matched"**: Confirms that the resource matches a registered module. Example:
      ```plaintext
      Module Matched
      - Module: ../modules/1_input_instance/grafana_dashboard
@@ -136,7 +136,7 @@ Once the module is registered and the resource is created and enabled:
      - Version: latest
      - Module Name: grafana_dashboard_vm-metrics
      ```
-   - **"No per instance module matched"**: Indicates that no module matches the kind, flavor, or version of the resource. Example:
+   * **"No per instance module matched"**: Indicates that no module matches the kind, flavor, or version of the resource. Example:
      ```plaintext
      No per instance module matched for ../stacks/infra-dev/aurora/disaster-recovery.json
      - Kind: infra-dev
@@ -148,9 +148,9 @@ This verifies that the custom resource is correctly associated with the register
 
 ### Troubleshooting
 
-- Check Terraform logs for errors during deployment.
-- Ensure the module inputs match the schema defined in `facets.yaml`.
-- Validate outputs to ensure consistency with the declared outputs in `outputs.tf`.
+* Check Terraform logs for errors during deployment.
+* Ensure the module inputs match the schema defined in `facets.yaml`.
+* Validate outputs to ensure consistency with the declared outputs in `outputs.tf`.
 
 ***
 
