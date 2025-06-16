@@ -25,24 +25,9 @@ Navigate to **Settings > Accounts.** All the accounts in Facets will be displaye
 5. In the **[Cloud Shell](https://portal.azure.com/#cloudshell/)** terminal, execute the command.
 6. Facets will automatically detect if the connection has been successfully established.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f71b9f-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/0f71b9f-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully added a new Azure account to the Facets Control Plane.
 
@@ -52,27 +37,12 @@ You have successfully added a new Azure account to the Facets Control Plane.
 2. Mention the **Account Name** and click **Next.**
 3. Copy the command that is generated in the modal.
 4. Open the **GCP Cloud Console** and click the **Cloud Shell** icon on the top bar.
-5. In the **[Cloud Shell](https://console.cloud.google.com/welcome?project=facets-cp-test&cloudshell=true--)** terminal, execute the command.
+5. In the **[Cloud Shell](https://console.cloud.google.com/welcome?project=facets-cp-test\&cloudshell=true--)** terminal, execute the command.
 6. Facets will automatically detect if the connection has been successfully established.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa5147a-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/fa5147a-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully added a new Google Cloud Platform account to the Facets Control Plane.
 
@@ -85,24 +55,9 @@ You have successfully added a new Google Cloud Platform account to the Facets Co
 5. In the **[CloudShell](https://ap-south-1.console.aws.amazon.com/cloudshell/home?region=ap-south-1#e8a9b144-b70c-468d-be1e-fd0249123b16)** terminal, execute the command.
 6. Facets will automatically detect if the connection has been successfully established.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e68e5b0-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/e68e5b0-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully added a new AWS account to the Facets Control Plane.
 
@@ -116,23 +71,8 @@ You have successfully added a new AWS account to the Facets Control Plane.
 4. Load the kubeconfig file in the terminal and execute the command.
 5. Facets will automatically detect if the connection has been successfully established.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/540d5d1-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/540d5d1-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully added a new Kubernetes account to the Facets Control Plane.
