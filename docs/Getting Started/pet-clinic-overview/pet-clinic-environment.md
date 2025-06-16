@@ -18,7 +18,7 @@ Note: If you have already created an environment while Creating your project, yo
 
 1. Open **Projects** and select the required Project.
 2. Now, select the **Environments** tab and you will be greeted with a prompt to create your first Environment.
-3. Mention the **Environment Name** and select the **Release Stream. **
+3. Mention the **Environment Name** and select the **Release Stream.**
 4. Click **Create.**
 
 You have successfully created a logical environment.
@@ -27,23 +27,23 @@ You can monitor the current status of all your created environments from the **E
 
 ## How to Launch the Environment?
 
-1. In your project, proceed to the **Environment** tab.  
+1. In your project, proceed to the **Environment** tab.\
    Here, you will find a collection of environments associated with your chosen project.
 2. Identify the environment you want to launch and click the **Launch** button beside it.
-3. This will prompt the **Environment Launch Wizard** to appear on your screen.  
+3. This will prompt the **Environment Launch Wizard** to appear on your screen.\
    This wizard comprises of the following steps:
-   1. **Connect your Cloud Provider: **
+   1. **Connect your Cloud Provider:**
       1. Select the **Cloud Provider** where you plan to provision your infrastructure. 
       2. Choose the **Cloud Account** linked to your selected cloud provider.
-   2. **Set up your Network: **
+   2. **Set up your Network:**
       1. You have the option to either **Create a new VPC** or **Choose an existing one.**
-      2. If you opt for an existing VPC, you will need to provide the **VPC ID. **
-      3. Finally, specify the **Region, Availability Zone, CIDR range, **and **Time Zone.**
-   3. **Kubernetes Setup: **
+      2. If you opt for an existing VPC, you will need to provide the **VPC ID.**
+      3. Finally, specify the **Region, Availability Zone, CIDR range,** and **Time Zone.**
+   3. **Kubernetes Setup:**
       1. Define your Kubernetes cluster's Node type(s) based on your specific requirements and constraints.
    4. **Review Secrets and Variables:**
       1. It allows you to view and edit your existing secrets and variables. Refer to the Secrets and Variables guide for detailed instructions on how to create Secrets and Variables.
-   5. **Review Resources: **
+   5. **Review Resources:**
       1. Enable the Postgres, Service, and Ingress resources that you created earlier.
 4. Once you have completed these steps, click **Launch Environment.** 
 5. You will be redirected to the **Releases** page of this environment. 
