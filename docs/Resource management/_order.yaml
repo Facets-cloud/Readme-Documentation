@@ -5,3 +5,4 @@
 - rolling-restart-of-pods
 - artifact-history-and-rollback
 - wiring-resources
+- configuring-the-status-check-monitoring-dashboard
