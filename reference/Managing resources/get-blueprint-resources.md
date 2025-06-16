@@ -14,8 +14,8 @@ next:
   description: ''
 ---
 > 🚧 Your Control Plane URL will vary
-> 
-> The Control Plane URL, denoted as <code>CP_URL</code> for this API reference document is <https://facetsdemo.console.facets.cloud>.  
+>
+> The Control Plane URL, denoted as <code>CP\_URL</code> for this API reference document is [https://facetsdemo.console.facets.cloud](https://facetsdemo.console.facets.cloud).\
 > Replace that with the Control Plane URL unique to your account.
 
 ## API Endpoint
@@ -30,15 +30,15 @@ This API endpoint has two path parameters, `stackName` and `branch`.
 
 ## Path Parameters
 
-- `stackName` of type String is the name of the Blueprint.
-- `branch` of type String is the name of the branch.
+* `stackName` of type String is the name of the Blueprint.
+* `branch` of type String is the name of the branch.
 
 ## **Authenticate your API request**
 
 To learn more about how to generate a basic authentication token for use with Facets API requests, check [Authentication Setup](ref:authentication-setup).
 
-> 📘 
-> 
+> 📘
+>
 > Facets API uses Basic Authentication.
 
 ## Generate a Sample Request ➡️
