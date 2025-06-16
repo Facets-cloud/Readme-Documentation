@@ -24,7 +24,7 @@ You can view and download the latest `facetsctl` package from its [NPM page](htt
 
 This command displays the help for facetsctl. You can use it to get information about a specific command by providing the command name as an argument.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 COMMAND: Command to show help for.
 
 **FLAGS**
@@ -65,50 +65,153 @@ $ facetsctl register -i <value> -s <value> -e <value> --git-ref <value> [-d <val
 
 ### FLAGS
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Flag",
-    "h-1": "Required",
-    "h-2": "What does it do?",
-    "0-0": "-d,  --description=\\<value>",
-    "0-1": "No",
-    "0-2": "Defines the description of the build if any.",
-    "1-0": "-e,  --external-id=\\<value>",
-    "1-1": "Yes",
-    "1-2": "Defines the external identifier for the artifact.",
-    "2-0": "-i, --docker-image=\\<value>",
-    "2-1": "Yes",
-    "2-2": "Defines the docker image URL in the external registry.",
-    "3-0": "-s,  --service=\\<value>",
-    "3-1": "Yes",
-    "3-2": "Defines the name of the CI Integration for which the artifact needs to be registered.",
-    "4-0": "--blueprint-name=\\<value>",
-    "4-1": "No",
-    "4-2": "Defines the Blueprint name in which the CI Integration will be created if not present already.",
-    "5-0": "--git-ref=\\<value>",
-    "5-1": "Yes",
-    "5-2": "Defines the git ref provided in CI Rule.",
-    "6-0": "--registration-type=\\<option>",
-    "6-1": "No",
-    "6-2": "Defines the mode of registration for CI integration.  \nUsed as \\<options: ENVIRONMENT | RELEASE_STREAM>",
-    "7-0": "--registry=\\<value>",
-    "7-1": "No",
-    "7-2": "Defines the artifactory where the image will be pushed.",
-    "8-0": "--debug=\\<value>",
-    "8-1": "No",
-    "8-2": "Defines if you want to view the original error message thrown.  \n[default: false]"
-  },
-  "cols": 3,
-  "rows": 9,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Flag
+      </th>
 
+      <th>
+        Required
+      </th>
+
+      <th>
+        What does it do?
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        -d,  --description=\<value>
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines the description of the build if any.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        -e,  --external-id=\<value>
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the external identifier for the artifact.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        -i, --docker-image=\<value>
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the docker image URL in the external registry.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        -s,  --service=\<value>
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the name of the CI Integration for which the artifact needs to be registered.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \--blueprint-name=\<value>
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines the Blueprint name in which the CI Integration will be created if not present already.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \--git-ref=\<value>
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the git ref provided in CI Rule.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \--registration-type=\<option>
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines the mode of registration for CI integration.\
+        Used as \<options: ENVIRONMENT | RELEASE\_STREAM>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \--registry=\<value>
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines the artifactory where the image will be pushed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \--debug=\<value>
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines if you want to view the original error message thrown.\
+        [default: false]
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### `facetsctl register by env`
 
@@ -128,7 +231,7 @@ Register already pushed images from the external repository to the Facets Contro
 | `-i, --docker-image=<value>` | Yes      | Defines the docker image URL in the external registry.                                |
 | `-s, --service=<value>`      | Yes      | Defines the name of the CI integration for which the artifact needs to be registered. |
 | `--blueprint-name=<value>`   | Yes      | Defines the Blueprint name in which the given environment is present.                 |
-| `--debug=<value>`            | No       | Defines if you want to view the original error message thrown. [default: false]       |
+| `--debug=<value>`            | No       | Defines if you want to view the original error message thrown. \[default: false]      |
 | `--environment-name=<value>` | Yes      | Defines the environment name in which the artifact will be registered.                |
 | `--registry=<value>`         | No       | Defines the artifactory where the images will be pushed.                              |
 
@@ -148,7 +251,7 @@ $ facetsctl register-by-releasestream -i <value> -s <value> -e <value> --release
 | `-i, --docker-image=<value>` | Yes      | Defines the docker image URL in the external registry.                                |
 | `-s, --service=<value>`      | Yes      | Defines the name of the CI integration for which the artifact needs to be registered. |
 | `--blueprint-name=<value>`   | Yes      | Defines the Blueprint name in which the given environment is present.                 |
-| `--debug=<value>`            | No       | Defines if you want to view the original error message thrown. [default: false]       |
+| `--debug=<value>`            | No       | Defines if you want to view the original error message thrown. \[default: false]      |
 | `--release-stream=<value>`   | Yes      | Defines the git ref provided in CI Rule.                                              |
 | `--registry=<value>`         | No       | Defines the artifactory where the images will be pushed.                              |
 
@@ -170,44 +273,125 @@ $ facetsctl push --ci <ci_integration_name> --image <docker_image_name> --git-re
 
 **FLAGS**
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Flag",
-    "h-1": "Required",
-    "h-2": "What does it do?",
-    "0-0": " `-a, --artifact-name` = `<value>`",
-    "0-1": "Yes",
-    "0-2": "Defines the name of the artifact as mentioned in the Blueprint.",
-    "1-0": " `-d, --description` = `<value>`",
-    "1-1": "No",
-    "1-2": "Defines the description of the build, if any.",
-    "2-0": "`-e, --external-id` = `<value>`",
-    "2-1": "Yes",
-    "2-2": "Defines the external identifier for the artifact.",
-    "3-0": "`-i, --docker-image` = `<value>`",
-    "3-1": "Yes",
-    "3-2": "Defines the image location.  \nUsed as \\<IMAGE:TAG>.",
-    "4-0": " `--artifactory `= `<value>`",
-    "4-1": "No",
-    "4-2": "Defines the artifactory where the image will be pushed.",
-    "5-0": "`--registration-type` = `<option>`",
-    "5-1": "Yes",
-    "5-2": "Defines the mode of registration.  \nUsed as \\<options: CLUSTER|RELEASE_STREAM>.",
-    "6-0": "`--registration-value` = `<value>`",
-    "6-1": "Yes",
-    "6-2": "Defines the value for release stream or cluster id, based on mode of registration."
-  },
-  "cols": 3,
-  "rows": 7,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Flag
+      </th>
 
+      <th>
+        Required
+      </th>
+
+      <th>
+        What does it do?
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+         `-a, --artifact-name` = `<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the name of the artifact as mentioned in the Blueprint.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+         `-d, --description` = `<value>`
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines the description of the build, if any.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-e, --external-id` = `<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the external identifier for the artifact.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `-i, --docker-image` = `<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the image location.\
+        Used as \<IMAGE:TAG>.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+         `--artifactory `= `<value>`
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Defines the artifactory where the image will be pushed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `--registration-type` = `<option>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the mode of registration.\
+        Used as \<options: CLUSTER|RELEASE\_STREAM>.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `--registration-value` = `<value>`
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Defines the value for release stream or cluster id, based on mode of registration.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### `facetsctl refresh`
 
@@ -244,8 +428,6 @@ $ facetsctl download-kubeconfig --environment-name <value>  --blueprint-name ‹
 | `-e, --environment-id` | Yes      | Defines the Environment ID for downloading kubeconfig.           |
 | `--environment-name`   | Yes      | Defines the Environment name for downloading kubeconfig.         |
 | `--blueprint-name`     | Yes      | Defines the Blueprint name using which environment was launched. |
-
-
 
 ## Facets CLI version v1.0.9
 
