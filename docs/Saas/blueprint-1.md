@@ -19,12 +19,12 @@ This document provides an in-depth overview of the Blueprint's functionalities, 
 
 ## Key Functionalities
 
-- **Table Mode:** For those who prefer a structured format, the Table mode provides a comprehensive tabular representation of all the Resources in the Project.
-- **Graph Mode:** The Graph mode offers an intuitive, visual representation of the Project, making it easy to understand the relationships between different components.
-- **Resource Management:** Add, modify, or delete resources seamlessly within the Blueprint.
-- **Resource Configuration:** Manage resource configurations directly at the Project level, ensuring precise control over resource settings.
-- **Resource Overview:** Within the Blueprint, you can observe how resource links with artifacts, environments, and other project resources, all on one page, delivering valuable insights into resource interactions.
-- **Overrides Management:** Effectively manage overrides for all resources, ensuring flexibility in customization.
+* **Table Mode:** For those who prefer a structured format, the Table mode provides a comprehensive tabular representation of all the Resources in the Project.
+* **Graph Mode:** The Graph mode offers an intuitive, visual representation of the Project, making it easy to understand the relationships between different components.
+* **Resource Management:** Add, modify, or delete resources seamlessly within the Blueprint.
+* **Resource Configuration:** Manage resource configurations directly at the Project level, ensuring precise control over resource settings.
+* **Resource Overview:** Within the Blueprint, you can observe how resource links with artifacts, environments, and other project resources, all on one page, delivering valuable insights into resource interactions.
+* **Overrides Management:** Effectively manage overrides for all resources, ensuring flexibility in customization.
 
 ## FAQs
 
