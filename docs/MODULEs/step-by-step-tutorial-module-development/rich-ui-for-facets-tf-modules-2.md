@@ -14,7 +14,7 @@ The following fields when added in `facets.yaml` will enable you to give a rich 
 
 The **x‑ui** extension properties enrich your JSON Schema definitions so that dynamic forms can be rendered with custom behavior, validation, and presentation. You define these properties directly in your schema (or YAML) and the form builder processes them to tailor the UI.
 
-> **Important:**  
+> **Important:**\
 > Always include the `x‑ui-` prefix exactly as shown to ensure the form builder recognizes the property.
 
 ***
@@ -22,33 +22,33 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 ## Table of Contents
 
 1. [Field Ordering and Visibility](#1-field-ordering-and-visibility)
-   - **x‑ui‑order**
-   - **x‑ui‑override‑disable**
-   - **x‑ui‑visible‑if**
-   - **x‑ui‑skip**
-   - **x‑ui‑overrides‑only**
+   * **x‑ui‑order**
+   * **x‑ui‑override‑disable**
+   * **x‑ui‑visible‑if**
+   * **x‑ui‑skip**
+   * **x‑ui‑overrides‑only**
 2. [Dynamic Data Population](#2-dynamic-data-population)
-   - **x‑ui‑dynamic‑enum**
-   - **x‑ui‑api‑source**
+   * **x‑ui‑dynamic‑enum**
+   * **x‑ui‑api‑source**
 3. [Data Extraction and Lookup](#3-data-extraction-and-lookup)
-   - **x‑ui‑lookup‑regex**
+   * **x‑ui‑lookup‑regex**
 4. [User Guidance and Validation](#4-user-guidance-and-validation)
-   - **x‑ui‑placeholder**
-   - **x‑ui‑error‑message**
+   * **x‑ui‑placeholder**
+   * **x‑ui‑error‑message**
 5. [Specialised Input Rendering](#5-specialized-input-rendering)
-   - **x‑ui‑yaml‑editor**
-   - **x‑ui‑command**
-   - **x‑ui‑typeable**
+   * **x‑ui‑yaml‑editor**
+   * **x‑ui‑command**
+   * **x‑ui‑typeable**
 6. [Miscellaneous UI Behaviours](#6-miscellaneous-ui-behaviors)
-   - **x‑ui‑toggle**
-   - **x‑ui‑disable‑tooltip**
-   - **x‑ui‑output‑type**
-   - **x-ui-allow-title-edit**
+   * **x‑ui‑toggle**
+   * **x‑ui‑disable‑tooltip**
+   * **x‑ui‑output‑type**
+   * **x-ui-allow-title-edit**
 7. [Additional Fields for Resource Configuration](#7-additional-fields-for-resource-configuration)
-   - **x‑ui‑secret‑ref / x‑ui‑variable‑ref**
-   - **x‑ui‑unique & x‑ui‑unique‑pattern‑error‑message**
-   - **x‑ui‑no‑sort**
-   - **x-ui-compare**
+   * **x‑ui‑secret‑ref / x‑ui‑variable‑ref**
+   * **x‑ui‑unique & x‑ui‑unique‑pattern‑error‑message**
+   * **x‑ui‑no‑sort**
+   * **x-ui-compare**
 
 ***
 
@@ -56,9 +56,9 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑order
 
-- **Purpose:** Specifies the order in which fields appear.
+* **Purpose:** Specifies the order in which fields appear.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   x-ui-order:
     - restart_policy
@@ -70,15 +70,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     - cloud_permissions
   ```
 
-- **UI Behavior:** Fields are rendered in the specified order. Fields omitted (e.g., due to being skipped) are filtered out.
+* **UI Behavior:** Fields are rendered in the specified order. Fields omitted (e.g., due to being skipped) are filtered out.
 
 ***
 
 ### x‑ui‑override‑disable
 
-- **Purpose:** Prevents a field from being modified by the user—ensuring that a blueprinted or default value remains intact.
+* **Purpose:** Prevents a field from being modified by the user—ensuring that a blueprinted or default value remains intact.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   restart_policy:
     type: string
@@ -91,15 +91,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
       - Never
   ```
 
-- **UI Behavior:** Such fields are either rendered as disabled or omitted from override forms.
+* **UI Behavior:** Such fields are either rendered as disabled or omitted from override forms.
 
 ***
 
 ### x‑ui‑visible‑if
 
-- **Purpose:** Conditionally displays a field or group based on the value of another field.
+* **Purpose:** Conditionally displays a field or group based on the value of another field.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   readiness_timeout:
     type: integer
@@ -114,30 +114,30 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
       values: ["PortCheck", "HttpCheck", "ExecCheck"]
   ```
 
-- **UI Behavior:** The control is displayed only when the referenced field has one of the specified values.
+* **UI Behavior:** The control is displayed only when the referenced field has one of the specified values.
 
 ***
 
 ### x‑ui‑skip
 
-- **Purpose:** Excludes a field from being rendered in the UI. Use this when you want to store data without displaying it to the user.
+* **Purpose:** Excludes a field from being rendered in the UI. Use this when you want to store data without displaying it to the user.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   secretToken:
     type: string
     x-ui-skip: true
   ```
 
-- **UI Behavior:** The form builder ignores any property with **x‑ui‑skip**, so no control is generated for it.
+* **UI Behavior:** The form builder ignores any property with **x‑ui‑skip**, so no control is generated for it.
 
 ***
 
 ### x‑ui‑overrides‑only
 
-- **Purpose:** Indicates that a field should only be available as an override (for example, in an override form) and not be part of the base configuration.
+* **Purpose:** Indicates that a field should only be available as an override (for example, in an override form) and not be part of the base configuration.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   specialSetting:
     type: string
@@ -145,7 +145,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-overrides-only: true
   ```
 
-- **UI Behavior:** When the form is built, fields with **x‑ui‑overrides‑only** are included only in contexts where overrides are being applied.
+* **UI Behavior:** When the form is built, fields with **x‑ui‑overrides‑only** are included only in contexts where overrides are being applied.
 
 ***
 
@@ -153,9 +153,9 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑dynamic‑enum
 
-- **Purpose:** Populates a select control’s options dynamically based on a JSON pointer or path.
+* **Purpose:** Populates a select control’s options dynamically based on a JSON pointer or path.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   readiness_port:
     type: string
@@ -164,15 +164,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-disable-tooltip: "No Ports Added"
   ```
 
-- **UI Behavior:** The UI extracts available options from the defined path. If no options exist, the control is disabled with a tooltip.
+* **UI Behavior:** The UI extracts available options from the defined path. If no options exist, the control is disabled with a tooltip.
 
 ***
 
 ### x‑ui‑api‑source
 
-- **Purpose:** Configures the control to fetch options via a control plane API call 
+* **Purpose:** Configures the control to fetch options via a control plane API call 
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   name:
     type: string
@@ -191,7 +191,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
           value: kubernetes_secret
   ```
 
-- **UI Behavior:** Control Plane API call is made to populate options; the returned data is processed using defined keys and templates. With **x‑ui‑typeable**, users can also input custom values.
+* **UI Behavior:** Control Plane API call is made to populate options; the returned data is processed using defined keys and templates. With **x‑ui‑typeable**, users can also input custom values.
 
 ***
 
@@ -199,10 +199,10 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑lookup‑regex
 
-- **Purpose:** Applies a regular expression to a field’s value to extract a substring for dynamic processing.  
+* **Purpose:** Applies a regular expression to a field’s value to extract a substring for dynamic processing.\
   (For instance, you might need to strip a prefix from a value.)
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   identifier:
     type: string
@@ -210,7 +210,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-lookup-regex: '^prefix-(.*)$'
   ```
 
-- **UI Behavior:** If the field’s `lookup` type is set to `"regex"`, the UI applies the regular expression from **x‑ui‑lookup‑regex** to the input value and extracts the first capturing group. This extracted value may be used to dynamically construct URLs or set dynamic properties.
+* **UI Behavior:** If the field’s `lookup` type is set to `"regex"`, the UI applies the regular expression from **x‑ui‑lookup‑regex** to the input value and extracts the first capturing group. This extracted value may be used to dynamically construct URLs or set dynamic properties.
 
 ***
 
@@ -218,9 +218,9 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑placeholder
 
-- **Purpose:** Provides in-field example text to guide the user.
+* **Purpose:** Provides in-field example text to guide the user.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   memory:
     type: string
@@ -228,15 +228,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-placeholder: "Enter Memory (e.g., 1Gi or 512Mi)"
   ```
 
-- **UI Behavior:** The placeholder text appears in empty input fields.
+* **UI Behavior:** The placeholder text appears in empty input fields.
 
 ***
 
 ### x‑ui‑error‑message
 
-- **Purpose:** Displays a custom error message when validation (such as a pattern check) fails.
+* **Purpose:** Displays a custom error message when validation (such as a pattern check) fails.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   memory:
     type: string
@@ -246,7 +246,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-error-message: "Value must be in the format 1Gi to 64Gi or 1Mi to 64000Mi"
   ```
 
-- **UI Behavior:** When the user’s input fails validation, this message is shown.
+* **UI Behavior:** When the user’s input fails validation, this message is shown.
 
 ***
 
@@ -254,9 +254,9 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑yaml‑editor
 
-- **Purpose:** Renders a dedicated YAML editor for complex or large objects.
+* **Purpose:** Renders a dedicated YAML editor for complex or large objects.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   env:
     title: Environment Variables
@@ -264,15 +264,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-yaml-editor: true
   ```
 
-- **UI Behavior:** A specialized editor (often with syntax highlighting) is displayed, and the YAML is parsed to JSON when saved.
+* **UI Behavior:** A specialized editor (often with syntax highlighting) is displayed, and the YAML is parsed to JSON when saved.
 
 ***
 
 ### x‑ui‑command
 
-- **Purpose:** Indicates that the field should be treated as a command input, often needing a multi-line editor.
+* **Purpose:** Indicates that the field should be treated as a command input, often needing a multi-line editor.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   command:
     type: array
@@ -282,15 +282,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-command: true
   ```
 
-- **UI Behavior:** A multiline or code editor is rendered to facilitate command entry.
+* **UI Behavior:** A multiline or code editor is rendered to facilitate command entry.
 
 ***
 
 ### x‑ui‑typeable
 
-- **Purpose:** Allows users to both select from a list and type a custom value.
+* **Purpose:** Allows users to both select from a list and type a custom value.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   name:
     type: string
@@ -298,7 +298,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-typeable: true
   ```
 
-- **UI Behavior:** The dropdown control accepts custom input as well as selections from the provided options.
+* **UI Behavior:** The dropdown control accepts custom input as well as selections from the provided options.
 
 ***
 
@@ -306,9 +306,9 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑toggle
 
-- **Purpose:** Renders a collapsible group of fields.
+* **Purpose:** Renders a collapsible group of fields.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   cloud_permissions:
     type: object
@@ -321,15 +321,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
         x-ui-toggle: true
   ```
 
-- **UI Behavior:** Toggle buttons allow the user to expand or collapse the group.
+* **UI Behavior:** Toggle buttons allow the user to expand or collapse the group.
 
 ***
 
 ### x‑ui‑disable‑tooltip
 
-- **Purpose:** Shows a tooltip when a control is disabled, explaining why no valid options are available.
+* **Purpose:** Shows a tooltip when a control is disabled, explaining why no valid options are available.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   readiness_port:
     type: string
@@ -338,15 +338,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-disable-tooltip: "No Ports Added"
   ```
 
-- **UI Behavior:** When disabled, the tooltip appears on hover.
+* **UI Behavior:** When disabled, the tooltip appears on hover.
 
 ***
 
 ### x‑ui‑output‑type
 
-- **Purpose:** If a module gives an output of a specific type (@outputs/{type}), one can mention that type here, and any resources that are matched to that module are shown in the dropdown in the UI and that output will be $ referenced
+* **Purpose:** If a module gives an output of a specific type (@outputs/\{type}), one can mention that type here, and any resources that are matched to that module are shown in the dropdown in the UI and that output will be $ referenced
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   arn:
     type: string
@@ -354,14 +354,14 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-output-type: "iam_policy_arn"
   ```
 
-- **UI Behaviour:** The field might be formatted or handled differently in the UI based on its output type.
+* **UI Behaviour:** The field might be formatted or handled differently in the UI based on its output type.
 
 ***
 
 ### x-ui-allow-title-edit
 
-- **Purpose**: Enables users to customize the display titles of patternProperties items instead of using default auto-generated titles (field1, field2, field3, etc.). 
-- **Usage Example: **
+* **Purpose**: Enables users to customize the display titles of patternProperties items instead of using default auto-generated titles (field1, field2, field3, etc.). 
+* **Usage Example:**
   ```
   ports:
     type: object
@@ -372,7 +372,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
       type: object
       keyPattern: "^[0-9]+[m]?$"
   ```
-- **UI Behaviour**: This provides better readability and context for dynamic field collections.
+* **UI Behaviour**: This provides better readability and context for dynamic field collections.
 
 ***
 
@@ -380,9 +380,9 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 ### x‑ui‑secret‑ref and x‑ui‑variable‑ref
 
-- **Purpose:** Identify fields that reference external secrets or variables, and prompt the UI to provide options to create new ones.
+* **Purpose:** Identify fields that reference external secrets or variables, and prompt the UI to provide options to create new ones.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   apiKey:
     type: string
@@ -390,15 +390,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-secret-ref: true
   ```
 
-- **UI Behavior:** A “Create New Secret” or “Create New Variable” button is rendered next to the field.
+* **UI Behavior:** A “Create New Secret” or “Create New Variable” button is rendered next to the field.
 
 ***
 
 ### x‑ui‑unique & x‑ui‑unique‑pattern‑error‑message
 
-- **Purpose:** Ensures that values (such as keys in a map) are unique.
+* **Purpose:** Ensures that values (such as keys in a map) are unique.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   identifier:
     type: string
@@ -406,15 +406,15 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-unique-pattern-error-message: "Each key must be unique."
   ```
 
-- **UI Behavior:** The UI validates uniqueness and shows the custom error if a duplicate is detected.
+* **UI Behavior:** The UI validates uniqueness and shows the custom error if a duplicate is detected.
 
 ***
 
 ### x‑ui‑no‑sort
 
-- **Purpose:** Prevents automatic sorting of select options, preserving the order defined in the schema.
+* **Purpose:** Prevents automatic sorting of select options, preserving the order defined in the schema.
 
-- **Usage Example:**
+* **Usage Example:**
   ```yaml
   priority:
     type: string
@@ -425,14 +425,14 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
     x-ui-no-sort: true
   ```
 
-- **UI Behavior:** Options are rendered in the exact order provided.
+* **UI Behavior:** Options are rendered in the exact order provided.
 
 ***
 
 ### x-ui-compare
 
-- **Purpose**: Implements validation rules between two numeric fields by comparing their values using specified operators.
-- **Usage Example**: 
+* **Purpose**: Implements validation rules between two numeric fields by comparing their values using specified operators.
+* **Usage Example**: 
 
   ```yaml
   cpu:
@@ -443,7 +443,7 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
       comparator: '<='
       x-ui-error-message: 'CPU cannot be more than CPU limit'
   ```
-- **UI Behavior**: Validates that two fields follow the logical relationship defined in 'comparator'.
+* **UI Behavior**: Validates that two fields follow the logical relationship defined in 'comparator'.
 
 ***
 
@@ -451,22 +451,22 @@ The **x‑ui** extension properties enrich your JSON Schema definitions so that 
 
 This comprehensive guide covers all the **x‑ui** extension properties—including the newly added **x‑ui‑skip**, **x‑ui‑lookup‑regex**, and **x‑ui‑overrides‑only**—and explains how they control the dynamic behavior and presentation of forms:
 
-- **Ordering & Visibility:**  
+* **Ordering & Visibility:**\
   Use **x‑ui‑order**, **x‑ui‑override‑disable**, **x‑ui‑visible‑if**, **x‑ui‑skip**, and **x‑ui‑overrides‑only** to determine which fields are shown, in what order, and in which contexts (e.g., overrides only).
 
-- **Dynamic Data:**  
+* **Dynamic Data:**\
   **x‑ui‑dynamic‑enum** and **x‑ui‑api‑source** help populate fields based on other parts of the configuration or external API calls.
 
-- **Data Extraction:**  
+* **Data Extraction:**\
   **x‑ui‑lookup‑regex** enables you to extract portions of a field’s value for dynamic processing.
 
-- **User Guidance & Validation:**  
+* **User Guidance & Validation:**\
   **x‑ui‑placeholder** and **x‑ui‑error‑message** provide in-field guidance and custom validation feedback.
 
-- **Specialized Rendering:**  
+* **Specialized Rendering:**\
   **x‑ui‑yaml‑editor**, **x‑ui‑command**, and **x‑ui‑typeable** customize how input is received for complex data.
 
-- **Additional Behaviors:**  
+* **Additional Behaviors:**\
   **x‑ui‑toggle**, **x‑ui‑disable‑tooltip**, **x‑ui‑output‑type**, **x‑ui‑secret‑ref**, **x‑ui‑compare**, **x‑ui‑unique**, and **x‑ui‑no‑sort** offer further control over layout, interactivity, and data integrity.
 
 By following this guide, end users and schema authors can quickly reference and apply **x‑ui** properties to create dynamic, robust, and user-friendly forms for configuring services and resources.
