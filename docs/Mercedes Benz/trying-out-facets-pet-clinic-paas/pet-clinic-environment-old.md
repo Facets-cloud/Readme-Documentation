@@ -29,8 +29,8 @@ A logical environment would be created by clicking the **Create** button. Howeve
 
 ## How to Launch the Environment?
 
-- Select the specific environment and select the **Releases** tab.
-- Click **Launch.**
+* Select the specific environment and select the **Releases** tab.
+* Click **Launch.**
 
 You have successfully launched your Environment.
 
