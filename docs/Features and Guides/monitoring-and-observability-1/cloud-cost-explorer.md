@@ -10,38 +10,23 @@ metadata:
 next:
   description: ''
 ---
-> 📘 
-> 
+> 📘
+>
 > **Note:** This feature is only available in the Enterprise Plan.
 
 Cloud Cost Explorer in Facets offers users comprehensive insights into their cloud expenditure, enabling informed decision-making and resource optimization. It provides a detailed breakdown of costs across cloud platforms, catering to both basic and advanced analysis needs.
 
 ## Key Functionalities
 
-- **Cloud Cost Analysis:** Analyze your financial landscape by exploring the total costs per environment in a chart on the Blueprint level for the selected time range.
-- **Time Period Filters:** Using the time period filters, you have the option to access data for specific durations: the last 7 days, 30 days, and 90 days. 
-- **Percentage Change Analysis:** Analyze your spending trends by selecting a time filter, for example, 7 days. The system will calculate and display the percentage increase or decrease in your expenses over the chosen period, providing you with valuable insights.
-- **Daily Spending Breakdown:** Analyze your daily spending breakdown, including expenses by each environment within your chosen time range, and note that you can retrieve cost data for each specific day over the past 30 days.
-- **Dynamic Updates:** Costs and environments update dynamically based on the selected time period.
+* **Cloud Cost Analysis:** Analyze your financial landscape by exploring the total costs per environment in a chart on the Blueprint level for the selected time range.
+* **Time Period Filters:** Using the time period filters, you have the option to access data for specific durations: the last 7 days, 30 days, and 90 days. 
+* **Percentage Change Analysis:** Analyze your spending trends by selecting a time filter, for example, 7 days. The system will calculate and display the percentage increase or decrease in your expenses over the chosen period, providing you with valuable insights.
+* **Daily Spending Breakdown:** Analyze your daily spending breakdown, including expenses by each environment within your chosen time range, and note that you can retrieve cost data for each specific day over the past 30 days.
+* **Dynamic Updates:** Costs and environments update dynamically based on the selected time period.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8932313-Costexplorer.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/8932313-Costexplorer.gif">
+  Click on the image to expand
+</Image>
 
 ## FAQ
 
@@ -67,4 +52,4 @@ Cloud Cost Explorer is currently available for AWS and Azure cloud services.
 
 ## Related Guides
 
-- [Configuring Cloud Cost Explorer for AWS Accounts](https://doc.clickup.com/3443930/d/h/3936u-18744/caa022affb5455a/3936u-62804)
+* [Configuring Cloud Cost Explorer for AWS Accounts](https://doc.clickup.com/3443930/d/h/3936u-18744/caa022affb5455a/3936u-62804)
