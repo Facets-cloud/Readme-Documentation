@@ -28,26 +28,11 @@ The username is your registered email ID with which you access the Facets Contro
 6. This string constitutes your personal token. This will function as your password for basic authentication when making API calls.
 
 > 📘 Save this token!
-> 
+>
 > It is crucial to copy and securely store this generated token. **It will only be visible within this specific pop-up!**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6e1176a-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/6e1176a-image.png">
+  Click on the image to expand
+</Image>
 
 With this personal token (your password) and username, you are now equipped to make API calls to Facets Endpoints.
