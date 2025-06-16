@@ -28,28 +28,14 @@ The Kill Bill Architecture looks like this:
 
 ![](https://files.readme.io/f962853-KillBillImage.png "KillBillImage.png")
 
-
-
 # Create Killbill Blueprint
 
-As in previous examples, we first create a Blueprint for Kill Bill in the Facets Control Plane.  
+As in previous examples, we first create a Blueprint for Kill Bill in the Facets Control Plane.\
 In GitHub we will create the following new directory structure to add the Kill Bill Blueprint details.  As we did before, create a new directory named <code>killbill/</code> with the following directory structure.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5f090d-kb-fsstructure.png",
-        "kb-fsstructure.png",
-        310
-      ],
-      "align": "center",
-      "caption": "Kill Bill Blueprint Directory Structure"
-    }
-  ]
-}
-[/block]
+<Image title="kb-fsstructure.png" alt={310} align="center" src="https://files.readme.io/c5f090d-kb-fsstructure.png">
+  Kill Bill Blueprint Directory Structure
+</Image>
 
 The following files remain unchanged from previous examples. So we can copy these files and place them in their respective folders.
 
@@ -132,12 +118,10 @@ Create <code>killbill.json</code> with the following content.
 }
 ```
 
+There are 3 environment variables defined in the above json file, namely, <code>KILLBILL\_DAO\_PASSWORD</code>,<code>KILLBILL\_DAO\_URL</code> and <code>KILLBILL\_DAO\_USER</code>. These are used by the killbill server to access the database. 
 
-
-There are 3 environment variables defined in the above json file, namely, <code>KILLBILL_DAO_PASSWORD</code>,<code>KILLBILL_DAO_URL</code> and <code>KILLBILL_DAO_USER</code>. These are used by the killbill server to access the database. 
-
-> 📘 
-> 
+> 📘
+>
 > Note that we have added a <code>domainPrefix</code> key in the load balancing rules. This is because both killbill and kaui listen on port <code>8080</code>. In order to expose both of these services using a single ingress controller, we add a domain prefix to each application. In this way, killbill will be reachable on <code>killbill.$ingress-url</code> and kaui will be reachable on <code>kaui.$ingress-url</code>.
 
 ## Modeling the kaui application
@@ -219,9 +203,7 @@ Create <code>kaui.json</code> with the following content.
 }
 ```
 
-
-
-Kaui uses 3 environment variables to connect to the database. These are <code>KAUI_CONFIG_DAO_PASSWORD</code>,<code>KAUI_CONFIG_DAO_URL</code>,and <code>KAUI_CONFIG_DAO_USER</code>. In Kaui also, we have used a <code>domainPrefix</code> key. 
+Kaui uses 3 environment variables to connect to the database. These are <code>KAUI\_CONFIG\_DAO\_PASSWORD</code>,<code>KAUI\_CONFIG\_DAO\_URL</code>,and <code>KAUI\_CONFIG\_DAO\_USER</code>. In Kaui also, we have used a <code>domainPrefix</code> key. 
 
 ## Modelling MySQL
 
@@ -247,8 +229,6 @@ Facets allows provision and configuring of database in a secure, standardized wa
 }
 ```
 
-
-
 2. Create a file called <code>sizing.json</code> inside <code>aurora/</code> directory with the following content.
 
 ```json
@@ -265,8 +245,6 @@ Facets allows provision and configuring of database in a secure, standardized wa
     }
   }
 ```
-
-
 
 3. Create a file called <code>disaster-recovery.json</code> inside <code>aurora/</code> directory and put the code in the link inside it. This is to take periodic backup of the database. 
 
@@ -294,45 +272,85 @@ Facets allows provision and configuring of database in a secure, standardized wa
   }
 ```
 
-
-
 ## Seed MySQL with initial schema
 
-Since we are using a standalone instance of MySQL/Aurora, we need to seed the required schema and data into it before applications connect to the database. Facets runs the pre application deployment tasks as a Kubernetes job. In our case, we will create a python script that will connect to the MySQL database and run the SQL scripts provided by Kill bill. This will seed the MySQL database before Kill Bill and Kaui connect to it. Facets supports docker images that are run as jobs. Hence we will also dockerize our seed script and run it as a job. The code of this can be found :point-down: 
+Since we are using a standalone instance of MySQL/Aurora, we need to seed the required schema and data into it before applications connect to the database. Facets runs the pre application deployment tasks as a Kubernetes job. In our case, we will create a python script that will connect to the MySQL database and run the SQL scripts provided by Kill bill. This will seed the MySQL database before Kill Bill and Kaui connect to it. Facets supports docker images that are run as jobs. Hence we will also dockerize our seed script and run it as a job. The code of this can be found :point_down: 
 
-
-[block:embed]
-{
-  "html": false,
-  "url": "https://github.com/Facets-cloud/sample-blueprints/tree/master/examples/killbill-facets/src",
-  "title": "sample-blueprints/examples/killbill-facets/src at master · Facets-cloud/sample-blueprints",
-  "favicon": "https://github.com/favicon.ico",
-  "image": "https://opengraph.githubassets.com/1c2d71713894cb6a012b72bedbf2e1299889900a761236d5e26c5e6afaeb5c77/Facets-cloud/sample-blueprints",
-  "provider": "github.com",
-  "href": "https://github.com/Facets-cloud/sample-blueprints/tree/master/examples/killbill-facets/src"
-}
-[/block]
-
-
-
+<Embed url="https://github.com/Facets-cloud/sample-blueprints/tree/master/examples/killbill-facets/src" title="sample-blueprints/examples/killbill-facets/src at master · Facets-cloud/sample-blueprints" favicon="https://github.com/favicon.ico" image="https://opengraph.githubassets.com/1c2d71713894cb6a012b72bedbf2e1299889900a761236d5e26c5e6afaeb5c77/Facets-cloud/sample-blueprints" provider="github.com" href="https://github.com/Facets-cloud/sample-blueprints/tree/master/examples/killbill-facets/src" />
 
 The content is organized as follows
 
-| File Name                                                                                                                                    | Description                                                          |
-| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------- |
-| [<code>seed.py</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/src/seed.py)                   | The python job that will run as a one-time job to populate the MySQL |
-| [<code>killbill-ddl.sql</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/src/killbill-ddl.sql) | The DDL required by <code>killbill</code> server                     |
-| [<code>kaui-ddl.sql</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/src/kaui-ddl.sql)         | The DDL required by <code>kaui</code>                                |
-| [<code>requirements.txt</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/requirements.txt)     | required Python Dependencies                                         |
-| [<code>Dockerfile</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/Dockerfile)                 | <code>Dockerfile</code> to build the job                             |
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        File Name
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        [<code>seed.py</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/src/seed.py)
+      </td>
+
+      <td>
+        The python job that will run as a one-time job to populate the MySQL
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [<code>killbill-ddl.sql</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/src/killbill-ddl.sql)
+      </td>
+
+      <td>
+        The DDL required by <code>killbill</code> server
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [<code>kaui-ddl.sql</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/src/kaui-ddl.sql)
+      </td>
+
+      <td>
+        The DDL required by <code>kaui</code>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [<code>requirements.txt</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/requirements.txt)
+      </td>
+
+      <td>
+        required Python Dependencies
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [<code>Dockerfile</code>](https://github.com/Facets-cloud/sample-blueprints/blob/master/examples/killbill-facets/Dockerfile)
+      </td>
+
+      <td>
+        <code>Dockerfile</code> to build the job
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 Run the following command to create a docker image of the seed job. 
 
 ```shell
 docker build -t killbill-seed-job:1 .
 ```
-
-
 
 Create the <code>seed.json</code> as described in the blueprint directory structure with the following content.
 
@@ -383,8 +401,6 @@ Create the <code>seed.json</code> as described in the blueprint directory struct
 }
 ```
 
-
-
 The json consists of a permissions block which creates a user with management level permissions. This user credential is used to run the DDLs against the database.
 
 Create the <code>sizing.json</code> for the seed job with the following content. 
@@ -400,8 +416,6 @@ Create the <code>sizing.json</code> for the seed job with the following content.
 }
 ```
 
-
-
 # Putting everything together
 
 Just like earlier examples
@@ -415,95 +429,35 @@ Just like earlier examples
 7. Push the changes to git repo.
 8. Now Launch the environment. Once the release succeeds, you will be able to see kaui and killbill applications. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f77128-kb-apps.png",
-        "kb-apps.png",
-        512
-      ],
-      "align": "center",
-      "caption": "Killbill apps on Facets"
-    }
-  ]
-}
-[/block]
+<Image title="kb-apps.png" alt={512} align="center" src="https://files.readme.io/3f77128-kb-apps.png">
+  Killbill apps on Facets
+</Image>
 
 # Access the Killbill application
 
 Click on killbill in the Applications tab and then go to the Live Release tab. Copy the killbill ingress url.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/52b0476-killbill-ingress.png",
-        "killbill-ingress.png",
-        512
-      ],
-      "align": "center",
-      "caption": "KillBill from Application details view"
-    }
-  ]
-}
-[/block]
+<Image title="killbill-ingress.png" alt={512} align="center" src="https://files.readme.io/52b0476-killbill-ingress.png">
+  KillBill from Application details view
+</Image>
 
 Append <code>index.html</code> to the copied ingress url and access it using your browser. If you see a page like below, it means killbill is successfully deployed on Facets.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc94cf2-killbill-welcome.png",
-        "killbill-welcome.png",
-        512
-      ],
-      "align": "center",
-      "caption": "Killbill running confirmation page"
-    }
-  ]
-}
-[/block]
+<Image title="killbill-welcome.png" alt={512} align="center" src="https://files.readme.io/cc94cf2-killbill-welcome.png">
+  Killbill running confirmation page
+</Image>
 
 Similarly, go back to the Applications tab in Facets Control Plane and now click on kaui. Copy the ingress url. Then, go to your browser and access the url. If you see the below Login page, it means Killbill is installed and accessible using kaui.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7a8abce-killbill-login_page.png",
-        "killbill-login page.png",
-        512
-      ],
-      "align": "center",
-      "caption": "KillBill Login Page"
-    }
-  ]
-}
-[/block]
+<Image title="killbill-login page.png" alt={512} align="center" src="https://files.readme.io/7a8abce-killbill-login_page.png">
+  KillBill Login Page
+</Image>
 
 The default username is <code>admin</code> and default password is <code>password</code>. Upon login, you should be able to see a page like this.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e80d9f3-killbill-app_page.png",
-        "killbill-app page.png",
-        512
-      ],
-      "align": "center",
-      "caption": "Kill Bill App running page"
-    }
-  ]
-}
-[/block]
+<Image title="killbill-app page.png" alt={512} align="center" src="https://files.readme.io/e80d9f3-killbill-app_page.png">
+  Kill Bill App running page
+</Image>
 
 This confirms that kaui is up and running and now explore the rest of the application as per your business requirements.
 
@@ -517,45 +471,21 @@ Facets provides the capability to configure backups for your database. This is a
 
 In order to see the backups, go to Backups from Facets console and in resource type choose aurora and in resource name choose your db service name. You should be able to see all the backups done for the killbill database
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/079e046-kb-aurora-backups.png",
-        "kb-aurora-backups.png",
-        512
-      ],
-      "align": "center",
-      "caption": "KillBill Aurora backup details"
-    }
-  ]
-}
-[/block]
+<Image title="kb-aurora-backups.png" alt={512} align="center" src="https://files.readme.io/079e046-kb-aurora-backups.png">
+  KillBill Aurora backup details
+</Image>
 
 ## Aurora mysql metrics
 
 Alike applications, facets also projects aurora metrics to default inbuilt Grafana dashboards. These metrics are aurora specific and can be used to monitor the databases. In order to see the metrics, go to Tools from the facets console and choose the Mysql overview dashboard from built-in Grafana dashboards.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4a196f-kb-mysql-dashaboards.png",
-        "kb-mysql-dashaboards.png",
-        512
-      ],
-      "align": "center",
-      "caption": "Kill Bill MySQL Dashboards"
-    }
-  ]
-}
-[/block]
+<Image title="kb-mysql-dashaboards.png" alt={512} align="center" src="https://files.readme.io/c4a196f-kb-mysql-dashaboards.png">
+  Kill Bill MySQL Dashboards
+</Image>
 
 ## Log collection
 
-Facets provides additional log collection capabilities which are accessible through a web-console logs for applications. Simply enable <code>logging_nfs</code> plugin in the top level <code>stack.json</code>
+Facets provides additional log collection capabilities which are accessible through a web-console logs for applications. Simply enable <code>logging\_nfs</code> plugin in the top level <code>stack.json</code>
 
 ```json
 {
@@ -574,40 +504,14 @@ Facets provides additional log collection capabilities which are accessible thro
 }
 ```
 
-
-
 After this, perform a release. Go to Tools section on Facets console and click on Logs tab as shown.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/789c054-kb-logs-tab.png",
-        "kb-logs-tab.png",
-        512
-      ],
-      "align": "center",
-      "caption": "Logs Tab for the Kill Bill Blueprint"
-    }
-  ]
-}
-[/block]
+<Image title="kb-logs-tab.png" alt={512} align="center" src="https://files.readme.io/789c054-kb-logs-tab.png">
+  Logs Tab for the Kill Bill Blueprint
+</Image>
 
 Enter username and password as shown. You should be able to get a web console (similar to the image below) that has application / container logs in respective folders. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5fbd00f-kb-wetty-logs.png",
-        "kb-wetty-logs.png",
-        512
-      ],
-      "align": "center",
-      "caption": "Kill Bill Application Logs"
-    }
-  ]
-}
-[/block]
+<Image title="kb-wetty-logs.png" alt={512} align="center" src="https://files.readme.io/5fbd00f-kb-wetty-logs.png">
+  Kill Bill Application Logs
+</Image>
