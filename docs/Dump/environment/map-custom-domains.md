@@ -20,8 +20,8 @@ Domain mapping is a powerful tool for businesses looking to align their custom d
 4. Select the **Environment** where you want to map your custom domain to the Ingress resource.
 5. Click **Map Custom Domain.**
 6. In the UI that appears, provide the following details:
-   - **Custom Domain Alias: **This unique, user-defined name serves as an alternative web address. 
-   - **Custom Domain URL: **This refers to the specific web address associated with a Custom Domain Alias.
+   * **Custom Domain Alias:** This unique, user-defined name serves as an alternative web address. 
+   * **Custom Domain URL:** This refers to the specific web address associated with a Custom Domain Alias.
 7. Click **Create** to finalize the mapping.
 8. Now, navigate to your DNS provider. Establish a CNAME record for the designated custom domain, and save the changes.
 
