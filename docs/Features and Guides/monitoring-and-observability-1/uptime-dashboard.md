@@ -10,8 +10,8 @@ metadata:
 next:
   description: ''
 ---
-> 📘 
-> 
+> 📘
+>
 > **Note:** This feature is only available in the Enterprise Plan.
 
 Facets Uptime Status Dashboard is a comprehensive, real-time solution designed to monitor the uptime of resources across various Blueprints and Environments. 
@@ -20,9 +20,9 @@ This feature offers a centralized solution, integrating with Grafana for compreh
 
 ## Key Features
 
-- **Uptime Dashboard:** The Status check Monitoring dashboard in Grafana lists all configured resources, providing detailed information such as name, uptime percentage, and current ping status.
-- **Alerts:** Real-time notifications are provided for resources that become inactive and when previously inactive resources return to an active state. Users can manage specific 'Health status' alerts in the **Alert Manager** section and view alert details.
-- **Resource Status Display:** The status of resources, represented as either 'healthy' or 'unhealthy' and indicating their uptime and downtime. A 'healthy' status signifies that the resource is operational, implying uptime, while an 'unhealthy' status suggests the resource is not functioning as expected, denoting downtime.
+* **Uptime Dashboard:** The Status check Monitoring dashboard in Grafana lists all configured resources, providing detailed information such as name, uptime percentage, and current ping status.
+* **Alerts:** Real-time notifications are provided for resources that become inactive and when previously inactive resources return to an active state. Users can manage specific 'Health status' alerts in the **Alert Manager** section and view alert details.
+* **Resource Status Display:** The status of resources, represented as either 'healthy' or 'unhealthy' and indicating their uptime and downtime. A 'healthy' status signifies that the resource is operational, implying uptime, while an 'unhealthy' status suggests the resource is not functioning as expected, denoting downtime.
 
 ## FAQ
 
@@ -32,7 +32,7 @@ The system will send you alerts when a resource becomes unhealthy or returns to 
 
 ### 2. What is uptime and downtime?
 
-Uptime refers to the period when a service or resource is operational and running as expected.  
+Uptime refers to the period when a service or resource is operational and running as expected.\
 Downtime refers to the period during which a service or resource is unavailable or not functioning as intended.
 
 ### 3. Does accessing the Uptime Dashboard require any specific permissions?
@@ -41,4 +41,4 @@ No, accessing the Uptime Dashboard does not require any specific permissions.
 
 ## Related Guides
 
-- [Configuring the Uptime Dashboard](https://readme.facets.cloud/docs/configuring-the-uptime-dashboard)
+* [Configuring the Uptime Dashboard](https://readme.facets.cloud/docs/configuring-the-uptime-dashboard)
