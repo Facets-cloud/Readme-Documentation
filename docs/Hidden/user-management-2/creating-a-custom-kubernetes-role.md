@@ -15,7 +15,7 @@ Facets allows you to create custom Kubernetes roles, enabling you to define spec
 ## How to create a Custom Kubernetes Role?
 
 1. Open the **Projects** tab and select the desired project.
-2. In the **Blueprint** tab, search for and click on the **k8s_access_control** resource.
+2. In the **Blueprint** tab, search for and click on the **k8s\_access\_control** resource.
 3. Select **Configurations** from the dropdown.
 4. In the **Configurations** tab, select the **JSON** tab and edit the resource JSON.
 5. Under `"spec"` create the required roles.
