@@ -16,7 +16,7 @@ Facets provides users with the ability to enable and disable the resources in bu
 
 Let's first understand the logic we are going to use to Enable/Disable Resources in an Environment.
 
-- Facets will use the `clusterId` to identify the Environment where you want to update the status of the resources.
+* Facets will use the `clusterId` to identify the Environment where you want to update the status of the resources.
 
 ### Steps to Enable/Disable Resources
 
@@ -30,7 +30,7 @@ You should get a response confirming that the resources have been updated.
 
 Let's first understand the logic we are going to use to Enable/Disable Resources in a Blueprint.
 
-- Facets will use the `stackName` to identify the Blueprint where you want to update the status of the resources.
+* Facets will use the `stackName` to identify the Blueprint where you want to update the status of the resources.
 
 ### Steps to Enable/Disable Resources
 
