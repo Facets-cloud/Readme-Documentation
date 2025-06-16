@@ -14,11 +14,11 @@ The **Live** tab offers real-time insights and management capabilities for your 
 
 ## Use Cases
 
-- **Real-Time Monitoring**: Observe live deployment statuses and resource metrics to ensure system health and performance.
-- **Deployment Management**: Oversee and control deployment pipelines, including version rollbacks and promotions.
-- **Kubernetes Operations**: Manage Kubernetes workloads with actions like rolling restarts and scaling adjustments.
-- **Infrastructure Outputs Access**: Retrieve and utilise Terraform outputs for seamless integration and configuration.
-- **Resource Monitoring**: Utilise Grafana-powered dashboards to monitor CPU usage, memory consumption, and pod restarts.
+* **Real-Time Monitoring**: Observe live deployment statuses and resource metrics to ensure system health and performance.
+* **Deployment Management**: Oversee and control deployment pipelines, including version rollbacks and promotions.
+* **Kubernetes Operations**: Manage Kubernetes workloads with actions like rolling restarts and scaling adjustments.
+* **Infrastructure Outputs Access**: Retrieve and utilise Terraform outputs for seamless integration and configuration.
+* **Resource Monitoring**: Utilise Grafana-powered dashboards to monitor CPU usage, memory consumption, and pod restarts.
 
 ***
 
@@ -26,33 +26,21 @@ The **Live** tab offers real-time insights and management capabilities for your 
 
 ### 1. Pipeline Activity
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fbhfqttv3j2bs&display_name=Storylane&url=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fbhfqttv3j2bs&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%2Fproject%2Fproject_3ca51d9a-52b5-4e78-9481-f4710a5ac106%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"431\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://app.storylane.io/demo/bhfqttv3j2bs",
-  "title": "Pipeline Activity (copy)",
-  "favicon": "https://app.storylane.io/favicon.ico",
-  "image": "https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_3ca51d9a-52b5-4e78-9481-f4710a5ac106/preview.gif",
-  "provider": "app.storylane.io",
-  "href": "https://app.storylane.io/demo/bhfqttv3j2bs",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
-
+<Embed url="https://app.storylane.io/demo/bhfqttv3j2bs" title="Pipeline Activity (copy)" favicon="https://app.storylane.io/favicon.ico" image="https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_3ca51d9a-52b5-4e78-9481-f4710a5ac106/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demo/bhfqttv3j2bs" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fbhfqttv3j2bs%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fbhfqttv3j2bs%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_3ca51d9a-52b5-4e78-9481-f4710a5ac106%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22431%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 <br />
 
 This section displays the current state and version history segmented into:
 
-- **Build Registered**: Tracks the changes to the artifact being deployed.
-- **Blueprint Activity**: Monitors changes and deployments related to the blueprint configurations.
-- **Override Activity**: Logs modifications applied to the resources as overrides.
+* **Build Registered**: Tracks the changes to the artifact being deployed.
+* **Blueprint Activity**: Monitors changes and deployments related to the blueprint configurations.
+* **Override Activity**: Logs modifications applied to the resources as overrides.
 
 Each category presents:
 
-- **Live Version**: The version currently deployed.
-- **Release Pending Version**: The version queued for deployment.
-- **Version History**: An expandable table detailing past versions with timestamps and statuses.
+* **Live Version**: The version currently deployed.
+* **Release Pending Version**: The version queued for deployment.
+* **Version History**: An expandable table detailing past versions with timestamps and statuses.
 
 The Version History table includes a **rollback** feature, allowing you to revert to a specific version if necessary.
 
@@ -60,87 +48,39 @@ The Version History table includes a **rollback** feature, allowing you to rever
 
 ### 2. Kubernetes Dashboard
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d19af88888ded9c216726464e0d25c961f3c06a386057084b932dce176538256-Screenshot_2025-02-18_at_2.26.05_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "500px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="500px" border={true} src="https://files.readme.io/d19af88888ded9c216726464e0d25c961f3c06a386057084b932dce176538256-Screenshot_2025-02-18_at_2.26.05_PM.png" />
 
 This dashboard offers a live overview of your Kubernetes cluster, covering:
 
-- **Workloads**:
-  - **Pods**: Displays status, age, restarts, readiness, and available actions.
-  - **Deployments, DaemonSets, StatefulSets, CronJobs, Jobs**: Provides insights into the state and performance of various controllers and jobs.
+* **Workloads**:
+  * **Pods**: Displays status, age, restarts, readiness, and available actions.
+  * **Deployments, DaemonSets, StatefulSets, CronJobs, Jobs**: Provides insights into the state and performance of various controllers and jobs.
 
-- **Storage**:
-  - **Persistent Volume Claims (PVCs) and Persistent Volumes (PVs)**: Shows storage allocations, statuses, and capacities.
+* **Storage**:
+  * **Persistent Volume Claims (PVCs) and Persistent Volumes (PVs)**: Shows storage allocations, statuses, and capacities.
 
-- **Autoscaling**:
-  - **Horizontal Pod Autoscalers (HPAs)**: Monitors scaling activities and metrics.
+* **Autoscaling**:
+  * **Horizontal Pod Autoscalers (HPAs)**: Monitors scaling activities and metrics.
 
 For **Pods**, the following actions are available:
 
-- **Rolling Restart**: Gracefully restarts pods to apply updates or recover from issues.
-- **Refresh**: Updates the pod list to reflect the current state.
-- **Promote**: Advances a pod to a stable release, particularly useful in blue-green or canary deployments.
-- **Abort**: Terminates a deployment in progress, applicable during blue-green or canary strategies.
+* **Rolling Restart**: Gracefully restarts pods to apply updates or recover from issues.
+* **Refresh**: Updates the pod list to reflect the current state.
+* **Promote**: Advances a pod to a stable release, particularly useful in blue-green or canary deployments.
+* **Abort**: Terminates a deployment in progress, applicable during blue-green or canary strategies.
 
 ***
 
 ### 3. Terraform Outputs
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2e23068f229b97e1fd5ded6220043dbbe097d08c2e2a99d3cba3de17e194e70-Screenshot_2025-02-18_at_2.27.47_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="450px" border={true} src="https://files.readme.io/f2e23068f229b97e1fd5ded6220043dbbe097d08c2e2a99d3cba3de17e194e70-Screenshot_2025-02-18_at_2.27.47_PM.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/abef680180ce1f18d848461ee70ba344f75fe22f4cea37be5bf744b9b2051440-Screenshot_2025-02-18_at_2.27.56_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="450px" border={true} src="https://files.readme.io/abef680180ce1f18d848461ee70ba344f75fe22f4cea37be5bf744b9b2051440-Screenshot_2025-02-18_at_2.27.56_PM.png" />
 
 This section displays the outputs from your Terraform configurations, including:
 
-- **Interfaces**: Endpoints or connection details exposed by your resources.
-- **Attributes**: Key-value pairs representing resource properties.
+* **Interfaces**: Endpoints or connection details exposed by your resources.
+* **Attributes**: Key-value pairs representing resource properties.
 
 Each output offers action buttons to copy names and dollar references (`$refs`) for seamless integration into your configurations.
 
@@ -148,28 +88,13 @@ Each output offers action buttons to copy names and dollar references (`$refs`) 
 
 ### 4. Monitoring Dashboards
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf143d170d4a1a97620c33c651f6831ce99a3b30094977dabc62006316400260-MixCollage-18-Feb-2025-02-37-PM-3020.jpg",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/cf143d170d4a1a97620c33c651f6831ce99a3b30094977dabc62006316400260-MixCollage-18-Feb-2025-02-37-PM-3020.jpg" />
 
 Real-time monitoring is facilitated through Grafana-powered dashboards, featuring:
 
-- **CPU Usage**: Visualizes CPU consumption across your resources.
-- **Memory Usage**: Tracks memory allocation and usage patterns.
-- **Pod Restarts**: Monitors the frequency and reasons for pod restarts, aiding in troubleshooting.
+* **CPU Usage**: Visualizes CPU consumption across your resources.
+* **Memory Usage**: Tracks memory allocation and usage patterns.
+* **Pod Restarts**: Monitors the frequency and reasons for pod restarts, aiding in troubleshooting.
 
 ***
 
@@ -177,8 +102,8 @@ Real-time monitoring is facilitated through Grafana-powered dashboards, featurin
 
 Depending on the selected resource type, additional dashboards may include:
 
-- **Ingress Overview**: Details traffic routing, load balancing, and external access points.
-- **Historical Logs**: Provides access to past logs for auditing and debugging purposes.
+* **Ingress Overview**: Details traffic routing, load balancing, and external access points.
+* **Historical Logs**: Provides access to past logs for auditing and debugging purposes.
 
 These dashboards adapt based on the resource type selected, ensuring relevant information is presented for effective management.
 
@@ -208,12 +133,12 @@ Dashboards are tailored based on the selected resource type, ensuring relevant i
 
 **Issue: Changes are not reflecting in the Kubernetes Dashboard.**
 
-- **Solution**: Ensure you have clicked the **Refresh** action to update the pod list. If the issue persists, verify your Kubernetes cluster's connectivity and health.
+* **Solution**: Ensure you have clicked the **Refresh** action to update the pod list. If the issue persists, verify your Kubernetes cluster's connectivity and health.
 
 **Issue: Unable to perform a rollback to a previous version.**
 
-- **Solution**: Confirm that the desired version is listed in the **Version History**. If it's unavailable, the version may not be eligible for rollback.
+* **Solution**: Confirm that the desired version is listed in the **Version History**. If it's unavailable, the version may not be eligible for rollback.
 
 **Issue: Terraform outputs are not displaying correctly.**
 
-- **Solution**: Check that your Terraform configurations have been applied successfully. Re-run the Terraform apply process if necessary and refresh the **Live** tab.
+* **Solution**: Check that your Terraform configurations have been applied successfully. Re-run the Terraform apply process if necessary and refresh the **Live** tab.
