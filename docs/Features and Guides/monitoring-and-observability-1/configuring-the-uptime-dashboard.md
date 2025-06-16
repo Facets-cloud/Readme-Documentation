@@ -10,8 +10,8 @@ metadata:
 next:
   description: ''
 ---
-> 📘 
-> 
+> 📘
+>
 > **Note:** This feature is only available in the Enterprise Plan.
 
 ## How to configure the Status Check Monitoring Dashboard?
@@ -19,7 +19,7 @@ next:
 1. Open **Projects** and select the required Project. 
 2. Select the **Blueprint** tab.
 3. In the **Add Resources** pop-up, search for and select the resource type **Status Check.**
-4. Select the Flavor and provide a **Name** for the resource and click **Add.**  
+4. Select the Flavor and provide a **Name** for the resource and click **Add.**\
    **Note:** When creating a resource, it is initially set with default sample values that can be modified after the resource has been created.
 5. Override the resource and customize the checks to match your specific needs. A sample status check is provided below:
 
@@ -48,9 +48,9 @@ You have successfully configured the Uptime Dashboard.
 
 1. Navigate to **Settings > Notification Center** to access the Notifications section.
 2. Select the **Subscriptions** tab and click **Create Subscription.**
-3. Here, mention the **Subscription Name, Notification Type, Blueprint, Channel Type, **and** Channel Name.**
+3. Here, mention the **Subscription Name, Notification Type, Blueprint, Channel Type,** and **Channel Name.**
 4. Next, click on **Add Filters.** Select **Environment Name** from the dropdown and select the environment.
-5. Click **Add Filters** again. This time, select **Alert Name** from the dropdown and select **health_check.**
+5. Click **Add Filters** again. This time, select **Alert Name** from the dropdown and select **health\_check.**
 6. To ensure everything is set up correctly, click **Test Notifications.** This will send a test alert to your chosen channel.
 7. Click **Create.**
 
