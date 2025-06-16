@@ -2,3 +2,4 @@
 - rolling-restart-of-pods
 - artifact-history-and-rollback
 - expanding-a-pvc
+- removing-unhealthy-ingester-instances-from-the-ring
