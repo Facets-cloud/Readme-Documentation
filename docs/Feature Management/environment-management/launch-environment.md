@@ -18,13 +18,13 @@ When you create an environment using Facets, even if you use an empty blueprint,
 
 **Virtual Private Cloud (VPC):** A VPC provides a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define.
 
-**Subnets and Security Groups: **Facets creates subnets and security groups within the VPC, to segment network traffic and provide access control to resources within the network.
+**Subnets and Security Groups:** Facets creates subnets and security groups within the VPC, to segment network traffic and provide access control to resources within the network.
 
 ## Kubernetes:
 
 **A Kubernetes cluster:** A Kubernetes cluster is a set of worker nodes and control-plane nodes that run containerized applications.
 
-**Default Node Pool: **Facets creates a default node pool for the Kubernetes cluster, which is used to run containers.
+**Default Node Pool:** Facets creates a default node pool for the Kubernetes cluster, which is used to run containers.
 
 **Prometheus, Grafana, and Alertmanager:** These tools provide a way to monitor and alert on the health and performance of the cluster and its components.
 
