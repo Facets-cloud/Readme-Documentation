@@ -12,7 +12,7 @@ next:
 ---
 Welcome to Facets! In this getting started guide, we will walk you through the process of getting your control plane. The first step is to get a demo and have a short discussion with the Facets team.
 
-1. **Get a Demo **: To get started, simply request a [demo by contacting the Facets team](https://www.facets.cloud/demo). Our team will understand the requirements and will help you get started. 
+1. **Get a Demo** : To get started, simply request a [demo by contacting the Facets team](https://www.facets.cloud/demo). Our team will understand the requirements and will help you get started. 
 2. **Launch the Cloudformation Template**: You will receive an email with a personalized link to launch a Cloudformation template. This template will create an IAM role in the AWS account of your choice. Please note that the CloudFormation template must be executed in the Mumbai region. However, this does not determine the region of your control plane.
    > Facets never requires you to provide any IAM User credentials (root or otherwise). The IAM role created by the CloudFormation template will have a limited set of IAM policies attached. The role will have a trust policy set. You can optionally limit the role permissions further after the initial control plane set up by updating the CloudFormation stack with it's option to limit permissions.
 3. **The Facets team launches the Control Plane**: After you have created the IAM role in the AWS account, the Facets team will launch the control plane in the closest region to your developers. The control plane will be set up and ready to use in 60 minutes.
@@ -46,7 +46,7 @@ To run your control plane in AWS, Facets deploys the following AWS resources:
 
 ### Deployment Options
 
-You may choose to run the control plane in any AWS Region and Availability Zones of your choice. You can communicate your preferences with the Facets team before deploying the control plane. Any resource sizing changes may be requested over an email to [support@facets.cloud].
+You may choose to run the control plane in any AWS Region and Availability Zones of your choice. You can communicate your preferences with the Facets team before deploying the control plane. Any resource sizing changes may be requested over an email to \[support\@facets.cloud].
 
 ### Backups
 
