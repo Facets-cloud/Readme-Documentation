@@ -20,7 +20,7 @@ In Facets, environments are the specific deployment destinations for your cloud 
 
 **Deployment Target:** When you deploy a blueprint, you deploy it into a specific environment. This allows you to have different versions of your infrastructure running in different environments]. For example, you might have a development environment for testing new features and a production environment for your live application.
 
-**Dynamic Configuration**: Each environment can have its own specific configuration. This allows you to customize the behavior of your application based on the specific environment it is running in.  
+**Dynamic Configuration**: Each environment can have its own specific configuration. This allows you to customize the behavior of your application based on the specific environment it is running in.\
 Runtime Variable Injection: Facets injects environment variables at runtime, determining their values for each environment. This means that the same application can behave differently in different environments.
 
 **Overriding Defaults:** You can set default values for variables at the project or service level and then override them at the environment level. This provides a hierarchical approach to configuration management, ensuring that each environment is tailored to its specific needs.
