@@ -20,23 +20,9 @@ You might need to expand the PVC when you find the following error.
 
 `CRITICAL Alert: [Critical] Kubernetes Volume disk space < 15% available - [ 1.36956787109375 ](asi-uat-facets)`
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dbebf23-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" border={true} src="https://files.readme.io/dbebf23-image.png">
+  Click on the image to expand
+</Image>
 
 The following sections will provide a step-by-step walkthrough on how to examine and expand a PVC volume accordingly.
 
@@ -74,8 +60,8 @@ export KUBECONFIG=~/path-to-file/downloaded-kubeconfig
    The **Capacity** field should display the new size. 
 5. Ensure that the pod using this PVC is functioning correctly after the resize.
 
-> 📘 
-> 
+> 📘
+>
 > 1. For safety, make sure the pod utilizing this PVC runs in a stateful set or deployment with a single replica to avoid data loss.
 > 2. We recommend backing up the data in the PV before making any modifications.
 > 3. Check the compatibility of the new size with the storage class and the underlying storage system.
@@ -116,5 +102,5 @@ To Resize PVCs with an associated period of downtime, refer to the official [Exp
 
 ## References
 
-- [Use the Azure Disk Container Storage Interface (CSI) driver in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/azure-disk-csi#resize-a-persistent-volume-without-downtime-preview)
-- [Expanding without downtime classic VM SKU support](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks?tabs=ubuntu#expanding-without-downtime-classic-vm-sku-support)
+* [Use the Azure Disk Container Storage Interface (CSI) driver in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/azure-disk-csi#resize-a-persistent-volume-without-downtime-preview)
+* [Expanding without downtime classic VM SKU support](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks?tabs=ubuntu#expanding-without-downtime-classic-vm-sku-support)
