@@ -20,12 +20,12 @@ The first step involves wiring PostgreSQL with a Service. This is crucial as it 
 
 Let's walk through the process of wiring a Service to a Postgres database. Follow these steps:
 
-1. **Create a Service and a Postgres Resource**  
+1. **Create a Service and a Postgres Resource**\
    First, ensure you have both a Service and a Postgres resource created within your Blueprint.
 2. **Edit the JSON Configuration**
    1. Navigate to the **Blueprint** tab and select the Service resource you want to connect to the Postgres resource.
    2. Access the **Configurations** tab and click **Environment Variables.**
-   3. Now, click **Add Environment Variables. **
+   3. Now, click **Add Environment Variables.**
    4. From the first column's drop-down menu, choose **Resource Reference.**
    5. Enter the **Key** as `POSTGRES_URL`, select the corresponding Postgres resource, and select the connection as host. Click **Add New Entry.**
    6. Enter the **Key** as `POSTGRES_USER`, select the corresponding Postgres resource, and select the connection as username. Click **Add New Entry.**
@@ -42,13 +42,13 @@ To ensure that your application is accessible, you will need to create an ingres
 
 Let's walk through the process of wiring a Service with an Ingress. Follow these steps:
 
-1. **Create a Service and an Ingress Resource**  
+1. **Create a Service and an Ingress Resource**\
    First, ensure you have both a Service and an Ingress resource created within your Blueprint.
 2. **Edit the JSON Configuration**
    1. Navigate to the **Resource Center** and select the Ingress resource you want to connect to the Service resource.
    2. Access the **Configurations** tab and click **Configure.**
    3. In the Form mode, under **Ingress Rules,** click **Add New Entry.**
-   4. Mention the **Service Name, Path, **and** Port. **
+   4. Mention the **Service Name, Path,** and **Port.**
    5. Click **Save Changes.**
 
 By following these steps, you can effectively link your resources, ensuring efficient intercommunication and public accessibility of your application.
