@@ -32,8 +32,6 @@ The results are clear: when it comes to direct costs, using Facets is a no-brain
 
 ## Indirect costs
 
-
-
 Indirect costs refer to the opportunity cost and other costs associated with the decision to build or buy the platform. Here, the results are just as clear. By choosing Facets, businesses can:
 
 1. Focus on their core business areas
