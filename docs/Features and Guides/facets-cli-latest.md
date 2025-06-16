@@ -26,8 +26,8 @@ next:
 
 The facetsctlv3 CLI is designed for several key use cases:
 
-- **Artifact Management**: Push, register, and upload Docker images or other artifacts to the Facets Control Plane.
-- **Application Synchronisation**: Ensure that applications are in sync with their desired states across different environments.
+* **Artifact Management**: Push, register, and upload Docker images or other artifacts to the Facets Control Plane.
+* **Application Synchronisation**: Ensure that applications are in sync with their desired states across different environments.
 
 ### Installation
 
@@ -41,8 +41,8 @@ You can view and download the latest `facetsctlv3` package from its <a href="htt
 2. Replace the old `facetsctl` binary with the new `facetsctlv3` binary.
 3. Update any scripts or automation workflows that use `facetsctl` to reference `facetsctlv3`commands.
 
-**Key Changes in `facetsctlv3`**:
+**Key Changes in`facetsctlv3`** :
 
-- Enhanced command structure and output formatting for improved readability.
-- Support for new features and APIs introduced in recent Control Plane versions.
-- Bug fixes and performance improvements.
+* Enhanced command structure and output formatting for improved readability.
+* Support for new features and APIs introduced in recent Control Plane versions.
+* Bug fixes and performance improvements.
