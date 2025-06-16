@@ -14,8 +14,8 @@ Facets offers seamless integration with popular identity providers such as Googl
 
 ## Related Guides
 
-- [Google Oauth](doc:google-oauth-integration-for-user-management)
-- [Azure AD](doc:integrating-with-azure-ad)
-- [Okta](doc:integrating-with-okta)
-- [OneLogin](doc:integrating-with-onelogin)
-- [Generic SSO](doc:generic-sso)
+* [Google Oauth](doc:google-oauth-integration-for-user-management)
+* [Azure AD](doc:integrating-with-azure-ad)
+* [Okta](doc:integrating-with-okta)
+* [OneLogin](doc:integrating-with-onelogin)
+* [Generic SSO](doc:generic-sso)
