@@ -40,18 +40,4 @@ While fetching logs from the Grafana UI, if you encounter an error indicating an
 
 7. Click **Forget** beside the unhealthy instance to remove it.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d70109a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/d70109a-image.png" />
