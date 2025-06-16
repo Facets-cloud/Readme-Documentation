@@ -2,3 +2,4 @@
 - manage-iac
 - centralized-override-management
 - map-custom-domains
+- rolling-restart-of-pods
