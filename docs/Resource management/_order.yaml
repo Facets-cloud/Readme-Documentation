@@ -4,3 +4,4 @@
 - map-custom-domains
 - rolling-restart-of-pods
 - artifact-history-and-rollback
+- wiring-resources
