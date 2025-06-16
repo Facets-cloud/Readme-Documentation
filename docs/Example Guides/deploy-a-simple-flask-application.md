@@ -19,7 +19,7 @@ This is a complete step by step guide to deploy a basic flask based python appli
 We have a very simple flask application written in python. The application currently has two routes configured.
 
 1. <code>/</code> returns a message <code>Hello World</code> and 
-2. <code>/healthz</code> returns an empty string. This route is configured to implement liveness checks for the application. :point-down: 
+2. <code>/healthz</code> returns an empty string. This route is configured to implement liveness checks for the application. :point_down: 
 
 ```python
 from flask import Flask
@@ -35,8 +35,6 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0')
 ```
 
-
-
 1. Create a directory named <code>src/</code> and inside this directory create a file named <code>app.py</code>. Paste the above code it in <code>app.py</code>. 
 
 2. Create another file named <code>requirements.txt</code> at the same level as <code>src/</code> directory and put all the required application dependencies in it. For this application we only require flask.
@@ -45,7 +43,7 @@ if __name__ == '__main__':
 
 In order to deploy applications on Facets, the applications need to be containerized. For this we need to create images for various components of our application. For our demo application, we only have one component and hence we will create one docker image for it.
 
-Create a file named <code>Dockerfile</code> at the same level as <code>src/</code> directory.  
+Create a file named <code>Dockerfile</code> at the same level as <code>src/</code> directory.\
 Place the following content in the <code>Dockerfile</code>.
 
 ```dockerfile
@@ -64,8 +62,6 @@ COPY src/ .
 ENV PATH="/app/.venv/bin:$PATH"
 CMD ["python", "app.py"]
 ```
-
-
 
 Build  and tag the docker image by running the following command in the same directory where you created <code>Dockerfile</code>.
 
