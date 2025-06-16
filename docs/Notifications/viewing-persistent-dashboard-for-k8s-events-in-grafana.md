@@ -23,20 +23,6 @@ The primary use case for this dashboard is to allow users to view the health of 
 5. Choose the appropriate values for **ObjectKind**, **ObjectName**, **ObjectNamespace** fields.
 6. You can now view the Events in a tabular format.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f9b475d-Kubernetes_events.gif",
-        null,
-        "Click to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
+<Image alt="Click to expand" align="center" width="450px" border={true} src="https://files.readme.io/f9b475d-Kubernetes_events.gif">
+  Click on the image to expand
+</Image>
