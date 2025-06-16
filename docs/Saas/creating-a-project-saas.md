@@ -24,7 +24,7 @@ You have successfully created a new Project. This will be accessible from the Pr
 ## What are the settings specific to a Project?
 
 1. To access these settings, open the **Projects** tab and choose the relevant project. 
-2. From here, select the **Project Settings** tab. This tab contains three tabs: **General, GitOps, **and** Danger Zone.**
+2. From here, select the **Project Settings** tab. This tab contains three tabs: **General, GitOps,** and **Danger Zone.**
 3. In the **General** section, you will find:
    1. **Project Name** (uneditable)
    2. **Description:** You can alter the project's summary here.
@@ -32,11 +32,11 @@ You have successfully created a new Project. This will be accessible from the Pr
    4. After making any changes, click **Save Changes** to implement them.
 4. The **GitOps,** when configured, allows modifications in the Blueprint via your GitHub repository. Here, you will find the following options:
    1. **Choose Account:** Select the GitOps account you prefer.
-   2. **Repository URL: **Specify the location of your repository.
+   2. **Repository URL:** Specify the location of your repository.
    3. **Branch:** Identify the branch that carries the desired Blueprint.
    4. **Relative Path:** Denotes the directory containing the Blueprint definition in relation to the repository URL.
    5. After making any changes, click **Save Changes.**
-5. The **CI/CD tab** allows you to automate your deployment by creating tailored rules and workflows for your development process. Choose between **Branch Per Environment, Single Branch Promotion **or** Advanced.**
+5. The **CI/CD tab** allows you to automate your deployment by creating tailored rules and workflows for your development process. Choose between **Branch Per Environment, Single Branch Promotion** or **Advanced.**
 6. The **Danger Zone** section provides the option to delete the project. To do so:
    1. Click **Delete.**
    2. A pop-up will appear asking you to confirm the project name. 
@@ -58,6 +58,6 @@ The "Enable GitOps" feature lets you adjust your project's Blueprint directly fr
 
 i. To delete a project, go to the **Settings** tab of your project and navigate to the **Danger Zone** section. 
 
-ii. Click **Delete. **
+ii. Click **Delete.**
 
 iii. A pop-up will appear asking you to confirm the project name. After entering the name, click **Delete** to remove the project.
