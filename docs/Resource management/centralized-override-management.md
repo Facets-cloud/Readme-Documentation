@@ -16,28 +16,13 @@ The centralized override management system provides users with a comprehensive v
 
 1. Navigate to **Blueprint > List** and select the desired Blueprint.
 2. Now, navigate to **Blueprint > Designer.**
-3. Select the required resource and switch to the **Overrides** tab.  
+3. Select the required resource and switch to the **Overrides** tab.\
    This tab presents a list of override values for the selected Blueprint's environments. Displayed details include **Path, Environment, Blueprint Value,** and **Environment Value.**
 4. Click the **Edit** icon to override the **Value** at the **Environment** level. After updating the value, confirm the change by clicking the **Check** icon.
 5. Click **Save Changes.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/82b2e3b-Override_management.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/82b2e3b-Override_management.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully overridden the value at the environment level.
