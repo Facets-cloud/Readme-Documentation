@@ -14,69 +14,27 @@ This guide will walk you through the modules available on the Resource Center pa
 
 Navigate to **Environment > Resources.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c8a899-image.png",
-        null,
-        "Resources tab in left Navigation menu"
-      ],
-      "align": "center",
-      "sizing": "350px",
-      "border": true,
-      "caption": "Resources tab in left Navigation menu"
-    }
-  ]
-}
-[/block]
+<Image alt="Resources tab in left Navigation menu" align="center" width="350px" border={true} src="https://files.readme.io/7c8a899-image.png">
+  Resources tab in left Navigation menu
+</Image>
 
 On the page that appears, you will find all the resources that were defined in the blueprint. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8cdb65f-image.png",
-        null,
-        "Resource Center screen"
-      ],
-      "align": "center",
-      "sizing": "700px",
-      "border": true,
-      "caption": "Resource Center screen"
-    }
-  ]
-}
-[/block]
+<Image alt="Resource Center screen" align="center" width="700px" border={true} src="https://files.readme.io/8cdb65f-image.png">
+  Resource Center screen
+</Image>
 
 ## Sync with Git
 
 Click the **Sync with Git** button on the top right corner of the screen to sync the resources with the blueprint.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b2bb1b4-image.png",
-        null,
-        "Sync with Git navigation"
-      ],
-      "align": "center",
-      "sizing": "700px",
-      "border": true,
-      "caption": "Sync with Git navigation"
-    }
-  ]
-}
-[/block]
+<Image alt="Sync with Git navigation" align="center" width="700px" border={true} src="https://files.readme.io/b2bb1b4-image.png">
+  Sync with Git navigation
+</Image>
 
 > 📘 Note
-> 
-> After updating the Blueprint, it may take up to 5 minutes for changes to appear on the Resources page.  
+>
+> After updating the Blueprint, it may take up to 5 minutes for changes to appear on the Resources page.\
 > Please reload the page if you are still unable to view the newly defined resources.
 
 ## Search
@@ -85,45 +43,17 @@ On the Resource Center page, you will find the search bar at the top of the scre
 
 ## Filter
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0d4117-image.png",
-        null,
-        "Search Resource by Name"
-      ],
-      "align": "center",
-      "sizing": "700px",
-      "border": true,
-      "caption": "Search Resource by Name"
-    }
-  ]
-}
-[/block]
+<Image alt="Search Resource by Name" align="center" width="700px" border={true} src="https://files.readme.io/e0d4117-image.png">
+  Search Resource by Name
+</Image>
 
-The Resource Type filter is available at the top of the screen. To view only the list of resources belonging to a particular resource type, select that resource type from the **Filter Resource Type **dropdown.
+The Resource Type filter is available at the top of the screen. To view only the list of resources belonging to a particular resource type, select that resource type from the **Filter Resource Type** dropdown.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2d989c8-image.png",
-        null,
-        "Filter by Resource Type"
-      ],
-      "align": "center",
-      "sizing": "700px",
-      "border": true,
-      "caption": "Filter by Resource Type"
-    }
-  ]
-}
-[/block]
+<Image alt="Filter by Resource Type" align="center" width="700px" border={true} src="https://files.readme.io/2d989c8-image.png">
+  Filter by Resource Type
+</Image>
 
 ## Related Guides
 
-- [Resource Details](doc:resource-details)
-- [Resource Type - Application](doc:resource-type-application)
+* [Resource Details](doc:resource-details)
+* [Resource Type - Application](doc:resource-type-application)
