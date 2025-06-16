@@ -16,7 +16,7 @@ The purpose of this guide is to assist you in unlocking the Terraform state in i
 
 The Terraform state should be unlocked when Releases fail with the following error message:
 
-- error: error acquiring state lock
+* error: error acquiring state lock
 
 ## How to unlock the Terraform State?
 
