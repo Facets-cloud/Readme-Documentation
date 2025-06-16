@@ -14,7 +14,7 @@ next:
 
 This help document will walk you through the process of setting up the delivery pipeline to streamline the deployment of your environment and ensure a reliable and consistent release process.
 
-1. Open **Blueprints** and choose the Blueprint. Select the **Pipeline** tab.  
+1. Open **Blueprints** and choose the Blueprint. Select the **Pipeline** tab.\
    This page will display the existing pre-defined pipeline in Facets.
 2. Click **Edit** on the bottom left to edit the pipeline.
 3. You will find an edit icon on the top right corner of each environment.
@@ -24,23 +24,8 @@ This help document will walk you through the process of setting up the delivery
 7. Toggle **Require sign-off** to approve the releases manually.
 8. Click **Confirm** and click **Save Changes.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5f61c80-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/5f61c80-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully created a delivery pipeline linking the two environments.
