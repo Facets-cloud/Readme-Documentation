@@ -21,23 +21,8 @@ Facets is a tool that provides the ability to define separate release schedules 
 5. In the pop-up that appears, click **Create Release Schedule**. If you already have a schedule set for this release, you will see the existing schedule. You can click **Edit Schedule** to modify it.
 6. Select the desired schedule interval and click **Create.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c54e3b5-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/c54e3b5-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully created a release schedule in Facets. You can repeat this process for each environment in your system and set a different schedule for each one if needed.
