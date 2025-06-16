@@ -16,7 +16,7 @@ next:
 ---
 Welcome to Facets! In this getting started guide, we will walk you through the process of getting your control plane. The first step is to get a demo and have a short discussion with the Facets team.
 
-1. **Get a Demo **: To get started, simply request a [demo by contacting the Facets team](https://www.facets.cloud/demo). Our team will understand the requirements and will help you get started. 
+1. **Get a Demo** : To get started, simply request a [demo by contacting the Facets team](https://www.facets.cloud/demo). Our team will understand the requirements and will help you get started. 
 2. **Submit Service Account Details**: You will receive a form to submit your service account details. It is important that the service account has Owner access to the Azure subscription. This step is crucial for the Facets team to set up and manage your control plane. It is recommended to use a dedicated subscription for setting up the Facets control plane.
 3. **The Facets team launches the Control Plane**: After receiving your service account details, the Facets team will launch the control plane in Azure. The setup will be completed, and your control plane will be ready to use within approximately 60 minutes.
 4. **Welcome Email with Control Plane URL**: You will receive a welcome email with your personal control plane URL, along with a username and password reset link. This will allow you to log into the control plane and start using Facets.
