@@ -12,13 +12,13 @@ metadata:
 next:
   description: ''
 ---
-After creating your Project, you can now launch the first manifestation of it, which is the **Environment. **
+After creating your Project, you can now launch the first manifestation of it, which is the **Environment.**
 
 ## How to Create an Environment?
 
 1. Open **Projects** and select the required Project.
 2. Now, select the **Environments** tab and you will be greeted with a prompt to create your first Environment.
-3. Mention the **Environment Name** and select the **Release Stream. **
+3. Mention the **Environment Name** and select the **Release Stream.**
 4. Click **Create.**
 
 You have successfully created a logical environment.
