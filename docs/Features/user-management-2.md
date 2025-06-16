@@ -32,7 +32,7 @@ Admins can create User Groups that encompass roles and assign environment-specif
 
 ### Resource Groups
 
-Resource groups in Facets offer a structured approach to organizing and managing resources. They simplify resource management by bundling related resources together. With Resource Groups, you can group services, databases, caches, and other resources in one resource group, thereby aligning your team and pod structures.  
+Resource groups in Facets offer a structured approach to organizing and managing resources. They simplify resource management by bundling related resources together. With Resource Groups, you can group services, databases, caches, and other resources in one resource group, thereby aligning your team and pod structures.\
 With role-based access control, different departments can have dedicated user groups with access to specific resource groups, enabling teams to access and manage resources specific to their responsibilities. Other key benefits of this feature include high accessibility control, simplified management, improved collaboration, and flexibility to reorganize resources.
 
 ### OAuth Integrations
@@ -41,9 +41,9 @@ Facets now offers seamless integration with popular identity providers such as G
 
 ## Related Guides
 
-- [Integrating with Google Oauth](doc:google-oauth-integration-for-user-management)
-- [Integrating with OneLogin](doc:integrating-with-onelogin)
-- [Integrating with Okta](doc:integrating-with-okta)
-- [Creating Custom Roles](doc:custom-roles)
-- [Creating a User](doc:creating-a-user)
-- [Creating a User Group](doc:creating-a-user-group)
+* [Integrating with Google Oauth](doc:google-oauth-integration-for-user-management)
+* [Integrating with OneLogin](doc:integrating-with-onelogin)
+* [Integrating with Okta](doc:integrating-with-okta)
+* [Creating Custom Roles](doc:custom-roles)
+* [Creating a User](doc:creating-a-user)
+* [Creating a User Group](doc:creating-a-user-group)
