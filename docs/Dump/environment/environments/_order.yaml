@@ -8,3 +8,4 @@
 - time-sensitive
 - secrets-variables-1
 - automatic-releases
+- validations-based-on-guardrails-set
