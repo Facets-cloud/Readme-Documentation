@@ -22,24 +22,9 @@ After creating your Blueprint and resources, you can now launch the first manife
 6. Now, link your **Cloud Account** with the Facets control plane or select a pre-configured cloud account. For more details, refer to the [Integrating Cloud Accounts](https://readme.facets.cloud/docs/integrating-cloud-accounts) documentation.
 7. Click **Create.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d32bb39-pet_-_create_env.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/d32bb39-pet_-_create_env.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully created an Environment.
 
@@ -47,27 +32,12 @@ A logical environment would be created by clicking the **Create** button. Howeve
 
 ## How to Launch the Environment?
 
-- Navigate to the **Environment > Releases** section for that specific environment and click **Launch/Launch Environment.**
-- In the popup that appears, click **Confirm.**
+* Navigate to the **Environment > Releases** section for that specific environment and click **Launch/Launch Environment.**
+* In the popup that appears, click **Confirm.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/769ef01-pet_-_launch_env.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/769ef01-pet_-_launch_env.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully launched your Environment.
 
