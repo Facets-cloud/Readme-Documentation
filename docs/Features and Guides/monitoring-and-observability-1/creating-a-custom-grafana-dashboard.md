@@ -10,8 +10,8 @@ metadata:
 next:
   description: ''
 ---
-> 📘 
-> 
+> 📘
+>
 > **Note:** This feature is only available in the Enterprise Plan.
 
 ### Prerequisite
@@ -23,29 +23,14 @@ Ensure you have write access to the Blueprint, access to overrides, and the abil
 1. Open the **Projects** tab and select the required project. 
 2. Select the desired environment in which you wish to create a grafana dashboard.
 3. Here, select **Tools > Grafana.**
-4. In Grafana, select **Dashboard > New Dashboard **and click **Add a new panel.**
-5. Under the **Query** section, input your queries and click **Apply.**  
+4. In Grafana, select **Dashboard > New Dashboard** and click **Add a new panel.**
+5. Under the **Query** section, input your queries and click **Apply.**\
    For instance, creating a dashboard to monitor the node count in time series.
 6. Click the **Save** icon. Here, mention the **Dashboard Name** and click **Save.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0b8ef2e-creating_grafana_dashboard.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/0b8ef2e-creating_grafana_dashboard.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully created a custom Grafana dashboard.
 
