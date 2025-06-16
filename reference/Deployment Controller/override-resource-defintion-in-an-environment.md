@@ -14,8 +14,8 @@ next:
   description: ''
 ---
 > 🚧 Your Control Plane URL will vary
-> 
-> The Control Plane URL, denoted as <code>YOUR_CP_URL</code> for this API reference document is <https://facetsdemo.console.facets.cloud>.  
+>
+> The Control Plane URL, denoted as <code>YOUR\_CP\_URL</code> for this API reference document is [https://facetsdemo.console.facets.cloud](https://facetsdemo.console.facets.cloud).\
 > Replace that with the Control Plane URL unique to your account.
 
 ## API Endpoint
@@ -26,32 +26,32 @@ This API processes a <code>POST</code> request to override current configuration
 https://{YOUR_CP_URL}/cc-ui/v1/clusters/{clusterId}/resourceType/{resourceType}/resourceName/{resourceName}/overrides
 ```
 
-- This API endpoint has four **path parameters**: `YOUR_CP_URL`, `clusterId`, `resourceType`, and `resourceName`.
-- There is also a **body parameter**, `overrides`.
+* This API endpoint has four **path parameters**: `YOUR_CP_URL`, `clusterId`, `resourceType`, and `resourceName`.
+* There is also a **body parameter**, `overrides`.
 
 ### **Path parameters**
 
-- `YOUR_CP_URL `of type `String`.  
+* `YOUR_CP_URL `of type `String`.\
   This is the Control Plane URL specific to your account.
-- `clusterId `of type `String`.  
+* `clusterId `of type `String`.\
   This is the unique ID for the environment where you want to override values in a defined resource. You can find this ID in the Environment Overview screen in Facets UI.
-- `resourceType`of type `String`.  
+* `resourceType`of type `String`.\
   This is the type of resource you want to override.
-- `resourceName`of type `String`.  
+* `resourceName`of type `String`.\
   This is the name of the resource you want to override. 
 
 > ⚠️ Validate your API request
-> 
+>
 > Ensure that the blueprint contains a defined `resourceName.json` file for the resource in the path `resourceType/instances/resourceName` where you want to override values.
 
 ### **Body parameters**
 
 `overrides` is an object that will take `key:value` pairs of type `String`.
 
-> 📘 
-> 
-> - The data in the `overrides `object will be merged with the existing definition in the `resourceName.json` file defined in the blueprint.
-> - Ensure that the`key:value` pairs match the keys and values in the `resourceName.json` file defined in the blueprint.
+> 📘
+>
+> * The data in the `overrides `object will be merged with the existing definition in the `resourceName.json` file defined in the blueprint.
+> * Ensure that the`key:value` pairs match the keys and values in the `resourceName.json` file defined in the blueprint.
 
 ```json overrides
 {
@@ -76,8 +76,8 @@ https://{YOUR_CP_URL}/cc-ui/v1/clusters/{clusterId}/resourceType/{resourceType}/
 
 To learn more about how to generate a basic authentication token for use with Facets API requests, check [Authentication Setup](ref:authentication-setup).
 
-> 📘 
-> 
+> 📘
+>
 > Facets API uses Basic Authentication.
 
 ## Generate a Sample Request ➡️
