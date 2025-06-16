@@ -14,48 +14,18 @@ Once the blueprint has been created, the next step involves creating the resourc
 
 The **Postgres** resource in this context is a PostgreSQL database, used by your application for data storage and retrieval. The **Service** resource is where the Spring Boot application resides, and the **Ingress** resource manages the exposure of your services to the external world.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/13a2260-image.png",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/13a2260-image.png">
+  Click on the image to expand
+</Image>
 
 ## How to Add Resources?
 
 1. Navigate to **Blueprint > List** and select the required Blueprint. 
 2. Open **Designer** and click **Add Resources.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/46fdf7d-pet_-_Add_resources.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/46fdf7d-pet_-_Add_resources.gif">
+  Click on the image to expand
+</Image>
 
 ### Adding a Postgres Resource
 
@@ -64,24 +34,9 @@ The **Postgres** resource in this context is a PostgreSQL database, used by your
 3. Mention the **Resource Name** and click **Add.**
 4. To create the resource and view its configuration, click **Add & View.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/93a1bc9-pet_-_add_res_postgres.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/93a1bc9-pet_-_add_res_postgres.gif">
+  Click on the image to expand
+</Image>
 
 #### Default Postgres JSON
 
@@ -120,24 +75,9 @@ The **Postgres** resource in this context is a PostgreSQL database, used by your
 3. Mention the **Resource Name** and click **Add.**
 4. To create the resource and view its configuration, click **Add & View.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1c95706-pet_-_add_res_service.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/1c95706-pet_-_add_res_service.gif">
+  Click on the image to expand
+</Image>
 
 #### Default Service JSON
 
@@ -206,24 +146,9 @@ The **Postgres** resource in this context is a PostgreSQL database, used by your
 3. Mention the **Resource Name** and click **Add.**
 4. To create the resource and view its configuration, click **Add & View.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d3a434c-pet_-_add_res_ingress.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/d3a434c-pet_-_add_res_ingress.gif">
+  Click on the image to expand
+</Image>
 
 #### Default Ingress JSON
 
@@ -258,7 +183,7 @@ The **Postgres** resource in this context is a PostgreSQL database, used by your
 }
 ```
 
-**Note: **When creating a resource, it is initially set with default sample values that can be modified after the resource has been created.
+**Note:** When creating a resource, it is initially set with default sample values that can be modified after the resource has been created.
 
 You have successfully created the necessary resources for the Pet Clinic application.
 
@@ -270,24 +195,9 @@ Upon creation, all resources are in a **disabled** state. To enable them, please
 2. Select the Postgres, Service, and Ingress resources you just created and click the **Enable** button at the bottom.
 3. In the Enable Resource pop-up, type **Confirm** in the text box and click **Enable.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ce9c79e-pet_-_enable_resource.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/ce9c79e-pet_-_enable_resource.gif">
+  Click on the image to expand
+</Image>
 
 You have successfully enabled the created resources.
 
