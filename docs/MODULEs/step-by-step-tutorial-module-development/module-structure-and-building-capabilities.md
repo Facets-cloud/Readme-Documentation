@@ -22,9 +22,9 @@ A Facets module is a structured collection of Terraform files and metadata that 
 
 1. **Terraform Files**:
 
-   - **main.tf**: Contains the resource definitions and logic.
-   - **variables.tf**: Defines the input parameters required for the module.
-   - **outputs.tf**: Specifies the outputs exposed by the module for downstream use.
+   * **main.tf**: Contains the resource definitions and logic.
+   * **variables.tf**: Defines the input parameters required for the module.
+   * **outputs.tf**: Specifies the outputs exposed by the module for downstream use.
 
 2. **Metadata File (facets.yaml)**: 
 
@@ -38,10 +38,10 @@ Module can be initialised in your local machine using FTF CLI. [Read More](https
 
 Facets.cloud provides predefined variables to simplify module development and integration. These variables ensure consistency across modules and facilitate dynamic configurations:
 
-- **`instance`**: Contains the content of the entire declarative configuration JSON, allowing access to all input parameters.
-- **`environment`**: Provides details of the Facets environment, such as namespace and other contextual information.
-- **`instance_name`**: Holds the name of the resource instance being created.
-- **`cluster`**: Includes details of the cluster created within the environment.
+* **`instance`**: Contains the content of the entire declarative configuration JSON, allowing access to all input parameters.
+* **`environment`**: Provides details of the Facets environment, such as namespace and other contextual information.
+* **`instance_name`**: Holds the name of the resource instance being created.
+* **`cluster`**: Includes details of the cluster created within the environment.
 
 These variables should be used within Terraform code to dynamically adapt configurations to the current environment.
 
@@ -62,7 +62,7 @@ These variables can be empty or set with specific values but must be defined. Th
 
 ## Sample Module: AWS S3 Bucket
 
-Example: <https://github.com/Facets-cloud/module-development-examples/tree/main/examples/s3>
+Example: [https://github.com/Facets-cloud/module-development-examples/tree/main/examples/s3](https://github.com/Facets-cloud/module-development-examples/tree/main/examples/s3)
 
 Below is a sample directory structure and file contents for an AWS S3 bucket module:
 
@@ -148,7 +148,7 @@ The `facets.yaml` file is the metadata blueprint for a Facets module. It specifi
 
 Let us understand in next chapters on what are the key fields in the facets.yaml and how to write a detailed YAML for a particular module. 
 
-**Sample S3 facets.yaml: **
+**Sample S3 facets.yaml:**
 
 ```yaml
 intent: s3
