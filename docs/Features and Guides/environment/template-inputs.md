@@ -36,16 +36,16 @@ This guide will help you define your own templated resources in Facets and assig
 
 To define a Template Input, follow these steps:
 
-1. **Create the Required Folder Structure:**  
+1. **Create the Required Folder Structure:**\
    Create a folder named `template_input_type/instances` within your blueprint definition.
-2. **Define Your Template Input:**  
+2. **Define Your Template Input:**\
    Inside the instances folder, create a JSON file to specify your Template Input.
-   - The Template Input will appear in the Control Plane with the name of the file you have created.
-   - For instance, if you name the file **customers.json**, it will be displayed as **customers** on the Template Input UI in your Control Plane.
-3. **Configure the JSON:**  
+   * The Template Input will appear in the Control Plane with the name of the file you have created.
+   * For instance, if you name the file **customers.json**, it will be displayed as **customers** on the Template Input UI in your Control Plane.
+3. **Configure the JSON:**\
    The JSON file you create should include the necessary fields that will define your template based on your business logic.
-   - `"fields":` An array of field names that will be used to define the template input. These fields should correspond to the attributes you need to specify for each tenant or instance.
-   - Replace `<field1>`, `<field2>`, and `<field3>` with actual field names relevant to your setup.
+   * `"fields":` An array of field names that will be used to define the template input. These fields should correspond to the attributes you need to specify for each tenant or instance.
+   * Replace `<field1>`, `<field2>`, and `<field3>` with actual field names relevant to your setup.
 
 ```Text JSON
 {
@@ -70,10 +70,10 @@ Facets uses Mustache, a logic-less templating system. Using Mustache allows you 
 
 To Create a Mustache File, follow these steps:
 
-1. **Create the Mustache File:**  
+1. **Create the Mustache File:**\
    Create a `.mustache` file in the `<resource_type>/instances` directory of the resource where you want to create template inputs.
-2. **Specify the Template Input:**  
-   In your Mustache file, use the JSON key `"templatedOn"` to specify which template input to use with the template.  
+2. **Specify the Template Input:**\
+   In your Mustache file, use the JSON key `"templatedOn"` to specify which template input to use with the template.\
    **For example:** `"templatedOn": "customers"`
 
 This setup will generate one replica for each tenant defined in your Control Plane.
@@ -84,7 +84,7 @@ This setup will generate one replica for each tenant defined in your Control Pla
 
 As an example, if your application takes `customer_id` and `designation` as inputs, the following Mustache JSON file creates one instance per defined customer and passes the respective `customer_id` and `designation` fields as arguments to the application.
 
-- Notice the key `templatedOn` is mapped to the defined Template Input file name.
+* Notice the key `templatedOn` is mapped to the defined Template Input file name.
 
 ```Text JSON
 
@@ -137,15 +137,15 @@ As an example, if your application takes `customer_id` and `designation` as inpu
 }
 ```
 
-- To refer to any field in the template input, you can use `current.data.<field_name>`.
-  - For example, `{{current.data.customer_id}}` or `{{current.data.designation}}`.
-- However, to refer to the unique ID assigned when creating a new customer in the Control Plane, use `{{current.uid}}`.
+* To refer to any field in the template input, you can use `current.data.<field_name>`.
+  * For example, `{{current.data.customer_id}}` or `{{current.data.designation}}`.
+* However, to refer to the unique ID assigned when creating a new customer in the Control Plane, use `{{current.uid}}`.
 
 #### Sample Ingress
 
 The following Mustache JSON file demonstrates how to create an ingress configuration that links to multiple services. This configuration uses the `uid` to uniquely identify each customer's frontend and backend services. 
 
-- Notice the key `templatedOn` is not used here because the same ingress configuration can be shared across different applications, and it dynamically links to the services.
+* Notice the key `templatedOn` is not used here because the same ingress configuration can be shared across different applications, and it dynamically links to the services.
 
 ```Text JSON
 {
@@ -192,8 +192,8 @@ The following Mustache JSON file demonstrates how to create an ingress configura
 }
 ```
 
-- In this example, any rules inside the `{{#customers}}...{{/customers}}` block will be replicated for each key in `customers` template input. 
-- The placeholder `{{uid}}` is used to uniquely identify each customer's frontend and backend services.
+* In this example, any rules inside the `{{#customers}}...{{/customers}}` block will be replicated for each key in `customers` template input. 
+* The placeholder `{{uid}}` is used to uniquely identify each customer's frontend and backend services.
 
 ## How to create a template input in the Control Plane?
 
@@ -201,7 +201,7 @@ Template Inputs in your Control Plane will require you to provide a unique ID fo
 
 1. Navigate to the environment where you want to define the template and select the **Template Inputs** tab.
 2. Click on the **Create New customers** button.
-   - The button says **customers** here because it reflects the name of the file in the `template_input_type/instances` folder. You can change this by renaming the file in that folder.
+   * The button says **customers** here because it reflects the name of the file in the `template_input_type/instances` folder. You can change this by renaming the file in that folder.
 3. Enter the necessary details in the pop-up that appears.
 4. Click **Save.**
 
