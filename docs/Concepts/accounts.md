@@ -34,5 +34,5 @@ Cloud Accounts in Facets are used to integrate with different cloud providers, s
 
 ## Related Guides
 
-- [Integrate Version Control Systems (VCS) with Facets](doc:integrating-vcs-accounts)
-- [Integrating Cloud Accounts](https://readme.facets.cloud/docs/integrating-cloud-accounts)
+* [Integrate Version Control Systems (VCS) with Facets](doc:integrating-vcs-accounts)
+* [Integrating Cloud Accounts](https://readme.facets.cloud/docs/integrating-cloud-accounts)
