@@ -39,8 +39,6 @@ You can define a resource in your blueprint by adding an `<intent>.json` file wi
 vim mysql/instances/my-mysql.json
 ```
 
-
-
 # Schema for a Resource Type/ Intent
 
 The following fields consist of a basic schema for any Resource Type/Intent.
@@ -49,13 +47,13 @@ The following fields consist of a basic schema for any Resource Type/Intent.
 
 `Kind` is used to specify the type of resource/`intent`. If not specified, the fallback is determined by where the JSON is placed `folder_name`/instances 
 
-- Application, MySQL, or Redis are a `kind` of `intent`.
+* Application, MySQL, or Redis are a `kind` of `intent`.
 
 ## flavor
 
 `Flavor` is used to select a particular implementation for a Resource Type/`Intent`.
 
-- `k8s`, `elasticache`, and `memorystore` are all flavors of Redis Intent
+* `k8s`, `elasticache`, and `memorystore` are all flavors of Redis Intent
 
 ## version
 
@@ -65,7 +63,7 @@ In case of multiple versions of a resource implementation, this field can be use
 
 There are multiple phases in the lifecycle of an environment, `lifecycle` describes the phase in which a particular resource has to be invoked.
 
-- `ENVIRONMENT_BOOTSTRAP`, and `ENVIRONMENT_NORMAL` are different values for `lifecycle`.
+* `ENVIRONMENT_BOOTSTRAP`, and `ENVIRONMENT_NORMAL` are different values for `lifecycle`.
 
 ## disabled
 
@@ -75,8 +73,8 @@ As the name suggests, this is a flag to disable a resource.
 
 This section is used for specifying properties specific to a Resource Type/ `Intent`. These properties are independent of the implementation and are relevant to the `Intent`
 
-- e.g. Redis version for Redis `Intent`
-- e.g. No. of slaves for a Redis `Intent` 
+* e.g. Redis version for Redis `Intent`
+* e.g. No. of slaves for a Redis `Intent` 
 
 ## out
 
@@ -91,8 +89,6 @@ Any field in this block can be referenced in other JSON by following the convent
 }
 ```
 
-
-
 ## advanced
 
 Every implementation/ `flavor` is free to inherit the resource type schema and add additional fields in the `advanced` section. 
@@ -101,11 +97,9 @@ Every implementation/ `flavor` is free to inherit the resource type schema and a
 
 Flag to tell if facets should not provision the resource. The Out values have to be provided by the user in this case.
 
-- A MySQL can be provisioned outside the facets but can exist in the blueprint for others to refer to the URL, username, etc.
+* A MySQL can be provisioned outside the facets but can exist in the blueprint for others to refer to the URL, username, etc.
 
 ***
-
-
 
 # Traits
 
@@ -116,7 +110,7 @@ There are many traits that may be common across resource types/`Intents` like th
 | Key          | Optional | Type    | Description                                                                                                                     |
 | :----------- | :------- | :------ | :------------------------------------------------------------------------------------------------------------------------------ |
 | `kind`       | No       | string  | Describes the type of resource. e.g. ingress, application, mysql etc. If not specified, fallback is the `folder_name`/instances |
-| `flavor`     | No       | string  | Implementation selector for the resource. e.g. for a resource type ingress, it can be default, aws_alb, gcp_alb etc.            |
+| `flavor`     | No       | string  | Implementation selector for the resource. e.g. for a resource type ingress, it can be default, aws\_alb, gcp\_alb etc.          |
 | `version`    | No       | string  | Used to pin to a particular version. Default value `latest`.                                                                    |
 | `disabled`   | Yes      | boolean | Flag to disable the resource.                                                                                                   |
 | `provided`   | Yes      | boolean | Flag to tell if the resource should not be provisioned by Facets.                                                               |
