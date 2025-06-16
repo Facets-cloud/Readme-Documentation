@@ -29,33 +29,22 @@ Establish stable production environments with specific release streams and confi
 ## How to Create an Environment
 
 1. Access Environment Creation:
-   - Navigate to your project
-   - Select **Environments** tab
-   - Click **Create Environment** button
+   * Navigate to your project
+   * Select **Environments** tab
+   * Click **Create Environment** button
 
 2. Configure Environment:
-   - Enter a unique **Environment Name**
-   - Select appropriate **Release Stream**
-   - Click **Create**
+   * Enter a unique **Environment Name**
+   * Select appropriate **Release Stream**
+   * Click **Create**
 
 3. Post-Creation:
-   - Environment appears with **STOPPED** status
-   - Use **Launch** button to deploy to a cloud of your choice. 
-   - Monitor status in the environments page
+   * Environment appears with **STOPPED** status
+   * Use **Launch** button to deploy to a cloud of your choice. 
+   * Monitor status in the environments page
 
 Your new environment is ready for configuration and deployment after completion.
 
 ### Interactive Demo: How to Create an Environment on Facets
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fcfh5tc7h03cw&display_name=Storylane&url=https%3A%2F%2Fapp.storylane.io%2Fdemos%2Fcfh5tc7h03cw&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%2Fproject%2Fproject_de58d977-156f-4675-81d0-02f8c6c06971%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"473\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://app.storylane.io/demos/cfh5tc7h03cw",
-  "title": "Environments | Feb 20 6:43 PM",
-  "favicon": "https://assets.storylane.io/apps/prod/99/icons/favicon.ico",
-  "image": "https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_de58d977-156f-4675-81d0-02f8c6c06971/preview.gif",
-  "provider": "https://www.storylane.io",
-  "href": "https://app.storylane.io/demos/cfh5tc7h03cw",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
+<Embed url="https://app.storylane.io/demos/cfh5tc7h03cw" title="Environments | Feb 20 6:43 PM" favicon="https://assets.storylane.io/apps/prod/99/icons/favicon.ico" image="https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_de58d977-156f-4675-81d0-02f8c6c06971/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demos/cfh5tc7h03cw" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fcfh5tc7h03cw%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemos%252Fcfh5tc7h03cw%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_de58d977-156f-4675-81d0-02f8c6c06971%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22473%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
