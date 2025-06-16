@@ -21,7 +21,7 @@ In this example, we will be linking a Postgres resource to a Service resource us
 1. First, ensure you have both a Service and a Postgres resource created within your Blueprint.
 2. Navigate to the **Blueprint** tab and select the Service resource you want to connect to the Postgres resource.
 3. Access the **Configurations** tab and click **Environment Variables.**
-4. Now, click **Add Environment Variables. **
+4. Now, click **Add Environment Variables.**
 5. In the pop-up that appears, select **Resource Reference.**
 6. Now, select the corresponding Postgres database, enter the Name and select the required Value.
 7. Click **Save.**
@@ -36,7 +36,7 @@ In this example, we will be linking a Service resource to an Ingress resource us
 2. Navigate to the **Resource Center** and select the Ingress resource to which you want to connect your Service resource.
 3. Access the **Configurations** tab and click **Configure.**
 4. In the Form mode, under **Ingress Rules,** click **Add New Entry.**
-5. Mention the **Service Name, Path, **and** Port. **
+5. Mention the **Service Name, Path,** and **Port.**
 6. Click **Save Changes.**
 
 You have successfully linked a Service resource with an Ingress resource.
