@@ -14,30 +14,30 @@ When developing applications, it's often necessary to provide information that c
 
 This information can't be hardcoded and includes:
 
-- **Feature Flags:** Change the behavior of the application from one environment to another.
-- **Secrets and Variables:** External keys and secrets needed to interact with services like OpenAI.
-- **URLs and Passwords:** Credentials and URLs for dependencies like PostgreSQL databases.
+* **Feature Flags:** Change the behavior of the application from one environment to another.
+* **Secrets and Variables:** External keys and secrets needed to interact with services like OpenAI.
+* **URLs and Passwords:** Credentials and URLs for dependencies like PostgreSQL databases.
 
 ## Common Challenges
 
 Currently, organizations use various methods to handle these configurations:
 
-- Creating environment variables for some settings.
-- Storing secrets in secret stores.
-- Maintaining environment-specific configuration files.
+* Creating environment variables for some settings.
+* Storing secrets in secret stores.
+* Maintaining environment-specific configuration files.
 
 These approaches can lead to security risks and human errors, such as:
 
-- Accidentally exposing passwords while adding them to a secret store.
-- Inputting incorrect URLs or credentials.
+* Accidentally exposing passwords while adding them to a secret store.
+* Inputting incorrect URLs or credentials.
 
 ## Our Solution
 
 We address these challenges by modeling all configurations using environment variables. Here's how it works:
 
-- **Service-Specific Variables:** Create environment variables for individual services, such as feature flags.
-- **Project-Level Secrets and Variables:** Define secrets and variables at the project level that can be referenced by multiple services using different key names.
-- **Direct Connections:** Directly connect to databases or other resources and automatically wire values like URLs, usernames, and passwords.
+* **Service-Specific Variables:** Create environment variables for individual services, such as feature flags.
+* **Project-Level Secrets and Variables:** Define secrets and variables at the project level that can be referenced by multiple services using different key names.
+* **Direct Connections:** Directly connect to databases or other resources and automatically wire values like URLs, usernames, and passwords.
 
 Our platform injects these variables at runtime, determining their values for each environment. You can provide default values for project-level or service-level variables and secrets, which can be overridden at the environment level. This approach centralizes the management of common variables, making it easier and more secure.
 
