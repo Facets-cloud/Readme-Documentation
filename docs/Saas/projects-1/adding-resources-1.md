@@ -55,5 +55,5 @@ To explore related tasks, refer to the following documentation:
 
 ## FAQs
 
-1. How do I handle dependencies between resources when adding them?  
+1. How do I handle dependencies between resources when adding them?\
    Use the Reference Resources functionality to define dependencies. You can reference other resources dynamically using dollar references in JSON Mode or predefined options in Form Mode.
