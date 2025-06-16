@@ -18,18 +18,18 @@ To know more about what are secrets and variables in Facets, [Secrets & Variable
 
 ### Migrating Existing Variables
 
-- Review your current .env files or configuration management
-- Identify variables that should be project-wide vs resource-specific
-- Determine which values need environment-specific overrides
+* Review your current .env files or configuration management
+* Identify variables that should be project-wide vs resource-specific
+* Determine which values need environment-specific overrides
 
 ### Configuring in Facets
 
-- Add project-wide secrets and variables from "Secrets and Variables" tab in your project. Configure auto-injection for commonly used variables to be used across all resources. 
-- Navigate to your Service Configuration Tab and add resource-specific variables in "Environment Variables" section or in JSON configuration. Non-auto-injected variables if needed can be aliased in the resource as well.
+* Add project-wide secrets and variables from "Secrets and Variables" tab in your project. Configure auto-injection for commonly used variables to be used across all resources. 
+* Navigate to your Service Configuration Tab and add resource-specific variables in "Environment Variables" section or in JSON configuration. Non-auto-injected variables if needed can be aliased in the resource as well.
 
 ### Managing Sensitive Data
 
-- Use Secrets for sensitive values
-- Only define secret keys in the blueprint
-- Set actual values at environment level
-- Utilise secret manager integration for enhanced security
+* Use Secrets for sensitive values
+* Only define secret keys in the blueprint
+* Set actual values at environment level
+* Utilise secret manager integration for enhanced security
