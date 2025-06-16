@@ -16,19 +16,7 @@ Once you've configured your project-level CD flow, you need to consume it at the
 
 ## How to Attach an Image to a Service Resource?
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fvqccd5lqvmn8&display_name=Storylane&url=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fvqccd5lqvmn8&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%2Fproject%2Fproject_a974a08a-4b8f-4c50-9a38-4b16f64e3892%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"449\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://app.storylane.io/demo/vqccd5lqvmn8",
-  "title": "CI/CD | Feb 17 12:18 PM",
-  "favicon": "https://app.storylane.io/favicon.ico",
-  "image": "https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_a974a08a-4b8f-4c50-9a38-4b16f64e3892/preview.gif",
-  "provider": "app.storylane.io",
-  "href": "https://app.storylane.io/demo/vqccd5lqvmn8",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
-
+<Embed url="https://app.storylane.io/demo/vqccd5lqvmn8" title="CI/CD | Feb 17 12:18 PM" favicon="https://app.storylane.io/favicon.ico" image="https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_a974a08a-4b8f-4c50-9a38-4b16f64e3892/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demo/vqccd5lqvmn8" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fvqccd5lqvmn8%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fvqccd5lqvmn8%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_a974a08a-4b8f-4c50-9a38-4b16f64e3892%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22449%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 1. In the **Images** Tab of any Service Resource, you can change the strategy from the edit icon.
 2. Facets offers two CI/CD strategies:
@@ -49,10 +37,10 @@ You have successfully attached the image to that environment. Repeat this proces
 
 After selecting the project CI/CD flow option in your service's Images tab, you'll see a visual representation of:
 
-- All environments in your CD flow and current images deployed in each environment
-- Available promotion paths between environments and Image status and deployment information
+* All environments in your CD flow and current images deployed in each environment
+* Available promotion paths between environments and Image status and deployment information
 
-**Image Registration**  
+**Image Registration**\
 When your CI pipeline builds a new image, Facets provides a command that maps this image to the correct environment based on the source branch. This command needs to be run everytime a new image is built corresponding to that branch of git repo.
 
 ```json
@@ -70,27 +58,13 @@ curl -s https://facets-cloud.github.io/facets-schemas/scripts/fctl_register.sh |
 
 **Integration with CI Pipeline**
 
-- Instead of manually running the registration command each time, add the Facets command to your existing CI pipeline. 
-- Each time code is committed to a configured branch, CI pipeline builds the image and with the command added in the file, image is automatically registered with the correct environment. No manual intervention required.
-- Once the image is registered in the environment linked to the source branch in the CI Rule, it can be promoted to further environments based on the promotion workflow defined.
+* Instead of manually running the registration command each time, add the Facets command to your existing CI pipeline. 
+* Each time code is committed to a configured branch, CI pipeline builds the image and with the command added in the file, image is automatically registered with the correct environment. No manual intervention required.
+* Once the image is registered in the environment linked to the source branch in the CI Rule, it can be promoted to further environments based on the promotion workflow defined.
 
 To know more about Integration with CI Pipeline, refer to the "Integrate with CI System" in Images Tab. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0a400eca32e56dbf0f53079bb47f77e42f5bf576b3e147398564ba272c68aa87-Screenshot_2025-02-18_at_11.49.53_AM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/0a400eca32e56dbf0f53079bb47f77e42f5bf576b3e147398564ba272c68aa87-Screenshot_2025-02-18_at_11.49.53_AM.png" />
 
 ***
 
@@ -116,5 +90,5 @@ No, you cannot deploy your application if the image is only registered but not p
 
 ## Related Guides
 
-- [CI/CD Workflow](https://readme.facets.cloud/docs/cicd-workflow)
-- [Container Registries](https://readme.facets.cloud/docs/container-registries)
+* [CI/CD Workflow](https://readme.facets.cloud/docs/cicd-workflow)
+* [Container Registries](https://readme.facets.cloud/docs/container-registries)
