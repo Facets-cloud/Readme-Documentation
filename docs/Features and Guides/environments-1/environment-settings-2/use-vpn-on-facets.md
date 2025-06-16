@@ -16,12 +16,12 @@ Facets integrates with WireGuard VPN to provide secure access to cluster resourc
 
 ## Key Features
 
-- Built-in WireGuard VPN server configuration
-- User-specific VPN profiles
-- Custom IP range definition for VPN access
-- Permission-based access control
-- One-click VPN profile download
-- Simple client setup process
+* Built-in WireGuard VPN server configuration
+* User-specific VPN profiles
+* Custom IP range definition for VPN access
+* Permission-based access control
+* One-click VPN profile download
+* Simple client setup process
 
 ## Common Use Cases
 
@@ -40,21 +40,21 @@ Access internal monitoring dashboards and debugging tools securely.
 ## How to Configure VPN
 
 1. Enable VPN Server:
-   - Navigate to **Projects** → Select your project
-   - Go to **Environments** → Choose environment
-   - Open **Environment Settings** → **Virtual Private Network**
-   - Toggle **Enable VPN Server**
-   - Enter IP range(s) accessible via VPN
-   - Click **Save Changes**
+   * Navigate to **Projects** → Select your project
+   * Go to **Environments** → Choose environment
+   * Open **Environment Settings** → **Virtual Private Network**
+   * Toggle **Enable VPN Server**
+   * Enter IP range(s) accessible via VPN
+   * Click **Save Changes**
 
 2. Confirm VPN Status:
-   - Perform a release to activate VPN server
-   - Verify VPN server status in environment
+   * Perform a release to activate VPN server
+   * Verify VPN server status in environment
 
 3. Set Up Client Access:
-   - Download WireGuard Client from [WireGuard website](https://www.wireguard.com/install/)
-   - Click environment menu (⋮) → **Download VPN Profile**
-   - Import profile into WireGuard Client
-   - Connect to start using Facets VPN
+   * Download WireGuard Client from [WireGuard website](https://www.wireguard.com/install/)
+   * Click environment menu (⋮) → **Download VPN Profile**
+   * Import profile into WireGuard Client
+   * Connect to start using Facets VPN
 
 Your team can now securely access cluster resources through the configured VPN connection.
