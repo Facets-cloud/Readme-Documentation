@@ -12,12 +12,12 @@ next:
 ---
 Welcome to Facets! In this getting started guide, we will walk you through the process of getting your control plane. 
 
-1. **Get a Demo **: To get started, simply request a [demo by contacting the Facets team](https://www.facets.cloud/demo). Our team will understand the requirements and will help you get started. 
-2. **Submit Service Account Details**:  
+1. **Get a Demo** : To get started, simply request a [demo by contacting the Facets team](https://www.facets.cloud/demo). Our team will understand the requirements and will help you get started. 
+2. **Submit Service Account Details**:\
    You will receive a form to submit your **Google Cloud Service Account** details. Ensure that:
-   - You use a **dedicated GCP project** for better security and isolation.  
+   * You use a **dedicated GCP project** for better security and isolation.\
      A dedicated subscription is recommended to set up the Facets control plane.
-   - Enable the following google APIs in the project where Facets control plane resources are to be deployed.
+   * Enable the following google APIs in the project where Facets control plane resources are to be deployed.
      ```
      "analyticshub.googleapis.com"
      "artifactregistry.googleapis.com"
@@ -55,7 +55,7 @@ Welcome to Facets! In this getting started guide, we will walk you through the p
      "storage.googleapis.com"
      "secretmanager.googleapis.com"
      ```
-   - Ensure the service account has the necessary permissions :
+   * Ensure the service account has the necessary permissions :
    ```
    "alloydb.clusters.create"
      "alloydb.clusters.delete"
@@ -233,11 +233,11 @@ Welcome to Facets! In this getting started guide, we will walk you through the p
    ```
    <br />
 3. **The Facets team launches the Control Plane**: After receiving your **service account details**, the Facets team will launch the **control plane** in your GCP environment. The setup is usually completed within **60 minutes**.
-4. **Welcome Email with Control Plane URL**:  
+4. **Welcome Email with Control Plane URL**:\
    Once the deployment is successful, you will receive a **welcome email** containing:
-   - Your **Facets Control Plane URL**
-   - A **username**
-   - A **password reset link**  
+   * Your **Facets Control Plane URL**
+   * A **username**
+   * A **password reset link**\
      Use these credentials to log in and start configuring your Facets environment.
 
 ## **Resources Deployed on GCP**
@@ -246,26 +246,26 @@ The **Facets Control Plane** will include the following Google Cloud resources:
 
 ### **Networking**
 
-- **Virtual Private Cloud (VPC)**: A dedicated VPC for the Facets control plane. In Custom cases we optionally work with shared vpc as well. [Read More](https://readme.facets.cloud/docs/launching-facets-control-plane-in-gcp-shared-vpc)
-- **Subnets**:
-  - **Private Subnets**: Located in two separate **GCP regions/zones**, with **Cloud NAT Gateways** for outbound internet access.
-  - **Public Subnets**: Designed for managing external access.
+* **Virtual Private Cloud (VPC)**: A dedicated VPC for the Facets control plane. In Custom cases we optionally work with shared vpc as well. [Read More](https://readme.facets.cloud/docs/launching-facets-control-plane-in-gcp-shared-vpc)
+* **Subnets**:
+  * **Private Subnets**: Located in two separate **GCP regions/zones**, with **Cloud NAT Gateways** for outbound internet access.
+  * **Public Subnets**: Designed for managing external access.
 
 ### **Compute & Container Orchestration**
 
-- **Google Kubernetes Engine (GKE)**:
-  - **Cluster**: A **GKE cluster** with **encryption at rest** enabled.
-  - **Nodes**: A **GKE node pool** with **8 vCPUs, 32GB RAM**, and a **100GB root volume**.
-  - **Auto-scaling**: Ensuring efficient resource allocation.
-- **Google Cloud Load Balancer (GLB)**:
-  - **Two external HTTP(S) Load Balancers** to distribute traffic across availability zones.
+* **Google Kubernetes Engine (GKE)**:
+  * **Cluster**: A **GKE cluster** with **encryption at rest** enabled.
+  * **Nodes**: A **GKE node pool** with **8 vCPUs, 32GB RAM**, and a **100GB root volume**.
+  * **Auto-scaling**: Ensuring efficient resource allocation.
+* **Google Cloud Load Balancer (GLB)**:
+  * **Two external HTTP(S) Load Balancers** to distribute traffic across availability zones.
 
 ### **Storage & Security**
 
-- **Database**: **postgres db** for managing terraform state.
-- **Cloud IAM**: Role-based access controls (RBAC) for **fine-grained security policies**.
-- **Cloud Logging & Monitoring**:
-  - **Google Cloud Operations Suite** (formerly Stackdriver) integration for **real-time monitoring** and **logging**.
+* **Database**: **postgres db** for managing terraform state.
+* **Cloud IAM**: Role-based access controls (RBAC) for **fine-grained security policies**.
+* **Cloud Logging & Monitoring**:
+  * **Google Cloud Operations Suite** (formerly Stackdriver) integration for **real-time monitoring** and **logging**.
 
 ## Deployment Options
 
@@ -277,9 +277,9 @@ For custom configurations such as **resource scaling** or **high-availability se
 
 After deployment, you can:
 
-- Create **custom blueprints** to automate cloud infrastructure.
-- Manage resources using the **Facets UI** or **CLI**.
-- Monitor your workloads through **integrated dashboards**.
+* Create **custom blueprints** to automate cloud infrastructure.
+* Manage resources using the **Facets UI** or **CLI**.
+* Monitor your workloads through **integrated dashboards**.
 
 ***
 
@@ -297,9 +297,9 @@ The Facets GCP Secret Manager feature enables secure storage and management of s
 
 The feature supports three operational modes, implemented in the GcpSecretsService:
 
-- `AUTOMATIC_REPLICATION`: Secrets are automatically replicated across multiple regions by GCP (default setting)
-- `USER_MANAGED_REPLICATION`: Customer specifies which regions the secret should be replicated to
-- `REGIONAL`: Secrets are available only in a specific region
+* `AUTOMATIC_REPLICATION`: Secrets are automatically replicated across multiple regions by GCP (default setting)
+* `USER_MANAGED_REPLICATION`: Customer specifies which regions the secret should be replicated to
+* `REGIONAL`: Secrets are available only in a specific region
 
 ### Mode Selection Guide
 
@@ -309,21 +309,21 @@ When choosing between automatic and user-managed replication, consider these fac
 
 #### Automatic Replication: Provides greater availability by replicating secrets to all available regions
 
-Pros: Higher availability, simpler management  
+Pros: Higher availability, simpler management\
 Cons: May conflict with organizational policies, higher costs
 
 ##### User-Managed Replication: Allows you to specify exactly which regions contain your secrets
 
-Pros: Fine-grained control, potentially lower costs, compliance with location restrictions  
+Pros: Fine-grained control, potentially lower costs, compliance with location restrictions\
 Cons: Manual management overhead, potentially lower availability
 
 ### Regional Secrets
 
 Regional secrets are only available in [specific regions supported by Secret Manager](https://cloud.google.com/secret-manager/docs/locations). Consider using regional secrets when:
 
-- You have strict data residency requirements
-- You want to minimize costs for rarely accessed secrets
-- Your applications only run in a specific region
+* You have strict data residency requirements
+* You want to minimize costs for rarely accessed secrets
+* Your applications only run in a specific region
 
 For a detailed comparison between regional and global secret options, see [Google's comparison documentation](https://cloud.google.com/secret-manager/regional-secrets/global-regionalized-service-comparison).
 
@@ -333,12 +333,12 @@ If your organization has implemented location restriction policies, you may be b
 
 In such cases, you must use either:
 
-- `USER_MANAGED_REPLICATION` mode with approved regions
-- `REGIONAL `mode with an approved region
+* `USER_MANAGED_REPLICATION` mode with approved regions
+* `REGIONAL `mode with an approved region
 
 #### Important Implementation Notes
 
-The `SecretManagerMode` should not be changed after secrets have been migrated to avoid access issues.  
+The `SecretManagerMode` should not be changed after secrets have been migrated to avoid access issues.\
 When using modes other than `AUTOMATIC_REPLICATION`, the `gcp.secret.manager.region.id` must be set to a supported region.
 
 Regional secrets are only available in the regions listed in the [Secret Manager locations documentation](https://cloud.google.com/secret-manager/docs/locations).
