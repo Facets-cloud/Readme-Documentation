@@ -18,9 +18,9 @@ Learn more about [IaC in Facets](doc:iac-using-facets).
 
 Facets allows you to manage the IaC version from your **Environment Overview** screen as well as **Releases** screen. 
 
-> 📘 
-> 
-> **Note: **IaC version or stream change will take effect from the next release after the change.
+> 📘
+>
+> **Note:** IaC version or stream change will take effect from the next release after the change.
 
 1. Login to your **Control Plane.**
 2. Navigate to **Blueprint > List** and select a **Blueprint.**
@@ -29,26 +29,11 @@ Facets allows you to manage the IaC version from your **Environment Overview** s
 ### Using the Environment Overview screen
 
 1. In the **Environment Overview** page, click the **Edit** button in the **IaC Version** widget.
-2. In the **Edit IaC Version **popup, make the required modifications and then click **Save Changes.**
+2. In the **Edit IaC Version** popup, make the required modifications and then click **Save Changes.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9c25a57-Manage_IaC_-_env_overview.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/9c25a57-Manage_IaC_-_env_overview.gif">
+  Click on the image to expand
+</Image>
 
 You should see a success toaster popup confirming your changes.
 
@@ -56,12 +41,14 @@ You should see a success toaster popup confirming your changes.
 
 1. Navigate to **Environment > Releases.**
 2. Click on the Ellipsis button to view more options and select **Update IaC Version.**
-3. In the **Edit IaC Version **popup, make the required modifications and then click **Save Changes.**
+3. In the **Edit IaC Version** popup, make the required modifications and then click **Save Changes.**
 
-[block:image]{"images":[{"image":["https://files.readme.io/8cfe618-Manage_IaC_-_releases.gif",null,"Click on the image to expand"],"align":"center","sizing":"450px","border":true,"caption":"Click on the image to expand"}]}[/block]
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/8cfe618-Manage_IaC_-_releases.gif">
+  Click on the image to expand
+</Image>
 
 You should see a success toaster popup confirming your changes.
 
 > 📘 NOTE
-> 
-> **Note: **If there is no defined IaC version for an environment during deployment, Facets will automatically select the latest version of IaC from `PRODUCTION` stream.
+>
+> **Note:** If there is no defined IaC version for an environment during deployment, Facets will automatically select the latest version of IaC from `PRODUCTION` stream.
