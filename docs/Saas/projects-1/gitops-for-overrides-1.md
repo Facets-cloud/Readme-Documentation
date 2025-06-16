@@ -33,11 +33,11 @@ The GitOps feature in Facets allows you to manage resource overrides directly th
 5. Decide whether you want to enable **Restrict Changes from UI.**
 6. Click **Save Changes.**
 
-> 📘 
-> 
-> - Once you click **Save Changes,** the migration process will begin.
-> - The migration can take some time to complete. During this period, please refrain from making any overrides.
-> - You can monitor the migration status directly in the UI. If the migration fails, you will need to configure it again
+> 📘
+>
+> * Once you click **Save Changes,** the migration process will begin.
+> * The migration can take some time to complete. During this period, please refrain from making any overrides.
+> * You can monitor the migration status directly in the UI. If the migration fails, you will need to configure it again
 
 You have successfully configured GitOps for Overrides. All existing override data has been migrated to your specified repository, and any future overrides will be saved there automatically.
 
@@ -49,7 +49,7 @@ When the Restrict Changes from UI feature is enabled in Facets, it imposes limit
    1. Enabling or Disabling Resources
    2. Overriding Resources
    3. Attaching Images
-   4. Domain Mapping for Ingress resources  
+   4. Domain Mapping for Ingress resources\
       All related buttons and options within the UI will be disabled, preventing any direct changes.
 2. Users will need to use Git to override resources. An **Edit from Git** button will be provided, directing users to the relevant Git repository for making updates.
    1. **For Previously Overridden Resources:** Clicking the **Edit from Git** button will navigate users to the specific resource JSON file within the Git repository.
@@ -70,5 +70,5 @@ By enabling the Restrict Changes from UI feature, you streamline and centralize 
 
 ## FAQs
 
-1. What if the migration process fails?
+1. What if the migration process fails?\
    If the migration fails, you can reconfigure GitOps in the project settings. Monitor the migration status in the UI for detailed error information.
