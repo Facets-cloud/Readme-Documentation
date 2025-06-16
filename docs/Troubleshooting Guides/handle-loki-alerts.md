@@ -20,7 +20,7 @@ If you receive a CPU throttling alert for Promtail, follow these steps to increa
 2. In the **Environments** tab, select the required Environment.  
 3. Now, in the **Resource Center** tab, select the appropriate `log_collector` resource. 
 4. Under the **Spec Overrides** tab, click **Edit.**
-5. To increase the CPU, update the CPU limits at the specified JSON path by referring to the [Helm chart.](https://artifacthub.io/packages/helm/grafana/promtail?modal=values&path=resources)
+5. To increase the CPU, update the CPU limits at the specified JSON path by referring to the [Helm chart.](https://artifacthub.io/packages/helm/grafana/promtail?modal=values\&path=resources)
 
 The following is the JSON path to increase CPU limits:
 
@@ -59,7 +59,7 @@ If you receive a memory throttling alert for Promtail, follow these steps to inc
 2. In the **Environments** tab, select the required Environment.  
 3. Now, in the **Resource Center** tab, select the appropriate `log_collector` resource. 
 4. Under the **Spec Overrides** tab, click **Edit.**
-5. To increase the memory, update the memory limits at the specified JSON path by referring to the [Helm chart.](https://artifacthub.io/packages/helm/grafana/promtail?modal=values&path=resources)
+5. To increase the memory, update the memory limits at the specified JSON path by referring to the [Helm chart.](https://artifacthub.io/packages/helm/grafana/promtail?modal=values\&path=resources)
 
 The following is the JSON path to increase memory limits:
 
@@ -176,7 +176,7 @@ If you encounter a query error with a read timeout,
    ```Text SHELL
    kubectl get pod -n facets
    ```
-2. If the status is reported as `CrashLoopBackOff` or if you observe frequent restarts of components it is necessary to investigate the cause for the restarts.  
+2. If the status is reported as `CrashLoopBackOff` or if you observe frequent restarts of components it is necessary to investigate the cause for the restarts.\
    The following command can be used to retrieve the reason for the last termination :
 
 ```Text SHELL
