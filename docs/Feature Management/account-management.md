@@ -12,9 +12,9 @@ next:
 ---
 ## Feature Page
 
-- [Account Management](doc:accounts) 
+* [Account Management](doc:accounts) 
 
 ## User Guides
 
-- [Integrate Version Control Systems (VCS) with Facets](doc:integrating-vcs-accounts)
-- [Integrating Cloud Accounts](doc:integrating-cloud-accounts)
+* [Integrate Version Control Systems (VCS) with Facets](doc:integrating-vcs-accounts)
+* [Integrating Cloud Accounts](doc:integrating-cloud-accounts)
