@@ -26,15 +26,15 @@ Think of a Facets module as a **capability** — for example, “provision a Kub
 
 Most teams using Terraform hit similar challenges over time:
 
-- Different teams write modules differently — no standard pattern
-- Inputs are hard to validate or document
-- Developers need deep Terraform knowledge to use even simple infrastructure
-- Reuse becomes risky or limited to copy-paste
+* Different teams write modules differently — no standard pattern
+* Inputs are hard to validate or document
+* Developers need deep Terraform knowledge to use even simple infrastructure
+* Reuse becomes risky or limited to copy-paste
 
 Facets addresses this by introducing **a contract for modules**, built on structured inputs and outputs:
 
-- **Inputs**: What developers are allowed to configure
-- **Outputs**: What other modules or services can consume
+* **Inputs**: What developers are allowed to configure
+* **Outputs**: What other modules or services can consume
 
 By enforcing this structure — and using a shared language (`instance`, `environment`, `inputs`) — modules can be rolled out safely across environments, with low friction and no surprises.
 
@@ -50,7 +50,7 @@ Modules are defined once by platform teams and published to an internal registry
 
 ### Designing for Simplicity, Not Exhaustiveness
 
-Some might ask: _“Why not expose all the options Terraform supports?”_
+Some might ask: *“Why not expose all the options Terraform supports?”*
 
 Facets takes the opposite approach. Modules are **designed for clarity**. The goal isn’t to make every setting available — it’s to expose just what developers need to safely deploy and manage infrastructure.
 
@@ -58,8 +58,8 @@ This constraint leads to **standardized, predictable assets**. It avoids the cha
 
 True self-service at scale depends on two things:
 
-- **Organizational context**: using inputs and language developers already know
-- **Strong abstractions**: hiding what doesn’t matter to the consumer
+* **Organizational context**: using inputs and language developers already know
+* **Strong abstractions**: hiding what doesn’t matter to the consumer
 
 Facets modules are built with both in mind.
 
@@ -67,8 +67,8 @@ Facets modules are built with both in mind.
 
 ### Who Writes Modules, and Who Uses Them
 
-- **Platform engineers** write, version, and publish modules to the registry.
-- **Developers** configure and use those modules without touching Terraform code — often through a UI.
+* **Platform engineers** write, version, and publish modules to the registry.
+* **Developers** configure and use those modules without touching Terraform code — often through a UI.
 
 ***
 
@@ -76,25 +76,25 @@ Facets modules are built with both in mind.
 
 Here’s what the process of writing and publishing a Facets module typically looks like:
 
-1. **Plan the capability**  
+1. **Plan the capability**\
    Identify the infrastructure capability you want to model (e.g., `gcp-gke`, `aws-s3`, `databricks-job`). Define what should be configurable and what should be opinionated.
 
-2. **Write the Terraform logic**  
+2. **Write the Terraform logic**\
    Implement the core infrastructure in standard Terraform. Use only [Facets standard variables](https://readme.facets.cloud/docs/building-a-facets-module#3-write-the-terraform-logic) (`instance`, `instance_name`, `environment`, `inputs`) to keep it compatible with the Facets system.
 
-3. **Define the module contract**  
+3. **Define the module contract**\
    Establish what the module is meant to do, what inputs developers will configure, what outputs will be available to other modules, and an example configuration to support UI rendering.
 
-4. **Generate outputs**  
+4. **Generate outputs**\
    Use structured `locals` to define `output_interfaces` and `output_attributes`, including any `secrets`.
 
-5. **Test and validate**  
+5. **Test and validate**\
    Use `terraform validate` and other local checks to ensure inputs, outputs, and logic are working as expected.
 
-6. **Publish the module**  
+6. **Publish the module**\
    Register the module using the Facets CLI. It becomes available in the registry and can be reused across teams.
 
-7. **Enable consumption by developers**  
+7. **Enable consumption by developers**\
    Developers can now discover the module and configure it through the Facets UI or by providing a JSON spec — without needing to write or understand the underlying Terraform.
 
 ***
