@@ -16,8 +16,8 @@ In Facets, you can define default CI Rules for designated blueprints, environmen
 
 First, let's outline the logic we will employ to establish and configure default CI Rules.
 
-- Facets uses `ruleID` to uniquely identify every CI Rule.
-- The `ruleID` is unique for each CI Rule and can be extracted from the URL after selecting the CI Rule.
+* Facets uses `ruleID` to uniquely identify every CI Rule.
+* The `ruleID` is unique for each CI Rule and can be extracted from the URL after selecting the CI Rule.
 
 This guide will help you configure the default CI Rule using API calls. Refer to the [CI Rules documentation](ref:ci-rules) to know more about it.
 
@@ -32,8 +32,8 @@ To achieve this, use the following two APIs:
 ### Step 1: Get the ruleID
 
 1. Navigate to **Artifacts > CI Rules** and select the required CI Rule.
-2. Now, locate the `ruleID` from the URL and copy it.  
-   **Eg:** _https\://\<control_plane_url>/capc/stack/\<bp_name>/artifacts/ci-rules/edit/<ruleID>_
+2. Now, locate the `ruleID` from the URL and copy it.\
+   **Eg:** *https://&lt;control_plane_url&gt;/capc/stack/&lt;bp_name&gt;/artifacts/ci-rules/edit/`{ruleID}`*
 
 ### Step 2: Get the Artifact Routing Rule
 
@@ -41,7 +41,7 @@ Perform a REST API `GET` call using the `ruleID` as specified in the [Get Artifa
 
 **Response:**
 
-You should get a response with multiple fields. Copy the entire response body. 
+You should get a response with multiple fields. Copy the entire response body.
 
 ### Step 3: Update the Response body
 
@@ -59,7 +59,7 @@ Perform a REST API `PUT` call as specified in the [Update Artifact Routing Rule]
 
 You should get a response with the updated values denoting that the request has been successfully sent.
 
-> 📘 
-> 
-> - Note that each Blueprint and Release Stream / Environment combination can have only one default CI Rule at a time.
-> - If you intend to replace an existing default rule with a new one, ensure that you first set the attribute "isDefault" to "false" for the old rule.
+> 📘
+>
+> * Note that each Blueprint and Release Stream / Environment combination can have only one default CI Rule at a time.
+> * If you intend to replace an existing default rule with a new one, ensure that you first set the attribute "isDefault" to "false" for the old rule.
