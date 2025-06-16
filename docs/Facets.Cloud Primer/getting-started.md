@@ -23,19 +23,19 @@ Facets is relevant for businesses of all sizes that are looking to optimize thei
 
 ## Benefits of using Facets
 
-- Efficiency: Facets provides a unified platform for all your DevOps needs, reducing the time and effort required to manage multiple tools and processes.
-- Collaboration: Facets makes it easy for teams to work together, improving communication and collaboration between developers, testers, and stakeholders.
-- Speed: With Facets, you can quickly and easily automate your software development and deployment workflows, reducing time-to-market for your applications.
-- Scalability: Facets is designed to scale with your business, growing with you as your needs evolve.
-- Flexibility: Facets supports a wide variety of programming languages, frameworks, and tools, making it a flexible solution for businesses of all sizes.
+* Efficiency: Facets provides a unified platform for all your DevOps needs, reducing the time and effort required to manage multiple tools and processes.
+* Collaboration: Facets makes it easy for teams to work together, improving communication and collaboration between developers, testers, and stakeholders.
+* Speed: With Facets, you can quickly and easily automate your software development and deployment workflows, reducing time-to-market for your applications.
+* Scalability: Facets is designed to scale with your business, growing with you as your needs evolve.
+* Flexibility: Facets supports a wide variety of programming languages, frameworks, and tools, making it a flexible solution for businesses of all sizes.
 
 ## Key Features of Facets
 
-- Continuous Integration and Deployment: Facets automates your CI/CD pipeline, allowing you to quickly and easily deploy your code to multiple environments.
-- Monitoring and Logging: Facets includes comprehensive monitoring and logging tools, giving you visibility into the performance and health of your applications.
-- Security: Facets includes advanced security features, helping you secure your applications and ensure compliance with industry standards.
-- Drift-Free and Ephemeral Environments: Facets ensures that your environments are always in sync, preventing drift and making it easy to create ephemeral environments for testing and development.
-- Single Source of Truth and Ease of Collaboration: Facets provides a centralized repository for your infrastructure, making it easy for teams to collaborate and work from a single source of truth.
+* Continuous Integration and Deployment: Facets automates your CI/CD pipeline, allowing you to quickly and easily deploy your code to multiple environments.
+* Monitoring and Logging: Facets includes comprehensive monitoring and logging tools, giving you visibility into the performance and health of your applications.
+* Security: Facets includes advanced security features, helping you secure your applications and ensure compliance with industry standards.
+* Drift-Free and Ephemeral Environments: Facets ensures that your environments are always in sync, preventing drift and making it easy to create ephemeral environments for testing and development.
+* Single Source of Truth and Ease of Collaboration: Facets provides a centralized repository for your infrastructure, making it easy for teams to collaborate and work from a single source of truth.
 
 # Get started with Facets today
 
