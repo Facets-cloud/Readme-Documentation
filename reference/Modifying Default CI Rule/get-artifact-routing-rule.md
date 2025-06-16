@@ -14,8 +14,8 @@ next:
   description: ''
 ---
 > 🚧 Your Control Plane URL will vary
-> 
-> The Control Plane URL, denoted as <code>CP_URL</code> for this API reference document is <https://facetsdemo.console.facets.cloud>.  
+>
+> The Control Plane URL, denoted as <code>CP\_URL</code> for this API reference document is [https://facetsdemo.console.facets.cloud](https://facetsdemo.console.facets.cloud).\
 > Replace that with the Control Plane URL unique to your account.
 
 ## API Endpoint
@@ -30,14 +30,14 @@ https://<CP_URL>.console.facets.cloud/cc-ui/v1/artifact-routing-rule/{ruleId}
 
 ### **Path parameters**
 
-- `ruleID` of type `String` is the unique ID for the CI Rule that you want to make default. You can find this ID in the URL of the selected CI Rule.
+* `ruleID` of type `String` is the unique ID for the CI Rule that you want to make default. You can find this ID in the URL of the selected CI Rule.
 
 ## **Authenticate your API request**
 
 To learn more about how to generate a basic authentication token for use with Facets API requests, check [Authentication Setup](ref:authentication-setup).
 
-> 📘 
-> 
+> 📘
+>
 > Facets API uses Basic Authentication.
 
 ## Generate a Sample Request ➡️
