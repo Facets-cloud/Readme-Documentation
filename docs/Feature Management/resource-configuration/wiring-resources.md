@@ -20,48 +20,33 @@ Facets dynamic referencing assists users in wiring resources using dollar notati
 4. Go to the **Spec Overrides** tab and click **Edit.**
 5. While editing the resource JSON in the editor, use dollar referencing to wire the resources. Dollar referencing allows the integration of dynamic values into your configurations. 
 
-   1. **Using Autocomplete:**  
+   1. **Using Autocomplete:**\
       As you edit, the autocomplete feature provides relevant suggestions, enabling efficient wiring of resources without manual input.
-   2. **Locating Dollar References:**  
-      Additionally, you can find the dollar reference for a resource in the **Resource Details > Overview**, under the **Interfaces and Attributes** widget.  
+   2. **Locating Dollar References:**\
+      Additionally, you can find the dollar reference for a resource in the **Resource Details > Overview**, under the **Interfaces and Attributes** widget.\
       **Note:** The dollar references provided in the **Resource Overview** are accessible only after the environment is launched. 
 6. Now, **Save the Changes.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e87840f-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/e87840f-image.png">
+  Click on the image to expand
+</Image>
 
 You have successfully wired a resource with another resource using dollar-referencing.
 
 ## Guidelines for Dollar Referencing
 
-1. **Ensuring Correct Syntax**  
-   Maintain the correct syntax for dollar referencing. Double-check your usage to avoid errors and ensure that the references point to the intended values.  
-   **Syntax:** `${\<resource_type>.\<resource_name>.out.\<respective_attributes>}`  
+1. **Ensuring Correct Syntax**\
+   Maintain the correct syntax for dollar referencing. Double-check your usage to avoid errors and ensure that the references point to the intended values.\
+   **Syntax:** `${\<resource_type>.\<resource_name>.out.\<respective_attributes>}`\
    **Example:** `${postgres.default-db.out.interfaces.writer.host}`
-2. **Select Options from Autocomplete**  
+2. **Select Options from Autocomplete**\
    When using dollar references in the JSON editor, the autocomplete feature is your ally. It suggests options based on available dollar references, reducing the need for manual lookups.
 
 ### Example: Wiring a Postgres Database to a Service
 
 Let's walk through the process of wiring a Postgres database to a Service. Follow these steps:
 
-1. **Create a Service and a Postgres Resource**  
+1. **Create a Service and a Postgres Resource**\
    First, ensure you have both a Service and a Postgres resource created within your Blueprint.
 2. **Edit the JSON Configuration**
    1. Navigate to **Environment > Resource Center** and select the Service resource you want to wire with the Postgres database.
@@ -74,13 +59,13 @@ Let's walk through the process of wiring a Postgres database to a Service. Follo
 "POSTGRES_PASS": "${postgres.default-db.out.interfaces.writer.password}"
 ```
 
-In this example,  
-**`"default-db"`:** Name of the Postgres resource.  
-**`"POSTGRES_URL"`:** URL for the Postgres database.  
-**`"POSTGRES_USER"`:** Username of the Postgres database.  
+In this example,\
+**`"default-db"`:** Name of the Postgres resource.\
+**`"POSTGRES_URL"`:** URL for the Postgres database.\
+**`"POSTGRES_USER"`:** Username of the Postgres database.\
 **`"POSTGRES_PASS"`:** Password of the Postgres database.
 
-**Note: **The variables `POSTGRES_URL`, `POSTGRES_USER`, and `POSTGRES_PASS` are placeholders in the configuration. While these can be named differently, it is crucial to ensure that the values are correctly mapped to the respective variables.
+**Note:** The variables `POSTGRES_URL`, `POSTGRES_USER`, and `POSTGRES_PASS` are placeholders in the configuration. While these can be named differently, it is crucial to ensure that the values are correctly mapped to the respective variables.
 
 ## FAQ
 
