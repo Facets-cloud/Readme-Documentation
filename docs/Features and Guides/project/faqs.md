@@ -40,10 +40,10 @@ Consider enabling this option only if your team follows strict version control w
 
 **Answer:**  
 
-- **Branch Per Environment:** Each Git branch is mapped to a specific environment (e.g., the `dev` branch for the Development environment).  
-- **Single Branch Promotion:** One branch is linked to multiple environments, and changes are automatically promoted from one environment to the next (e.g., from `staging` to `production`).  
+* **Branch Per Environment:** Each Git branch is mapped to a specific environment (e.g., the `dev` branch for the Development environment).  
+* **Single Branch Promotion:** One branch is linked to multiple environments, and changes are automatically promoted from one environment to the next (e.g., from `staging` to `production`).  
 
 **When to use:**  
 
-- Choose **Single Branch Promotion** if you prefer a linear progression of changes through environments.  
-- Choose **Branch Per Environment** if you want parallel testing across multiple branches/environments.
+* Choose **Single Branch Promotion** if you prefer a linear progression of changes through environments.  
+* Choose **Branch Per Environment** if you want parallel testing across multiple branches/environments.
