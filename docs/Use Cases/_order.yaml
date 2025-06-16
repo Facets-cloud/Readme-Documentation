@@ -3,3 +3,4 @@
 - using-dependent-environments
 - managing-aws-iam-policies-in-services-module
 - modular-launch-wizard
+- reusing-terraform-code-in-facets-modules
