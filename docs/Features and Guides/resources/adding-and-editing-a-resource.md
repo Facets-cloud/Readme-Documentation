@@ -27,11 +27,11 @@ You have successfully added a new resource in the Blueprint.
 ## How to Edit a Resource?
 
 1. Open the **Projects** and select the required Project.
-2. Select the** Blueprint** tab to access the Resources graph.
+2. Select the **Blueprint** tab to access the Resources graph.
 3. Locate the resource you want to modify.
    1. If you're in **Graph mode,** click on the resource and select **Configure** from the dropdown menu.
    2. If you're in **Table mode,** click on the resource name and select the **Configurations** tab to access the JSON.
-4. In the page that appears, make the necessary changes to the configuration settings.  
+4. In the page that appears, make the necessary changes to the configuration settings.\
    **Note:** From the **Resource Reference** column, you can select resources alongside their interfaces or attributes to display references dynamically. This information is copy-ready for convenient use.
 5. Click **Save Changes** to save the updated configuration.
 
@@ -41,14 +41,4 @@ You have successfully edited a Resource in Facets.
 
 ## Sample Product Demo - Adding and Editing a Resource
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2F3jwm9jm3izfj&display_name=Storylane&url=http%3A%2F%2Fapp.storylane.io%2Fshare%2F3jwm9jm3izfj&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%2Fproject%2Fproject_2247852d-419e-4a89-8eb5-5263f9a7420c%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"431\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "http://app.storylane.io/share/3jwm9jm3izfj",
-  "title": "Adding and Editing Resource",
-  "image": "https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_2247852d-419e-4a89-8eb5-5263f9a7420c/preview.gif",
-  "provider": "https://www.storylane.io",
-  "href": "http://app.storylane.io/share/3jwm9jm3izfj",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
+<Embed url="http://app.storylane.io/share/3jwm9jm3izfj" title="Adding and Editing Resource" image="https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_2247852d-419e-4a89-8eb5-5263f9a7420c/preview.gif" provider="app.storylane.io" href="http://app.storylane.io/share/3jwm9jm3izfj" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252F3jwm9jm3izfj%26display_name%3DStorylane%26url%3Dhttp%253A%252F%252Fapp.storylane.io%252Fshare%252F3jwm9jm3izfj%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_2247852d-419e-4a89-8eb5-5263f9a7420c%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22431%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
