@@ -16,7 +16,7 @@ The purpose of this guide is to assist you in unlocking the Terraform state in i
 
 The Terraform state should be unlocked when Releases fail with the following error message:
 
-- error: error acquiring state lock
+* error: error acquiring state lock
 
 ## How to unlock the Terraform State?
 
@@ -27,23 +27,8 @@ The Terraform state should be unlocked when Releases fail with the following err
 5. In the Unlock State pop-up, paste the previously copied **id** into the **Terraform Lock id** field, then click **Unlock.**
 6. Trigger a new release.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d16ca08-Unlock_TF_state.gif",
-        null,
-        "Click on the image to expand"
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true,
-      "caption": "Click on the image to expand"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/d16ca08-Unlock_TF_state.gif">
+  Click on the image to expand
+</Image>
 
 You have now successfully unlocked the Terraform lock state.
