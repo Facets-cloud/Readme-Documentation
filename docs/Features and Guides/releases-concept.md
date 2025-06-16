@@ -37,8 +37,8 @@ The following are the various types of releases available in Facets:
 1. **Full Release:** The default release type, this is used for synchronizing all changes in an environment.
 2. **Selective Release:** This release type allows for selective deployment of services or changes, commonly used for out-of-turn hotfixes in environments.
 3. **Plan Release:** Provides a preview of all changes that will be made during the release, allowing for review and approval before applying changes.
-4. **Custom Release: **This release type allows power users to issue direct Terraform commands, giving them greater control and flexibility in their deployments.
-5. **Queued Release: **This feature allows the system to automatically add a new, manually triggered release to a queue while another release is already in progress. This allows you to initiate releases without the need to wait for the current one to complete.
+4. **Custom Release:** This release type allows power users to issue direct Terraform commands, giving them greater control and flexibility in their deployments.
+5. **Queued Release:** This feature allows the system to automatically add a new, manually triggered release to a queue while another release is already in progress. This allows you to initiate releases without the need to wait for the current one to complete.
 6. **Launch Release:** Used for launching a new environment for the first time.
 7. **Destroy Release:** Used to destroy all resources provisioned by Facets.
 8. **Maintenance Release:** Used execute Infrastructure as Code (IaC) upgrades.
