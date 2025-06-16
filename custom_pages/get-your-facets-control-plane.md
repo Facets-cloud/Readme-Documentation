@@ -28,12 +28,11 @@ That's it, you are ready to simplify your DevOps processes and optimize your sof
 
 ## Suggested Reading
 
-- [Trying Out Facets - Petclinic Overview](doc:pet-clinic-overview)
-- [Facets Core Concepts](doc:facets-core-concepts)
-- [Resource Management](doc:resource-management)
-- [Integration and Delivery](doc:integration-and-delivery-1)
-- [Monitoring and Observability](doc:monitoring-and-observability-1)
+* [Trying Out Facets - Petclinic Overview](doc:pet-clinic-overview)
+* [Facets Core Concepts](doc:facets-core-concepts)
+* [Resource Management](doc:resource-management)
+* [Integration and Delivery](doc:integration-and-delivery-1)
+* [Monitoring and Observability](doc:monitoring-and-observability-1)
 
-<br>
-
-<br>
+<br />
+<br />
