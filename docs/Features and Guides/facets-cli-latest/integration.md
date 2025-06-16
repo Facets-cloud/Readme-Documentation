@@ -21,8 +21,8 @@ Facets CLI provides a command-line interface to manage and interact with your Fa
 
 ## Prerequisites
 
-- **Access to Facets environment**: You will need credentials or access permissions for your Facets setup.
-- **Network access**: Ensure your system has internet access to download the required files.
+* **Access to Facets environment**: You will need credentials or access permissions for your Facets setup.
+* **Network access**: Ensure your system has internet access to download the required files.
 
 ***
 
@@ -32,7 +32,7 @@ Facets CLI provides a command-line interface to manage and interact with your Fa
 
 Facets CLI is available as an NPM package. Follow these steps:
 
-1. **Verify Node installation**:  
+1. **Verify Node installation**:\
    Ensure you have Node.js v14.17.0 or later installed. You can check your version using:
    ```bash
    node -v
@@ -41,12 +41,12 @@ Facets CLI is available as an NPM package. Follow these steps:
    ```bash
    npm install -g @facets-cloud/facetsctlv3
    ```
-3. **Verify installation**:  
+3. **Verify installation**:\
    Run the following command to ensure the CLI is installed correctly:
    ```bash
    facetsctl --version
    ```
-4. **Login using FacetsCLI**:  
+4. **Login using FacetsCLI**:\
    After installation, log in to the Facets Control Plane. You will be prompted to enter your API token, organization ID, and other required details. 
 
    Example configuration command:
@@ -54,7 +54,7 @@ Facets CLI is available as an NPM package. Follow these steps:
    ```bash
    $ facetsctl login -u <value> -t <value> -f <value>
    ```
-5. **Available Commands**:  
+5. **Available Commands**:\
    To see all available commands and their descriptions, use:
 
    ```bash
@@ -100,25 +100,25 @@ If you prefer to use pre-built binaries, download Facets CLI directly from the p
    | Gzip | 32-bit       | [facetsctI-win32-x86.tar.gz](https://facets-cf-templates.s3.amazonaws.com/oclif-tarballs/v3/production/latest/facetsctl-win32-x86.tar.gz) |
    | XZ   | 32-bit       | [facetsctI-win32-x86.tar.xz](https://facets-cf-templates.s3.amazonaws.com/oclif-tarballs/v3/production/latest/facetsctl-win32-x86.tar.xz) |
 
-2. **Make the binary executable**:  
+2. **Make the binary executable**:\
    After downloading, make the binary executable (for Linux/macOS):
    ```bash
    chmod +x ./facetsctl
    ```
 
-3. **Move the binary to your PATH**:  
+3. **Move the binary to your PATH**:\
    Move the executable file to a directory included in your system’s PATH. For example:
    ```bash
    sudo mv ./facetsctl /usr/local/bin/facetsctl
    ```
 
-4. **Verify installation**:  
+4. **Verify installation**:\
    Run the following command to ensure the CLI is installed correctly:
    ```bash
    facetsctl --version
    ```
 
-5. **Log in using Facets CLI**:  
+5. **Log in using Facets CLI**:\
    Log in using Facets CLI with your username and token:
    ```bash
    $ facetsctl login -u <value> -t <value> -f <value>
