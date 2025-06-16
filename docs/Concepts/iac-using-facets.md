@@ -44,4 +44,4 @@ In conclusion, Facets Control Plane provides a flexible and reliable platform fo
 
 ## Related Guides
 
-- [Manage Infrastructure as a Code](doc:manage-iac)
+* [Manage Infrastructure as a Code](doc:manage-iac)
