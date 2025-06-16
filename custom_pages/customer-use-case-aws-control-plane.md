@@ -16,7 +16,7 @@ Facets Control Plane is deployed in the customer's AWS account, ensuring full co
 
 ### Virtual Private Cloud (VPC)
 
-**Network Isolation**: The VPC provides a logically isolated network environment where all your cloud resources can operate securely and privately.  
+**Network Isolation**: The VPC provides a logically isolated network environment where all your cloud resources can operate securely and privately.\
 **Subnets**: It includes both public and private subnets to organize and control the accessibility of cloud resources.
 
 ### Elastic Load Balancer
@@ -33,9 +33,9 @@ Facets Control Plane is deployed in the customer's AWS account, ensuring full co
 
 ### AWS Services
 
-**State S3 Bucket**: Stores application state data.  
-**State Lock DynamoDB**: Maintains state locks for consistency.  
-**Artifacts S3 Bucket**: Stores application artifacts.  
+**State S3 Bucket**: Stores application state data.\
+**State Lock DynamoDB**: Maintains state locks for consistency.\
+**Artifacts S3 Bucket**: Stores application artifacts.\
 **Secrets Manager**: Manages sensitive information like passwords and API keys.
 
 ### Facets IaC Agent
@@ -52,5 +52,5 @@ Facets Control Plane is deployed in the customer's AWS account, ensuring full co
 
 ### Control Plane Backend
 
-**Terraform Execution**: The Control Plane Backend pod runs the Terraform code that automates the provisioning, configuration, and management of your cloud resources.  
+**Terraform Execution**: The Control Plane Backend pod runs the Terraform code that automates the provisioning, configuration, and management of your cloud resources.\
 **Orchestration**: This backend pod orchestrates all the necessary cloud operations, ensuring that your infrastructure is set up and maintained according to your specifications.
