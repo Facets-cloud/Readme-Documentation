@@ -18,19 +18,19 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 
 | **Category**                    | **Tag**                                                                                                  | **Short Description**                                                                                                                                                              |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Conditional Display**         | [`x-ui-visible-if`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-visible-if)             | Conditionally display this field only if another field has a specific value. _For example, show replicaCount only if deploymentType is set to "ReplicaSet"._                       |
-| **Dynamic Data Sources**        | [`x-ui-dynamic-enum`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-dynamic-enum)         | Populates a dropdown based on values from another field. _For example, allow selecting a port for a health check from the list of container ports defined in the same deployment._ |
-| **Dynamic Data Sources**        | [`x-ui-output-type`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-output-type)           | Marks the field as a special output type. _For example, an Ingress upstream can be selected from available Services that export a compatible output interface._                    |
-| **Dynamic Data Sources**        | [`x-ui-secret-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-secret-ref)             | Allows the field value to reference a secret defined at the project level. _For example, link to a stored API key without exposing its value._                                     |
-| **Dynamic Data Sources**        | [`x-ui-variable-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-variable-ref)         | Allows the field value to reference a variable defined at the project level. _For example, reuse a common region or environment name._                                             |
+| **Conditional Display**         | [`x-ui-visible-if`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-visible-if)             | Conditionally display this field only if another field has a specific value. *For example, show replicaCount only if deploymentType is set to "ReplicaSet".*                       |
+| **Dynamic Data Sources**        | [`x-ui-dynamic-enum`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-dynamic-enum)         | Populates a dropdown based on values from another field. *For example, allow selecting a port for a health check from the list of container ports defined in the same deployment.* |
+| **Dynamic Data Sources**        | [`x-ui-output-type`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-output-type)           | Marks the field as a special output type. *For example, an Ingress upstream can be selected from available Services that export a compatible output interface.*                    |
+| **Dynamic Data Sources**        | [`x-ui-secret-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-secret-ref)             | Allows the field value to reference a secret defined at the project level. *For example, link to a stored API key without exposing its value.*                                     |
+| **Dynamic Data Sources**        | [`x-ui-variable-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-variable-ref)         | Allows the field value to reference a variable defined at the project level. *For example, reuse a common region or environment name.*                                             |
 | **Dynamic Data Sources**        | [`x-ui-typeable`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-typeable)                 | Allows a field value to be typed instead of selecting it from the dropdown values                                                                                                  |
-| **Environment Management**      | [`x-ui-overrides-only`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-overrides-only)     | Show this field only when overriding for a specific environment. _For example, a CIDR block must be set per environment and shouldn't have a default value._                       |
+| **Environment Management**      | [`x-ui-overrides-only`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-overrides-only)     | Show this field only when overriding for a specific environment. *For example, a CIDR block must be set per environment and shouldn't have a default value.*                       |
 | **Environment Management**      | [`x-ui-override-disable`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-override-disable) | Prevents a field from being modified by the user for any environment - ensuring that a blueprinted or default value remains intact.                                                |
 | **Form Layout & Presentation**  | [`x-ui-order`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-order)                       | Specify the rendering order of fields.                                                                                                                                             |
 | **Form Layout & Presentation**  | [`x-ui-placeholder`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-placeholder)           | Provide example input placeholder text.                                                                                                                                            |
-| **Form Layout & Presentation**  | [`x-ui-toggle`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-toggle)                     | Renders a group of fields as a collapsible section. _For example, show health check settings inside a deployment only if the user chooses to enable health checks._                |
-| **Form Layout & Presentation**  | [`x-ui-yaml-editor`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-yaml-editor)           | Enables a YAML editor for complex object fields. _For example, custom values.yaml for a Helm chart deployment._                                                                    |
-| **Validation & Error Handling** | [`x-ui-error-message`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-error-message)       | Defines a custom error message to show when validation fails. _For example, “CIDR must be a valid private IP block” for a pattern mismatch._                                       |
+| **Form Layout & Presentation**  | [`x-ui-toggle`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-toggle)                     | Renders a group of fields as a collapsible section. *For example, show health check settings inside a deployment only if the user chooses to enable health checks.*                |
+| **Form Layout & Presentation**  | [`x-ui-yaml-editor`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-yaml-editor)           | Enables a YAML editor for complex object fields. *For example, custom values.yaml for a Helm chart deployment.*                                                                    |
+| **Validation & Error Handling** | [`x-ui-error-message`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-error-message)       | Defines a custom error message to show when validation fails. *For example, “CIDR must be a valid private IP block” for a pattern mismatch.*                                       |
 
 ***
 
@@ -71,21 +71,7 @@ Conditionally shows fields based on another field’s value (User can enter mult
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
 
 </div></div>
 
@@ -109,21 +95,7 @@ readiness_port:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5d75fcc71231625c29d08ad681e54a718d38183e90eb73baa5bef9cbfbf4beb7-Screenshot_2025-04-11_at_4.59.40_PM.png",
-        null,
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/5d75fcc71231625c29d08ad681e54a718d38183e90eb73baa5bef9cbfbf4beb7-Screenshot_2025-04-11_at_4.59.40_PM.png" />
 
 </div></div>
 
@@ -144,21 +116,7 @@ arn:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png",
-        null,
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
 
 </div></div>
 
@@ -176,21 +134,7 @@ db_password:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
 
 </div></div>
 
@@ -208,21 +152,7 @@ db_username:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
 
 <br />
 
@@ -252,21 +182,7 @@ java_version:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png" />
 
 </div></div>
 
@@ -289,21 +205,7 @@ cidr:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/60a1233a4594f28d1a85b82a0a67971131ca4e2ce058e688c7f63e46da9df6c1-Screenshot_2025-04-11_at_2.41.51_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/60a1233a4594f28d1a85b82a0a67971131ca4e2ce058e688c7f63e46da9df6c1-Screenshot_2025-04-11_at_2.41.51_PM.png" />
 
 </div></div>
 
@@ -327,21 +229,7 @@ restart_policy:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png" />
 
 </div></div>
 
@@ -364,21 +252,7 @@ x-ui-order:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png" />
 
 </div></div>
 
@@ -395,21 +269,7 @@ memory:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png" />
 
 </div></div>
 
@@ -434,21 +294,7 @@ cloud_permissions:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png" />
 
 </div></div>
 
@@ -468,21 +314,7 @@ values:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
 
 </div></div>
 
@@ -505,22 +337,8 @@ memory:
 
 </div><div style="display:flex; flex: 1; align-items:center">
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
 
 </div></div>
 
-- [🔝 Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
+* [🔝 Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
