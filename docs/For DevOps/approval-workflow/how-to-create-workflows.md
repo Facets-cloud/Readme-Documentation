@@ -14,14 +14,14 @@ next:
 
 ### Step 1: Prepare the Approval Script
 
-1. Create a script that defines the conditions for approval.  
+1. Create a script that defines the conditions for approval.\
    **Example:**
-   - Require approval only for specific environments.
-   - Automate approval for other environments.
+   * Require approval only for specific environments.
+   * Automate approval for other environments.
 2. Ensure the script returns an exit code based on the required conditions:
-   - **Exit Code 0:** Automatic approval (default behavior, the release executes immediately)
-   - **Exit Code 2:** Release requires manual approval
-   - **Other Codes:** The release fails
+   * **Exit Code 0:** Automatic approval (default behavior, the release executes immediately)
+   * **Exit Code 2:** Release requires manual approval
+   * **Other Codes:** The release fails
 
 **Note:** Sample script is mentioned at the end of this document.
 
@@ -72,57 +72,45 @@ Sample of how release changes will be in the json file is as below:
 
 When a release is triggered in an environment, it enters either:
 
-- A queued state if there are other releases in progress in that environment.
-- Or start immediately if there are no conflicts.
+* A queued state if there are other releases in progress in that environment.
+* Or start immediately if there are no conflicts.
 
 ### 2. Script Execution
 
 Once the release moves to a ready state, the approval script is executed. Based on the template script (mentioned at the end of this document), the following things are executed:
 
-- **Exit Code 0:** Release proceeds automatically
-- **Exit Code 2:** Release enters Pending Approval State
-- **Other exit codes:** Release fails
+* **Exit Code 0:** Release proceeds automatically
+* **Exit Code 2:** Release enters Pending Approval State
+* **Other exit codes:** Release fails
 
 ### 3. Pending Approval Actions:
 
 When a release enters Pending Approval Status:
 
-- **Approval Step:** Users with 'Release Approval/Reject' permission can approve or reject the release from the Facets UI or through JIRA tickets (if configured). 
-  - **On Approval:**
-    - A new “Bot” Release is triggered automatically to apply the changes.
-    - The original release status is updated to Approved.
-  - **On Rejection:**
-    - The release status changes to Rejected. Queued releases can proceed for execution.
+* **Approval Step:** Users with 'Release Approval/Reject' permission can approve or reject the release from the Facets UI or through JIRA tickets (if configured). 
+  * **On Approval:**
+    * A new “Bot” Release is triggered automatically to apply the changes.
+    * The original release status is updated to Approved.
+  * **On Rejection:**
+    * The release status changes to Rejected. Queued releases can proceed for execution.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fhbxyns2q1gil&display_name=Storylane&url=https%3A%2F%2Fapp.storylane.io%2Fdemo%2Fhbxyns2q1gil&image=https%3A%2F%2Fapp-pages.storylane.io%2Fcompany%2Fcompany_ac706bdb-fa93-49a7-8be4-a2d7b56b1ef6%2Fproject%2Fproject_c6c521cb-9124-4a8a-9e9a-ec7b6382bfce%2Fpreview.gif&type=text%2Fhtml&schema=storylane\" width=\"750\" height=\"449\" scrolling=\"no\" title=\"Storylane embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://app.storylane.io/demo/hbxyns2q1gil",
-  "title": "Releases | Nov 28 3:02 PM",
-  "favicon": "https://app.storylane.io/favicon.ico",
-  "image": "https://app-pages.storylane.io/company/company_ac706bdb-fa93-49a7-8be4-a2d7b56b1ef6/project/project_c6c521cb-9124-4a8a-9e9a-ec7b6382bfce/preview.gif",
-  "provider": "app.storylane.io",
-  "href": "https://app.storylane.io/demo/hbxyns2q1gil",
-  "typeOfEmbed": "jsfiddle"
-}
-[/block]
-
+<Embed url="https://app.storylane.io/demo/hbxyns2q1gil" title="Releases | Nov 28 3:02 PM" favicon="https://app.storylane.io/favicon.ico" image="https://app-pages.storylane.io/company/company_ac706bdb-fa93-49a7-8be4-a2d7b56b1ef6/project/project_c6c521cb-9124-4a8a-9e9a-ec7b6382bfce/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demo/hbxyns2q1gil" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fhbxyns2q1gil%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fhbxyns2q1gil%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_ac706bdb-fa93-49a7-8be4-a2d7b56b1ef6%252Fproject%252Fproject_c6c521cb-9124-4a8a-9e9a-ec7b6382bfce%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22449%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ## Conditions for Release Approval Workflow
 
 ### Approval Workflow Execution
 
-- Environments with Approval Requirement:
-  - Releases to environments requiring approval follow the workflow defined in the script.
-- Environments without Approval Requirement:
-  - Releases proceed automatically if conditions are met (Exit Code 0).
+* Environments with Approval Requirement:
+  * Releases to environments requiring approval follow the workflow defined in the script.
+* Environments without Approval Requirement:
+  * Releases proceed automatically if conditions are met (Exit Code 0).
 
 ### Handling Multiple Releases
 
-- Pending Approval Releases:
-  - Only one release can be in the Pending Approval state at a time.
-  - New releases are in queued state until the pending release is resolved (approved or rejected).
-- Queued releases are triggered once the approval is resolved.
+* Pending Approval Releases:
+  * Only one release can be in the Pending Approval state at a time.
+  * New releases are in queued state until the pending release is resolved (approved or rejected).
+* Queued releases are triggered once the approval is resolved.
 
 ## Sample Script to be added in the Facets Project's Github Repo
 
