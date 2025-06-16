@@ -14,23 +14,7 @@ next:
 
 A 'Project' in Facets is a comprehensive workspace that provisions the infrastructure and streamlines software development. It houses a Blueprint, which acts as your application's visual roadmap provisioning all the resources required for your Project, and Environments that are practical implementations of the Blueprint for software deployment on your selected cloud platform. For detailed instructions on setting up a Project, refer to the [Creating a Project](doc:creating-a-project) documentation.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/afdaca93df99481898bbb14a8d634ad6c47bccf809f59f395eadb2485d6d9a02-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "650px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="650px" border={true} src="https://files.readme.io/afdaca93df99481898bbb14a8d634ad6c47bccf809f59f395eadb2485d6d9a02-image.png" />
 
 ***
 
@@ -40,24 +24,9 @@ Blueprints are declarative representations of your overall application's archite
 
 They encapsulate all configurations required to create and manage cloud environments, including resource definitions, service discovery, and secrets. Stored as files in a Git repository, blueprints provide a single source of truth for infrastructure design and deployment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/76b55224992469ea3c9dc728431d9ba9ebfcf833a78b6d50701f177dd186d042-image.png",
-        null,
-        "A sample blueprint in Facets"
-      ],
-      "align": "center",
-      "sizing": "650px",
-      "border": true,
-      "caption": "A sample blueprint in Facets"
-    }
-  ]
-}
-[/block]
-
+<Image alt="A sample blueprint in Facets" align="center" width="650px" border={true} src="https://files.readme.io/76b55224992469ea3c9dc728431d9ba9ebfcf833a78b6d50701f177dd186d042-image.png">
+  A sample blueprint in Facets
+</Image>
 
 ## Benefits of using Blueprints
 
@@ -81,8 +50,8 @@ Blueprints help you manage resources by defining and tagging them correctly. Thi
 
 Every Blueprints reside in a Git repository, so all infrastructure changes are versioned and under your control. This approach offers several advantages:
 
-- **Versioning:** Fine-grained versions in resource configurations are beneficial as your team grows. You can use PR raise and merge flows similar to your code for infrastructure, observability, and application configuration changes.
-- **Innovation:** Infra-as-Code files in JSON allow internal teams to be innovative. Some customers have written Slack bots for resourcse creation, policies to scan before each release, and automation to rightsize resources based on feedback from observability platforms.
+* **Versioning:** Fine-grained versions in resource configurations are beneficial as your team grows. You can use PR raise and merge flows similar to your code for infrastructure, observability, and application configuration changes.
+* **Innovation:** Infra-as-Code files in JSON allow internal teams to be innovative. Some customers have written Slack bots for resourcse creation, policies to scan before each release, and automation to rightsize resources based on feedback from observability platforms.
 
 ***
 
@@ -94,23 +63,7 @@ A resource in Facets refers to any cloud infrastructure component included in a 
 
 An Intent represents a high-level infrastructure requirement. When you're building an application, you think in terms of capabilities: "I need a database" or "I need a cache." You shouldn't need to worry about whether it's AWS RDS, GCP Cloud SQL, or which specific configuration parameters to set.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d8fffcc0f9f3715207bad98d47d27b5b321ba3b63e319ca678c409534c996135-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "350px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="350px" border={true} src="https://files.readme.io/d8fffcc0f9f3715207bad98d47d27b5b321ba3b63e319ca678c409534c996135-image.png" />
 
 Here's how an Intent works in practice:
 
@@ -135,23 +88,7 @@ The Intent above declares a postgres intent what you need without specifying imp
 
 While Intents declare what you need, Flavors define how to provide it. A Flavor is a concrete implementation of an Intent, packaged as a Terraform module. Think of Flavors as the bridge between your high-level requirements and actual cloud resources. Each Flavor implements the same Intent differently, but they all satisfy the core requirements.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/093deca4a02ace682f79c63ff0e552c62caf502a957c834d93f4caf4f1e1ea2f-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "350px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="350px" border={true} src="https://files.readme.io/093deca4a02ace682f79c63ff0e552c62caf502a957c834d93f4caf4f1e1ea2f-image.png" />
 
 Here's how to assign a flavor:
 
@@ -181,23 +118,7 @@ With an understanding of resources, intents, and flavors, you can define infrast
 
 An Environment in Facets is a concrete implementation of a **Blueprint designed for a particular cloud infrastructure**. It contains all necessary resources, configurations, and services to run the software. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4e61d475e3391f7a90d43fdf5871a4a0304ffd95c15c53a01a2c47a5a0ac686-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "650px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="650px" border={true} src="https://files.readme.io/c4e61d475e3391f7a90d43fdf5871a4a0304ffd95c15c53a01a2c47a5a0ac686-image.png" />
 
 ## Base Environment
 
@@ -219,50 +140,19 @@ The next step is learning how to customize and adjust resources within these env
 
 A release in Facets is a streamlined process for deploying changes to a cloud environment.  Any modifications in a running environment, such as adding a new Redis instance or deploying an application build, happens through a Release.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9a0e2801f05cfd4f56e2f6b784d2fbe47048ba2709e78ddee7cfa34ede35079a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "650px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="650px" border={true} src="https://files.readme.io/9a0e2801f05cfd4f56e2f6b784d2fbe47048ba2709e78ddee7cfa34ede35079a-image.png" />
 
 ## Three-Way Comparison
 
-- Releases are executed using Terraform apply commands, which perform a three-way comparison to determine and deploy the necessary changes. 
-- This comparison involves checking the current state of the environment, the state defined in the generated Terraform configuration files from the blueprint, and the desired end state. 
-- Based on this comparison, the required changes are deployed to align the environment with the desired configuration.
+* Releases are executed using Terraform apply commands, which perform a three-way comparison to determine and deploy the necessary changes. 
+* This comparison involves checking the current state of the environment, the state defined in the generated Terraform configuration files from the blueprint, and the desired end state. 
+* Based on this comparison, the required changes are deployed to align the environment with the desired configuration.
 
 ## Releases Execution
 
 For any environment, Releases can be scheduled to run periodically, with an option to do Manual release anytime you need. Any changes (disk expansion, new build, changed alert definitions) during the period are accumulated and executed in the next scheduled or manual release. To learn how to perform and manage releases in Facets, refer to the [Performing Releases](doc:performing-releases) documentation.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c6f187a6392a3bb1c60e6c6953b4f0dd1bbb669e61238e3b4e12c8903a06b9bf-napkin-selection_1.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "450px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="450px" src="https://files.readme.io/c6f187a6392a3bb1c60e6c6953b4f0dd1bbb669e61238e3b4e12c8903a06b9bf-napkin-selection_1.png" />
 
 In addition, Terraform logs are available for power users to view detailed information about the changes made during each release. By using releases in Facets, organizations can have a well-defined and automated process for deploying changes to their cloud environments, which helps reduce the risk of errors and makes it easier to roll back if necessary.
 
@@ -276,45 +166,13 @@ This method provides flexibility by enabling environment-specific adjustments wh
 
 ## Types of Overrides
 
-- **Resource Configurations:** Modify resource settings, such as instance types, database sizes, or scaling parameters, to allocate resources based on the specific needs of each environment (e.g., 2 cores for production and 0.5 cores for testing).
+* **Resource Configurations:** Modify resource settings, such as instance types, database sizes, or scaling parameters, to allocate resources based on the specific needs of each environment (e.g., 2 cores for production and 0.5 cores for testing).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b6f0cea7d8624565d213646980017bcce194099a815a612dc150412777cef41b-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="450px" border={true} src="https://files.readme.io/b6f0cea7d8624565d213646980017bcce194099a815a612dc150412777cef41b-image.png" />
 
+* **Secrets and Sensitive Data:** Manage secrets (e.g., passwords, access tokens) securely for each environment without hardcoding them in the Blueprint.
+* **Variables:** Define environment-specific variables, such as API keys, URLs, or other configuration values that differ across environments.
 
-- **Secrets and Sensitive Data:** Manage secrets (e.g., passwords, access tokens) securely for each environment without hardcoding them in the Blueprint.
-- **Variables:** Define environment-specific variables, such as API keys, URLs, or other configuration values that differ across environments.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c6646ca88b8c94eb1ddf99d10d7e80e32dd90c362241afaf99729dc6e368651d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "450px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="450px" border={true} src="https://files.readme.io/c6646ca88b8c94eb1ddf99d10d7e80e32dd90c362241afaf99729dc6e368651d-image.png" />
 
 In summary, Facets Overrides provide a flexible way to customize configurations for different environments while maintaining Blueprint integrity.
