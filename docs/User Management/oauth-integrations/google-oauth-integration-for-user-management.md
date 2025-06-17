@@ -13,7 +13,7 @@ next:
 ## Creating an OAuth Client ID in your Google Console
 
 1. Go to the Google Console and follow the steps in the [Setting up OAuth 2.0 guide](https://support.google.com/cloud/answer/6158849).
-2. Set up an Authorized Redirect URI using the following format: `<YOUR_CP_URL>/login/oauth2/code/`<unique-registrationID>.
+2. Set up an Authorized Redirect URI using the following format: `<YOUR_CP_URL>/login/oauth2/code/<unique-registrationID>`.
 3. Make note of the unique Registration ID provided by Google.
    1. Replace `<YOUR_CP_URL>` in the table above with the unique URL for your organization's Control Plane.
    2. We recommend using a single word, all in lower-case, as the `<unique-registrationID>`. This will be used later in the Facets UI when adding the OAuth integration to your Control Plane.
@@ -33,4 +33,4 @@ next:
 
 <Image alt="Click on the image to expand" align="center" width="450px" border={true} src="https://files.readme.io/50990e2-image.png" />
 
-That's it! You have successfully set up Google OAuth integration in Facets.
+That's it! You have successfully set up Google OAuth integration in Facets. 
