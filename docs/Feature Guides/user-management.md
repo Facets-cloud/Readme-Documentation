@@ -205,7 +205,7 @@ Please refer to the google docs below
       </td>
 
       <td>
-        {user.CP_URL}login/oauth2/code/<unique-registration ID>
+        {user.CP_URL}login/oauth2/code/`<unique-registration ID>`
       </td>
     </tr>
   </tbody>
@@ -245,7 +245,7 @@ Fill in the values as below
       </td>
 
       <td>
-        <unique-registration ID> given in redirect URI
+        `<unique-registration ID>` given in redirect URI
       </td>
     </tr>
 
@@ -275,7 +275,7 @@ Fill in the values as below
       </td>
 
       <td>
-        Text that will appear in the CP Login screen. For e.g. <OrgName>
+        Text that will appear in the CP Login screen. For e.g. \<OrgName>
       </td>
     </tr>
   </tbody>
