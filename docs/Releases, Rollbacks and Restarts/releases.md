@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-<<glossary:Releases>> are mutations that propagates to an environment. In this Section, you will learn how to perform and monitor a release that makes a change to the environment.
+\<\<glossary:Releases>> are mutations that propagates to an environment. In this Section, you will learn how to perform and monitor a release that makes a change to the environment.
 
 Facets is built on a key principle that any changes (release) to an environment has to happen through a single mechanism. These changes could be of
 
@@ -34,72 +34,81 @@ Releases are of two types
 
 Once a release is performed the following details are available for it.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "",
-    "h-1": "",
-    "0-0": "Started",
-    "0-1": "When was the release triggered",
-    "1-0": "Status",
-    "1-1": "<span style={{ color: \"green\" }}>SUCCESS</span> or <span style={{ color: \"red\" }}>FAIL</span>",
-    "2-0": "Last Commit",
-    "2-1": "The git commit up to which the IDP has pulled the changes",
-    "3-0": "Release Type",
-    "3-1": "RELEASE (Indicates a full release)  \nLAUNCH (Environment launch)  \nHOTFIX (Indicates a selective release)",
-    "4-0": "Triggered By",
-    "4-1": "Either a **user**  \nOr  \n**Facets Bot** (indicating a scheduled release)",
-    "5-0": "Action",
-    "5-1": "1. Release Details  \n2. Terraform Logs"
-  },
-  "cols": 2,
-  "rows": 6,
-  "align": [
-    "left",
-    "left"
-  ]
-}
-[/block]
+<HTMLBlock>{`
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+<tr>
+  <th style="border: 1px solid #ddd; padding: 8px;"></th>
+  <th style="border: 1px solid #ddd; padding: 8px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Started</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>When was the release triggered</p>
+</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Status</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>&lt;span style={{ color: &quot;green&quot; }}&gt;SUCCESS</span> or &lt;span style={{ color: &quot;red&quot; }}&gt;FAIL</span></p>
+</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Last Commit</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>The git commit up to which the IDP has pulled the changes</p>
+</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Release Type</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>RELEASE (Indicates a full release)<br>LAUNCH (Environment launch)<br>HOTFIX (Indicates a selective release)</p>
+</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Triggered By</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Either a <strong>user</strong><br>Or<br><strong>Facets Bot</strong> (indicating a scheduled release)</p>
+</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Action</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><ol>
+<li>Release Details  </li>
+<li>Terraform Logs</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+`}</HTMLBlock>
 
 ## Release Details
 
 The release details Action shows the resource changes i.e <span style={{ color: "green" }}>Creations</span>, <span style={{ color: "GoldenRod" }}>Modification</span> (i.e. new versions of apps) or <span style={{ color: "red" }}>Destruction</span>.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7169c77-Screen_Shot_2022-03-29_at_11.22.57_PM.png",
-        "Screen Shot 2022-03-29 at 11.22.57 PM.png",
-        2024
-      ],
-      "align": "center",
-      "caption": "Release Details"
-    }
-  ]
-}
-[/block]
+<Image
+  src="https://files.readme.io/7169c77-Screen_Shot_2022-03-29_at_11.22.57_PM.png"
+  alt="Release Details"
+  align="center"
+  caption="Release Details"
+/>
+
 
 ## Release Logs
 
 The release logs provide a detail view of the generated terraform logs.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4c2ff6b-Screen_Shot_2022-03-30_at_12.01.10_AM.png",
-        "Screen Shot 2022-03-30 at 12.01.10 AM.png",
-        2390
-      ],
-      "align": "center",
-      "caption": "Terraform Logs"
-    }
-  ]
-}
-[/block]
+<Image
+  src="https://files.readme.io/4c2ff6b-Screen_Shot_2022-03-30_at_12.01.10_AM.png"
+  alt="Terraform Logs"
+  align="center"
+  caption="Terraform Logs"
+/>
+
 
 # Release Summary
 
