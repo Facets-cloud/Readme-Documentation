@@ -53,7 +53,7 @@ Now to create a new Project Type:
        * **Git Repository URL**: Provide the repository’s URL.
        * **Git Ref**: Specify the exact commit ID or branch to be used.
        * **Relative Path**: Define the path to the project configuration within the repository.
-   * **IAC Tool:** Choose the IAC Tool and the IAC Tool Version (All the projects made from this project type will have resources that are supported by the selected IAC tool).
+   * **IAC Tool:** Choose the **IAC Tool and the IAC Tool Version** (All the projects made from this project type will have resources that are supported by the selected IAC tool).
    * **Allowed Clouds**: The cloud provider which will host your project.
 3. After filling in the details, click **Create** to save the project type.
 
@@ -65,7 +65,7 @@ Post Project Type creation, you can define exactly which resources are mapped to
 
 **Steps to Map Resources :**
 
-1. Click **Manage Resources** to view all existing modules, including all published custom modules
+1. Click **Manage Resources** to view all existing modules, including all published custom modules. The list will contain only resources that are supported by the IAC Tool that was selected while creating that project type.
 
 > **Note:** By default, all resources are selected for a project type and Preview modules are not visible in this list.
 
