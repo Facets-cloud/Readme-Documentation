@@ -25,8 +25,8 @@ In Facets, the VCS stores all Project-related files, including Blueprints, resou
    * **Resource JSON Files:** The resource JSON files define various infrastructure components, such as databases, compute instances, or networking resources.
    * **Overrides for Environment-Specific Customization:** To customize a blueprint for specific environments (e.g., development, staging, production), Facets supports overrides, stored as separate JSON files in the VCS. These overrides allow environment-specific adjustments without modifying the base blueprint, maintaining consistency and flexibility.
 3. **Deployment Synchronization**
-   * Automated Deployments: Facets integrates with the VCS to monitor changes to the blueprints and resources. When a change is committed to the repository, Facets can trigger an automated deployment process, ensuring that the live environment reflects the latest configuration in the VCS.
-   * Controlled Updates: Facets only deploys changes once they are committed and merged in the VCS, promoting a CI/CD (Continuous Integration/Continuous Deployment) workflow. This setup supports collaborative, controlled updates and reduces the risk of misconfigurations in production environments.
+   * **Automated Deployments:** Facets integrates with the VCS to monitor changes to the blueprints and resources. When a change is committed to the repository, Facets can trigger an automated deployment process, ensuring that the live environment reflects the latest configuration in the VCS.
+   * **Controlled Updates:** Facets only deploys changes once they are committed and merged in the VCS, promoting a CI/CD (Continuous Integration/Continuous Deployment) workflow. This setup supports collaborative, controlled updates and reduces the risk of misconfigurations in production environments.
 
 ## Working with VCS in Facets
 
