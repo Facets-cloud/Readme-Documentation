@@ -45,7 +45,7 @@ Conditionally shows fields based on another field’s value (User can enter mult
 <HTMLBlock>{`
 <div style="display: flex; flex-direction: row; gap: 1px;"><div style="flex: 1;width:25rem">
 <pre class="language-yaml">
-    <code class="language-yaml">
+    <code >
       readiness_timeout:
 	type: integer
   title: Readiness Timeout
