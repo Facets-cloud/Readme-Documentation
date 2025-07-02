@@ -114,7 +114,17 @@ db_password:
 
 <Image align="center" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
 
-<br />
+#### **`x-ui-variable-ref`**
+
+Allows referencing or creating variables (this flag shows a dropdown along with capability to type as well).
+
+```
+db_username:
+      type: string
+      x-ui-variable-ref: true
+```
+
+<Image align="center" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
 
 <br />
 
