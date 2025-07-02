@@ -202,4 +202,29 @@ x-ui-order:
 
 #### **`x-ui-placeholder`**
 
+```
+memory:
+  type: string
+  title: Memory
+  x-ui-placeholder: "Enter Memory (e.g., 1Gi or 512Mi)"
+```
+
+<br />
+
+<Image align="center" src="https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png" />
+
+#### **`x-ui-toggle`**
+
+Sets value for collapsible groups. If true, the group is collapsed by default every time the form is rendered.
+
+```
+cloud_permissions:
+      type: object
+      title: Cloud Permissions
+```
+
+<br />
+
+<br />
+
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
