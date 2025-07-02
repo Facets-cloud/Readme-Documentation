@@ -232,6 +232,20 @@ cloud_permissions:
 
 <Image align="center" src="https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png" />
 
+#### **`x-ui-yaml-editor`**
+
+YAML editor for object-type fields.
+
+```
+values:
+      type: object
+      title: Values
+      description: YAML Editor
+      x-ui-yaml-editor: true
+```
+
+<Image align="center" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
+
 <br />
 
 <br />
