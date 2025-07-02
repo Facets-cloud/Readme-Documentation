@@ -7,7 +7,7 @@ metadata:
 ---
 ## Overview
 
-Resource Locking in Facets helps safeguard your critical infrastructure by giving you the ability to lock individual resources from accidental changes. When a resource is locked, certain actions—like disabling the resource or modifying sensitive fields—are explicitly restricted. This feature is especially useful for production-grade components like databases, storage, or Kubernetes node pools.
+Resource Locking in Facets helps **safeguard your critical infrastructure** by giving you the ability to lock individual resources from accidental changes. When a resource is locked, **certain actions**—like disabling the resource or modifying sensitive fields—**are explicitly restricted**. This feature is especially useful for production-grade components like databases, storage, or Kubernetes node pools.
 
 ***
 
