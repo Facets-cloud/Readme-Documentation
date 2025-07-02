@@ -43,7 +43,7 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are met)
 
 <HTMLBlock>{`
-<div style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start; background-color: red">
+<div style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start;>
   <div style="flex: 1; min-width: 300px;">
 	<pre>
     <code>
