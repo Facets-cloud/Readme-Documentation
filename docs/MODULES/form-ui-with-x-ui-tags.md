@@ -102,6 +102,18 @@ arn:
 
 <Image align="center" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
 
+#### **`x-ui-secret-ref`**
+
+Allows referencing or creating secrets (this flag shows a dropdown along with capability to type as well).
+
+```yaml
+db_password:
+      type: string
+      x-ui-secret-ref: true
+```
+
+<Image align="center" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
+
 <br />
 
 <br />
