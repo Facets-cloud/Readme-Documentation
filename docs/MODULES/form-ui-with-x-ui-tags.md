@@ -42,7 +42,10 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are met)
 
-\<div style="display: flex; flex-direction: row; gap: 1px;">\<div style="flex: 1;width:25rem">
+```typescript
+<div style="display: flex; flex-direction: row; gap: 1px;">
+<div style="flex: 1;width:25rem">
+```
 
 ```yaml
 readiness_timeout:
@@ -69,7 +72,11 @@ liveliness_timeout:
     values: ["10"]
 ```
 
-\</div>
+```typescript
+</div>
+```
+
+<br />
 
 <Image align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
 
