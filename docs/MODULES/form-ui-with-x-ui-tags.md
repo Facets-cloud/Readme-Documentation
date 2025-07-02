@@ -42,7 +42,7 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are
 
-````html
+````jsx
 <div style="display: flex; flex-direction: row; gap: 1px;">
 <div style="flex: 1;width:25rem">
 
