@@ -217,11 +217,22 @@ memory:
 
 Sets value for collapsible groups. If true, the group is collapsed by default every time the form is rendered.
 
-```
+```yaml
 cloud_permissions:
-      type: object
-      title: Cloud Permissions
+	type: object
+  title: Cloud Permissions
+  description: Assign roles, define access levels
+  x-ui-toggle: false
+	properties:
+    aws:
+    type: object
+    title: AWS
+    x-ui-toggle: true
 ```
+
+<Image align="center" src="https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png" />
+
+<br />
 
 <br />
 
