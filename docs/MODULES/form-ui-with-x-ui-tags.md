@@ -45,6 +45,22 @@ Conditionally shows fields based on another field’s value (User can enter mult
 <HTMLBlock>{`
 <div style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start; background-color: red">
   <div style="flex: 1; min-width: 300px;">
+\`\`\`yaml
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: my-service
+    spec:
+      selector:
+        app: my-app
+      ports:
+      - port: 80
+        targetPort: 8080
+    \`\`\`
+  </div>
+  <div style="display:flex; flex: 1; align-items:center">
+    <img align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
+  </div></div>
 `}</HTMLBlock>
 
 ```yaml
