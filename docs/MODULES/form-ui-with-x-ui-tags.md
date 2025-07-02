@@ -87,6 +87,21 @@ readiness_port:
 
 <Image align="center" src="https://files.readme.io/5d75fcc71231625c29d08ad681e54a718d38183e90eb73baa5bef9cbfbf4beb7-Screenshot_2025-04-11_at_4.59.40_PM.png" />
 
+#### **`x-ui-output-type`**
+
+Lists down all the resources whose output is of type mentioned in "x-ui-output-type".
+
+```
+arn:
+      title: ARN
+      type: string
+      pattern: '^(arn:aws:iam::(\d{12}|aws):policy\/[A-Za-z0-9+=,.@\-_]+|\$\{[A-Za-z0-9._-]+\})$'
+      x-ui-error-message: "Value doesn't match pattern, accepted value pattern
+      x-ui-output-type: "iam_policy_arn"
+```
+
+<Image align="center" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
+
 <br />
 
 <br />
