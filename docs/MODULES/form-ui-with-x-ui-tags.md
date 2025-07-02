@@ -183,6 +183,23 @@ restart_policy:
 
 <Image align="center" src="https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png" />
 
-<br />
+***
+
+### Form Layout & Presentation
+
+#### **`x-ui-order`**
+
+Controls the exact order of rendered fields.
+
+```yaml
+x-ui-order:
+      - restart_policy
+      - db_password
+      - memory
+```
+
+<Image align="center" src="https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png" />
+
+#### **`x-ui-placeholder`**
 
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
