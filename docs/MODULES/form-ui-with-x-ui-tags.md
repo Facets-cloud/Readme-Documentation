@@ -246,6 +246,25 @@ values:
 
 <Image align="center" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
 
+***
+
+### Validation & Error Handling
+
+#### **`x-ui-error-message`**
+
+Customises error messages on validation.
+
+```yaml
+memory:
+      type: string
+      pattern: "^\\d+(Mi|Gi)$"
+      x-ui-error-message: "Invalid memory format. Use Gi or Mi."
+```
+
+<br />
+
+<Image align="center" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
+
 <br />
 
 <br />
