@@ -126,7 +126,27 @@ db_username:
 
 <Image align="center" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
 
-<br />
+#### **`x-ui-typeable`**
+
+Allows a field value to be typed instead of selecting it from the dropdown values
+
+```
+java_version:
+      title: Java Version
+      type: string
+      description: Java version to use for the build
+      default: '17'
+      enum:
+      - '8'
+      - '11'
+      - '17'
+      - '21'
+      x-ui-typeable: true
+```
+
+<Image align="center" src="https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png" />
+
+***
 
 <br />
 
