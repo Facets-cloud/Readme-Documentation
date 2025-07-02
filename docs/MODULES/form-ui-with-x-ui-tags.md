@@ -38,7 +38,7 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 
 ### Conditional Display
 
-#### **`x-ui-visible-if`**
+#### `x-ui-visible-if`
 
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are met)
 
@@ -69,15 +69,11 @@ liveliness_timeout:
 
 <Image align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
 
-<HTMLBlock>{`
-</div></div>
-`}</HTMLBlock>
-
-<br />
+***
 
 ### Dynamic Data Sources
 
-#### **`x-ui-dynamic-enum`**
+#### `x-ui-dynamic-enum`
 
 Dynamically populates enum values from a schema path
 
@@ -91,7 +87,9 @@ readiness_port:
 
 <Image align="center" src="https://files.readme.io/5d75fcc71231625c29d08ad681e54a718d38183e90eb73baa5bef9cbfbf4beb7-Screenshot_2025-04-11_at_4.59.40_PM.png" />
 
-#### **`x-ui-output-type`**
+***
+
+#### `x-ui-output-type`
 
 Lists down all the resources whose output is of type mentioned in "x-ui-output-type".
 
@@ -106,7 +104,9 @@ arn:
 
 <Image align="center" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
 
-#### **`x-ui-secret-ref`**
+***
+
+#### `x-ui-secret-ref`
 
 Allows referencing or creating secrets (this flag shows a dropdown along with capability to type as well).
 
