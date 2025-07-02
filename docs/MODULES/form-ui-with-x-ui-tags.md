@@ -69,6 +69,26 @@ liveliness_timeout:
 
 <Image align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
 
+***
+
+### Dynamic Data Sources
+
+#### **`x-ui-dynamic-enum`**
+
+Dynamically populates enum values from a schema path
+
+```yaml
+readiness_port:
+      type: string
+      title: Readiness Port
+      x-ui-dynamic-enum: spec.runtime.ports.*.port
+      x-ui-disable-tooltip: "No Ports Added"
+```
+
+<br />
+
+<Image align="center" src="https://files.readme.io/5d75fcc71231625c29d08ad681e54a718d38183e90eb73baa5bef9cbfbf4beb7-Screenshot_2025-04-11_at_4.59.40_PM.png" />
+
 <br />
 
 <br />
