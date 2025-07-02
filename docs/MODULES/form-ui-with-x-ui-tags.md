@@ -43,8 +43,12 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are met)
 
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+
 <div style="display: flex; flex-direction: row; gap: 1px;"><div style="flex: 1;width:25rem">
-<pre>
+<pre class="language-yaml">
     <code class="language-yaml">
       apiVersion: v1
       kind: Service
@@ -61,6 +65,7 @@ Conditionally shows fields based on another field’s value (User can enter mult
   <div style="display:flex; flex: 1; align-items:center">
     <img align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
   </div></div>
+<script> Prism.highlightAll(); </script>
 `}</HTMLBlock>
 
 ```html
