@@ -20,9 +20,9 @@ In Facets, the VCS stores all Project-related files, including Blueprints, resou
 
 1. **Project and Blueprint Management**
    * **Blueprint Storage:** Each Blueprint—essentially the design of the infrastructure and its configurations—is stored in the VCS. This blueprint includes resources defined as JSON files, specifying the desired infrastructure setup.
-   * \*\*Centralized Versioning:\*\*Storing the blueprint in the VCS enables version control, allowing developers to track changes, collaborate on updates, and roll back to previous configurations if necessary.
+   * **Centralized Versioning:** Storing the blueprint in the VCS enables version control, allowing developers to track changes, collaborate on updates, and roll back to previous configurations if necessary.
 2. **Resource Definitions and Overrides**
-   * \*\*Resource JSON Files:\*\*The resource JSON files define various infrastructure components, such as databases, compute instances, or networking resources.
+   * **Resource JSON Files:** The resource JSON files define various infrastructure components, such as databases, compute instances, or networking resources.
    * **Overrides for Environment-Specific Customization:** To customize a blueprint for specific environments (e.g., development, staging, production), Facets supports overrides, stored as separate JSON files in the VCS. These overrides allow environment-specific adjustments without modifying the base blueprint, maintaining consistency and flexibility.
 3. **Deployment Synchronization**
    * Automated Deployments: Facets integrates with the VCS to monitor changes to the blueprints and resources. When a change is committed to the repository, Facets can trigger an automated deployment process, ensuring that the live environment reflects the latest configuration in the VCS.
