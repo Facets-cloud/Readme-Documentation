@@ -1,7 +1,7 @@
 ---
 title: Form UI with (x-ui-* tags) (COPY)
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
