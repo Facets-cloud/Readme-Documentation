@@ -148,6 +148,21 @@ java_version:
 
 ***
 
+### Environment Management
+
+#### **`x-ui-overrides-only`**
+
+Only visible at the environment level and not visible at the blueprint level
+
+```yaml
+cidr:
+      type: string
+      default: "defaultValue"
+      x-ui-overrides-only: true
+```
+
+<Image align="center" src="https://files.readme.io/60a1233a4594f28d1a85b82a0a67971131ca4e2ce058e688c7f63e46da9df6c1-Screenshot_2025-04-11_at_2.41.51_PM.png" />
+
 <br />
 
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
