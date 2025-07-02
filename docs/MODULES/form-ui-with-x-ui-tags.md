@@ -45,8 +45,7 @@ Conditionally shows fields based on another field’s value (User can enter mult
 <HTMLBlock>{`
 <div style="display: flex; flex-direction: row; gap: 1px;"><div style="flex: 1;width:25rem">
 	<pre>
-    <code>
-  \`\`\`yaml
+    <code class="language-yaml">
       apiVersion: v1
       kind: Service
       metadata:
@@ -57,7 +56,6 @@ Conditionally shows fields based on another field’s value (User can enter mult
         ports:
         - port: 80
           targetPort: 8080
-      \`\`\`
       </code>
 </pre>
   </div>
