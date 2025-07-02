@@ -85,8 +85,6 @@ readiness_port:
       x-ui-disable-tooltip: "No Ports Added"
 ```
 
-<br />
-
 <Image align="center" src="https://files.readme.io/5d75fcc71231625c29d08ad681e54a718d38183e90eb73baa5bef9cbfbf4beb7-Screenshot_2025-04-11_at_4.59.40_PM.png" />
 
 <br />
