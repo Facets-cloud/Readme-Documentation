@@ -45,29 +45,29 @@ Conditionally shows fields based on another field’s value (User can enter mult
 <HTMLBlock>{`
 <div style="display: flex; flex-direction: row; gap: 1px;"><div style="flex: 1;width:25rem">
 <pre class="language-yaml">
-    <code >
+    <code class="language-yaml">
       readiness_timeout:
-	type: integer
-  title: Readiness Timeout
-  default: 10
-  minimum: 0
-  maximum: 10000
-  x-ui-placeholder: "Enter readiness timeout for the Pod"
-  x-ui-error-message: "Value must be between 0 and 10000"
-  x-ui-visible-if:
-  	field: spec.runtime.health_checks.readiness_check_type
-    values: ["PortCheck", "HttpCheck", "ExecCheck"]
-liveliness_timeout:
-  type: integer
-  title: Liveliness Timeout
-  default: 10
-  minimum: 0
-  maximum: 10000
-  x-ui-visible-if:
-    - field: spec.runtime.health_checks.liveliness_check_type
-    values: ["PortCheck", "HttpCheck", "ExecCheck"]
-    - field: spec.runtime.health_checks.liveliness_start_up_time
-    values: ["10"]
+        type: integer
+        title: Readiness Timeout
+        default: 10
+        minimum: 0
+        maximum: 10000
+        x-ui-placeholder: "Enter readiness timeout for the Pod"
+        x-ui-error-message: "Value must be between 0 and 10000"
+        x-ui-visible-if:
+          field: spec.runtime.health_checks.readiness_check_type
+          values: ["PortCheck", "HttpCheck", "ExecCheck"]
+      liveliness_timeout:
+        type: integer
+        title: Liveliness Timeout
+        default: 10
+        minimum: 0
+        maximum: 10000
+        x-ui-visible-if:
+          - field: spec.runtime.health_checks.liveliness_check_type
+          values: ["PortCheck", "HttpCheck", "ExecCheck"]
+          - field: spec.runtime.health_checks.liveliness_start_up_time
+          values: ["10"]
       </code></pre>
   </div>
   <div style="display:flex; flex: 1; align-items:center">
