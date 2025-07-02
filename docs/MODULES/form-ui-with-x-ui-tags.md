@@ -118,7 +118,9 @@ db_password:
 
 <Image align="center" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
 
-#### **`x-ui-variable-ref`**
+***
+
+#### `x-ui-variable-ref`
 
 Allows referencing or creating variables (this flag shows a dropdown along with capability to type as well).
 
@@ -130,7 +132,9 @@ db_username:
 
 <Image align="center" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
 
-#### **`x-ui-typeable`**
+***
+
+#### `x-ui-typeable`
 
 Allows a field value to be typed instead of selecting it from the dropdown values
 
@@ -154,7 +158,7 @@ java_version:
 
 ### Environment Management
 
-#### **`x-ui-overrides-only`**
+#### `x-ui-overrides-only`
 
 Only visible at the environment level and not visible at the blueprint level
 
@@ -169,7 +173,9 @@ cidr:
 
 <br />
 
-#### **`x-ui-override-disable`**
+***
+
+#### `x-ui-override-disable`
 
 Only visible at the blueprint level and not visible at the environment level
 
@@ -191,7 +197,7 @@ restart_policy:
 
 ### Form Layout & Presentation
 
-#### **`x-ui-order`**
+#### `x-ui-order`
 
 Controls the exact order of rendered fields.
 
@@ -204,7 +210,9 @@ x-ui-order:
 
 <Image align="center" src="https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png" />
 
-#### **`x-ui-placeholder`**
+***
+
+#### `x-ui-placeholder`
 
 ```
 memory:
@@ -217,7 +225,9 @@ memory:
 
 <Image align="center" src="https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png" />
 
-#### **`x-ui-toggle`**
+***
+
+#### `x-ui-toggle`
 
 Sets value for collapsible groups. If true, the group is collapsed by default every time the form is rendered.
 
@@ -236,7 +246,9 @@ cloud_permissions:
 
 <Image align="center" src="https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png" />
 
-#### **`x-ui-yaml-editor`**
+***
+
+#### `x-ui-yaml-editor`
 
 YAML editor for object-type fields.
 
@@ -254,7 +266,7 @@ values:
 
 ### Validation & Error Handling
 
-#### **`x-ui-error-message`**
+#### `x-ui-error-message`
 
 Customises error messages on validation.
 
