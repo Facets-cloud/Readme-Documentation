@@ -46,43 +46,34 @@ Conditionally shows fields based on another field’s value (User can enter mult
 <div style="display: flex; flex-direction: row; gap: 1px;"><div style="flex: 1;width:25rem">
 <pre class="language-yaml">
     <code class="language-yaml">
-      apiVersion: v1
-      kind: Service
-      metadata:
-        name: my-service
-      spec:
-        selector:
-          app: my-app
-        ports:
-        - port: 80
-          targetPort: 8080
+      readiness_timeout:
+	type: integer
+  title: Readiness Timeout
+  default: 10
+  minimum: 0
+  maximum: 10000
+  x-ui-placeholder: "Enter readiness timeout for the Pod"
+  x-ui-error-message: "Value must be between 0 and 10000"
+  x-ui-visible-if:
+  	field: spec.runtime.health_checks.readiness_check_type
+    values: ["PortCheck", "HttpCheck", "ExecCheck"]
+liveliness_timeout:
+  type: integer
+  title: Liveliness Timeout
+  default: 10
+  minimum: 0
+  maximum: 10000
+  x-ui-visible-if:
+    - field: spec.runtime.health_checks.liveliness_check_type
+    values: ["PortCheck", "HttpCheck", "ExecCheck"]
+    - field: spec.runtime.health_checks.liveliness_start_up_time
+    values: ["10"]
       </code></pre>
   </div>
   <div style="display:flex; flex: 1; align-items:center">
     <img align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
   </div></div>
 `}</HTMLBlock>
-
-```html
-<div style="display: flex; flex-direction: row; gap: 1px;"><div style="flex: 1;width:25rem">
-<pre>
-    <code class="language-yaml">
-      apiVersion: v1
-      kind: Service
-      metadata:
-        name: my-service
-      spec:
-        selector:
-          app: my-app
-        ports:
-        - port: 80
-          targetPort: 8080
-      </code></pre>
-  </div>
-  <div style="display:flex; flex: 1; align-items:center">
-    <img align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
-  </div></div>
-```
 
 <br />
 
