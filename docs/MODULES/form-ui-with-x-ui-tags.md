@@ -42,6 +42,11 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are met)
 
+\<div style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start;">
+
+&#x20; \<div style="flex: 1; min-width: 25rem;">
+
+
 ```yaml
 readiness_timeout:
 	type: integer
@@ -70,10 +75,6 @@ liveliness_timeout:
 \</div>
 
 <Image align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
-
-```jsx
-</div></div>
-```
 
 ***
 
@@ -270,5 +271,29 @@ memory:
 <br />
 
 <Image align="center" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
+
+````jsx
+<div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+  <div style={{ flex: 1 }}>
+    ```yaml
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: my-service
+    spec:
+      selector:
+        app: my-app
+      ports:
+      - port: 80
+        targetPort: 8080
+    ```
+  </div>
+  <div style={{ flex: 1 }}>
+    <Image align="center" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
+  </div>
+</div>
+````
+
+<br />
 
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
