@@ -165,4 +165,24 @@ cidr:
 
 <br />
 
+#### **`x-ui-override-disable`**
+
+Only visible at the blueprint level and not visible at the environment level
+
+```yaml
+restart_policy:
+      type: string
+      title: Restart Policy
+      description: Restart Policy- Always, OnFailure, Never
+      x-ui-override-disable: true
+      enum:
+        - Always
+        - OnFailure
+        - Never
+```
+
+<Image align="center" src="https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png" />
+
+<br />
+
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
