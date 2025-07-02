@@ -10,7 +10,9 @@ metadata:
 next:
   description: ''
 ---
-In Facets, Version Control Systems (VCS) are essential for managing Projects, Blueprints, and environment-specific configurations. Facets integrates with popular **VCS providers like GitHub, GitLab, and Bitbucket**, enabling developers to track infrastructure configurations, manage changes, and automate deployment. By leveraging a VCS, Facets ensures that projects and resource definitions are consistently stored, versioned, and accessible across teams.
+In Facets, Version Control Systems (VCS) are essential for managing Projects, Blueprints, and environment-specific configurations. Facets integrates with popular **VCS providers like GitHub, GitLab, and Bitbucket**, enabling developers to track infrastructure configurations, manage changes, and automate deployment.
+
+By leveraging a VCS, Facets ensures that projects and resource definitions are consistently stored, versioned, and accessible across teams.
 
 ## How VCS is used in Facets
 
