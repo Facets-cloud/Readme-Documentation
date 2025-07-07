@@ -43,20 +43,18 @@ By marking a resource as critical, Facets provides a deliberate control mechanis
 
 ***
 
-## How Locking Works
+## How it Works for Critical Resources
 
-### Locked Resources:
+### For Critical Resources
 
-* Cannot be disabled or deleted.
-* **Fields marked as x-ui-lockable:** true in the module schema become read-only.
-* Only users with the appropriate permissions can lock/unlock resources.
-* All lock/unlock actions are tracked in audit logs.
+* Cannot be deleted or disabled by users without the required permission
+* Fields marked with x-ui-critical: true are read-only unless the user has permission
+* All actions are logged with full context (who, what, when)
 
-### Unlocked Resources
+### For Non-Critical Resources
 
-* Default state of any resource.
-* Can be edited or disabled normally.
-* No restrictions apply.
+* Behave as usual with no restrictions on status changes or field edits
+* Accessible and editable by any user with general permissions
 
 ***
 
