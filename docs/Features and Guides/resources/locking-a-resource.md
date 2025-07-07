@@ -20,7 +20,7 @@ A resource is considered critical if:
 * The module YAML includes critical: true.
 * Certain fields within the module are marked as critical using x-ui-critical: true.
 
-Only users with the modify\_critical\_resources permission can:
+Only users with the *modify\_critical\_resources* permission can:
 
 * Delete the resource
 * Change its status (enable/disable)
@@ -62,9 +62,9 @@ By marking a resource as critical, Facets provides a deliberate control mechanis
 
 ## Use Cases
 
-* Protect production databases from accidental shutdown or destructive updates.
-* Lock Kubernetes node pools and persistent volumes that must remain stable.
-* Allow module developers to mark fields like storage size or replica count as locked once deployed.
+* Prevent accidental deletion of **production databases**
+* **Protect Kubernetes node pools** from scale-down or misconfiguration
+* Ensure only authorized personnel can change **resource limits, persistent disk size, or compute allocations**
 
 ***
 
