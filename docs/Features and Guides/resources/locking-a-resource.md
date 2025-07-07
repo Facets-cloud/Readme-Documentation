@@ -66,19 +66,18 @@ By marking a resource as critical, Facets provides a deliberate control mechanis
 
 ***
 
-## How to Use Resource Locking
+## How to Use Critical Resources
 
 <Embed typeOfEmbed="jsfiddle" url="" />
 
 ## Permissions and Auditability
 
-**RBAC Required:** Only users with lock/unlock\_resource permission can lock or unlock resources.
+**Permission Required**: Only users with the *modify\_critical\_resources* permission can make restricted changes to critical resources.
 
-**Audit Logs:**
+**Audit Logs**: Every critical action (delete, disable, modify critical fields) is logged with timestamp, user ID, and resource ID
 
-* Every lock/unlock event is recorded with the user, timestamp, and resource ID.
-* Helps maintain accountability and change traceability.
+Ensures traceability and compliance across your infrastructure operations
 
 ## Summary
 
-Resource Locking is designed to give teams peace of mind when working with critical infrastructure. By restricting high-risk actions behind an explicit lock mechanism and tying them to permissions and audit logs, Facets ensures that your most important resources are protected from human error.
+Critical Resources in Facets offer a robust safeguard for infrastructure components that require careful handling. By embedding this control directly into the platform, teams gain confidence that production-grade systems are protected from accidental or unauthorized modifications. The result: safer operations, cleaner access controls, and greater peace of mind across your engineering org.
