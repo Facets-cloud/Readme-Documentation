@@ -1,5 +1,5 @@
 ---
-title: Locking a Resource
+title: Critical Resources
 deprecated: false
 hidden: true
 metadata:
@@ -7,20 +7,22 @@ metadata:
 ---
 ## Overview
 
-Resource Locking in Facets helps **safeguard your critical infrastructure** by giving you the ability to lock individual resources from accidental changes. When a resource is locked, **certain actions**—like disabling the resource or modifying sensitive fields—**are explicitly restricted**. This feature is especially useful for production-grade components like databases, storage, or Kubernetes node pools.
+Critical Resources in Facets are designed to **help protect sensitive infrastructure components** by restricting who can make impactful changes. When a resource is marked as critical, specific actions—such as deleting the resource, changing its status, or editing sensitive fields—are limited to users with explicit permissions.
+
+This feature is essential for high-stakes infrastructure components such as production databases, Kubernetes node pools, or persistent storage, where unintended changes can lead to downtime or data loss.
 
 ***
 
-## Why Lock Resources?
+## Why Mark Resources as Critical?
 
-In complex environments, even a small mistake—like changing a field or disabling a live service—can lead to unexpected downtime or data loss. While tools like prevent\_destroy in Terraform offer some protection, they don’t help in cases where a resource is deleted or disabled from the blueprint entirely.
+In complex environments, even a small mistake—like changing a field or disabling a live service—can lead to unexpected downtime or data loss. While tools like **prevent\_destroy** in Terraform offer some protection, they don’t help in cases where a resource is deleted or disabled from the blueprint entirely.
 
-Resource Locking solves this by:
+By marking a resource as critical, Facets provides a deliberate control mechanism that:
 
-* Preventing critical resources from being disabled or deleted.
-* Blocking edits to sensitive fields that are known to cause service disruption.
-* Allowing module authors to define which fields are lock-sensitive.
-* Adding a deliberate layer of control for safety-critical environments.
+* Prevents accidental deletion or disablement
+* Restricts changes to sensitive fields
+* Establishes clear boundaries based on role-based access control (RBAC)
+* Ensures traceability through audit logs
 
 ***
 
