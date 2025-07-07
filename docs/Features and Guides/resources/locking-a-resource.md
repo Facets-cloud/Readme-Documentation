@@ -43,7 +43,7 @@ By marking a resource as critical, Facets provides a deliberate control mechanis
 
 ***
 
-## How it Works for Critical Resources
+## How It Works for Critical Resources
 
 ### For Critical Resources
 
