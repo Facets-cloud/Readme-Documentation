@@ -13,6 +13,23 @@ This feature is essential for high-stakes infrastructure components such as prod
 
 ***
 
+## What Is a Critical Resource?
+
+A resource is considered critical if:
+
+* The module YAML includes critical: true.
+* Certain fields within the module are marked as critical using x-ui-critical: true.
+
+Only users with the modify\_critical\_resources permission can:
+
+* Delete the resource
+* Change its status (enable/disable)
+* Edit fields marked as x-ui-critical: true
+
+Users without this permission will see these actions as disabled or read-only.
+
+***
+
 ## Why Mark Resources as Critical?
 
 In complex environments, even a small mistake—like changing a field or disabling a live service—can lead to unexpected downtime or data loss. While tools like **prevent\_destroy** in Terraform offer some protection, they don’t help in cases where a resource is deleted or disabled from the blueprint entirely.
