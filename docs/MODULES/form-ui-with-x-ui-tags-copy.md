@@ -75,10 +75,8 @@ liveliness_timeout:
 ![](https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png)
 
 <HTMLBlock>{`
-</div>
+</div></div>
 `}</HTMLBlock>
-
-<Image align="center" src="https://files.readme.io/7a576f8e5ad8f9c901a4274c3f35719d9f366f020685c0355d2c0f284e959494-Screenshot_2025-04-11_at_4.42.45_PM.png" />
 
 ***
 
