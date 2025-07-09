@@ -38,14 +38,9 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 Conditionally shows fields based on another field’s value (User can enter multiple conditions under this flag and the field will be visible only if all the conditions are met)
 
 <HTMLBlock>{`
-<div style="display: flex; background-color: red">
+<div style="display: flex !important; background-color: red !important">
 	<div style="width: 50%;">
 `}</HTMLBlock>
-
-```html
-<div style="display: flex; background-color: red">
-	<div style="width: 50%;">
-```
 
 ```yaml
 readiness_timeout:
@@ -71,12 +66,6 @@ liveliness_timeout:
     - field: spec.runtime.health_checks.liveliness_start_up_time
     values: ["10"]
 ```
-
-```html
-</div></div>
-```
-
-<br />
 
 <HTMLBlock>{`
 </div>
