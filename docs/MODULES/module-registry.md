@@ -31,8 +31,6 @@ The registry presents each module as an entry with the following metadata:
 | **Clouds Supported** | Lists cloud providers (e.g., AWS, GCP, Azure) supported by the module                                  |
 | **Usage Map**        | References to projects and environments where this module is currently being used in the control plane |
 
-<br />
-
 ***
 
 ## Custom Module-Specific Metadata
