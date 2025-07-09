@@ -47,9 +47,30 @@ In addition to the standard fields, custom modules include additional metadata t
 
 ### Module State
 
-Custom modules exist in one of the following states:
+Custom modules in Facets can exist in one of the following states:
 
-* **Preview:** Modules still under development or testing. Cannot be used in production environments unless explicitly allowed.
-* **Published:** Approved, production-ready modules available to all teams in the CP.
+* **Preview:** Modules in active development or validation phase. These can be used in test projects to experiment, iterate, and verify behavior. This is the default state when a module is first registered locally via the CLI.
+* **Published:** Modules that have been reviewed and are considered production-ready. These are available for use across all projects within the Control Plane and are visible to all users.
 
-Transitions (e.g., promoting a module from preview to published) are governed through policy and user permissions.
+Typically, module developers write and test their modules locally, register them as preview modules, and validate them within isolated test projects. Once validated, they promote the module to published, making it available across the organisation for broader use.
+
+Transitions between states (e.g., preview → published) are governed by user permissions and organizational policy.
+
+***
+
+## Using the Registry
+
+<Embed typeOfEmbed="jsfiddle" url="" />
+
+***
+
+## Why It Matters
+
+For DevOps engineers and platform teams, the Module Registry acts as a single source of truth for:
+
+* Discovering reusable infrastructure patterns
+* Understanding dependencies and usage impact
+* Managing lifecycle and versions of infrastructure modules
+* Enabling safe, consistent, and environment-aware provisioning
+
+Whether you're building new environments, updating blueprints, or analyzing infra usage, the Module Registry is your infrastructure catalogue and control surface.
