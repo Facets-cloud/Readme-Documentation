@@ -42,6 +42,11 @@ Conditionally shows fields based on another field’s value (User can enter mult
 	<div style="width: 50%;">
 `}</HTMLBlock>
 
+```html
+<div style="display: flex; background-color: red">
+	<div style="width: 50%;">
+```
+
 ```yaml
 readiness_timeout:
 	type: integer
@@ -66,6 +71,12 @@ liveliness_timeout:
     - field: spec.runtime.health_checks.liveliness_start_up_time
     values: ["10"]
 ```
+
+```html
+</div></div>
+```
+
+<br />
 
 <HTMLBlock>{`
 </div>
