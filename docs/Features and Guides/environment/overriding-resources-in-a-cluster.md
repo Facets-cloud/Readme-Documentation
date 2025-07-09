@@ -14,11 +14,10 @@ Facets provides the flexibility to directly modify any resource configurations i
 
 ## How to Override Resources for an Environment?
 
-1. Open the **Projects** tab and select your desired project. 
-2. Select the **Blueprint** tab and select the desired resource.
-3. Select **Override** from the drop-down.
-4. Select the environment where the values need to be updated.
-5. Update the desired values in the **Form** or **JSON** mode and click **Save Changes.**
+1. Open the **Projects** tab and select your desired project.
+2. Select the **Resource Center** tab and select the environment where the values need to be updated.
+3. Select the desired resource and Click on **Overrides** tab
+4. Update the desired values in the **Form** or **JSON** mode and click **Save Changes.**
 
 **Note:** Any changes made to the overridden configuration will only take effect after the next release.
 
