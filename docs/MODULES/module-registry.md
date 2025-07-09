@@ -1,7 +1,7 @@
 ---
 title: Module Registry
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
