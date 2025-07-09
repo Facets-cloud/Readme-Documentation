@@ -5,13 +5,13 @@ hidden: true
 metadata:
   robots: index
 ---
-The **Module Registry** in Facets provides a centralized, searchable **catalogue of all infrastructure modules** available within a Control Plane (CP). It includes both system-provided **Facets Modules** and Organisation-authored **Custom Modules**, enabling teams to discover, understand, and manage reusable building blocks across environments and projects.
+The **Module Registry** in Facets provides a centralized, searchable **catalogue of all infrastructure modules** available within a Control Plane (CP).
 
-As we know by now, in Facets, a module is defined by a unique combination of:
+It includes both system-provided **Facets Modules** and Organisation-authored **Custom Modules**, enabling teams to discover, understand, and manage reusable building blocks across environments and projects.
 
-* **Intent**: the capability being provisioned (e.g., postgresql-db)
-* **Flavor**: the implementation of that intent (e.g., rds, gke, etc.)
-* **Version**: the iteration of the module (e.g., 1.0, 2.1)
+As we know by now, in Facets, a module is defined by a unique combination of **Intent**, **Flavor**, **Version**.
+
+***
 
 ## What the Registry Includes
 
@@ -31,6 +31,10 @@ The registry presents each module as an entry with the following metadata:
 | **Clouds Supported** | Lists cloud providers (e.g., AWS, GCP, Azure) supported by the module                                  |
 | **Usage Map**        | References to projects and environments where this module is currently being used in the control plane |
 
+<br />
+
+***
+
 ## Custom Module-Specific Metadata
 
 In addition to the standard fields, custom modules include additional metadata to support governance and lifecycle workflows:
@@ -42,3 +46,12 @@ In addition to the standard fields, custom modules include additional metadata t
 | **Module State**      | Indicates if the module is in `preview` or `published` mode                 |
 | **GitHub Repo Link**  | Points to the source repository of the module, if linked                    |
 | **Actions Available** | Depending on permissions: publish module, delete module, or update metadata |
+
+### Module State
+
+Custom modules exist in one of the following states:
+
+* **Preview:** Modules still under development or testing. Cannot be used in production environments unless explicitly allowed.
+* **Published:** Approved, production-ready modules available to all teams in the CP.
+
+Transitions (e.g., promoting a module from preview to published) are governed through policy and user permissions.
