@@ -1,5 +1,5 @@
 ---
-title: Approval Workflow
+title: Release Approval Workflow
 excerpt: ''
 deprecated: false
 hidden: false
@@ -10,11 +10,11 @@ metadata:
 next:
   description: ''
 ---
-Facets provides a powerful release approval workflow feature to help teams maintain control and ensure compliance during the software development lifecycle. This feature enables organizations to define structured approval processes, ensuring only reviewed and authorized changes are deployed to production environments. 
+Facets provides a powerful release approval workflow feature to help teams maintain control and ensure compliance during the software development lifecycle. This feature enables organizations to define structured approval processes, ensuring only reviewed and authorized changes are deployed to production environments.
 
 Release approval workflows streamline collaboration, accountability, and quality assurance.
 
-## Why Create Workflows
+## Why Create Release Approval Workflows
 
 Creating workflows in Facets allows teams to establish a clear, repeatable process for approving changes before deployment. By defining workflows, organizations can:
 
