@@ -96,7 +96,7 @@ outputs:
 
 Your Terraform module must only use the standard variables injected by the Facets engine. These map directly to your `facets.yaml`:
 
-```yaml
+```json
 variable "instance" {
   description = "Developer-supplied configuration."
   type = object({
