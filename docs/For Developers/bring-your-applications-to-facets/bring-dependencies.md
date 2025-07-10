@@ -18,7 +18,7 @@ Facets makes it easy to onboard your existing databases by offering structured b
 
 ### 1. Database Creation
 
-* **Add DB Resource to Blueprint**: Choose a database resource from Facets' blueprints that matches your existing setup (e.g., RDS, MongoDB, Redis).  
+* **Add DB Resource to Blueprint**: Choose a database resource from Facets' blueprints that matches your existing setup (e.g., RDS, MongoDB, Redis).
 * **Configure Specifications**: Define parameters such as instance size, storage, and replication settings to mirror your current database.
 
 ### 2. Application Connection
@@ -27,16 +27,16 @@ Facets makes it easy to onboard your existing databases by offering structured b
 
 ### 3. Data Migration
 
-For databases like Redis, use existing tools and scripts to migrate data. This may involve:  
+For databases like Redis, use existing tools and scripts to migrate data. This may involve:
 
-* Taking snapshots or dumps.  
-* Exporting the data from the existing database.  
+* Taking snapshots or dumps.
+* Exporting the data from the existing database.
 * Importing it into the new database instance on Facets.
 
 ### 4. Cutover
 
-* **Validate Migration**: Ensure the data migration was successful.  
-* **Redirect Connections**: Update the application to exclusively use the new database instance on Facets.  
+* **Validate Migration**: Ensure the data migration was successful.
+* **Redirect Connections**: Update the application to exclusively use the new database instance on Facets.
 * **Decommission the Old Database**: If no longer needed, safely decommission the old database.
 
 ***
@@ -47,7 +47,7 @@ To transition your existing cloud dependencies to Facets, follow these steps:
 
 ### 1. Resource Provisioning
 
-* **Select the Resource**: Choose a matching resource for your resource type (e.g., SQS, SNS, Lambda).  
+* **Select the Resource**: Choose a matching resource for your resource type (e.g., SQS, SNS, Lambda).
 * **Mirror Configurations**: Configure the resource to match the settings of your existing setup, including attributes like queue delay, visibility timeout, or concurrency limits.
 
 ### 2. IAM Permission Setup
@@ -60,7 +60,7 @@ To transition your existing cloud dependencies to Facets, follow these steps:
 
 ### 4. Application Integration
 
-* **Modify Application Configuration**: Update the application’s configuration or code to reference the new resource endpoints and credentials.  
+* **Modify Application Configuration**: Update the application’s configuration or code to reference the new resource endpoints and credentials.
 * **Test Connectivity**: Verify that the application interacts with the new cloud resources as intended.
 
 > **Note**: You can also mark resources as Provided which will allow you to seamlessly incorporate externally provided infrastructure components, services, and cloud resources into their workflows.
