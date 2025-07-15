@@ -22,3 +22,10 @@ Facets provides the flexibility to directly modify any resource configurations i
 **Note:** Any changes made to the overridden configuration will only take effect after the next release.
 
 You have successfully overridden the Resource for an Environment.
+
+## Resource Overrides Delete
+
+Users might want to **delete overridden value of a field across environments** and set it to default or **delete all the overrides of a particular environment**.
+
+* In any such cases, users can go to "Overrides Summary" tab present in the resource side-pane and select the overrides that they want to delete.
+* Once **deleted, the values will be set to the default blueprint value** of that field.
