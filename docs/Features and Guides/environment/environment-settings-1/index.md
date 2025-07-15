@@ -25,7 +25,7 @@ Use the left-hand menu on the Environment Settings page to navigate between thes
 * **Releases**
 * **Infrastructure as Code (IaC)**
 * **Virtual Private Network (VPN)**
-* [Advanced](https://readme.facets.cloud/docs/advanced-settings-in-facets) 
+* [Advanced](https://readme.facets.cloud/docs/advanced-settings-in-facets)
 * **Danger Zone**
 
 ***
@@ -62,9 +62,33 @@ The **Time Sensitive** section lets you manage the availability schedule of your
   **Best Practice:** Ensure that the stop time is set later than the start time to avoid configuration errors.
 * **Manage Updates:** Modify the schedule anytime to adjust the periods when your environment is available.
 
-### Saving Changes
+<br />
 
-* **Save Changes Button:** Once the schedule is updated, click this button to apply the new time settings.
+### Short-lived Environment Configuration
+
+The **Short-lived Environment** section lets you configure automated teardown behavior for environments that are manually launched or scaled up. This is especially useful for managing **ephemeral workloads** such as testing, QA, or short-term experiments.
+
+#### Configuration Options
+
+* **Teardown Action**\*: Choose the action to execute automatically after a manual operation:
+  * **Scale Down**: Reduce resource usage by scaling down the environment.
+  * **Destroy**: Completely tear down the environment.
+
+* **Trigger Delay**\*: Set the time delay before the teardown action executes. This can be defined in **hours**, **minutes**, or **seconds**.
+
+#### Use Cases
+
+* Prevent resource waste from forgotten environments
+* Automate cleanup for ad-hoc or temporary environments
+* Improve cost control and operational hygiene
+
+#### How to Configure
+
+1. Navigate to the **Time Sensitive Settings** in the environment settings panel.
+2. Scroll to **Short-lived Environment**.
+3. Select the **Teardown Action** (`Scale Down` or `Destroy`).
+4. Set the **Trigger Delay**.
+5. Click **Save Changes** to apply the configuration.
 
 ***
 
