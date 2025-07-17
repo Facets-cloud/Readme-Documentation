@@ -102,7 +102,7 @@ arn:
       x-ui-output-type: "iam_policy_arn"
 ```
 
-<Image align="center" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
 
 ***
 
@@ -116,7 +116,7 @@ db_password:
       x-ui-secret-ref: true
 ```
 
-<Image align="center" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
 
 ***
 
@@ -130,7 +130,7 @@ db_username:
       x-ui-variable-ref: true
 ```
 
-<Image align="center" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
 
 ***
 
@@ -152,7 +152,7 @@ java_version:
       x-ui-typeable: true
 ```
 
-<Image align="center" src="https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png" />
 
 ***
 
@@ -169,7 +169,7 @@ cidr:
       x-ui-overrides-only: true
 ```
 
-<Image align="center" src="https://files.readme.io/60a1233a4594f28d1a85b82a0a67971131ca4e2ce058e688c7f63e46da9df6c1-Screenshot_2025-04-11_at_2.41.51_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/60a1233a4594f28d1a85b82a0a67971131ca4e2ce058e688c7f63e46da9df6c1-Screenshot_2025-04-11_at_2.41.51_PM.png" />
 
 <br />
 
@@ -191,7 +191,7 @@ restart_policy:
         - Never
 ```
 
-<Image align="center" src="https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png" />
 
 ***
 
@@ -208,7 +208,7 @@ x-ui-order:
       - memory
 ```
 
-<Image align="center" src="https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png" />
 
 ***
 
@@ -223,7 +223,7 @@ memory:
 
 <br />
 
-<Image align="center" src="https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png" />
 
 ***
 
@@ -244,7 +244,7 @@ cloud_permissions:
     x-ui-toggle: true
 ```
 
-<Image align="center" src="https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png" />
+<Image align="center" width="500px" src="https://files.readme.io/ba8c898bd6f1c5783d479ebba1ad75ff9e7dea8f6e4fa6bc4059c23d50aa0910-Screenshot_2025-04-11_at_3.31.54_PM.png" />
 
 ***
 
@@ -260,7 +260,7 @@ values:
       x-ui-yaml-editor: true
 ```
 
-<Image align="center" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
+<Image align="center" width="600px" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
 
 ***
 
@@ -277,8 +277,6 @@ memory:
       x-ui-error-message: "Invalid memory format. Use Gi or Mi."
 ```
 
-<br />
-
-<Image align="center" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
+<Image align="center" width="600px" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
 
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
