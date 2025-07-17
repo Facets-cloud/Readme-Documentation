@@ -17,7 +17,7 @@ next:
       slug: ci-of-innersourcing
       title: Continuous Integration
 ---
-> 📘 Modules can be built using our 'Module Generation' MCP also. Try it <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor>
+> 📘 Modules can be built using our **'Module Generation' MCP**. Try it <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor>
 
 We follow the recommended Facets module development workflow:
 
