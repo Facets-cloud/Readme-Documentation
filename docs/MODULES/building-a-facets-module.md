@@ -179,3 +179,11 @@ inputs:
 This declares that the module expects a `cloud_account` input which includes a usable `aws` provider configuration.
 
 > 📌 This approach allows each building block to independently receive and use the provider it needs. It also enables gradual upgrades — not every module must migrate to a new provider version at the same time.
+
+***
+
+## Facets Module Generation MCP
+
+Modules can also be built using our MCP. [Try it out!](https://github.com/Facets-cloud/facets-module-mcp)
+
+> 📘 Modules can be built using our **'Module Generation' MCP**. Try it <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor>
