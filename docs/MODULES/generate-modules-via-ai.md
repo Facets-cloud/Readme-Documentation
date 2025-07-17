@@ -1,7 +1,7 @@
 ---
 title: Generate Modules via AI
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
