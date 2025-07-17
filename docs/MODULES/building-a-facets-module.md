@@ -17,6 +17,8 @@ next:
       slug: ci-of-innersourcing
       title: Continuous Integration
 ---
+> 📘 Modules can now be built using our 'Module Generation' MCP.
+
 We follow the recommended Facets module development workflow:
 
 ### 1. Plan the Capability
