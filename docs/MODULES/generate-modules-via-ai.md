@@ -1,5 +1,5 @@
 ---
-title: Generate Modules via AI
+title: Generate Modules via MCP
 deprecated: false
 hidden: false
 link:
