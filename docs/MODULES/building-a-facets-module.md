@@ -184,4 +184,12 @@ This declares that the module expects a `cloud_account` input which includes a u
 
 ## Facets Module Generation MCP
 
-Modules can also be built using our MCP. [Try it out!](https://github.com/Facets-cloud/facets-module-mcp)
+You can also build custom modules using our **Module Creation Platform (MCP)** — a powerful CLI tool designed to simplify and accelerate the process of writing Terraform modules for Facets.
+
+Some key advantages of using this MCP:
+
+* **Faster** module creation with guided prompts and validations
+* **Standardized** structure that aligns with Facets' module registry
+* **Supports custom logic**, templating, and metadata integration
+
+Try it out <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor> and start building modules tailored to your infrastructure needs.
