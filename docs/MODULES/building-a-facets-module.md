@@ -185,5 +185,3 @@ This declares that the module expects a `cloud_account` input which includes a u
 ## Facets Module Generation MCP
 
 Modules can also be built using our MCP. [Try it out!](https://github.com/Facets-cloud/facets-module-mcp)
-
-> 📘 Modules can be built using our **'Module Generation' MCP**. Try it <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor>
