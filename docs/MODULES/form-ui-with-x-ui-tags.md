@@ -203,9 +203,9 @@ Controls the exact order of rendered fields.
 
 ```yaml
 x-ui-order:
-      - restart_policy
-      - db_password
-      - memory
+  - restart_policy
+  - db_password
+  - memory
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/dfd51a7ddba395ede8f2616b633593dba947e244208fc7316286dbbe99dca7e0-Screenshot_2025-04-11_at_3.12.23_PM.png" />
