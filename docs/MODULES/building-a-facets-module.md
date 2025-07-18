@@ -179,17 +179,3 @@ inputs:
 This declares that the module expects a `cloud_account` input which includes a usable `aws` provider configuration.
 
 > 📌 This approach allows each building block to independently receive and use the provider it needs. It also enables gradual upgrades — not every module must migrate to a new provider version at the same time.
-
-***
-
-## Facets Module Generation MCP
-
-You can also build custom modules using our **Module Creation Platform (MCP)** — a powerful CLI tool designed to simplify and accelerate the process of writing Terraform modules for Facets.
-
-Some key advantages of using this MCP:
-
-* **Faster** module creation with guided prompts and validations
-* **Standardized** structure that aligns with Facets' module registry
-* **Supports custom logic**, templating, and metadata integration
-
-Try it out <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor> and start building modules tailored to your infrastructure needs.
