@@ -250,14 +250,14 @@ cloud_permissions:
 
 #### `x-ui-yaml-editor`
 
-YAML editor for object-type fields.
+Custom editor (with support of multiple languages to choose from) for object-type fields.
 
-```
+```yaml
 values:
-      type: object
-      title: Values
-      description: YAML Editor
-      x-ui-yaml-editor: true
+  type: object
+  title: Values
+  description: YAML Editor
+  x-ui-editor: true
 ```
 
 <Image align="center" width="600px" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
