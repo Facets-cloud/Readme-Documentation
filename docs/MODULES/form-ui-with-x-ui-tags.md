@@ -248,9 +248,10 @@ cloud_permissions:
 
 ***
 
-#### `x-ui-yaml-editor`
+#### `x-ui-editor`
 
-Custom editor (with support of multiple languages to choose from) for object-type fields.
+Custom editor (with support of multiple languages to choose from) for object-type fields.\
+\_Note: Earlier this tag was `x-ui-yaml-editor` which only supported YAML. \_
 
 ```yaml
 values:
