@@ -2,7 +2,7 @@
 title: Generate Custom Terraform Modules via MCP
 excerpt: >-
   This section explains how to turn a module concept into a working Facets
-  module in minutes. 
+  Module in minutes. 
 deprecated: false
 hidden: false
 metadata:
