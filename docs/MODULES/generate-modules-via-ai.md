@@ -1,5 +1,5 @@
 ---
-title: Generate Modules via MCP
+title: Generate Custom Terraform Modules via MCP
 excerpt: >-
   This section explains how to turn a module concept into a working Facets
   module. You'll define the module interface using `facets.yaml`, connect it to
