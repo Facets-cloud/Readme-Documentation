@@ -254,11 +254,11 @@ Custom editor (with support of multiple languages to choose from) for object-typ
 *Note: Earlier this tag was`x-ui-yaml-editor` which only supports YAML*
 
 ```yaml
-values:
-  type: object
-  title: Values
-  description: Editor
-  x-ui-editor: true
+ env:
+   title: Environment Variables
+   description: Map of environment variables passed to the main container.
+   type: object
+   x-ui-editor: true
 ```
 
 <Image align="center" width="600px" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
