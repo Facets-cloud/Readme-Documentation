@@ -261,7 +261,7 @@ Custom editor (with support of multiple languages to choose from) for object-typ
    x-ui-editor: true
 ```
 
-<Image align="center" width="600px" src="https://files.readme.io/0d5d5c79436b9deb1134d9499552d9424e306cb91bf28694fda6a604440aee49-Screenshot_2025-04-11_at_12.27.13_PM.png" />
+<Image align="center" width="600px" src="https://files.readme.io/422109bfd22d315bfd2f22b20cd4c64851b53298020b614a5e18f13c0ed89b07-Screenshot_2025-07-18_at_12.41.46_PM.png" />
 
 ***
 
