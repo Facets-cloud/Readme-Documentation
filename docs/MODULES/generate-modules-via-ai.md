@@ -1,5 +1,5 @@
 ---
-title: Generate Custom Terraform Modules via MCP
+title: Generate Modules via MCP
 excerpt: >-
   This section explains how to turn a module concept into a working Facets
   Module in minutes. 
