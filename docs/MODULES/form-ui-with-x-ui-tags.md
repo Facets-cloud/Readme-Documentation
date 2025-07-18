@@ -95,11 +95,11 @@ Lists down all the resources whose output is of type mentioned in "x-ui-output-t
 
 ```
 arn:
-      title: ARN
-      type: string
-      pattern: '^(arn:aws:iam::(\d{12}|aws):policy\/[A-Za-z0-9+=,.@\-_]+|\$\{[A-Za-z0-9._-]+\})$'
-      x-ui-error-message: "Value doesn't match pattern, accepted value pattern
-      x-ui-output-type: "iam_policy_arn"
+	title: ARN
+  type: string
+  pattern: '^(arn:aws:iam::(\d{12}|aws):policy\/[A-Za-z0-9+=,.@\-_]+|\$\{[A-Za-z0-9._-]+\})$'
+	x-ui-error-message: "Value doesn't match pattern, accepted value pattern
+	x-ui-output-type: "iam_policy_arn"
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
@@ -112,8 +112,8 @@ Allows referencing or creating secrets (this flag shows a dropdown along with ca
 
 ```yaml
 db_password:
-      type: string
-      x-ui-secret-ref: true
+  type: string
+  x-ui-secret-ref: true
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/6d6dbfac73e11cac2ebbf1f5307f575782b5893ed74fd2cee9417ccf5590c4bb-Screenshot_2025-04-11_at_2.37.05_PM.png" />
@@ -126,8 +126,8 @@ Allows referencing or creating variables (this flag shows a dropdown along with 
 
 ```
 db_username:
-      type: string
-      x-ui-variable-ref: true
+	type: string
+  x-ui-variable-ref: true
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/61b8d5a044c0f75d0819d752a1d3c3b65e1b52fde32ee43d667ee0b2cc760bde-Screenshot_2025-04-11_at_2.16.07_PM.png" />
@@ -140,16 +140,16 @@ Allows a field value to be typed instead of selecting it from the dropdown value
 
 ```
 java_version:
-      title: Java Version
-      type: string
-      description: Java version to use for the build
-      default: '17'
-      enum:
-      - '8'
-      - '11'
-      - '17'
-      - '21'
-      x-ui-typeable: true
+	title: Java Version
+  type: string
+  description: Java version to use for the build
+  default: '17'
+	enum:
+  	- '8'
+    - '11'
+    - '17'
+    - '21'
+	x-ui-typeable: true
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png" />
@@ -164,9 +164,9 @@ Only visible at the environment level and not visible at the blueprint level
 
 ```yaml
 cidr:
-      type: string
-      default: "defaultValue"
-      x-ui-overrides-only: true
+  type: string
+  default: "defaultValue"
+  x-ui-overrides-only: true
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/60a1233a4594f28d1a85b82a0a67971131ca4e2ce058e688c7f63e46da9df6c1-Screenshot_2025-04-11_at_2.41.51_PM.png" />
@@ -181,14 +181,14 @@ Only visible at the blueprint level and not visible at the environment level
 
 ```yaml
 restart_policy:
-      type: string
-      title: Restart Policy
-      description: Restart Policy- Always, OnFailure, Never
-      x-ui-override-disable: true
-      enum:
-        - Always
-        - OnFailure
-        - Never
+	type: string
+  title: Restart Policy
+  description: Restart Policy- Always, OnFailure, Never
+  x-ui-override-disable: true
+  enum:
+  - Always
+  - OnFailure
+  - Never
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/c50c9dbbc86c343fa8a0ced892a7bde80a57cdb3815efdb7182c29e057114419-Screenshot_2025-04-11_at_3.03.43_PM.png" />
