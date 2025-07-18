@@ -272,9 +272,9 @@ Customises error messages on validation.
 
 ```yaml
 memory:
-      type: string
-      pattern: "^\\d+(Mi|Gi)$"
-      x-ui-error-message: "Invalid memory format. Use Gi or Mi."
+  type: string
+  pattern: "^\\d+(Mi|Gi)$"
+  x-ui-error-message: "Invalid memory format. Use Gi or Mi."
 ```
 
 <Image align="center" width="600px" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
