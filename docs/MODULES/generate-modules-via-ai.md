@@ -8,7 +8,7 @@ hidden: false
 metadata:
   robots: index
 ---
-## Facets' **Module Generation MCP**
+## Facets' **Module-Generation MCP**
 
 You can also build custom modules using our **Module Creation Platform (MCP)** — a powerful CLI tool designed to simplify and accelerate the process of writing Terraform modules for Facets.
 
