@@ -18,13 +18,13 @@ This feature is essential for high-stakes infrastructure components such as prod
 A resource is considered critical if:
 
 * The module YAML includes critical: true.
-* Certain fields within the module are marked as critical using x-ui-critical: true.
+* Certain fields within the module are marked as critical using **x-ui-critical**
 
 Only users with the *modify\_critical\_resources* permission can:
 
 * Delete the resource
 * Change its status (enable/disable)
-* Edit fields marked as x-ui-critical: true
+* Edit fields marked as **x-ui-critical**
 
 Users without this permission will see these actions as disabled or read-only.
 
@@ -48,7 +48,7 @@ By marking a resource as critical, Facets provides a deliberate control mechanis
 ### For Critical Resources
 
 * Cannot be deleted or disabled by users without the required permission
-* Fields marked with x-ui-critical: true are read-only unless the user has permission
+* Fields marked with **x-ui-critical** are read-only unless the user has permission
 * All actions are logged with full context (who, what, when)
 
 ### For Non-Critical Resources
