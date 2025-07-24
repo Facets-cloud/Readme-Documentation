@@ -2,7 +2,6 @@
 - environment-configurations-on-facets
 - overriding-resources-in-a-cluster
 - dependent-environments
-- secrets-and-variables
 - template-inputs
 - environment-settings-1
 - environment-settings-use-cases
