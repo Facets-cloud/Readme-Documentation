@@ -46,6 +46,10 @@ Traditionally, managing environment variables and secrets across different envir
 
 ***
 
+### How to use Secrets/Variables at Project Level?
+
+<Embed typeOfEmbed="jsfiddle" url="https://app.storylane.io/share/epex9h9k9ron" />
+
 ### Benefits
 
 * **Single Source of Truth:** One place to define and manage all configurations
