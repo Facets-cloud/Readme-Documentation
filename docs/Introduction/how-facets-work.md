@@ -1,5 +1,5 @@
 ---
-title: How It works?
+title: How It Works?
 excerpt: ''
 deprecated: false
 hidden: false
