@@ -40,27 +40,22 @@ Resources that are shared between base (parent) and child environments, where th
 * **Parent-Child Relationship:** Child environments automatically inherit the resource instance from their respective parent environment
 * **No Separate Deployment:** Inherited resources are not deployed separately for child environments
 
-Example Scenario:\
-Production Environment (Parent)
-├── Shared Database (Inherited)
-├── Monitoring Stack (Inherited)
-└── Child Environments
-├── Staging → Inherits Database & Monitoring from Production
-└── Testing → Inherits Database & Monitoring from Production
+**Example Scenario:**
+
+> **Production Environment (Parent)**\
+> ├── Shared Database (Inherited)
+> ├── Monitoring Stack (Inherited)
+> └── **Child Environments**
+> ├── Staging → Inherits Database & Monitoring from Production
+> └── Testing → Inherits Database & Monitoring from Production
 
 ### Provided Resources
 
-External resources managed outside of Facets that are referenced within the blueprint for configuration and dependency purposes.\
-Characteristics:
+External resources managed outside of Facets that are referenced within the blueprint for configuration and dependency purposes.
 
-External Management: All lifecycle operations (provisioning, updates, deletion) handled outside Facets\
-Reference Only: Facets maintains resource definitions for dependency mapping and configuration reference
-No Direct Control: Facets does not perform any direct operations on these resources
-Blueprint Integration: Can be included in blueprints for documentation and dependency visualization
+**Characteristics**
 
-Use Cases:
-
-Third-party SaaS services\
-Legacy infrastructure managed by other teams
-Externally managed databases or storage systems
-Corporate identity providers
+* **External Management:** All lifecycle operations (provisioning, updates, deletion) handled outside Facets
+* **Reference Only:** Facets maintains resource definitions for dependency mapping and configuration reference
+* **No Direct Control:** Facets does not perform any direct operations on these resources
+* **Blueprint Integration:** Can be included in blueprints for documentation and dependency visualization
