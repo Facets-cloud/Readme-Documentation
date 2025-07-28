@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-The Dependent Environment feature in Facets introduces a new paradigm in environment management by allowing it to inherit infrastructure, tools, and any deployed resources from a designated Base Environment.
+The **Dependent Environment** feature in Facets introduces a new paradigm in environment management by allowing it to inherit infrastructure, tools, and any deployed resources from a designated Base Environment.
 
 This promotes consistency, reduces duplication of efforts, and simplifies maintenance by allowing dependent environments to be updated with changes made to the base environment if needed.
 
