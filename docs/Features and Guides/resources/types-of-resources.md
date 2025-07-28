@@ -29,14 +29,16 @@ Standard resources defined in the project blueprint that are deployed independen
 * Dedicated storage volumes
 * Production-critical resources requiring isolation
 
-Inherited Resources\
-Definition: Resources that are shared between parent and child environments, where the child environment uses the same instance deployed in its parent environment.
-Key Characteristics:
+### Inherited Resources
 
-Blueprint-level Configuration: Resources can only be marked as inherited at the project blueprint level\
-Parent-Child Relationship: Child environments automatically inherit the resource instance from their respective parent environment
-No Separate Deployment: Inherited resources are not deployed separately for child environments
-Multi-Parent Support: If multiple parent environments exist, each child inherits from its designated parent
+Resources that are shared between base (parent) and child environments, where the child environment uses the same instance deployed in its parent environment.
+
+**Key Characteristics**
+
+* **Definition Configuration:** Resources can be marked as inherited at the project blueprint level as well as at the child environment level.
+* **Multi-Parent Support:** If multiple parent environments exist, each child inherits from its designated parent is the resource is marked as inherited at the project blueprint level.
+* **Parent-Child Relationship:** Child environments automatically inherit the resource instance from their respective parent environment
+* **No Separate Deployment:** Inherited resources are not deployed separately for child environments
 
 Configuration Process:
 
