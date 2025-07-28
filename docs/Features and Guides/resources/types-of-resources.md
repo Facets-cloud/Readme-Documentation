@@ -9,6 +9,8 @@ metadata:
 
 Facets supports flexible resource management through different resource types and environment dependencies, enabling efficient infrastructure reuse and cost optimisation. This comprehensive guide covers the three resource types and their benefits.
 
+***
+
 ## Resource Types
 
 ### Normal Resources
@@ -29,6 +31,8 @@ Standard resources defined in the project blueprint that are deployed independen
 * Dedicated storage volumes
 * Production-critical resources requiring isolation
 
+***
+
 ### Inherited Resources
 
 Resources that are shared between base (parent) and child environments, where the child environment uses the same instance deployed in its parent environment.
@@ -48,6 +52,8 @@ Resources that are shared between base (parent) and child environments, where th
 > └── **Child Environments**
 > ├── Staging → Inherits Database & Monitoring from Production
 > └── Testing → Inherits Database & Monitoring from Production
+
+***
 
 ### Provided Resources
 
