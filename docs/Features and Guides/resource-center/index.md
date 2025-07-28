@@ -78,7 +78,7 @@ This tab provides a historical log of resource deployments. Key features include
 
 ## User-flow
 
-<Embed url="https://app.storylane.io/demo/8kfmjpyr63tx" title="Resource Center" favicon="https://app.storylane.io/favicon.ico" image="https://app-pages.storylane.io/company/company_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3/project/project_380d520f-671c-4bb7-8a35-79bdf77e71b5/preview.gif" provider="app.storylane.io" href="https://app.storylane.io/demo/8kfmjpyr63tx" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252F8kfmjpyr63tx%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252F8kfmjpyr63tx%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_380d520f-671c-4bb7-8a35-79bdf77e71b5%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22431%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+<Embed url="https://app.storylane.io/demo/8kfmjpyr63tx" href="https://app.storylane.io/demo/8kfmjpyr63tx" typeOfEmbed="jsfiddle" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252F8kfmjpyr63tx%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252F8kfmjpyr63tx%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_380d520f-671c-4bb7-8a35-79bdf77e71b5%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22431%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ## Frequently Asked Questions (FAQs)
 
@@ -87,7 +87,7 @@ This tab provides a historical log of resource deployments. Key features include
 * **How can I modify resource configurations for different environments?**\
   The Resource Overrides interface enables environment-specific configuration management, allowing customization of resource settings for different environments.
 * **Where can I find a record of all changes made to a resource?**\
-  The Release History interface maintains a comprehensive chronological record of all changes made to a resource within a specific environment. 
+  The Release History interface maintains a comprehensive chronological record of all changes made to a resource within a specific environment.
 * **How do I access the Resource Details page?**\
   Navigate to Environment > Resources, then click on the resource name from the list of resources to view the details.
 * **Can I make modifications in the environment that will deviate from the Blueprint?**\
@@ -101,4 +101,4 @@ This tab provides a historical log of resource deployments. Key features include
 * **What are the bulk operations available in the resource center?**\
   Multiple resources can be selected to perform bulk enable and disable operations.
 * **What is the difference between resource type and type column in resource center?**\
-  The resource type column shows the intent of a resource where as the type column shows wether the resource is Normal, Provided or Inherited.
+  The resource type column shows the intent of a resource where as the type column shows whether the resource is Normal, Provided or Inherited.
