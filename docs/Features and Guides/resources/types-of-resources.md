@@ -15,19 +15,19 @@ Facets supports flexible resource management through different resource types an
 
 Standard resources defined in the project blueprint that are deployed independently for each environment.
 
-**Behavior:**
+**Behavior**
 
 * Deployed separately for every environment through the releases mechanism
 * Each environment maintains its own instance of the resource
 * Full lifecycle management (create, update, delete) handled by Facets
 * Complete isolation between environments
 
-Use Cases:
+**Use Cases**
 
-Application-specific databases\
-Environment-specific load balancers
-Dedicated storage volumes
-Production-critical resources requiring isolation
+* Application-specific databases
+* Environment-specific load balancers
+* Dedicated storage volumes
+* Production-critical resources requiring isolation
 
 Inherited Resources\
 Definition: Resources that are shared between parent and child environments, where the child environment uses the same instance deployed in its parent environment.
