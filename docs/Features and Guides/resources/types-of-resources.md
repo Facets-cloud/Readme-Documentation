@@ -40,13 +40,6 @@ Resources that are shared between base (parent) and child environments, where th
 * **Parent-Child Relationship:** Child environments automatically inherit the resource instance from their respective parent environment
 * **No Separate Deployment:** Inherited resources are not deployed separately for child environments
 
-Configuration Process:
-
-Define the resource in the project blueprint\
-Mark the resource as "inherited" at the blueprint level
-Child environments automatically reference the parent's deployed instance
-No additional deployment or configuration required for child environments
-
 Example Scenario:\
 Production Environment (Parent)
 ├── Shared Database (Inherited)
@@ -54,8 +47,10 @@ Production Environment (Parent)
 └── Child Environments
 ├── Staging → Inherits Database & Monitoring from Production
 └── Testing → Inherits Database & Monitoring from Production
-Provided Resources
-Definition: External resources managed outside of Facets that are referenced within the blueprint for configuration and dependency purposes.
+
+### Provided Resources
+
+External resources managed outside of Facets that are referenced within the blueprint for configuration and dependency purposes.\
 Characteristics:
 
 External Management: All lifecycle operations (provisioning, updates, deletion) handled outside Facets\
