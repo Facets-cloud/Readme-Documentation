@@ -14,7 +14,9 @@ The **Dependent Environment** feature in Facets introduces a new paradigm in env
 
 This promotes consistency, reduces duplication of efforts, and simplifies maintenance by allowing dependent environments to be updated with changes made to the base environment if needed.
 
-## [When to use this feature?](https://readme.facets.cloud/docs/using-dependent-environments)
+## When to use this feature?
+
+The two primary scenarios for using dependent environments are **feature or non-production environments** within the same project and **shared non-production environments** across projects. Both scenarios optimize cost and simplify infrastructure management. [Read More](https://readme.facets.cloud/docs/using-dependent-environments)
 
 ## How to create a dependent environment?
 
