@@ -41,7 +41,7 @@ Resources that are **shared between base (dependent) and child environments**, w
 
 * **Definition Configuration:** Resources can be marked as inherited at the project blueprint level as well as at the child environment level.
 * **Multi-Dependent Support:** If multiple dependent environments exist, each child inherits from its designated base is the resource is marked as inherited at the project blueprint level.
-* **Dependent-Child Relationship:** Child environments automatically inherit the resource instance from their respective parent environment
+* **Dependent-Child Relationship:** Child environments automatically inherit the resource instance from their respective base environment
 * **No Separate Deployment:** Inherited resources are not deployed separately for child environments
 
 **Example Scenario:**
