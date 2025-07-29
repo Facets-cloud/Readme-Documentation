@@ -46,12 +46,12 @@ Resources that are shared between base (parent) and child environments, where th
 
 **Example Scenario:**
 
-> **Production Environment (Parent)**\
-> Shared Database (Inherited)
-> Monitoring Stack (Inherited)
-> **Child Environments**
-> Staging → Inherits Database & Monitoring from Production
-> Testing → Inherits Database & Monitoring from Production
+**Production Environment (Parent)**\
+Shared Database (Inherited)
+Monitoring Stack (Inherited)
+**Child Environments**
+Staging → Inherits Database & Monitoring from Production
+Testing → Inherits Database & Monitoring from Production
 
 ***
 
