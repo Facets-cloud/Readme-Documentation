@@ -35,18 +35,18 @@ Standard resources defined in the project blueprint that are deployed independen
 
 ### Inherited Resources
 
-Resources that are shared between base (parent) and child environments, where the child environment uses the same instance deployed in its parent environment.
+Resources that are **shared between base (dependent) and child environments**, where the child environment uses the same instance deployed in its base environment.
 
 **Key Characteristics**
 
 * **Definition Configuration:** Resources can be marked as inherited at the project blueprint level as well as at the child environment level.
-* **Multi-Parent Support:** If multiple parent environments exist, each child inherits from its designated parent is the resource is marked as inherited at the project blueprint level.
-* **Parent-Child Relationship:** Child environments automatically inherit the resource instance from their respective parent environment
+* **Multi-Dependent Support:** If multiple dependent environments exist, each child inherits from its designated base is the resource is marked as inherited at the project blueprint level.
+* **Dependent-Child Relationship:** Child environments automatically inherit the resource instance from their respective parent environment
 * **No Separate Deployment:** Inherited resources are not deployed separately for child environments
 
 **Example Scenario:**
 
-* **Production Environment (Parent)**: Shared Database and Monitoring Stack (Inherited)
+* **Production Environment (Dependent)**: Shared Database and Monitoring Stack (Inherited)
 * **Child Environments**: Staging and Testing → Inherits Database & Monitoring from Production
 
 ***
