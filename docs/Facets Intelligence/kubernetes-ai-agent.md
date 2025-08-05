@@ -19,8 +19,6 @@ The Facets Kubernetes AI Agent is a built-in assistant that provides a natural l
 **Where to Access:**\
 The agent is accessible within the Facets platform. Navigate to your desired environment's overview page, check the "Kubernetes Cluster" card, and click on the "Ask AI" button on the card.
 
-!\[Navigation Path to AI Agent]
-
 ## 2. Capabilities
 
 The agent can perform a wide range of read-only and analytical tasks on your cluster, leveraging the permissions granted by your kubeconfig.
