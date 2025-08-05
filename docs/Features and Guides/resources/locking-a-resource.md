@@ -78,6 +78,8 @@ By marking a resource as critical, Facets provides a deliberate control mechanis
 
 Ensures traceability and compliance across your infrastructure operations
 
+***
+
 ## Summary
 
 Critical Resources in Facets offer a robust safeguard for infrastructure components that require careful handling. By embedding this control directly into the platform, teams gain confidence that production-grade systems are protected from accidental or unauthorised modifications. The result: safer operations, cleaner access controls, and greater peace of mind across your engineering org.
