@@ -39,7 +39,9 @@ The agent can perform a wide range of read-only and analytical tasks on your clu
 3. **Enter a Prompt:** Type your question or command in plain English into the input box.
 4. **Review the Response:** The agent will process your request and return the output, which may include formatted text, tables, or log snippets.
 
-!\[AI Agent Interface with a sample query and response]
+<Embed typeOfEmbed="jsfiddle" url="https://app.storylane.io/demo/thldbtpl7fzd" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fthldbtpl7fzd%26display_name%3DStorylane%26url%3Dhttps%253A%252F%252Fapp.storylane.io%252Fdemo%252Fthldbtpl7fzd%26image%3Dhttps%253A%252F%252Fapp-pages.storylane.io%252Fcompany%252Fcompany_8c4ce947-95e7-4f47-ab9c-89edf23fd0e3%252Fproject%252Fproject_23247888-d800-44c2-84e4-7bce5bc1530b%252Fpreview.gif%26type%3Dtext%252Fhtml%26schema%3Dstorylane%22%20width%3D%22750%22%20height%3D%22449%22%20scrolling%3D%22no%22%20title%3D%22Storylane%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" href="https://app.storylane.io/demo/thldbtpl7fzd" providerUrl="https://www.storylane.io" providerName="Storylane" />
+
+<br />
 
 ## 4. How It Works
 
@@ -70,7 +72,6 @@ Security is paramount. The agent's access is strictly controlled and audited.
 
 * **Role-Based Access Control (RBAC):** The agent's actions are 100% constrained by the RBAC permissions of the user's kubeconfig. If a user has read-only access to the default namespace, the agent can only perform read-only actions within that namespace on their behalf.
 * **Scoped Permissions:** Access is limited to the scope defined in the kubeconfig. The agent cannot see or interact with clusters or resources outside of this scope.
-* **Read-Only by Default:** The agent is designed for diagnostics and analysis. It will only perform read operations (`get`, `list`, `describe`, `logs`) unless its underlying service account has been explicitly granted write permissions (not recommended for general use).
 
 ## 7. Secrets and ConfigMaps
 
