@@ -10,7 +10,7 @@ metadata:
 **What it is**\
 The Facets Kubernetes AI Agent is a built-in assistant that provides a natural language interface to interact with your Kubernetes clusters. It is integrated directly into the Facets platform, allowing engineers to query, troubleshoot, and manage cluster resources without needing to manually run `kubectl` commands.
 
-**Key Benefits:**
+**Key Benefits**
 
 * **Accelerated Troubleshooting:** Quickly diagnose issues like pod crashes, resource bottlenecks, and network problems by asking direct questions.
 * **Simplified Resource Analysis:** Get plain-language summaries of resource utilization (CPU, memory), deployments, and service statuses.
