@@ -73,7 +73,7 @@ To Create a Mustache File, follow these steps:
 1. **Create the Mustache File:**\
    Create a `.mustache` file in the `<resource_type>/instances` directory of the resource where you want to create template inputs.
 2. **Specify the Template Input:**\
-   In your Mustache file, use the JSON key `"templatedOn"` to specify which template input to use with the template.\
+   In your Mustache file, use the JSON key `"templatedOn"` to specify which template input to use with the template.
    **For example:** `"templatedOn": "customers"`
 
 This setup will generate one replica for each tenant defined in your Control Plane.
@@ -143,7 +143,7 @@ As an example, if your application takes `customer_id` and `designation` as inpu
 
 #### Sample Ingress
 
-The following Mustache JSON file demonstrates how to create an ingress configuration that links to multiple services. This configuration uses the `uid` to uniquely identify each customer's frontend and backend services. 
+The following Mustache JSON file demonstrates how to create an ingress configuration that links to multiple services. This configuration uses the `uid` to uniquely identify each customer's frontend and backend services.
 
 * Notice the key `templatedOn` is not used here because the same ingress configuration can be shared across different applications, and it dynamically links to the services.
 
@@ -164,7 +164,7 @@ The following Mustache JSON file demonstrates how to create an ingress configura
     "private": false,
     "force_ssl_redirection": true,
     "rules": {
-        {{/customers}}
+        {{#customers}}
       "frontend-{{uid}}": {
         "comment": "front-end {{uid}}",
         "domain_prefix": "",
@@ -192,7 +192,7 @@ The following Mustache JSON file demonstrates how to create an ingress configura
 }
 ```
 
-* In this example, any rules inside the `{{#customers}}...{{/customers}}` block will be replicated for each key in `customers` template input. 
+* In this example, any rules inside the `{{#customers}}...{{/customers}}` block will be replicated for each key in `customers` template input.
 * The placeholder `{{uid}}` is used to uniquely identify each customer's frontend and backend services.
 
 ## How to create a template input in the Control Plane?
@@ -207,6 +207,6 @@ Template Inputs in your Control Plane will require you to provide a unique ID fo
 
 ## How to Perform a Release?
 
-Perform a Full Release from the Releases screen, and all your templated resources should materialize as defined. For more information refer to the [Performing a Release](doc:performing-releases) documentation. 
+Perform a Full Release from the Releases screen, and all your templated resources should materialize as defined. For more information refer to the [Performing a Release](doc:performing-releases) documentation.
 
 Your templated resources have been successfully created and deployed.
