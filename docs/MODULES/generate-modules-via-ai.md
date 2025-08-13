@@ -20,6 +20,6 @@ Some key advantages of using this MCP:
 
 Try it out <Anchor label="here" target="_blank" href="https://github.com/Facets-cloud/facets-module-mcp">here</Anchor> and start building modules tailored to your infrastructure needs.
 
-Check this sample video out:
+Check out this sample video:
 
 <Embed typeOfEmbed="youtube" url="" />
