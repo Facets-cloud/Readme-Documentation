@@ -1,7 +1,7 @@
 ---
 title: Module Generation Agent
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
