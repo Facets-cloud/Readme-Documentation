@@ -240,14 +240,12 @@ x-ui-order:
 
 #### `x-ui-placeholder`
 
-```
+```yaml
 memory:
   type: string
   title: Memory
   x-ui-placeholder: "Enter Memory (e.g., 1Gi or 512Mi)"
 ```
-
-<br />
 
 <Image align="center" width="500px" src="https://files.readme.io/6467897f4cfcb85aa3def63571fd50f57612cd64ffccf7d7992e2d6c6263f525-Screenshot_2025-04-11_at_2.09.36_PM.png" />
 
