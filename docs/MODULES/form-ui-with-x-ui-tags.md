@@ -207,7 +207,7 @@ Only visible at the blueprint level and not visible at the environment level
 
 ```yaml
 restart_policy:
-	type: string
+  type: string
   title: Restart Policy
   description: Restart Policy- Always, OnFailure, Never
   x-ui-override-disable: true
