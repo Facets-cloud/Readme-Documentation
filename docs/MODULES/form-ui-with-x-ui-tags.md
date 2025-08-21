@@ -109,7 +109,25 @@ arn:
 
 #### `x-ui-api-source`
 
-<br />
+List down all options by calling a specified API endpoint (and applies optional filters) to retrieve and display relevant data based on the defined criteria.
+
+```yaml
+service_name:
+	type: string
+  x-ui-api-source:
+  	endpoint: "/cc-ui/v1/dropdown/stack/{{stackName}}/resources-info"
+    method: GET
+    params:
+    	includeContent: false
+      labelKey: resourceName
+      valueKey: resourceName
+      valueTemplate: "${service.{{value}}.out.attributes.service_name}"
+      filterConditions:
+      	- field: resourceType
+      	value: service
+```
+
+<Image align="center" width="500px" src="https://files.readme.io/80f8b213644a8819f5a3a03ed2aa09b268d94fad530862fd50eeacf3d0f27ce5-Screenshot_2025-08-21_at_1.29.55_PM.png" />
 
 ***
 
