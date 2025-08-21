@@ -263,7 +263,7 @@ cloud_permissions:
   title: Cloud Permissions
   description: Assign roles, define access levels
   x-ui-toggle: false
-	properties:
+  properties:
     aws:
     type: object
     title: AWS
