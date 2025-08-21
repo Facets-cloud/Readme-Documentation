@@ -107,34 +107,6 @@ arn:
 
 ***
 
-#### `x-ui-api-source`
-
-Lists down all the options by calling a specified API endpoint (and applying optional filters) to retrieve and display relevant data based on the defined criteria.
-
-```yaml
-service_name:
-	type: string
-  title: Service Name
-  description: Kubernetes service name
-  x-ui-api-source:
-  	endpoint: "/cc-ui/v1/dropdown/stack/{{stackName}}/resources-info"
-    method: GET
-    params:
-    	includeContent: false
-      labelKey: resourceName
-      valueKey: resourceName
-      valueTemplate: "${service.{{value}}.out.attributes.service_name}"
-      filterConditions:
-      	- field: resourceType
-      	value: service
-```
-
-<br />
-
-<br />
-
-***
-
 #### `x-ui-secret-ref`
 
 Allows referencing or creating secrets (this flag shows a dropdown along with capability to type as well).
