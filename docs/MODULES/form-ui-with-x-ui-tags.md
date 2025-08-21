@@ -306,4 +306,25 @@ memory:
 
 <Image align="center" width="600px" src="https://files.readme.io/5de38638c625340a80391fe3282e338b1c27784e5552c1c5635746dc8a98251b-Screenshot_2025-04-11_at_1.57.43_PM.png" />
 
+***
+
+#### `x-ui-array-input-validation`
+
+If any field with type "array", then validation can be put on each item of the array by defining pattern and error message inside this field.
+
+```yaml
+times:
+	type: array
+  title: Times
+  description: Times of day to create snapshots (HH:MM format)
+  x-ui-override-disable: true
+  x-ui-array-input-validation:
+  	pattern: "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
+    error: "Invalid time. Please enter a valid time in HH:MM format."
+  items:
+  	type: string
+```
+
+<br />
+
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
