@@ -46,7 +46,7 @@ Conditionally shows fields based on another field’s value (User can enter mult
 
 ```yaml
 readiness_timeout:
-	type: integer
+  type: integer
   title: Readiness Timeout
   default: 10
   minimum: 0
@@ -54,7 +54,7 @@ readiness_timeout:
   x-ui-placeholder: "Enter readiness timeout for the Pod"
   x-ui-error-message: "Value must be between 0 and 10000"
   x-ui-visible-if:
-  	field: spec.runtime.health_checks.readiness_check_type
+    field: spec.runtime.health_checks.readiness_check_type
     values: ["PortCheck", "HttpCheck", "ExecCheck"]
 liveliness_timeout:
   type: integer
@@ -100,8 +100,8 @@ arn:
   title: ARN
   type: string
   pattern: '^(arn:aws:iam::(\d{12}|aws):policy\/[A-Za-z0-9+=,.@\-_]+|\$\{[A-Za-z0-9._-]+\})$'
-	x-ui-error-message: "Value doesn't match pattern, accepted value pattern
-	x-ui-output-type: "iam_policy_arn"
+  x-ui-error-message: "Value doesn't match pattern, accepted value pattern
+  x-ui-output-type: "iam_policy_arn"
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/d5c489fe55c854b2b3efb6b0df838d2aa50c6c98096dab27630dc9a6347d48c8-Screenshot_2025-04-11_at_4.29.05_PM.png" />
