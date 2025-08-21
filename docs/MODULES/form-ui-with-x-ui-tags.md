@@ -322,8 +322,6 @@ times:
   	type: string
 ```
 
-![]()
-
 ***
 
 [ Return to top](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#detailed-examples)
