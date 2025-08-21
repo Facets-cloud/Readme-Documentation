@@ -95,9 +95,9 @@ readiness_port:
 
 Lists down all the resources whose output is of type mentioned in "x-ui-output-type".
 
-```
+```yaml
 arn:
-	title: ARN
+  title: ARN
   type: string
   pattern: '^(arn:aws:iam::(\d{12}|aws):policy\/[A-Za-z0-9+=,.@\-_]+|\$\{[A-Za-z0-9._-]+\})$'
 	x-ui-error-message: "Value doesn't match pattern, accepted value pattern
@@ -114,12 +114,12 @@ List down all options by calling a specified API endpoint (and applies optional 
 
 ```yaml
 service_name:
-	type: string
+  type: string
   x-ui-api-source:
-  	endpoint: "/cc-ui/v1/dropdown/stack/{{stackName}}/resources-info"
+    endpoint: "/cc-ui/v1/dropdown/stack/{{stackName}}/resources-info"
     method: GET
     params:
-    	includeContent: false
+      includeContent: false
       labelKey: resourceName
       valueKey: resourceName
       valueTemplate: "${service.{{value}}.out.attributes.service_name}"
