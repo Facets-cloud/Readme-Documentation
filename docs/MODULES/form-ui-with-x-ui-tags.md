@@ -259,7 +259,7 @@ Sets value for collapsible groups. If true, the group is collapsed by default ev
 
 ```yaml
 cloud_permissions:
-	type: object
+  type: object
   title: Cloud Permissions
   description: Assign roles, define access levels
   x-ui-toggle: false
