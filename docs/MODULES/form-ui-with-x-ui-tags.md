@@ -150,7 +150,7 @@ db_password:
 
 Allows referencing or creating variables (this flag shows a dropdown along with capability to type as well).
 
-```
+```yaml
 db_username:
 	type: string
   x-ui-variable-ref: true
@@ -164,7 +164,7 @@ db_username:
 
 Allows a field value to be typed instead of selecting it from the dropdown values
 
-```
+```yaml
 java_version:
 	title: Java Version
   type: string
