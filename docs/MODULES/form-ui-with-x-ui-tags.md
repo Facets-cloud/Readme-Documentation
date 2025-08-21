@@ -315,9 +315,6 @@ If any field with type "array", then validation can be put on each item of the a
 ```yaml
 times:
 	type: array
-  title: Times
-  description: Times of day to create snapshots (HH:MM format)
-  x-ui-override-disable: true
   x-ui-array-input-validation:
   	pattern: "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"
     error: "Invalid time. Please enter a valid time in HH:MM format."
