@@ -152,7 +152,7 @@ Allows referencing or creating variables (this flag shows a dropdown along with 
 
 ```yaml
 db_username:
-	type: string
+  type: string
   x-ui-variable-ref: true
 ```
 
@@ -166,16 +166,16 @@ Allows a field value to be typed instead of selecting it from the dropdown value
 
 ```yaml
 java_version:
-	title: Java Version
+  title: Java Version
   type: string
   description: Java version to use for the build
   default: '17'
-	enum:
-  	- '8'
+  enum:
+    - '8'
     - '11'
     - '17'
     - '21'
-	x-ui-typeable: true
+  x-ui-typeable: true
 ```
 
 <Image align="center" width="500px" src="https://files.readme.io/02786c3bf910b58546a8640cf588fa623213b8c38c9b15887c4686cc4c47c8a5-Screenshot_2025-05-15_at_1.41.25_PM.png" />
