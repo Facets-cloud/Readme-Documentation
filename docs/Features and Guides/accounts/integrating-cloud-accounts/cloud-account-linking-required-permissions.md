@@ -1,7 +1,7 @@
 ---
 title: 'Cloud account linking: required permissions'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
