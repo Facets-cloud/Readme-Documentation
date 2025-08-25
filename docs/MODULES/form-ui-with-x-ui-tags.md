@@ -314,8 +314,8 @@ If any field with type "array", then validation can be put on each item of the a
 times:
   type: array
   x-ui-array-input-validation:
-  pattern: "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"	
-  error: "Invalid time. Please enter a valid time in HH:MM format."
+  	pattern: "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"	
+  	error: "Invalid time. Please enter a valid time in HH:MM format."
   items:
     type: string
 ```
