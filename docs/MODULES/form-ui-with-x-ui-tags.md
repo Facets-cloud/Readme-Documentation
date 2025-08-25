@@ -18,20 +18,20 @@ Here is the table sorted alphabetically first by **Category**, then by **Tag**:
 
 | **Category**                    | **Tag**                                                                                                              | **Short Description**                                                                                                                                                              |
 | :------------------------------ | :------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Conditional Display**         | [`x-ui-visible-if`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-visible-if)                         | Conditionally display this field only if another field has a specific value. *For example, show replicaCount only if deploymentType is set to "ReplicaSet".*                       |
-| **Dynamic Data Sources**        | [`x-ui-dynamic-enum`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-dynamic-enum)                     | Populates a dropdown based on values from another field. *For example, allow selecting a port for a health check from the list of container ports defined in the same deployment.* |
-| **Dynamic Data Sources**        | [`x-ui-output-type`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-output-type)                       | Marks the field as a special output type. *For example, an Ingress upstream can be selected from available Services that export a compatible output interface.*                    |
+| **Conditional Display**         | [`x-ui-visible-if`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-visible-if)                         | Conditionally display this field only if another field has a specific value. _For example, show replicaCount only if deploymentType is set to "ReplicaSet"._                       |
+| **Dynamic Data Sources**        | [`x-ui-dynamic-enum`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-dynamic-enum)                     | Populates a dropdown based on values from another field. _For example, allow selecting a port for a health check from the list of container ports defined in the same deployment._ |
+| **Dynamic Data Sources**        | [`x-ui-output-type`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-output-type)                       | Marks the field as a special output type. _For example, an Ingress upstream can be selected from available Services that export a compatible output interface._                    |
 | **Dynamic Data Sources**        | [`x-ui-api-source`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-api-source)                         | Populates dropdown options by calling a specified API endpoint and applies optional filters to retrieve and display relevant data based on the defined criteria.                   |
-| **Dynamic Data Sources**        | [`x-ui-secret-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-secret-ref)                         | Allows the field value to reference a secret defined at the project level. *For example, link to a stored API key without exposing its value.*                                     |
-| **Dynamic Data Sources**        | [`x-ui-variable-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-variable-ref)                     | Allows the field value to reference a variable defined at the project level. *For example, reuse a common region or environment name.*                                             |
+| **Dynamic Data Sources**        | [`x-ui-secret-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-secret-ref)                         | Allows the field value to reference a secret defined at the project level. _For example, link to a stored API key without exposing its value._                                     |
+| **Dynamic Data Sources**        | [`x-ui-variable-ref`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-variable-ref)                     | Allows the field value to reference a variable defined at the project level. _For example, reuse a common region or environment name._                                             |
 | **Dynamic Data Sources**        | [`x-ui-typeable`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-typeable)                             | Allows a field value to be typed instead of selecting it from the dropdown values                                                                                                  |
-| **Environment Management**      | [`x-ui-overrides-only`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-overrides-only)                 | Show this field only when overriding for a specific environment. *For example, a CIDR block must be set per environment and shouldn't have a default value.*                       |
+| **Environment Management**      | [`x-ui-overrides-only`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-overrides-only)                 | Show this field only when overriding for a specific environment. _For example, a CIDR block must be set per environment and shouldn't have a default value._                       |
 | **Environment Management**      | [`x-ui-override-disable`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-override-disable)             | Prevents a field from being modified by the user for any environment - ensuring that a blueprinted or default value remains intact.                                                |
 | **Form Layout & Presentation**  | [`x-ui-order`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-order)                                   | Specify the rendering order of fields.                                                                                                                                             |
 | **Form Layout & Presentation**  | [`x-ui-placeholder`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-placeholder)                       | Provide example input placeholder text.                                                                                                                                            |
-| **Form Layout & Presentation**  | [`x-ui-toggle`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-toggle)                                 | Renders a group of fields as a collapsible section. *For example, show health check settings inside a deployment only if the user chooses to enable health checks.*                |
-| **Form Layout & Presentation**  | [`x-ui-editor`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-yaml-editor)                            | Enables an editor, with an option to choose language (by default YAML), for complex object fields. *For example, custom values.yaml for a Helm chart deployment.*                  |
-| **Validation & Error Handling** | [`x-ui-error-message`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-error-message)                   | Defines a custom error message to show when validation fails. *For example, “CIDR must be a valid private IP block” for a pattern mismatch.*                                       |
+| **Form Layout & Presentation**  | [`x-ui-toggle`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-toggle)                                 | Renders a group of fields as a collapsible section. _For example, show health check settings inside a deployment only if the user chooses to enable health checks._                |
+| **Form Layout & Presentation**  | [`x-ui-editor`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-yaml-editor)                            | Enables an editor, with an option to choose language (by default YAML), for complex object fields. _For example, custom values.yaml for a Helm chart deployment._                  |
+| **Validation & Error Handling** | [`x-ui-error-message`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-error-message)                   | Defines a custom error message to show when validation fails. _For example, “CIDR must be a valid private IP block” for a pattern mismatch._                                       |
 | **Validation & Error Handling** | [`x-ui-array-input-validation`](https://readme.facets.cloud/docs/form-ui-with-x-ui-tags#x-ui-array-input-validation) | Defines a custom pattern and error message to show when pattern fails.                                                                                                             |
 
 ***
@@ -274,8 +274,8 @@ cloud_permissions:
 
 #### `x-ui-editor`
 
-Custom editor (with support of multiple languages to choose from) for object-type fields.\
-*Note: Earlier this tag was`x-ui-yaml-editor` which only supports YAML*
+Custom editor (with support of multiple languages to choose from) for object-type fields.
+_Note: Earlier this tag was`x-ui-yaml-editor` which only supports YAML_
 
 ```yaml
  env:
@@ -319,6 +319,8 @@ times:
   items:
     type: string
 ```
+
+<Image align="center" width="700px" src="https://files.readme.io/97295ac669d7bc310201352403e6a538969d50ad9e843d3081ce4783e4cacc2d-Screenshot_2025-08-25_at_3.32.13_PM.png" />
 
 ***
 
