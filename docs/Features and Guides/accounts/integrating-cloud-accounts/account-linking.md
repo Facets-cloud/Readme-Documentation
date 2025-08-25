@@ -1,7 +1,7 @@
 ---
 title: Account Linking
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
